@@ -1,16 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 15px;
 }
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
+}
+
+p {
+  margin: 0px auto;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.social {
+  fill: #fff;
+}
+
+.social-icon {
+  fill: #363C4C;
+}
+
+.s-icon:hover .social {
+  fill: #363C4C;
+}
+
+.s-icon:hover .social-icon {
+  fill: #fff;
+}
+
+.sociallink-packet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wrapper {
+  padding-right: 6rem;
+  padding-left: 6em;
+}
+
+.btn-primary {
+  background-color: #FF9100 !important;
+  color: #fff !important;
+}
+
+.btn {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 0.8rem;
+  /* padding-bottom: 0.8rem; */
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 150px;
+  letter-spacing: 0.3px;
 }
