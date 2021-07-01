@@ -2,7 +2,7 @@ import { Container, Row, Col } from "reactstrap";
 import styles from '../styles/Footer.module.css'
 import Image from "next/image";
 import Link from 'next/link';
-import logo from '../public/logo.svg'
+import logo from '../assets/logo.svg'
 import { navlist, Businesses } from "../navlist";
 
 const Footer = () => {
