@@ -8,6 +8,7 @@ import {
     Button
 } from 'reactstrap';
 import Image from "next/image";
+import hamburger from "../public/hamburger.svg"
 import logo from '../public/logo.svg'
 
 const Header = () => {
@@ -22,7 +23,7 @@ const Header = () => {
                     <Button className="btn btn-primary me-4">
                         Download Brochure
                     </Button>
-                    <img src="/hamburger.svg" className="img-fluid" />
+                    <Image src={hamburger} className="img-fluid" />
                 </Nav>
 
             </Navbar>
