@@ -18,12 +18,12 @@ const Header = () => {
     return (
         <div>
             <Navbar color="light" light expand="md" className="wrapper">
-                <NavbarBrand href="/"> <Image src={logo} className="img-fluid" /></NavbarBrand>
+                <NavbarBrand href="/"> <img src="/logo.svg" className="img-fluid" /></NavbarBrand>
                 <Nav className="ms-auto" navbar>
                     <Button className="btn btn-primary me-4">
                         Download Brochure
                     </Button>
-                    <Image src={hamburger} className="img-fluid" />
+                    <img src='/hamburger.svg' className="img-fluid" />
                 </Nav>
 
             </Navbar>
