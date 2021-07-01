@@ -1,6 +1,8 @@
 import { Container, Row, Col } from "reactstrap";
 import styles from '../styles/Footer.module.css'
+import Image from "next/image";
 import Link from 'next/link';
+import logo from '../public/logo.svg'
 import { navlist, Businesses } from "../navlist";
 
 const Footer = () => {
@@ -9,7 +11,7 @@ const Footer = () => {
             <Container >
                 <Row className="py-5" >
                     <Col lg="2" className={styles.addressDiv} >
-                        <img src="/logo.svg" className="img-fluid" />
+                        <Image src={logo} layout="responsive" className="img-fluid" />
                         <p className="my-3">Stainless Centre, Plot No. 50, 6th Floor, Sector-32, Gurgaon, Haryana - 122001</p>
                         <p>contact@jindalstainless.com</p>
                     </Col>

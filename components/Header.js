@@ -7,6 +7,8 @@ import {
     Nav,
     Button
 } from 'reactstrap';
+import Image from "next/image";
+import logo from '../public/logo.svg'
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,16 +17,14 @@ const Header = () => {
     return (
         <div>
             <Navbar color="light" light expand="md" className="wrapper">
-                <NavbarBrand href="/"><img src="./logo.svg" /></NavbarBrand>
-                <NavbarToggler onClick={toggle} />
-                <Collapse isOpen={isOpen} navbar>
-                    <Nav className="ms-auto" navbar>
-                        <Button className="btn btn-primary me-4">
-                            Download Brochure
-                        </Button>
-                        <img src="/hamburger.svg" className="img-fluid" />
-                    </Nav>
-                </Collapse>
+                <NavbarBrand href="/"> <Image src={logo} className="img-fluid" /></NavbarBrand>
+                <Nav className="ms-auto" navbar>
+                    <Button className="btn btn-primary me-4">
+                        Download Brochure
+                    </Button>
+                    <img src="/hamburger.svg" className="img-fluid" />
+                </Nav>
+
             </Navbar>
         </div>
     );
