@@ -9,7 +9,7 @@ import {
 } from 'reactstrap';
 import Image from "next/image";
 import hamburger from "../public/hamburger.svg"
-import logo from '../public/logo.svg'
+import logo from '../assets/logo.svg'
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
