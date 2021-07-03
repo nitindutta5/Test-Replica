@@ -11,7 +11,7 @@ const Footer = () => {
             <Container >
                 <Row className="py-5" >
                     <Col lg="2" className={styles.addressDiv} >
-                        <img src="/logo.svg" className="img-fluid" />
+                        <Image src={logo} className="img-fluid" />
                         <p className="my-3">Stainless Centre, Plot No. 50, 6th Floor, Sector-32, Gurgaon, Haryana - 122001</p>
                         <p>contact@jindalstainless.com</p>
                     </Col>
