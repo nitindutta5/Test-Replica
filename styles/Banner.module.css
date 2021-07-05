@@ -1,0 +1,116 @@
+.Bannertext {
+    font-size: 65px;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+
+
+.carouseltext {
+    position: absolute;
+    width: 100%;
+    max-width: 77%;
+    padding: 40px;
+    background-color: #EC8022;
+    box-shadow: 10px 10px 40px #B3530080;
+    min-height: 150px;
+    border-top-right-radius: 40px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+
+
+
+.date {
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+
+.bannerholder {
+    position: relative;
+    padding: 0px !important;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    max-height: 100vh;
+    flex-direction: column;
+}
+
+.bannerholder img {
+    max-height: 100vh;
+    width: 100%;
+}
+
+@media(max-width:1600px) {
+    .Bannertext {
+        font-size: 50px;
+    }
+}
+
+@media(max-width:1300px) {
+    .Bannertext {
+        font-size: 40px;
+    }
+
+    .bannerholder img {
+        min-height: auto;
+        /* width:100%; */
+    }
+
+    .bannerholder {
+        min-height: auto;
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .Bannertext {
+        font-size: 35px;
+
+    }
+}
+
+
+@media(max-width:600px) {
+
+    .Bannertext {
+        font-size: 30px;
+
+    }
+}
+
+@media(max-width:480px) {
+    .carouseltext {
+        position: absolute;
+        width: 100%;
+        max-width: max-content;
+    }
+
+
+    .date {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .Bannertext {
+        font-size: 20px;
+        line-height: 1.2;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    /* #BlogInner .Bannertext{
+
+    } */
+
+}
