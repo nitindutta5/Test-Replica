@@ -46,7 +46,7 @@ const Banner = (props) => {
   return (
     <div ref={containerRef}>
       <Container fluid className={styles.bannerholder} style={{backgroundImage:`url(${props.src})`}}>
-        <img className="img-fluid invisble" src={props.src} alt="TopBanner" />
+        <img className="img-fluid invisible" src={props.src} alt="TopBanner" />
         <div className={styles.carouseltext}>
           <p className={styles.Bannertext}>{props.text}</p>
           <p className={styles.date} dangerouslySetInnerHTML={{__html:props.date}}/>

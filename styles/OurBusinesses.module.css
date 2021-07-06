@@ -1,0 +1,15 @@
+.title {
+    font-family: 'Jost';
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.btn {
+    position: absolute;
+    left: 5%;
+    bottom: 8%;
+}

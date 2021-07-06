@@ -8,7 +8,7 @@ import {
     Button
 } from 'reactstrap';
 import hamburger from "../public/hamburger.svg"
-import logo from '../assets/logo.svg'
+import logo from '../public/logo.svg'
 import ThemeContext from '../components/ThemeContext';
 import hamburger2 from '../public/hamburger2.svg'
 import logo2 from '../public/logo2.svg'

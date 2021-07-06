@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Banner from '../components/Banner'
-import BannerImage from '../assets/banner/homepage.jpg'
+import BannerImage from '../public/banner/homepage.jpg'
 import AboutUs from '../components/AboutUs'
 import OurPlants from '../components/OurPlants'
 import Media from '../components/Media'
 import SocialMedia from '../components/SocialMedia'
+import OurBusinesses from '../components/OurBusinesses'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <Banner src={BannerImage} text="CRAFTING A SMART FUTURE FOR A BEAUTIFUL LIVING"/>
       <AboutUs />
+      <OurBusinesses/>
       <OurPlants/>
       <Media />
       <SocialMedia/>
