@@ -9,29 +9,36 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <Container >
-                <Row className="py-5" >
-                    <Col lg="2" className={styles.addressDiv} >
+            <Row>
+            <Col lg="12">
+
+            <Row className="py-5" >
+                    <Col lg="2" className={[styles.addressDiv]+" mb-4 mb-lg-0"} >
                         <img src={logo} className="img-fluid" />
                         <p className="my-3">Stainless Centre, Plot No. 50, 6th Floor, Sector-32, Gurgaon, Haryana - 122001</p>
                         <p>contact@jindalstainless.com</p>
                     </Col>
-                    <Col lg="2" className="ms-lg-auto">
+                    <Col lg="2" xs="6" className="ms-lg-auto mb-4 mb-lg-0">
                         <p className={styles.linkTitle}>SITE MAP</p>
+                                                <ul>
                         {
                             navlist.map((obj, id) => (
-                                <Link key={id} href={obj.link}><a ><p className={styles.link}>{obj.text}</p></a></Link>
+                                <li className={styles.link}><Link key={id} href={obj.link}><a >{obj.text}</a></Link></li>
                             ))
                         }
+                         </ul>
                     </Col>
-                    <Col lg="2" className="ms-lg-auto">
+                    <Col lg="2" xs="6" className="ms-lg-auto mb-4 mb-lg-0">
                         <p className={styles.linkTitle}>OUR BUSINESSES</p>
+                        <ul>
                         {
                             Businesses.map((obj, id) => (
-                                <Link key={id} href={obj.link}><a ><p className={styles.link}>{obj.text}</p></a></Link>
+                                <li className={styles.link}><Link key={id} href={obj.link}><a >{obj.text}</a></Link></li>
                             ))
                         }
+                         </ul>
                     </Col>
-                    <Col lg="2" className="ms-lg-auto"  >
+                    <Col lg="2" xs="8"  className="ms-lg-auto"  >
                         <p className={styles.linkTitle}>FOLLOW US</p>
                         <div className="sociallink-packet">
                             <div className="s-icon">
@@ -69,6 +76,9 @@ const Footer = () => {
                         <p className="my-4 text-center">© 2021 Jindal Stainless Limited Lifestyle. All Rights Reserved.</p>
                     </Col>
                 </Row>
+</Col>
+</Row>
+
             </Container>
         </footer >
     );

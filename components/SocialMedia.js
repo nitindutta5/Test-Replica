@@ -1,6 +1,8 @@
 import { Container, Row, Col } from "reactstrap";
 import Slider from 'react-slick';
 import styles from '../styles/SocialMedia.module.css'
+import NextBtn from "./NextBtn";
+import Previous from "./Previous";
 
 
 const data = [
@@ -19,16 +21,36 @@ const data = [
     {
         img: './socialmedia/4.png',
         type: 'twitter'
+    },
+    {
+        img: './socialmedia/3.png',
+        type: 'twitter'
     }
 ];
 
 const SocialMedia = () =>{
     var settings = {
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
-        arrows: true
+        arrows: true,
+        nextArrow:<NextBtn/>,
+        prevArrow:<Previous/>,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                  slidesToShow: 2,
+                }
+              }
+        ]
     };
     return(
         <section>

@@ -72,13 +72,26 @@
         min-height: auto;
     }
 
+    .carouseltext {
+        max-width: 55%;
+        padding: 4rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        background-color: rgb(20 20 21 / 60%);
+        min-height: 140px;
+    }
+
 }
 
-@media(max-width:768px) {
+@media(max-width:800px) {
 
     .Bannertext {
         font-size: 35px;
 
+    }
+
+    .carouseltext {
+        max-width: 80%;
     }
 }
 
@@ -87,7 +100,6 @@
 
     .Bannertext {
         font-size: 30px;
-
     }
 }
 
@@ -96,7 +108,10 @@
         position: absolute;
         width: 100%;
         max-width: max-content;
+        min-height: auto;
+        padding: 1rem;
     }
+
 
 
     .date {

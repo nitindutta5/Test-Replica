@@ -22,6 +22,17 @@
     top: 10%;
 }
 
+.arrow {
+    max-width: auto;
+    max-height: 12px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.knowMore:hover .arrow {
+    margin-left: 20px;
+}
+
 
 .rightSection p {
     color: #363C4C;
@@ -31,7 +42,7 @@
     font-family: 'Jost', sans-serif;
     font-size: 25px;
     width: auto;
-    line-height: 2.0;
+    line-height: 1.5;
     font-weight: 700;
 }
 
@@ -69,9 +80,6 @@
 }
 
 @media(max-width:1600px) {
-    .Title {
-        font-size: 32px;
-    }
 
     .DataTitle {
         font-size: 19px;
@@ -87,9 +95,6 @@
 }
 
 @media(max-width:1400px) {
-    .Title {
-        font-size: 30px;
-    }
 
     .DataTitle {
         font-size: 17px;
@@ -105,9 +110,6 @@
 }
 
 @media(max-width:1200px) {
-    .Title {
-        width: 80%;
-    }
 
     .DataTitle {
         margin-top: 20px;
@@ -147,9 +149,12 @@
         -webkit-line-clamp: 5;
     }
 
+    .rightSection {
+        min-height: 300px;
+    }
+
     .Title {
-        font-size: 15px;
-        width: 80%;
+        font-size: 20px;
     }
 
     .Content {
@@ -197,8 +202,8 @@
         height: 0;
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
-        border-bottom: 30px solid #EC8022;
-        filter: drop-shadow(5px 5px 10px #EC8022);
+        border-bottom: 30px solid #fff;
+        filter: drop-shadow(5px 5px 10px #fff);
         position: absolute;
         top: -7%;
         left: 60px;
@@ -218,6 +223,13 @@
 
     .Content {
         line-height: 1.6;
+    }
+
+
+    .rightSection {
+        background: #fff;
+        position: relative;
+        min-height: 250px;
     }
 
 }

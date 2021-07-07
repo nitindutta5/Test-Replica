@@ -38,13 +38,30 @@ const OurBusinesses = () => {
         slidesToShow: 5,
         // autoplay: true,
         centerPadding: "0px",
-        arrows: false
+        arrows: false,
+        responsive: [
+            {
+              breakpoint: 1300,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                  dots:false
+                }
+              }
+        ]  
     };
     return (
         <section>
             <Container fluid id="businesses">
                 <Row>
-                    <Col lg="12">
+                    <Col lg="12" >
                         <h2 className="heading text-center">Our Businesses</h2>
                     </Col>
                     <Col lg="12" className="px-0">

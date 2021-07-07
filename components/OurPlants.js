@@ -7,23 +7,25 @@ const OurPlants = () => {
         <section className="bg2">
             <Container>
                 <Row>
-                    <Col lg="12">
+                    <Col lg="12" xs="11" className="mx-auto">
                         <h2 className="heading text-center"> Our Plants</h2>
-                    </Col>
-                    <Col lg="4" className={styles.plantCard}>
-                        <img src="./plants/chennai.png" className="img-fluid px-lg-4" />
-                        <p>Chennai Plant</p>
-                    </Col>
-                    <Col lg="4" className={styles.plantCard + " mx-auto"}>
-                        <img src="./plants/rohand.png" className="img-fluid px-lg-4" />
-                        <p>Rohand Plant</p>
-                    </Col>
-                    <Col lg="4" className={styles.plantCard}>
-                        <img src="./plants/pathrendi.png" className="img-fluid px-lg-4" />
-                        <p>Pathrendi Plant</p>
-                    </Col>
-                    <Col lg="12" className="text-center mt-5">
-                        <Button color="secondary" className="btn">Know More</Button>
+                        <Row>
+                            <Col lg="4" className={styles.plantCard}>
+                                <img src="./plants/chennai.png" className="img-fluid px-lg-4" />
+                                <p>Chennai Plant</p>
+                            </Col>
+                            <Col lg="4" className={styles.plantCard + " mx-auto"}>
+                                <img src="./plants/rohand.png" className="img-fluid px-lg-4" />
+                                <p>Rohand Plant</p>
+                            </Col>
+                            <Col lg="4" className={styles.plantCard}>
+                                <img src="./plants/pathrendi.png" className="img-fluid px-lg-4" />
+                                <p>Pathrendi Plant</p>
+                            </Col>
+                            <Col lg="12" className="text-center mt-5">
+                                <Button color="secondary" className="btn mx-auto">Know More</Button>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </Container>

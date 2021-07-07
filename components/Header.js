@@ -24,8 +24,8 @@ const Header = () => {
             <Navbar color={dark ? 'dark' : 'fadded'} light expand="md" className="wrapper">
                 <NavbarBrand href="/"> <img src={dark ? logo2 : logo} alt="logo" className="img-fluid " /></NavbarBrand>
                 <Nav className="ms-auto align-items-center" navbar>
-                    <Button color="primary" className=" me-5">
-                        Download Brochure
+                    <Button color="primary" className="me-lg-5 me-4">
+                        <img src="./Download-Brochure.svg" /> Brochure
                     </Button>
                     <img src={dark ? hamburger2 : hamburger} alt="hamburger" className="img-fluid hamburger" />
                 </Nav>

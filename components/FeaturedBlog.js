@@ -25,14 +25,14 @@ const FeaturedBlog = () => {
                             <div className={styles.triangleLeft}></div>
                             <div className={styles.triangleUp}></div>
                             <p className={[styles.Title]+" mt-4"}>Case Studies & Blogs </p>
-                            <p className={[styles.DataTitle]+" my-2"}>Lorem Ispem <br/>Lorem Ispem</p>
+                            <p className={[styles.DataTitle]+" my-3"}>Lorem Ispem <br/>Lorem Ispem</p>
                             <div className={styles.borderLeft}>
                                 <p className={styles.Content}>Lorem Ispem Lorem Ispem Lorem Ispem Lorem Ispem Lorem Ispem Lorem IspemLorem Ispem Lorem Ispem Lorem Ispem Lorem Ispem Lorem Ispem Lorem Ispem</p>
                             </div>
                             {/* href="/blogs/[slug]" as={`/blogs/${obj.slug}`} */}
                             <Link href="#">
                                 <a>
-                                    <p className={styles.knowMore}>KNOW MORE</p>
+                                    <p className={styles.knowMore}>Know More <span><img src="./Know-more-arrow.svg" className={styles.arrow} /></span></p>
                                 </a>
                             </Link>
 
