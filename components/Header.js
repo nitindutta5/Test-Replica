@@ -1,22 +1,37 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import {
     Navbar,
     NavbarBrand,
     Nav,
     Button
 } from 'reactstrap';
+import Link from 'next/link';
 import hamburger from "../public/hamburger.svg"
 import logo from '../public/logo.svg'
 import ThemeContext from '../components/ThemeContext';
 import hamburger2 from '../public/hamburger2.svg'
 import logo2 from '../public/logo2.svg'
+import { navlist, Businesses } from "../navlist";
+import OurBusinesses from './OurBusinesses';
 
 
-const Header = () => {
+const Header = (props) => {
     const { dark } = useContext(ThemeContext);
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
+    const [levelTwo, setLevelTwo] = useState(false);
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflowY = "hidden";
+        }
+        else {
+            document.body.style.overflowY = "scroll";
+        }
+    }, [isOpen])
 
+    useEffect(() => {
+        props.handleOverlay(isOpen)
+    }, [isOpen])
     return (
         <div>
             <Navbar color={dark ? 'dark' : 'fadded'} light expand="md" className="wrapper">
@@ -28,21 +43,37 @@ const Header = () => {
                     <img onClick={toggle} src={dark ? hamburger2 : hamburger} alt="hamburger" className="img-fluid hamburger" />
                 </Nav>
             </Navbar>
-            <div id="myNav" className={isOpen?"overlay open":"overlay"} >
+            <div id="myNav" className={isOpen ? "overlay open" : "overlay"} >
 
 
-  <a  className="closebtn" onClick={toggle}>&times;</a>
+                <a className="closebtn" onClick={toggle}>&times;</a>
+                {
+                    !levelTwo ? (
+                        <div className="overlay-content">
+                            {
+                                navlist.map((obj, id) => (
+                                    obj.text === "Our Businesses" ? <Link key={id} href={obj.link}><a onClick={() => setLevelTwo(!levelTwo)}>{obj.text + " >"} </a></Link> : <Link key={id} href={obj.link}><a >{obj.text}</a></Link>
+                                ))
+                            }
+                        </div>
+                    ) :
+                        (
+                            <div className="overlay-content">
+                                <a className="backbtn" onClick={() => setLevelTwo(!levelTwo)}>MAIN MENU</a>
+                                <a className="backbtn">Our Businesses</a>
+                                {
+                                    Businesses.map((obj, id) => (
+                                        <Link key={id} href={obj.link}><a >{obj.text}</a></Link>
+                                    ))
+                                }
+                            </div>
+                        )
+                }
 
-  <div className="overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
 
-</div>
+            </div>
 
-        </div>
+        </div >
     );
 }
 
