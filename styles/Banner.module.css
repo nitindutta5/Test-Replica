@@ -17,9 +17,9 @@
     padding-bottom: 2rem;
     background-color: rgb(20 20 21 / 60%);
     min-height: 140px;
-    display: flex;
+    /* display: flex; */
     text-align: left;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 

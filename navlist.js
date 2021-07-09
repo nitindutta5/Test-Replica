@@ -40,11 +40,6 @@ export const navlist = [
     link: '/media',
   },
   {
-    name: '/media',
-    text: 'Media',
-    link: '/media',
-  },
-  {
     name: '/careers',
     text: 'Careers',
     link: '/careers',

@@ -14,7 +14,7 @@ const Footer = () => {
 
             <Row className="py-5" >
                     <Col lg="2" className={[styles.addressDiv]+" mb-4 mb-lg-0"} >
-                        <img src={logo} className="img-fluid" />
+                        <Link href="/"><a><img src={logo} className="img-fluid" /></a></Link>
                         <p className="my-3">Stainless Centre, Plot No. 50, 6th Floor, Sector-32, Gurgaon, Haryana - 122001</p>
                         <p>contact@jindalstainless.com</p>
                     </Col>
@@ -23,7 +23,7 @@ const Footer = () => {
                                                 <ul>
                         {
                             navlist.map((obj, id) => (
-                                <li className={styles.link}><Link key={id} href={obj.link}><a >{obj.text}</a></Link></li>
+                                <li key={id} className={styles.link}><Link href={obj.link}><a >{obj.text}</a></Link></li>
                             ))
                         }
                          </ul>
@@ -33,7 +33,7 @@ const Footer = () => {
                         <ul>
                         {
                             Businesses.map((obj, id) => (
-                                <li className={styles.link}><Link key={id} href={obj.link}><a >{obj.text}</a></Link></li>
+                                <li key={id} className={styles.link}><Link  href={obj.link}><a >{obj.text}</a></Link></li>
                             ))
                         }
                          </ul>

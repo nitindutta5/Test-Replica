@@ -1,7 +1,9 @@
 import {Container,Row, Col} from 'reactstrap'
-
+import Link from 'next/link'
 const AboutUs = () =>{
     return(
+        <Link href="/aboutus">
+        <a>
         <section className="about-home-bg">
             <Container fluid className="wrapper">
                 <Row>
@@ -13,6 +15,8 @@ const AboutUs = () =>{
 
             </Container>
         </section>
+        </a>
+        </Link>
     );
 }
 
