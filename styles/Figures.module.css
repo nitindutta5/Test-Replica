@@ -1,0 +1,46 @@
+.bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    color: #fff;
+    font-family: Prompt;
+    display: flex;
+    align-items: center;
+
+}
+
+.flex {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.figure {
+    font-weight: 500;
+    font-size: 60px;
+    font-family: 'Jost', sans-serif;
+    color: #363C4C;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    color: #000;
+}
+
+@media(max-width:480px) {
+    .figure {
+        font-size: 35px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .bg {
+        min-height: 140px;
+    }
+}

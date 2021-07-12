@@ -1,0 +1,39 @@
+.contentpacket {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.content {
+    font-weight: 200;
+    color: #4B4B4C;
+}
+
+.content h4 {
+    color: #363C4C;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.content b {
+    color: #363C4C;
+    font-weight: 400;
+}
+
+
+
+@media(max-width:1500px) {
+    .content h4 {
+        font-size: 13px;
+    }
+}
+
+
+
+@media(max-width:440px) {
+    .contentpacket {
+        margin-left: 0px;
+    }
+}

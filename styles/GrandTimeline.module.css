@@ -1,0 +1,41 @@
+.contentleft {
+    margin-left: 40px;
+}
+
+
+.image {
+    max-width: 70px;
+    margin-right: 10px;
+}
+
+.paraTitle {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.para {
+    font-weight: 200;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 25px;
+    color: #363C4C;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+@media(max-width:480px) {
+    .contentleft {
+        margin-left: 0px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+}

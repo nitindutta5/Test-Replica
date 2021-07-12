@@ -59,7 +59,7 @@ const SocialMedia = () =>{
                 <Col lg="12">
                     <h2 className="heading text-center ">Social Media</h2>
                 </Col>
-                <Col lg="12" className="mx-auto" >
+                <Col lg="12" className="mx-auto" id="social-media">
 
                         <Slider {...settings}>
                             {
