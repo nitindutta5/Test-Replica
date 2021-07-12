@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+.left {
+    max-width: 300px;
+    left: 0;
+    top: -24px;
+    position: absolute;
+}
+
+.card {
+    background-color: #fff;
+    max-width: 90%;
+    padding: 10%;
+    min-height: 350px;
+}
+
+.number {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #363c4c5e;
+    font-size: 35px;
+    text-align: right;
+}
+
+.content {
+    color: #363C4C;
+    font-weight: 500;
+}
+
+.icon {
+    max-width: 80px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}

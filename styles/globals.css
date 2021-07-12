@@ -260,8 +260,8 @@ section {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-
 }
+
 
 .awards {
   max-height: 105px;
@@ -295,24 +295,24 @@ section {
 }
 
 
-.slick-slide p,
+#businesses .slick-slide p,
 .slick-slide .btn-secondary {
   display: none;
 }
 
 
-.slick-slide.slick-active.slick-center.slick-current p,
-.slick-slide.slick-active.slick-center.slick-current .btn-secondary {
+#businesses .slick-slide.slick-active.slick-center.slick-current p,
+#businesses .slick-slide.slick-active.slick-center.slick-current .btn-secondary {
   display: block;
 }
 
 
-.slick-slide {
+#businesses .slick-slide {
   transform: scale(.80);
 }
 
 
-.slick-center {
+#businesses .slick-center {
   transform: scale(1);
 }
 

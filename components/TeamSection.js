@@ -23,12 +23,12 @@ const TeamSection = () => {
 
     const LB = [
         {
-            img:'./deepika_jindal_6b4d08ce3a.png',
+            img:'./Deepika.png',
             name:"Deepika Jindal",
             designation:"Creative & Managing Director"
         },
         {
-            img:'./Rajesh Mohata Profile picture.jpg',
+            img:'./Rajesh.png',
             name:"Rajesh Mohata",
             designation:"CEO, JSL Lifestyle Limited" 
         }
@@ -44,21 +44,21 @@ const TeamSection = () => {
                         <h2 className="heading text-center">Our Leadership Team</h2>
                         </Col>
                         <Col lg="12" className={styles.bg}>
-                            {/* <Row>
+                            <Row>
                                 {
                                     LB.map((obj,id)=>(
-                                        <Col lg="3" key={id} className={id==0?"ms-auto":"me-auto"}>
+                                        <Col lg="3" key={id} className={id==0?"ms-auto text-center":"me-auto text-center"}>
                                             <img src={obj.img} className={styles.image}/>
-                                            <p>
+                                            <p className={[styles.LDTitle]+" "+[styles.title]}>
                                                 {obj.name}
                                             </p>
-                                            <p>
+                                            <p className={styles.LDDesignation}>
                                                 {obj.designation}
                                             </p>
                                         </Col>
                                     ))
                                 }
-                            </Row> */}
+                            </Row>
                         </Col>
                     </Row>
                    
