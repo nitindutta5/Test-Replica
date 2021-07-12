@@ -36,7 +36,7 @@ const OurBusinesses = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 5,
-        // autoplay: true,
+        autoplay: true,
         centerPadding: "0px",
         arrows: false,
         responsive: [

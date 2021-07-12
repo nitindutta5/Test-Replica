@@ -5,6 +5,7 @@ import AboutUs from "../components/AboutUs"
 import Parallax from "../components/Parallax"
 import Awards from "../components/Awards"
 import TeamSection from "../components/TeamSection"
+import CertificateCarousel from "../components/CertificateCarousel"
 
 const About = ({ checkOpen }) => {
     return (
@@ -20,6 +21,7 @@ const About = ({ checkOpen }) => {
             <Parallax />
             <TeamSection />
             <Awards />
+            <CertificateCarousel />
         </div>
     )
 }

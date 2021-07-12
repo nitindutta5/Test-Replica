@@ -256,6 +256,28 @@ section {
   cursor: pointer;
 }
 
+.awardpacket {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.awards {
+  max-height: 105px;
+}
+
+.clientslide {
+  margin: 0px auto;
+  text-align: center;
+}
+
+.client {
+  max-width: 120px;
+}
+
+
+
 .bg-dark {
   background-color: #fff !important;
 }
@@ -407,6 +429,10 @@ section {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+
+  .client {
+    max-width: 80px;
   }
 
 
