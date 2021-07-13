@@ -1,0 +1,55 @@
+.blogcard {
+    max-width: 90%;
+    margin: 0px auto;
+    background-color: #fff;
+}
+
+.blogcard .imgholder {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blogcard .date {
+    font-weight: 300;
+    color: #363C4C;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 14px;
+}
+
+.bottomSection {
+    padding: 5%;
+}
+
+.clock {
+    max-width: 15px;
+    margin-right: 10px;
+}
+
+.title {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 23px;
+    padding-right: 5%;
+    line-height: 1.2;
+    margin-bottom: 5%;
+}
+
+.content {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-right: 5%;
+    margin-bottom: 5%;
+}
+
+.blogcard a {
+    color: #363C4C;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: underline;
+}

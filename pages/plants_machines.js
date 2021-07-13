@@ -1,6 +1,5 @@
 import Head from "next/head"
 import Banner from "../components/Banner"
-import OurBusinesses from "../components/OurBusinesses"
 import OurMachines from "../components/OurMachines"
 import Overlay from "../components/Overlay"
 import VerticalPlantCarousel from "../components/VerticalPlantCarousel"
