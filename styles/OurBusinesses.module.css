@@ -8,6 +8,15 @@
     left: 5%;
 }
 
+.title2 {
+    font-family: 'Jost';
+    font-size: 28px;
+    font-weight: 600;
+    color: #363C4C;
+    text-align: center;
+    margin-top: 10px;
+}
+
 .btn {
     position: absolute;
     left: 5%;
@@ -15,14 +24,18 @@
 }
 
 @media(max-width:768px) {
-    .title {
+
+    .title,
+    .title2 {
         font-size: 25px;
     }
 
 }
 
 @media(max-width:500px) {
-    .title {
+
+    .title,
+    .title2 {
         font-size: 22px;
     }
 

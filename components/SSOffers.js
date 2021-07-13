@@ -62,7 +62,7 @@ const SSOffers = () => {
                     </Col>
                     {
                         data.map((obj, id) => (
-                            <Col lg="3" key={id} className="ss-card">
+                            <Col lg="3" xs="6" key={id} className="ss-card">
                                 <img src={obj.img} className="img-fluid" />
                                 <p className="white-color">{obj.text}</p>
                             </Col>
@@ -70,7 +70,7 @@ const SSOffers = () => {
                     }
                 </Row>
             </Container>
-        </section>
+        </section >
     );
 }
 

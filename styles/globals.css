@@ -23,6 +23,9 @@ p {
   box-sizing: border-box;
 }
 
+
+
+
 #blogcaseCarousel .swiper-pagination-bullets {
   bottom: 10px;
   left: 74%;
@@ -175,7 +178,7 @@ li {
   color: #EEEFF3;
   display: block;
   /* Display block instead of inline */
-  transition: 0.3s;
+  transition: all 0.2s ease;
   /* Transition effects on hover (color) */
 }
 
@@ -187,6 +190,26 @@ li {
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover,
 .overlay a:focus {
+  font-weight: 500;
+}
+
+.bottom {
+  opacity: 0;
+  width: 14px;
+  height: 2px;
+  background-color: #FF9100;
+  transition: all 0.2s ease;
+}
+
+.overlay a:hover .bottom {
+  opacity: 1;
+}
+
+.show-line {
+  opacity: 1;
+}
+
+.active {
   font-weight: 500;
 }
 
@@ -481,6 +504,16 @@ section {
   .client {
     max-width: 80px;
   }
+
+
+  .ss-card p {
+    padding-right: 0%;
+  }
+
+  .ss-card {
+    text-align: center;
+  }
+
 
 
 

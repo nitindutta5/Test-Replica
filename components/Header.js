@@ -58,11 +58,13 @@ const Header = (props) => {
                                                 <img
                                                     className=" arrow img-fluid ms-2"
                                                     src="./dropdown arrow-Right.svg" />
+                                                <div className="bottom"></div>
                                             </a>
                                         </Link>
                                         :
                                         <Link key={id} href={obj.link}>
-                                            <a onClick={toggle} >{obj.text}</a>
+                                            <a onClick={toggle} className={props.route === obj.link ? "active" : ""}>{obj.text}
+                                                <div className={props.route === obj.link ? "bottom show-line" : "bottom"}></div></a>
                                         </Link>
                                 ))
                             }
@@ -75,7 +77,9 @@ const Header = (props) => {
                                 {
                                     Businesses.map((obj, id) => (
                                         <Link key={id} href={obj.link}>
-                                            <a >{obj.text}</a>
+                                            <a >{obj.text}
+                                                <div className="bottom"></div>
+                                            </a>
                                         </Link>
                                     ))
                                 }

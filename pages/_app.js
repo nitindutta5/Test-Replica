@@ -9,7 +9,7 @@ import { useState } from 'react';
 import Head from 'next/head'
 import ThemeProvider from '../components/ThemeProvider';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps,router }) {
       //For white Overlay
       const [checkOpen, setOpen] = useState(false);
 
@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
           content="upgrade-insecure-requests"
         ></meta>
       </Head>
-      <Header  handleOverlay={handleOverlay}/>
+      <Header route={router.route} handleOverlay={handleOverlay}/>
       <Component {...pageProps} checkOpen={checkOpen}/>
       <Footer />
     </ThemeProvider>

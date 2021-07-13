@@ -29,9 +29,9 @@ export const navlist = [
   },
 
   {
-    name: '/plant_&_machineries',
-    text: 'Plant & Machineries',
-    link: '/plant_&_machineries',
+    name: '/plants_&_machines',
+    text: 'Plants & Machines',
+    link: '/plants_machines',
   },
 
   {
