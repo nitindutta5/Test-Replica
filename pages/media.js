@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Banner from "../components/Banner"
 import Blogs from "../components/Blogs/Blogs"
+import CaseStudies from "../components/CaseStudies"
 import Overlay from "../components/Overlay"
 
 
@@ -15,6 +16,7 @@ const Media = ({ checkOpen }) => {
             </Head>
             <Banner src="./banner/media.png" text="JSLL LIFESTYLE DIARIES" />
             <Blogs />
+            <CaseStudies />
         </div>
     )
 }

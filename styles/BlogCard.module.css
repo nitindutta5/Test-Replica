@@ -2,6 +2,8 @@
     max-width: 90%;
     margin: 0px auto;
     background-color: #fff;
+    cursor: pointer;
+    box-shadow: -6px 6px 20px #0000001A;
 }
 
 .blogcard .imgholder {
@@ -12,7 +14,7 @@
 
 .blogcard .date {
     font-weight: 300;
-    color: #363C4C;
+    color: #363C4C !important;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -32,6 +34,7 @@
 
 .title {
     font-family: 'Jost';
+    color: #363C4C !important;
     font-weight: 600;
     font-size: 23px;
     padding-right: 5%;
@@ -45,11 +48,17 @@
     line-height: 1.5;
     padding-right: 5%;
     margin-bottom: 5%;
+    color: #363C4C !important;
 }
 
-.blogcard a {
-    color: #363C4C;
+.readMore {
+    color: #363C4C !important;
     font-size: 13px;
     font-weight: 400;
-    text-decoration: underline;
+    text-decoration: underline !important;
+    transition: all 0.1s ease;
+}
+
+.readMore:hover {
+    font-weight: 500;
 }

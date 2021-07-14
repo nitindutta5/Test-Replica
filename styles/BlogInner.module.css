@@ -1,0 +1,41 @@
+.contentBox {
+    background-color: #fff;
+    padding: 5%;
+    font-size: 14px;
+    line-height: 1.7;
+    box-shadow: -6px 6px 20px #0000001A;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.date {
+    color: #363C4C;
+    font-weight: 500;
+    margin-bottom: 3%;
+}
+
+.contentBox img {
+    max-width: 100%;
+    height: auto;
+}
+
+.back {
+    display: block;
+    margin-top: 3%;
+    color: #363C4C !important;
+    font-weight: 300;
+    text-decoration: underline !important;
+    transition: all 0.1s ease;
+}
+
+.back:hover {
+    font-weight: 500;
+}
+
+.next {
+    right: -40px
+}
+
+.prev {
+    left: -40px;
+}

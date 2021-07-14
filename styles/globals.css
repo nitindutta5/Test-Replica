@@ -96,6 +96,51 @@ li {
   max-height: 20px;
 }
 
+.slick-next {
+  right: -40px;
+}
+
+.slick-prev {
+  left: -40px;
+}
+
+.pagination {
+  justify-content: center;
+  margin-top: 4%;
+
+}
+
+.page-link,
+.page-item.disabled .page-link {
+  box-shadow: none !important;
+  border: none !important;
+  background-color: transparent;
+  color: #363C4C !important;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+
+}
+
+.page-number {
+  height: 32px;
+  width: 32px;
+}
+
+.page-link span:nth-child(1) {
+  display: none;
+}
+
+.page-item.active .page-link {
+  background-color: #363C4C;
+  color: #fff !important;
+  border-radius: 50%;
+}
+
+.page-item:not(:first-child) .page-link {
+  margin-left: 10px;
+}
+
 .btn-secondary {
   background-color: #fff !important;
   color: #363C4C !important;
@@ -413,6 +458,13 @@ section {
 }
 
 @media(max-width:1300px) {
+  .slick-next {
+    right: -30px;
+  }
+
+  .slick-prev {
+    left: -30px;
+  }
 
   .s-icon svg {
     max-width: 25px;

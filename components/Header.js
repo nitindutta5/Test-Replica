@@ -12,7 +12,7 @@ import ThemeContext from '../components/ThemeContext';
 import hamburger2 from '../public/hamburger2.svg'
 import logo2 from '../public/logo2.svg'
 import { navlist, Businesses } from "../navlist";
-
+import downloadLogo from "../public/Download-Brochure_02.svg"
 
 const Header = (props) => {
     const { dark } = useContext(ThemeContext);
@@ -37,7 +37,7 @@ const Header = (props) => {
                 <NavbarBrand> <Link href="/"><img src={dark ? logo2 : logo} alt="logo" className="img-fluid " /></Link></NavbarBrand>
                 <Nav className="ms-auto align-items-center" navbar>
                     <Button color="primary" className="me-lg-5 me-4">
-                        <img src="./Download-Brochure_02.svg" /> Brochure
+                        <img src={downloadLogo} /> Brochure
                     </Button>
                     <img onClick={toggle} src={dark ? hamburger2 : hamburger} alt="hamburger" className="img-fluid hamburger" />
                 </Nav>
@@ -45,7 +45,7 @@ const Header = (props) => {
             <div id="myNav" className={isOpen ? "overlay open" : "overlay"} >
 
 
-                <a className="closebtn" onClick={toggle}><img src="./Cross.svg" className="img-fluid" /></a>
+                <a className="closebtn" onClick={toggle}><img src="../../Cross.svg" className="img-fluid" /></a>
                 {
                     !levelTwo ? (
                         <div className="overlay-content">
@@ -57,7 +57,7 @@ const Header = (props) => {
                                                 onClick={() => setLevelTwo(!levelTwo)}>{obj.text}
                                                 <img
                                                     className=" arrow img-fluid ms-2"
-                                                    src="./dropdown arrow-Right.svg" />
+                                                    src="../../dropdown arrow-Right.svg" />
                                                 <div className="bottom"></div>
                                             </a>
                                         </Link>
