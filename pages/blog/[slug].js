@@ -57,7 +57,7 @@ const BlogInnerPage = ({ checkOpen }) => {
                         <Row>
                             <Col lg="11" className="mx-auto">
                                 <h2 className="heading text-center">More Blogs</h2>
-                                <Slider {...settings}>
+                                <Slider {...settings} className="inn">
                                     {
                                         blogData.map((obj, id) => (
                                             <div key={id} className="position-relative">

@@ -1,0 +1,24 @@
+.small {
+    color: #fff;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 3%;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 3%;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.content {
+    color: #fff;
+    line-height: 1.5;
+}
+
+.slide {
+    max-width: 90%;
+    margin: 0px auto;
+}

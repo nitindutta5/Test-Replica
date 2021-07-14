@@ -33,7 +33,7 @@ export const blogData = [
     }
 ];
 const Blogs = () => {
-    const pageSize = 3;
+    const pageSize = 6;
     const pagesCount = 2;
     const [currentPage, setCurrentPage] = useState(0);
 

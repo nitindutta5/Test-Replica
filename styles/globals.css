@@ -96,12 +96,21 @@ li {
   max-height: 20px;
 }
 
-.slick-next {
+.inn .slick-next {
   right: -40px;
 }
 
-.slick-prev {
+.inn .slick-prev {
   left: -40px;
+}
+
+
+.slick-next {
+  right: 0px;
+}
+
+.slick-prev {
+  left: 0px;
 }
 
 .pagination {
@@ -404,7 +413,7 @@ section {
 
 
 #businesses .slick-slide p,
-.slick-slide .btn-secondary {
+#businesses .slick-slide .btn-secondary {
   display: none;
 }
 
@@ -458,11 +467,11 @@ section {
 }
 
 @media(max-width:1300px) {
-  .slick-next {
+  .inn .slick-next {
     right: -30px;
   }
 
-  .slick-prev {
+  .inn .slick-prev {
     left: -30px;
   }
 
