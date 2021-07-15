@@ -41,6 +41,7 @@ const News_Updates = () => {
     }
     ];
     var settings = {
+        autoplay:true,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
