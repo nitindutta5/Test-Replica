@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Banner from "../components/Banner"
 import Overlay from "../components/Overlay"
+import CareerIntro from "../components/CareerIntro"
 
 
 const Careers = ({ checkOpen }) => {
@@ -12,7 +13,8 @@ const Careers = ({ checkOpen }) => {
                 <meta name="description" content="Media Page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Banner src="./banner/media.png" text="JSLL CAREERS" />
+            <Banner src="./banner/Career.png" text="JSLL CAREERS" />
+            <CareerIntro />
         </div>
     )
 }
