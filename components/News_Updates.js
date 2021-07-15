@@ -41,7 +41,6 @@ const News_Updates = () => {
     }
     ];
     var settings = {
-        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
@@ -85,20 +84,24 @@ const News_Updates = () => {
                     </Col>
                 </Row>
             </Container>
-            <Container fluid className="mt-5 pt-5">
+            <Container fluid className={[styles.borderBottom] + " mt-5 pt-5"}>
                 <Slider {...settings}>
                     {
                         data.map((obj, id) => (
-                            <div key={id} className="position-relative" onClick={() => setCurrent(id)}>
+                            <div key={id} onClick={() => setCurrent(id)}>
                                 <div className={styles.slide}>
-                                    <img src={obj.img} className="img-fluid" />
+                                    <img src={obj.img} className="img-fluid mb-3" />
+                                    <p className={styles.verysmall}>{obj.date} | {obj.source} </p>
+                                    <p className={[styles.small] + " pb-3"}>{obj.title}</p>
+                                    <div className={id === current ? [styles.orangeBar] : ""}></div>
                                 </div>
+
                             </div>
                         ))
                     }
                 </Slider>
             </Container>
-        </section>
+        </section >
     )
 }
 

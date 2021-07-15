@@ -1,0 +1,36 @@
+.imageholder {
+    background-image: url("../public/path.svg");
+    background-position: center 65px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 70%;
+    margin: 0px auto;
+}
+
+.slide img {
+    display: block;
+    max-width: 130px;
+    border-radius: 50%;
+    margin: 0px auto;
+    box-shadow: 0px 5px 15px #605e5ea6;
+}
+
+.content {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.name {
+    color: #FF9100;
+    margin-top: 2%;
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+}
+
+.desig {
+    margin-bottom: 2%;
+    text-align: center;
+}

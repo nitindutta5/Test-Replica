@@ -4,7 +4,7 @@ import Blogs from "../components/Blogs/Blogs"
 import CaseStudies from "../components/CaseStudies"
 import Overlay from "../components/Overlay"
 import News_Updates from "../components/News_Updates"
-import Testimonials from "../components/Testimonails"
+import Testimonials from "../components/Testimonials"
 import VideoGallery from "../components/VideoGallery"
 
 
