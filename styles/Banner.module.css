@@ -10,7 +10,7 @@
 
 .carouseltext {
     position: absolute;
-    width: 100%;
+    width: max-content;
     max-width: 55%;
     padding: 6rem;
     padding-top: 2rem;

@@ -112,6 +112,29 @@ li {
   left: -55px;
 }
 
+.office-card {
+  margin: 0px auto;
+  width: max-content;
+  margin-bottom: 25%;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.office-card p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.office-card .icon {
+  max-width: 12px;
+}
+
 
 
 
@@ -236,13 +259,14 @@ li {
 
 /* The navigation links inside the overlay */
 .overlay a {
-  padding: 15px;
+  padding: 18px;
   padding-left: 7rem;
   text-decoration: none;
   color: #EEEFF3;
   display: block;
   /* Display block instead of inline */
   transition: all 0.2s ease;
+  line-height: 1;
   /* Transition effects on hover (color) */
 }
 

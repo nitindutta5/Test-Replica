@@ -1,0 +1,25 @@
+.active {
+    background-color: #fff;
+    color: #363C4C;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 25px;
+    padding: 5%;
+    padding-right: 0;
+    cursor: pointer;
+}
+
+.item {
+    color: #737682;
+    background-color: #EEEFF3;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 25px;
+    padding: 5%;
+    padding-right: 0;
+    cursor: pointer;
+}
+
+.navBar {
+    min-height: 400px;
+}
