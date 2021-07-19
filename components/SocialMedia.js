@@ -61,7 +61,7 @@ const SocialMedia = () =>{
                 </Col>
                 <Col lg="12" className="mx-auto" id="social-media">
 
-                        <Slider {...settings}>
+                        <Slider {...settings} className="inn">
                             {
                                 data.map((obj, id) => (
                                     <div key={id} className="position-relative">

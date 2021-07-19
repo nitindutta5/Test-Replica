@@ -41,4 +41,17 @@
 
 .borderBottom {
     border-bottom: 1px solid rgba(255, 255, 255, 0.445);
+
+}
+
+@media(max-width:1500px) {
+    .title {
+        font-size: 22px;
+    }
+}
+
+@media(max-width:1300px) {
+    .title {
+        font-size: 20px;
+    }
 }

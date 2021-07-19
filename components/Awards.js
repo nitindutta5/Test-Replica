@@ -7,7 +7,7 @@ const Awards = () => {
         <section className="bg2">
             <Container>
                 <Row>
-                    <Col md="9" className="mx-auto">
+                    <Col md="10" className="mx-auto">
                         <h2 className="heading text-center">Awards</h2>
                         <div className="mx-auto mt-lg-5 mt-md-5 mt-0 py-3 awardpacket">
                             {

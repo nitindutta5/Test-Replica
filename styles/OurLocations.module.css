@@ -1,0 +1,36 @@
+.smallHeading {
+    color: #363C4C;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Jost';
+    margin-bottom: 2%;
+}
+
+.boxes {
+    display: flex;
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    border: 1px solid #363C4C;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.boxes:hover {
+    color: #FF9100;
+    box-shadow: 6px -6px 30px #00000012;
+}
+
+.active {
+    color: #FF9100;
+    box-shadow: 6px -6px 30px #00000012;
+}
+
+@media(max-width:500px) {
+    .boxes {
+        min-height: 60px;
+        margin-bottom: 10px;
+    }
+}

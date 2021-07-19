@@ -36,7 +36,7 @@ const OurBusinesses = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 5,
-        autoplay: true,
+        // autoplay: true,
         centerPadding: "0px",
         arrows: false,
         responsive: [
@@ -50,9 +50,10 @@ const OurBusinesses = () => {
             {
                 breakpoint: 500,
                 settings: {
-                  slidesToShow: 2,
+                  slidesToShow: 1,
                   slidesToScroll: 1,
-                  dots:false
+                  dots:false,
+                  centerPadding: '50px'
                 }
               }
         ]  
@@ -68,10 +69,12 @@ const OurBusinesses = () => {
                         <Slider {...settings}>
                             {
                                 data.map((obj, id) => (
-                                    <div key={id} className="position-relative">
+                                    <div key={id} >
+                                        <div className="main">
                                         <img src={obj.img} className="img-fluid" />
                                         <p className={styles.title}>{obj.title}</p>
                                         <Button className={styles.btn} color="secondary">Download Brochure</Button>
+                                        </div>
                                     </div>
                                 ))
                             }

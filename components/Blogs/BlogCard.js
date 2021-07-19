@@ -14,7 +14,7 @@ const BlogCard = ({ data }) => {
                     <div className={styles.date}><img src={clock} className={styles.clock} /><span>{data.date}</span></div>
 
                     <h4 className={styles.title}>{data.title}</h4>
-                    <p className={styles.content}>{data.info.slice(0, 180)}</p>
+                    <p className={styles.content}>{data.info.slice(0, 150)}</p>
                     <Link href="/blog/[slug]" as={`/blog/${data.slug}`}><a className={styles.readMore}>Read More</a></Link>
                 </div>
             </div>

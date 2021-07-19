@@ -23,3 +23,9 @@
 .navBar {
     min-height: 400px;
 }
+
+@media(max-width:992px) {
+    .navBar {
+        min-height: auto;
+    }
+}

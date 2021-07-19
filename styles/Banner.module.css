@@ -101,6 +101,10 @@
     .Bannertext {
         font-size: 30px;
     }
+
+    .bannerholder {
+        min-height: 50vh;
+    }
 }
 
 @media(max-width:480px) {
@@ -111,6 +115,7 @@
         min-height: auto;
         padding: 1rem;
     }
+
 
 
 

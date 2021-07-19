@@ -67,7 +67,7 @@ const data = [
 
 const OurOffices = () => {
     return (
-        <section >
+        <section  className="pb-0">
             <Container>
                 <Row>
                     <Col lg="10" className="mx-auto">
@@ -75,7 +75,7 @@ const OurOffices = () => {
                         <Row>
                             {
                                 data.map((obj, id) => (
-                                    <Col lg="4" key={id} >
+                                    <Col lg="4" xs="6" key={id} >
                                         <div className="office-card">
                                             <img src={obj.img} className="img-fluid" />
                                             <p className="my-2">{obj.businessHead}</p>

@@ -50,9 +50,10 @@ const OurMachines = () => {
             {
                 breakpoint: 500,
                 settings: {
-                  slidesToShow: 2,
+                  slidesToShow: 1,
                   slidesToScroll: 1,
-                  dots:false
+                  dots:false,
+                  centerPadding: '50px',
                 }
               }
         ]  

@@ -10,14 +10,15 @@ body {
   font-weight: 400;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 a {
   color: inherit;
   text-decoration: none !important;
 }
 
-p {
-  margin: 0px auto;
-}
 
 * {
   box-sizing: border-box;
@@ -120,10 +121,26 @@ li {
 
 .form-control {
   border: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000 !important;
   border-radius: 0;
   outline: none !important;
   box-shadow: none !important;
+  padding-left: 0;
+}
+
+.form-control::placeholder {
+  color: #363C4C;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .office-card p {
@@ -134,6 +151,50 @@ li {
 .office-card .icon {
   max-width: 12px;
 }
+
+
+#indiamap .a {
+  fill: #4b4b4c;
+  opacity: 0.4;
+}
+
+#indiamap .b1,
+#indiamap .b2,
+#indiamap .b3 {
+  fill: #FF9100;
+  cursor: pointer;
+}
+
+
+.b1 title {
+  background-color: #FF9100;
+}
+
+.mytitle {
+  font-weight: 500;
+  color: #fff;
+  font-family: 'Jost', sans-serif;
+  text-align: left;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+.tooltip-inner {
+  min-width: 110px;
+  background: #FF9100 !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mydetails {
+  font-size: 11px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+
 
 
 
@@ -189,6 +250,10 @@ li {
   border: 1px solid #363C4C;
 }
 
+.tooltip {
+  z-index: 9 !important;
+}
+
 .btn-secondary:hover {
   background-color: #363C4C !important;
   color: #fff !important;
@@ -211,7 +276,7 @@ li {
   height: 100%;
   opacity: 0.6;
   background-color: #363C4C;
-  z-index: 99;
+  z-index: 999;
   position: fixed;
   top: 0;
   right: -100%;
@@ -219,7 +284,7 @@ li {
   overflow-y: hidden;
 }
 
-.show {
+.show-nav {
   right: 0;
 }
 
@@ -381,7 +446,7 @@ section {
 }
 
 
-.awards {
+.awards img {
   max-height: 105px;
 }
 
@@ -472,7 +537,7 @@ section {
 }
 
 .slick-arrow {
-  z-index: 99;
+  z-index: 9;
   box-shadow: 3px 0px 27px #0000004a;
   border-radius: 50%;
   width: 45px;
@@ -500,7 +565,7 @@ section {
   right: 10%;
 }
 
-@media(max-width:1300px) {
+@media(max-width:1400px) {
   .inn .slick-next {
     right: -30px;
   }
@@ -509,9 +574,18 @@ section {
     left: -30px;
   }
 
+  .inn2 .slick-next {
+    right: -35px;
+  }
+
+  .inn2 .slick-prev {
+    left: -35px;
+  }
+
   .s-icon svg {
     max-width: 25px;
   }
+
 
   .heading {
     font-size: 35px;
@@ -522,13 +596,57 @@ section {
     padding-left: 4em;
   }
 
+  .overlay .closebtn {
+    right: 4rem;
+  }
 
+
+}
+
+@media(max-width:1100px) {
+  .s-icon svg {
+    max-width: 23px;
+  }
+
+  .inn .slick-next {
+    right: -25px;
+  }
+
+  .inn2 .slick-next {
+    right: -25px;
+  }
+
+  .inn2 .slick-prev {
+    left: -25px;
+  }
+
+  .inn .slick-prev {
+    left: -25px;
+  }
+
+  .overlay a {
+    font-size: 16px;
+  }
+
+  body {
+    font-size: 14px;
+  }
 }
 
 
 
 
 @media(max-width:992px) {
+
+  .awards img {
+    max-height: 80px;
+  }
+
+  .legacy {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+
   #blogcaseCarousel {
     margin-bottom: 5%;
   }
@@ -560,6 +678,10 @@ section {
     padding-left: 2em;
   }
 
+  .overlay .closebtn {
+    right: 2rem;
+  }
+
   .slick-next {
     right: 0px;
   }
@@ -572,13 +694,82 @@ section {
     font-size: 30px;
   }
 
+  .slick-arrow {
+    width: 35px;
+    height: 35px;
+  }
+
+  .inn .slick-next {
+    right: -5px;
+  }
+
+  .inn2 .slick-next {
+    right: -10px;
+  }
+
+  .inn2 .slick-prev {
+    left: -10px;
+  }
+
+  .inn .slick-prev {
+    left: -5px;
+  }
 
 }
 
 @media(max-width:480px) {
+
+  .office-card img {
+    max-width: 100px;
+  }
+
+  .office-card p {
+    font-size: 13px;
+  }
+
+
+  .inn2 .slick-next {
+    right: -5px;
+  }
+
+  .inn2 .slick-prev {
+    left: -5px;
+  }
+
+  .awards img {
+    max-height: 62px;
+  }
+
+  section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .hamburger {
+    max-height: 17px;
+  }
+
+  .btn img {
+    max-height: 17px;
+  }
+
   .btn {
     font-size: 12px;
-    min-width: 120px;
+    min-width: 110px;
+    padding: 0.6rem;
+  }
+
+  .closebtn img {
+    max-width: 18px;
+  }
+
+
+  .navbar-brand {
+    max-width: 105px;
+  }
+
+  body {
+    font-size: 13px;
   }
 
   .wrapper {
@@ -587,13 +778,19 @@ section {
   }
 
   .overlay a {
-    font-size: 20px
+    font-size: 14px;
+    padding: 14px;
+    padding-left: 8rem;
   }
 
   .overlay .closebtn {
     font-size: 40px;
-    top: 15px;
-    right: 35px;
+    top: -10px;
+    right: 15px;
+  }
+
+  .heading {
+    font-size: 25px;
   }
 
   .client {
@@ -610,6 +807,24 @@ section {
   }
 
 
+}
 
+@media (max-width: 380px) {
+  .btn img {
+    max-height: 17px;
+  }
 
+  .btn {
+    font-size: 11px;
+    min-width: 100px;
+    padding: 0.5rem;
+  }
+
+  #myNav.open {
+    width: 80%;
+  }
+
+  .overlay a {
+    padding-left: 6rem;
+  }
 }

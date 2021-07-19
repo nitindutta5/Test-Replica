@@ -4,7 +4,7 @@ const Overlay = ({ checkOpen }) => {
     return (
         <div className={classnames({
             "bg-overlay": true,
-            "show":checkOpen
+            "show-nav":checkOpen
         })}>            
         </div>  
     );

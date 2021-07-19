@@ -44,3 +44,17 @@
         min-height: 140px;
     }
 }
+
+@media(max-width:320px) {
+    .figure {
+        font-size: 30px;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+
+    .bg {
+        min-height: 140px;
+    }
+}

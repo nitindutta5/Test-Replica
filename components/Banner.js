@@ -49,7 +49,7 @@ const Banner = (props) => {
         <img className="img-fluid invisible" src={props.src} alt="TopBanner" />
         <div className={styles.carouseltext}>
           <p className={styles.Bannertext}>{props.text}</p>
-          <p className={styles.date} dangerouslySetInnerHTML={{__html:props.date}}/>
+          {/* <p className={styles.date} dangerouslySetInnerHTML={{__html:props.date}}/> */}
         </div>
       </Container>
     </div>

@@ -70,7 +70,7 @@ const News_Updates = () => {
                     <Col lg="11" className="mx-auto">
                         <h2 className="heading text-center white-color"> News & Updates</h2>
                         <Row>
-                            <Col lg="6">
+                            <Col lg="6" className="mb-lg-0 mb-4">
                                 <img src={data[current].img} className="img-fluid" />
                             </Col>
                             <Col lg="6" className="d-flex align-items-center">

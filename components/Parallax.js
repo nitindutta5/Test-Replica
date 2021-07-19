@@ -8,7 +8,7 @@ const Parallax = () => {
                 <Row>
                     <Col lg="4">
                         <div className={styles.vision}>
-                            <h1 className="heading white-color">
+                            <h1 className="heading white-color mb-3">
                                 Our Vision
                             </h1>
                             <p className="white-color">
@@ -18,8 +18,8 @@ const Parallax = () => {
                     </Col>
                     <Col lg="4" className="ms-auto">
                         <div className={styles.vision}>
-                            <h1 className="heading white-color">
-                                Our Vision
+                            <h1 className="heading white-color mb-3">
+                                Our Mission
                             </h1>
                             <p className="white-color">
                                 To become a $1 billion enterprise, India’s largest stainless steel products manufacturer, and building the most admired lifestyle brand.

@@ -30,3 +30,19 @@
 .addressDiv p {
     font-size: 11px;
 }
+
+
+@media(max-width:992px) {
+    .addressDiv {
+        text-align: center;
+    }
+
+    .social {
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .social .linkTitle {
+        text-align: center;
+    }
+}

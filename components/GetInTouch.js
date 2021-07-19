@@ -13,7 +13,7 @@ const GetInTouch = () => {
                             <Col lg="7">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.0771779680013!2d77.03993891423126!3d28.447089782491286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d193f6b683ecf%3A0xeb510130bdec6eae!2sJindal%20Stainless%20Tower!5e0!3m2!1sen!2sin!4v1601893176069!5m2!1sen!2sin" width="100%" height="300px" frameBorder="0" aria-hidden="false" tabIndex="0" />
                             </Col>
-                            <Col lg="4" className="ps-5 d-flex flex-column justify-content-center">
+                            <Col lg="4" className="ps-5 d-flex flex-column justify-content-center mt-lg-0 mt-4">
                                 <Row className="mb-3">
                                     <Col xs="2" md="1" sm="1" className="contacticon-packet"><svg xmlns="http://ww{w.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25.798 38.1"><g transform="translate(0 0)"><path className="contact-icon" d="M124.809,3116.776c-.018,0-.018-.02-.018-.04a12.881,12.881,0,0,0-25.762,0c-.02.18-.72,12.88,12.88,25.22C125.509,3129.616,124.809,3116.916,124.809,3116.776Zm-12.9,6.4a6.44,6.44,0,1,1,6.44-6.44A6.436,6.436,0,0,1,111.909,3123.176Z" transform="translate(-99.017 -3103.856)" /></g></svg></Col>
                                     <Col xs={{ size: '10' }} sm="11" md={{ size: '11' }}>Stainless Centre, Plot No. 50, 6th Floor, Sector-32, Gurgaon, Haryana - 122001</Col>

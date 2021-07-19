@@ -3,7 +3,7 @@ import { Col, Button, Form, FormGroup,Input } from 'reactstrap';
 
 const WritetoUs = () =>{
     return(
-    <div className="ps-5 ms-5">
+    <div className="ps-lg-5 ms-lg-5 pg-3 ms-3">
         <h2 className="heading">Write to Us</h2>
         <Form>
         <FormGroup row>
@@ -19,7 +19,7 @@ const WritetoUs = () =>{
       <FormGroup row>
       <Col sm={8} className="mb-5">
         <Input type="select" name="select" id="exampleSelect">
-          <option selected>Department</option>
+          <option >Department</option>
           <option>2</option>
           <option>3</option>
           <option>4</option>
@@ -36,7 +36,7 @@ const WritetoUs = () =>{
 
       <FormGroup row>
         <Col sm={{ size: 12}}>
-          <Button color="primary">Submit</Button>
+          <Button color="primary">SEND</Button>
         </Col>
       </FormGroup>
     </Form>

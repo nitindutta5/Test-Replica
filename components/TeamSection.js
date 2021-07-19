@@ -47,7 +47,7 @@ const TeamSection = () => {
                             <Row>
                                 {
                                     LB.map((obj,id)=>(
-                                        <Col lg="3" key={id} className={id==0?"ms-auto text-center":"me-auto text-center"}>
+                                        <Col lg="3" xs="6" key={id} className={id==0?"ms-auto text-center":"me-auto text-center"}>
                                             <img src={obj.img} className={styles.image}/>
                                             <p className={[styles.LDTitle]+" "+[styles.title]}>
                                                 {obj.name}
@@ -73,7 +73,7 @@ const TeamSection = () => {
                         </Col>
                       {
                           BOD.map((obj,id)=>(
-                              <Col lg="3" key={id}>
+                              <Col lg="3"  xs="6" key={id} className={styles.BODBox}>
                                   <div className={styles.dummy}></div>
                                   <p className={"text-center "+[styles.title]}>{obj.name}</p>
                               </Col>

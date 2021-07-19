@@ -13,12 +13,12 @@ const Footer = () => {
             <Col lg="12">
 
             <Row className="py-5" >
-                    <Col lg="2" className={[styles.addressDiv]+" mb-4 mb-lg-0"} >
+                    <Col lg="2" className={[styles.addressDiv]+" mb-4 mb-lg-0 order-1 order-lg-1"} >
                         <Link href="/"><a><img src={logo} className="img-fluid" /></a></Link>
                         <p className="my-3">Stainless Centre, Plot No. 50, 6th Floor, Sector-32, Gurgaon, Haryana - 122001</p>
                         <p>contact@jindalstainless.com</p>
                     </Col>
-                    <Col lg="2" xs="6" className="ms-lg-auto mb-4 mb-lg-0">
+                    <Col lg="2" xs="6" className="ms-lg-auto mb-4 mb-lg-0 order-0 order-lg-2">
                         <p className={styles.linkTitle}>SITE MAP</p>
                                                 <ul>
                         {
@@ -28,7 +28,7 @@ const Footer = () => {
                         }
                          </ul>
                     </Col>
-                    <Col lg="2" xs="6" className="ms-lg-auto mb-4 mb-lg-0">
+                    <Col lg="2" xs="6" className="ms-lg-auto mb-4 mb-lg-0 order-0 order-lg-3">
                         <p className={styles.linkTitle}>OUR BUSINESSES</p>
                         <ul>
                         {
@@ -38,7 +38,7 @@ const Footer = () => {
                         }
                          </ul>
                     </Col>
-                    <Col lg="2" xs="8"  className="ms-lg-auto"  >
+                    <Col lg="2" xs="8"  className={"ms-lg-auto order-2 order-lg-4 "+[styles.social]}  >
                         <p className={styles.linkTitle}>FOLLOW US</p>
                         <div className="sociallink-packet">
                             <div className="s-icon">

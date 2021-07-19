@@ -46,6 +46,12 @@ const CaseStudies = () => {
                 settings: {
                     slidesToShow: 2,
                 }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                }
             }
         ]
     };

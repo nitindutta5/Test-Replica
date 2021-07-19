@@ -13,6 +13,7 @@ import { blogData } from '../../components/Blogs/Blogs'
 const BlogInnerPage = ({ checkOpen }) => {
     var settings = {
         infinite: true,
+        autoplay:true,
         speed: 500,
         slidesToShow: 3,
         arrows: true,
@@ -29,6 +30,12 @@ const BlogInnerPage = ({ checkOpen }) => {
                 breakpoint: 800,
                 settings: {
                     slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
                 }
             }
         ]

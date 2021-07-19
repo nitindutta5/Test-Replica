@@ -74,7 +74,7 @@ const Blogs = () => {
                         <Row>
                             {
                                 blogData.slice(currentPage * pageSize, (currentPage + 1) * pageSize).map((obj, id) => (
-                                    <Col lg="4" key={id} className="mb-5">
+                                    <Col lg="4" md="6" xs="6" key={id} className="mb-5">
                                         <BlogCard data={obj} />
                                     </Col>
                                 ))

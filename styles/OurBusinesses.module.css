@@ -8,6 +8,10 @@
     left: 5%;
 }
 
+.main {
+    position: relative;
+}
+
 .title2 {
     font-family: 'Jost';
     font-size: 28px;
@@ -27,7 +31,7 @@
 
     .title,
     .title2 {
-        font-size: 25px;
+        font-size: 22px;
     }
 
 }
@@ -36,7 +40,16 @@
 
     .title,
     .title2 {
-        font-size: 22px;
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width:360px) {
+
+    .title,
+    .title2 {
+        font-size: 18px;
     }
 
 }

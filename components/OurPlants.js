@@ -22,7 +22,7 @@ const OurPlants = () => {
                                 <img src="./plants/pathrendi.png" className="img-fluid px-lg-4" />
                                 <p>Pathrendi Plant</p>
                             </Col>
-                            <Col lg="12" className="text-center mt-5">
+                            <Col lg="12" className="text-center mt-lg-5 mt-0">
                                 <Button color="secondary" className="btn mx-auto">Know More</Button>
                             </Col>
                         </Row>

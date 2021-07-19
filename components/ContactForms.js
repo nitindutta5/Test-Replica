@@ -23,11 +23,11 @@ const ContactForms = () => {
         <section className="pb-0">
             <Container fluid className="wrapper">
                 <Row>
-                    <Col lg="3" className={[styles.navBar] + " bg2 pe-0"}>
+                    <Col lg="3" className={[styles.navBar] + " bg2 pe-0 pt-4"}>
                         <div className={formOne ? [styles.active] : [styles.item]} onClick={() => setForm("write_to_us")}>Write to us</div>
                         <div className={formTwo ? [styles.active] : [styles.item]} onClick={() => setForm("partner")}> Become a partner</div>
                     </Col>
-                    <Col lg="9">
+                    <Col lg="9" className="py-4">
                         {
                             formOne && <WritetoUs />
                             ||

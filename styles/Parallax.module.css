@@ -1,9 +1,7 @@
 .parallax {
     /* The image used */
     background-image: url("../public/Mask.png");
-
     min-height: 500px;
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -25,10 +23,18 @@
 
 }
 
-@media(max-width:800px) {
+@media(max-width:992px) {
     .vision p {
         font-size: 14px;
         line-height: 1.6;
+    }
+
+    .vision {
+        margin-bottom: 10%;
+    }
+
+    .parallax {
+        min-height: auto;
     }
 
 }
