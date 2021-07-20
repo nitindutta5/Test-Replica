@@ -21,6 +21,17 @@
     margin-top: 10px;
 }
 
+.holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secondBtn {
+    background-color: #363C4C !important;
+    color: #fff !important;
+}
+
 .btn {
     position: absolute;
     left: 5%;

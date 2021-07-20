@@ -1,4 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
+import { useRouter } from 'next/router'
 import {
     Navbar,
     NavbarBrand,
@@ -15,6 +16,7 @@ import { navlist, Businesses } from "../navlist";
 import downloadLogo from "../public/Download-Brochure_02.svg"
 
 const Header = (props) => {
+    const router = useRouter();
     const { dark } = useContext(ThemeContext);
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
@@ -33,18 +35,16 @@ const Header = (props) => {
     }, [isOpen])
     return (
         <div>
-            <Navbar color={dark ? 'dark' : 'fadded'} light expand="md" className="wrapper">
-                <NavbarBrand> <Link href="/"><img src={dark ? logo2 : logo} alt="logo" className="img-fluid " /></Link></NavbarBrand>
+            <Navbar color={dark || props.route === "/downloadBrochure" ? 'dark' : 'fadded'} light expand="md" className="wrapper">
+                <NavbarBrand> <Link href="/"><img src={dark || props.route === "/downloadBrochure" ? logo2 : logo} alt="logo" className="img-fluid " /></Link></NavbarBrand>
                 <Nav className="ms-auto align-items-center" navbar>
-                    <Button color="primary" className="me-lg-5 me-4">
+                    <Button color="primary" className="me-lg-5 me-4" onClick={() => router.push('/downloadBrochure')}>
                         <img src={downloadLogo} /> Brochure
                     </Button>
-                    <img onClick={toggle} src={dark ? hamburger2 : hamburger} alt="hamburger" className="img-fluid hamburger" />
+                    <img onClick={toggle} src={dark || props.route === "/downloadBrochure" ? hamburger2 : hamburger} alt="hamburger" className="img-fluid hamburger" />
                 </Nav>
             </Navbar>
             <div id="myNav" className={isOpen ? "overlay open" : "overlay"} >
-
-
                 <a className="closebtn" onClick={toggle}><img src="../../Cross.svg" className="img-fluid" /></a>
                 {
                     !levelTwo ? (
@@ -86,10 +86,7 @@ const Header = (props) => {
                             </div>
                         )
                 }
-
-
             </div>
-
         </div >
     );
 }
