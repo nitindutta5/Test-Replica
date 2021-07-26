@@ -4,15 +4,13 @@ import ContactForms from "../components/ContactForms"
 import GetInTouch from "../components/GetInTouch"
 import OurLocations from "../components/OurLocations"
 import OurOffices from "../components/OurOffices"
-import Overlay from "../components/Overlay"
 
 
 
 
-const ContactUs = ({ checkOpen }) => {
+const ContactUs = () => {
     return (
         <div>
-            <Overlay checkOpen={checkOpen} />
             <Head>
                 <title>Contact Us | JSLL  Lifestyle</title>
                 <meta name="description" content="Contact Us Page" />

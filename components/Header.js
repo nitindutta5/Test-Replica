@@ -35,8 +35,8 @@ const Header = (props) => {
     }, [isOpen])
     return (
         <div>
-            <Navbar color={dark || props.route === "/downloadBrochure" ? 'dark' : 'fadded'} light expand="md" className="wrapper">
-                <NavbarBrand> <Link href="/"><img src={dark || props.route === "/downloadBrochure" ? logo2 : logo} alt="logo" className="img-fluid " /></Link></NavbarBrand>
+            <Navbar color={dark || props.route === "/downloadBrochure" || props.route === "/ourbusinesses" ? 'dark' : 'fadded'} light expand="md" className="wrapper">
+                <NavbarBrand> <Link href="/"><img src={dark || props.route === "/downloadBrochure" || props.route === "/ourbusinesses" ? logo2 : logo} alt="logo" className="img-fluid " /></Link></NavbarBrand>
                 <Nav className="ms-auto align-items-center" navbar>
                     <Button color="primary" className="me-lg-5 me-4" onClick={() => router.push('/downloadBrochure')}>
                         <img src={downloadLogo} /> Brochure
@@ -73,7 +73,7 @@ const Header = (props) => {
                         (
                             <div className="overlay-content">
                                 <a className="TitleItem" onClick={() => setLevelTwo(!levelTwo)}>MAIN MENU</a>
-                                <a className="TitleItem">Our Businesses</a>
+                                <Link href="/ourBusinesses"><a onClick={toggle} className="TitleItem">Our Businesses</a></Link>
                                 {
                                     Businesses.map((obj, id) => (
                                         <Link key={id} href={obj.link}>

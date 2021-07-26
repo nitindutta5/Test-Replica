@@ -1,0 +1,78 @@
+.left {
+    background-position: left;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider {
+    background-color: #363C4C;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow: hidden;
+}
+
+@keyframes slide {
+    from {
+        opacity: 0;
+        margin-left: 40%;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 0%;
+    }
+}
+
+.title {
+    font-family: 'Jost';
+    font-weight: 700;
+    text-align: left;
+    font-size: 35px;
+    padding: 15px;
+    margin-bottom: 0px;
+    opacity: 0;
+    width: 100%;
+}
+
+.active .title {
+    animation: slide 0.2s 0.1s 1;
+    animation-fill-mode: forwards;
+}
+
+.box1 {
+    border: 1px solid #fff;
+    border-bottom: none;
+    max-width: 50%;
+}
+
+.content {
+    padding: 15px;
+    border: 1px solid #fff;
+    max-width: 80%;
+    margin-top: 0;
+    line-height: 1.7;
+}
+
+.button {
+    background-color: transparent !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+    border-top: none !important;
+    font-size: inherit;
+}
+
+
+.button:hover img {
+    margin-left: 5px;
+}
+
+.button img {
+    transition: all 0.2s ease;
+}

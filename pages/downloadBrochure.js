@@ -1,11 +1,10 @@
 import Head from "next/head"
-import Overlay from "../components/Overlay"
 import { Container, Row, Col, Button } from 'reactstrap'
 import Slider from 'react-slick';
 import styles from '../styles/OurBusinesses.module.css'
 import { useState } from "react";
 
-const downloadBrochure = ({ checkOpen }) => {
+const downloadBrochure = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const data = [
         {
@@ -75,7 +74,6 @@ const downloadBrochure = ({ checkOpen }) => {
     };
     return (
         <div>
-            <Overlay checkOpen={checkOpen} />
             <Head>
                 <title>Download Brochure | JSLL  Lifestyle</title>
                 <meta name="description" content="Download Brochure" />

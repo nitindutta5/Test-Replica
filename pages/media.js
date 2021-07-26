@@ -2,13 +2,12 @@ import Head from "next/head"
 import Banner from "../components/Banner"
 import Blogs from "../components/Blogs/Blogs"
 import CaseStudies from "../components/CaseStudies"
-import Overlay from "../components/Overlay"
 import News_Updates from "../components/News_Updates"
 import Testimonials from "../components/Testimonials"
 import VideoGallery from "../components/VideoGallery"
 
 
-const Media = ({ checkOpen }) => {
+const Media = () => {
     return (
         <div>
             <Overlay checkOpen={checkOpen} />

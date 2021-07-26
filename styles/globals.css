@@ -64,6 +64,34 @@ li {
   justify-content: space-between;
 }
 
+#our-Businesses .slick-dots {
+  width: auto;
+  left: 15px;
+  bottom: 50%;
+}
+
+
+#our-Businesses .slick-dots li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#our-Businesses .slick-dots li.slick-active button:before {
+  font-family: 'slick';
+  font-size: 12px;
+  color: #fff;
+}
+
+#our-Businesses .slick-dots li button:before {
+  font-size: 12px;
+  color: #808285
+}
+
+#ourBusinesses .slick-slide p {
+  opacity: 0;
+}
+
 .wrapper {
   padding-right: 6rem;
   padding-left: 6em;

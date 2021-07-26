@@ -1,13 +1,11 @@
 import Head from "next/head"
 import Banner from "../components/Banner"
 import OurMachines from "../components/OurMachines"
-import Overlay from "../components/Overlay"
 import VerticalPlantCarousel from "../components/VerticalPlantCarousel"
 
-const Plants_Machines = ({ checkOpen }) => {
+const Plants_Machines = () => {
     return (
         <div>
-            <Overlay checkOpen={checkOpen} />
             <Head>
                 <title>Plants & Machines | JSLL  Lifestyle</title>
                 <meta name="description" content="Our Plants & Machine Page" />

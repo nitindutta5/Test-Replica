@@ -1,5 +1,4 @@
 import Head from "next/head"
-import Overlay from "../../components/Overlay"
 import Banner from "../../components/Banner"
 import { Container, Row, Col } from "reactstrap"
 import styles from '../../styles/BlogInner.module.css'
@@ -10,7 +9,7 @@ import Previous from "../../components/Previous";
 import BlogCard from "../../components/Blogs/BlogCard"
 import { blogData } from '../../components/Blogs/Blogs'
 
-const BlogInnerPage = ({ checkOpen }) => {
+const BlogInnerPage = () => {
     var settings = {
         infinite: true,
         autoplay:true,
@@ -42,7 +41,6 @@ const BlogInnerPage = ({ checkOpen }) => {
     };
     return (
         <div>
-            <Overlay checkOpen={checkOpen} />
             <Head>
                 <title>Media | JSLL  Lifestyle</title>
                 <meta name="description" content="Media Page" />

@@ -8,6 +8,7 @@ import '../styles/globals.css'
 import { useState } from 'react';
 import Head from 'next/head'
 import ThemeProvider from '../components/ThemeProvider';
+import Overlay from '../components/Overlay';
 
 function MyApp({ Component, pageProps,router }) {
       //For white Overlay
@@ -25,7 +26,8 @@ function MyApp({ Component, pageProps,router }) {
         ></meta>
       </Head>
       <Header route={router.route} handleOverlay={handleOverlay}/>
-      <Component {...pageProps} checkOpen={checkOpen}/>
+      <Overlay checkOpen={checkOpen} />
+      <Component {...pageProps}/>
       <Footer />
     </ThemeProvider>
   )

@@ -1,14 +1,12 @@
 import Head from "next/head"
 import Banner from "../components/Banner"
-import Overlay from "../components/Overlay"
 import GrandTimeline from "../components/GrandTimeline"
 import LegacyContentBox from '../components/LegacyContentBox'
 import Figures from '../components/Figures'
 
-const Legacy = ({ checkOpen }) => {
+const Legacy = () => {
     return (
         <div>
-            <Overlay checkOpen={checkOpen} />
             <Head>
                 <title>Legacy | JSLL  Lifestyle</title>
                 <meta name="description" content="About Us Page" />
