@@ -1,0 +1,48 @@
+.bold {
+    font-weight: 500;
+    color: #fff;
+    margin-top: 4%;
+    line-height: 1.8;
+}
+
+.content {
+    color: #fff;
+    margin-top: 4%;
+    line-height: 1.8;
+}
+
+.iconBox {
+    max-width: 80%;
+    margin: 0px auto;
+    margin-bottom: 15px;
+}
+
+.iconBox img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.iconBox p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.productBox {
+    max-width: 90%;
+    margin: 0px auto;
+    margin-bottom: 10%;
+    box-shadow: -6px 6px 20px #0000001F;
+}
+
+.productBox h5 {
+    font-weight: 600;
+    font-size: 25px;
+    color: #363C4C;
+    margin-bottom: 20px;
+}
+
+.productBox p {
+    font-size: 13px;
+    line-height: 1.7;
+}

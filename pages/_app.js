@@ -9,6 +9,7 @@ import { useState } from 'react';
 import Head from 'next/head'
 import ThemeProvider from '../components/ThemeProvider';
 import Overlay from '../components/Overlay';
+import Chat from '../components/Chat';
 
 function MyApp({ Component, pageProps,router }) {
       //For white Overlay
@@ -28,6 +29,7 @@ function MyApp({ Component, pageProps,router }) {
       <Header route={router.route} handleOverlay={handleOverlay}/>
       <Overlay checkOpen={checkOpen} />
       <Component {...pageProps}/>
+      <Chat/>
       <Footer />
     </ThemeProvider>
   )

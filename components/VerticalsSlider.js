@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import { Row, Col, Button } from "reactstrap";
 import styles from '../styles/VerticalsSlider.module.css'
 import { useState } from "react";
+import Link from "next/link";
 
 const VerticalsSlider = () => {
 
@@ -27,32 +28,38 @@ const VerticalsSlider = () => {
         {
             img: "../verticals/Homeware.jpg",
             name: "Homeware",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!"
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
+            url: "ourBusinesses/homeware"
         },
         {
             img: "../verticals/JINDAL_ARC_KITCHENS.jpg",
             name: "Jindal Arc Kitchen",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem! Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!"
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem! Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
+            url: "ourBusinesses/jindalKitchen"
         },
         {
             img: "../verticals/JSLL_INFRA.jpg",
             name: "JSLL Infra",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!"
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
+            url: "ourBusinesses/infra"
         },
         {
             img: "../verticals/JSLL_MOBILITY.jpg",
             name: "JSLL Mobility",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!"
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
+            url: "ourBusinesses/mobility"
         },
         {
             img: "../verticals/PLUMBING.jpg",
             name: "Plumbing",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!"
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
+            url: "ourBusinesses/plumbing"
         },
         {
             img: "../verticals/VE.jpg",
             name: "Value Engineering",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem! Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!"
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem! Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
+            url: "ourBusinesses/ve"
         }
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -84,9 +91,11 @@ const VerticalsSlider = () => {
                         <p className={styles.content}>
                             {data[currentIndex].text}
                         </p>
-                        <Button className={styles.button}>Know more
-                            <img src="../Know-more-arrow-white.svg" className="img-fluid" />
-                        </Button>
+                        <Link href={data[currentIndex].url}>
+                            <Button className={styles.button}>Know more
+                                <img src="../Know-more-arrow-white.svg" className="img-fluid" />
+                            </Button>
+                        </Link>
                     </div>
                 </Col>
             </Row>

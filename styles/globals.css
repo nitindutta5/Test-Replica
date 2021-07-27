@@ -19,9 +19,63 @@ a {
   text-decoration: none !important;
 }
 
+.st0 {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 2.5;
+}
+
+.st1 {
+  fill: #FF9100;
+  stroke: #FFFFFF;
+  stroke-width: 2.5;
+}
+
+.chat svg {
+  max-width: 40px;
+}
+
+.chatOuter {
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chathidden {
+  opacity: 0;
+  color: #FF9100;
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
+  padding: 15px 8px 15px 8px;
+}
+
+.chat {
+  background-color: #FF9100;
+  padding: 10px 8px 10px 8px;
+  border-radius: 10px;
+  width: 56px;
+}
+
 
 * {
   box-sizing: border-box;
+}
+
+.chatOuter .chat:hover {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.chatOuter:hover .st1 {
+  fill: #fff;
+}
+
+.chatOuter:hover .chathidden {
+  opacity: 1;
 }
 
 
@@ -439,7 +493,7 @@ section {
   font-size: 40px;
   color: #363C4C;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 5%;
 }
 
