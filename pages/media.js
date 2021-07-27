@@ -10,7 +10,6 @@ import VideoGallery from "../components/VideoGallery"
 const Media = () => {
     return (
         <div>
-            <Overlay checkOpen={checkOpen} />
             <Head>
                 <title>Media | JSLL  Lifestyle</title>
                 <meta name="description" content="Media Page" />

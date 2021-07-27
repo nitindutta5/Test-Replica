@@ -6,9 +6,11 @@ import { useState } from "react";
 const VerticalsSlider = () => {
 
     const getIndex = (e) => {
+        setPreviousIndex(currentIndex);
         setCurrentIndex(e);
     }
     const params = {
+        autoplay: true,
         dots: true,
         infinite: true,
         slidesToShow: 1,
@@ -30,7 +32,7 @@ const VerticalsSlider = () => {
         {
             img: "../verticals/JINDAL_ARC_KITCHENS.jpg",
             name: "Jindal Arc Kitchen",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!"
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem! Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!"
         },
         {
             img: "../verticals/JSLL_INFRA.jpg",
@@ -50,41 +52,45 @@ const VerticalsSlider = () => {
         {
             img: "../verticals/VE.jpg",
             name: "Value Engineering",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!"
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem! Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!"
         }
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
-
+    const [previousIndex, setPreviousIndex] = useState(null);
     return (
         <div id="our-Businesses">
-            <Slider {...params} className={styles.slider} >
-                {
-                    data.map((obj, id) => (
-                        <div key={id}>
-                            <Row>
-                                <Col lg="6" className={styles.left} style={{ backgroundImage: `url(${obj.img})` }}>
-                                </Col>
-                                <Col lg="6" className={styles.right} >
-                                    <div className={currentIndex === id ? [styles.active] : ""}>
-                                        <div className={styles.box1}>
-                                            <h1 className={styles.title}>
-                                                {obj.name}
-                                            </h1>
-                                        </div>
 
-                                        <p className={styles.content}>
-                                            {obj.text}
-                                        </p>
-                                        <Button className={styles.button}>Know more
-                                            <img src="../Know-more-arrow-white.svg" className="img-fluid" />
-                                        </Button>
+            <Row>
+                <Col lg="6" className="px-0">
+                    <Slider {...params} className={styles.slider} >
+                        {
+                            data.map((obj, id) => (
+                                <div key={id}>
+                                    <div className={styles.left} style={{ backgroundImage: `url(${obj.img})` }}>
                                     </div>
-                                </Col>
-                            </Row>
+                                </div>
+                            ))
+                        }
+                    </Slider>
+                </Col>
+                <Col lg="6" className={styles.right} >
+                    <div>
+                        <div className={styles.box1}>
+                            <h1 className={styles.title}>
+                                {data[currentIndex].name}
+                            </h1>
                         </div>
-                    ))
-                }
-            </Slider>
+
+                        <p className={styles.content}>
+                            {data[currentIndex].text}
+                        </p>
+                        <Button className={styles.button}>Know more
+                            <img src="../Know-more-arrow-white.svg" className="img-fluid" />
+                        </Button>
+                    </div>
+                </Col>
+            </Row>
+
         </div>
     )
 }

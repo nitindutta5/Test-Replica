@@ -16,17 +16,30 @@
     padding-left: 5%;
     padding-right: 5%;
     overflow: hidden;
+    background-color: #363C4C;
 }
 
 @keyframes slide {
     from {
         opacity: 0;
-        margin-left: 40%;
+        margin-bottom: 40%;
     }
 
     to {
         opacity: 1;
-        margin-left: 0%;
+        margin-bottom: 0%;
+    }
+}
+
+@keyframes slide2 {
+    from {
+        opacity: 0;
+        margin-top: 40%;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0%;
     }
 }
 
@@ -35,21 +48,27 @@
     font-weight: 700;
     text-align: left;
     font-size: 35px;
-    padding: 15px;
     margin-bottom: 0px;
-    opacity: 0;
+    opacity: 1;
     width: 100%;
 }
 
+/* 
 .active .title {
-    animation: slide 0.2s 0.1s 1;
+    animation: slide 0.3s 0.1s 1;
     animation-fill-mode: forwards;
 }
+
+.active2 .title {
+    animation: slide2 0.3s 0.1s 1;
+    animation-fill-mode: forwards;
+} */
 
 .box1 {
     border: 1px solid #fff;
     border-bottom: none;
     max-width: 50%;
+    padding: 15px;
 }
 
 .content {
