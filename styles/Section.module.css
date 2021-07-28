@@ -5,6 +5,20 @@
     line-height: 1.8;
 }
 
+.category2 {
+    text-align: center;
+    margin: 0px auto;
+}
+
+.category2 .bold {
+    margin-top: 0px;
+}
+
+.category2 .content {
+    margin-top: 0%;
+    margin-bottom: 4%;
+}
+
 .content {
     color: #fff;
     margin-top: 4%;

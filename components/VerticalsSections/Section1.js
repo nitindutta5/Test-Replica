@@ -10,10 +10,18 @@ const Section1 = (props) => {
                 </Row>
                 <Row>
                     {
+                    props.data.type==="kitchen"?
                         props.data.brands.map((obj, id) => (
-                            <Col key={id} lg="5" className={id + 2 % 2 === 0 ? "me-auto mb-4" : "ms-auto mb-4"}>
+                            <Col key={id} lg="5" className={id + 2 % 2 === 0 ? "me-auto my-4" : "ms-auto my-4"}>
                                 <img src={obj.logo} alt="" className="img-fluid" />
                                 <p className={styles.bold} dangerouslySetInnerHTML={{ __html: obj.bold }} />
+                                <p className={styles.content}>
+                                    {obj.content}
+                                </p>
+                            </Col>
+                        )):
+                        props.data.brands.map((obj, id) => (
+                            <Col key={id} lg="10" className={styles.category2}>
                                 <p className={styles.content}>
                                     {obj.content}
                                 </p>
@@ -21,10 +29,11 @@ const Section1 = (props) => {
                         ))
                     }
                 </Row>
-                <Row className="mt-4">
+                <Row className="mt-5">
+                <Col lg="12"><h2 className="heading white-color text-center">{props.title2}</h2></Col>
                     {
                         props.data.icons.map((obj, id) => (
-                            <Col key={id} lg="2" className="text-center">
+                            <Col key={id} lg="2" xs="6" className="text-center">
                                 <div className={styles.iconBox}>
                                     <img src={obj.img} alt={obj.title} className="img-fluid" />
                                     <p>{obj.title}</p>

@@ -56,31 +56,31 @@ export const Businesses = [
   {
     name: '/homeware',
     text: 'Homeware',
-    link: '/homeware',
+    link: '/ourBusinesses/jindalKitchen',
   },
   {
     name: '/plumbing_solutions',
     text: 'Plumbing Solutions',
-    link: '/plumbing_solutions',
+    link: '/ourBusinesses/plumbing',
   },
   {
     name: '/jindal_kitchens',
     text: 'Jindal Kitchens',
-    link: '/jindal_kitchens',
+    link: '/ourBusinesses/jindalKitchen',
   },
   {
     name: '/infra_solutions',
     text: 'Infra Solutions',
-    link: '/infra_solutions',
+    link: '/ourBusinesses/infra',
   },
   {
     name: '/oem_solutions',
     text: 'OEM Solutions',
-    link: '/oem_solutions',
+    link: '/ourBusinesses/oem_solutions',
   },
   {
     name: '/mobility',
     text: 'Mobility',
-    link: '/mobility',
+    link: '/ourBusinesses/mobility',
   }
 ]

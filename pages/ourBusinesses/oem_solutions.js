@@ -3,19 +3,12 @@ import Banner from "../../components/Banner"
 import Section1 from "../../components/VerticalsSections/Section1"
 import Section2 from "../../components/VerticalsSections/Section2";
 
-const jindalKitchen = () => {
+const oem_solutions = () => {
     const data = {
-        type: "kitchen",
+        type: "oem",
         brands: [
             {
-                logo: "../../verticals/kitchen/arc.svg",
-                bold: "Looking for an ideal kitchen partner which boasts of the<br/> perfect combination of aesthetics & functionality?",
-                content: "ARC is committed towards creating a ‘healthy stainless steel culture’ for Indian homes by making stylish and sustainable life experiences, achieved by blending modern sensibilities with value designs and durability. Today, and in the future, the kitchen takes a central position in the home as a multifunctional space. And we believe in beautifully transforming the heart of the home in vivid hues that integrate functional as well as alluring elements into the space; whilst preventing any hazards, be it — fire, termites, water damage or harmful bacteria. Moreover, an ARC Kitchen comes with a warranty of 5 years & is also 100% eco-friendly."
-            },
-            {
-                logo: "../../verticals/kitchen/Arttdinox_Logo.svg",
-                bold: "Bespoke Indulgence <br/>For a kitchen as unique as you.",
-                content: "The kitchen is the heart of your home. At Arttd’inox, we make sure it’s also an epicenter of refinement, efficiency, and creativity. Ergonomically sculpted and spatially bespoke, an Arttd’inox Kitchen balances the chic of modernity with the gravitas of heritage to make for easy movement and convenient cooking - while evoking an enduring statement about your taste. Every Arttd’inox kitchen is a blend of meticulous craftsmanship, technical sophistication, and quality workmanship. The design is tailored to the lifestyle and personal taste of the homeowner, so the result is an exquisite bespoke kitchen that is not only functional but truly beautiful."
+                content: "The core ambition of JSLL Value Engineering is focused towards manufacturing stainless steel products for development and broad usage across industries. Through our own in-house backhand integration, we design finished end product for B2B and B2C segments. Being an original equipment manufacturer, JSLL Value Engineering fabricates daily use and industrial components in varied sectors."
             }
         ],
         icons: [
@@ -70,15 +63,15 @@ const jindalKitchen = () => {
     return (
         <div>
             <Head>
-                <title>Jindal Kitchen</title>
-                <meta name="description" content="Download Brochure" />
+                <title>OEM Solutions</title>
+                <meta name="description" content="OEM Solutions" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Banner src=".././banner/jindalkitchen.png" text="Jindal Kitchen" />
-            <Section1 data={data} title2="Why Choose Us">Our Brands</Section1>
+            <Banner src=".././banner/jindalkitchen.png" text="OEM Solutions" />
+            <Section1 data={data} title2="Why Stainless Steel">Manufacturing Tomorrow’s Products</Section1>
             <Section2 data={data.products}>Our Range of Products</Section2>
         </div>
     )
 }
 
-export default jindalKitchen
+export default oem_solutions

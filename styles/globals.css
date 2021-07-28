@@ -51,6 +51,9 @@ a {
   background-color: #fff;
   transition: all 0.4s ease-in-out;
   padding: 15px 8px 15px 8px;
+  box-shadow: 0px 0px 3px 1px #ff9100;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .chat {
@@ -468,7 +471,7 @@ input[type=number] {
 }
 
 .TitleItem {
-  font-size: 18px;
+  font-size: 17px;
   cursor: pointer;
 }
 
@@ -494,7 +497,7 @@ section {
   color: #363C4C;
   line-height: 1.2;
   font-weight: 600;
-  margin-bottom: 5%;
+  margin-bottom: 4%;
 }
 
 .about-home-bg {

@@ -28,36 +28,42 @@ const VerticalsSlider = () => {
         {
             img: "../verticals/Homeware.jpg",
             name: "Homeware",
+            logo:"../verticals/logos/Arttdinox_Logo.svg",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
-            url: "ourBusinesses/homeware"
+            url: "ourBusinesses/jindalKitchen"
         },
         {
             img: "../verticals/JINDAL_ARC_KITCHENS.jpg",
             name: "Jindal Arc Kitchen",
+            logo:"../verticals/logos/arc.svg",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem! Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
             url: "ourBusinesses/jindalKitchen"
         },
         {
             img: "../verticals/JSLL_INFRA.jpg",
             name: "JSLL Infra",
+            logo:"../verticals/logos/Infra-White.svg",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
             url: "ourBusinesses/infra"
         },
         {
             img: "../verticals/JSLL_MOBILITY.jpg",
             name: "JSLL Mobility",
+            logo:"../verticals/logos/Mobility-White.svg",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
             url: "ourBusinesses/mobility"
         },
         {
             img: "../verticals/PLUMBING.jpg",
             name: "Plumbing",
+            logo:"../verticals/logos/plumbing-White.svg",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
             url: "ourBusinesses/plumbing"
         },
         {
             img: "../verticals/VE.jpg",
-            name: "Value Engineering",
+            name: "OEM Solutions",
+            logo:"../verticals/logos/ve.png",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem! Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
             url: "ourBusinesses/ve"
         }
@@ -74,6 +80,7 @@ const VerticalsSlider = () => {
                             data.map((obj, id) => (
                                 <div key={id}>
                                     <div className={styles.left} style={{ backgroundImage: `url(${obj.img})` }}>
+                                        <img src={obj.logo} alt="" className={styles.logo}/>
                                     </div>
                                 </div>
                             ))
@@ -81,13 +88,12 @@ const VerticalsSlider = () => {
                     </Slider>
                 </Col>
                 <Col lg="6" className={styles.right} >
-                    <div>
+                    <div className={`${currentIndex>previousIndex?styles.forward:styles.backward}`}>
                         <div className={styles.box1}>
                             <h1 className={styles.title}>
                                 {data[currentIndex].name}
                             </h1>
                         </div>
-
                         <p className={styles.content}>
                             {data[currentIndex].text}
                         </p>
@@ -96,6 +102,8 @@ const VerticalsSlider = () => {
                                 <img src="../Know-more-arrow-white.svg" className="img-fluid" />
                             </Button>
                         </Link>
+                        <Button className="mt-5" color="secondary">Download Brochure
+                        </Button>
                     </div>
                 </Col>
             </Row>
