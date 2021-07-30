@@ -39,24 +39,24 @@ const plumbing = () => {
         ],
         products: [
             {
-                img: "../../verticals/kitchen/products/Homeware.png",
-                title: "Homeware",
-                content: "A combination of clean lines and purity of form meets custom-crafted storage and attention to detail with an added character and charm of seamless versatility."
+                img: "../../verticals/plumbing/products/90-Elbow.jpg",
+                title: "90-Elbow",
+                content: "LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem"
             },
             {
-                img: "../../verticals/kitchen/products/Kitchens.png",
-                title: "Kitchens",
-                content: "Explore our world of exquisite bespoke kitchens to suit all your moods. ARC seamlessly integrates durable and hygienic surface materials keeping in mind beauty and function, with efficiency and style."
+                img: "../../verticals/plumbing/products/Crossover.jpg",
+                title: "Crossover",
+                content: "LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem"
             },
             {
-                img: "../../verticals/kitchen/products/Wardrobe.png",
-                title: "Wardrobe",
-                content: "The style against which all others are measured in a modern home. It's time to amp up the ultimate design statement that is full of rustic charm, yet is contemporary and minimal."
+                img: "../../verticals/plumbing/products/End-Cap.jpg",
+                title: "End-Cap",
+                content: "LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem"
             },
             {
-                img: "../../verticals/kitchen/products/Vanity.png",
-                title: "Vanity",
-                content: "Inspired by sleek design harmony throughout, with minimal detailing and finishes that are striking in their simplicity; ARC meticulously blends in bespoke craftsmanship with clutter-free living."
+                img: "../../verticals/plumbing/products/Equal-Tee.jpg",
+                title: "Equal-Tee",
+                content: "LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem"
             }
         ]
     };
@@ -70,6 +70,7 @@ const plumbing = () => {
             <Banner src=".././banner/jindalkitchen.png" text="Plumbing" />
             <Section1 data={data} title2="Why Stainless Steel">Sustainable Plumbing Solutions</Section1>
             <Section2 data={data.products}>Our Range of Products</Section2>
+            LoremIspem
         </div>
     )
 }

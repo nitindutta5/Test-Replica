@@ -49,6 +49,15 @@
     box-shadow: -6px 6px 20px #0000001F;
 }
 
+.productBox div {
+    min-height: 150px;
+    overflow: hidden;
+}
+
+.productBox img {
+    filter: grayscale(1)
+}
+
 .productBox h5 {
     font-weight: 600;
     font-size: 25px;

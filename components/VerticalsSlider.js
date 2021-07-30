@@ -65,7 +65,7 @@ const VerticalsSlider = () => {
             name: "OEM Solutions",
             logo:"../verticals/logos/ve.png",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem! Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
-            url: "ourBusinesses/ve"
+            url: "ourBusinesses/oem_solutions"
         }
     ];
     const [currentIndex, setCurrentIndex] = useState(0);

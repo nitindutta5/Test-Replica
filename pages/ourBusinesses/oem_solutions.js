@@ -13,50 +13,62 @@ const oem_solutions = () => {
         ],
         icons: [
             {
-                img: "../../verticals/kitchen/Icons/01_Termite-Proof.png",
-                title: "Termite Proof"
+                img: "../../verticals/ve/Icons/1.png",
+                title: "Extensive Fire & Heat Resistant"
             },
             {
-                img: "../../verticals/kitchen/Icons/02_Fire-Resistant.png",
-                title: "Fire Resistant"
+                img: "../../verticals/ve/Icons/2.png",
+                title: "Great Combination Of Strength & Pliability"
             },
             {
-                img: "../../verticals/kitchen/Icons/03_Range-of-Hues.png",
-                title: "Range of Hues"
+                img: "../../verticals/ve/Icons/3.png",
+                title: "Aesthetic Appeal With Ease Of Fabrication"
             },
             {
-                img: "../../verticals/kitchen/Icons/04_Timely-Delivery.png",
-                title: "Timely Delivery"
+                img: "../../verticals/ve/Icons/4.png",
+                title: "Hygienic And Extremely Sturdy With Long Term Values"
             },
             {
-                img: "../../verticals/kitchen/Icons/05_Water-Resistant.png",
-                title: "Water Resistant"
+                img: "../../verticals/ve/Icons/5.png",
+                title: "Recyclable With Reduced Waste"
             },
             {
-                img: "../../verticals/kitchen/Icons/06_EcoFriendly.png",
-                title: "Eco Friendly"
+                img: "../../verticals/ve/Icons/6.png",
+                title: "Earthquake Proof as it can withstand vibrations and shocks"
+            },
+            {
+                img: "../../verticals/ve/Icons/7.png",
+                title: "Enhanced Formability With Corrosion Resistance"
+            },
+            {
+                img: "../../verticals/ve/Icons/8.png",
+                title: "Maintenance Free With A Long Life"
+            },
+            {
+                img: "../../verticals/ve/Icons/9.png",
+                title: "Environment Friendly & 100% Green Metal"
             }
         ],
         products: [
             {
-                img: "../../verticals/kitchen/products/Homeware.png",
-                title: "Homeware",
-                content: "A combination of clean lines and purity of form meets custom-crafted storage and attention to detail with an added character and charm of seamless versatility."
+                img: "../../verticals/ve/products/Automobile.jpg",
+                title: "Automobile",
+                content: "Our capabilities enable us to manufacture stainless steel parts used in automobile like car exhaust systems hose clamps and seatbelt springs."
             },
             {
-                img: "../../verticals/kitchen/products/Kitchens.png",
-                title: "Kitchens",
-                content: "Explore our world of exquisite bespoke kitchens to suit all your moods. ARC seamlessly integrates durable and hygienic surface materials keeping in mind beauty and function, with efficiency and style."
+                img: "../../verticals/ve/products/Handheld-Fire-Extinguisher.jpg",
+                title: "Handheld Fire Extinguisher",
+                content: "A compact fire estinguisher made of Stainless Steel with easy discharge mechanism containing simple aerosol valve mechanism like a deodorant."
             },
             {
-                img: "../../verticals/kitchen/products/Wardrobe.png",
-                title: "Wardrobe",
-                content: "The style against which all others are measured in a modern home. It's time to amp up the ultimate design statement that is full of rustic charm, yet is contemporary and minimal."
+                img: "../../verticals/ve/products/Mixer-Jars.jpg",
+                title: "Mixers Jars",
+                content: "Available in different designs and sizes, the mixer jars are manufactured with high grade stainless steel. It is durable and apt for usage of longer durations."
             },
             {
-                img: "../../verticals/kitchen/products/Vanity.png",
-                title: "Vanity",
-                content: "Inspired by sleek design harmony throughout, with minimal detailing and finishes that are striking in their simplicity; ARC meticulously blends in bespoke craftsmanship with clutter-free living."
+                img: "../../verticals/ve/products/OBM.jpg",
+                title: "OBM",
+                content: "As one of the leading OBM in Stainless Steel, we also manufacture ﬁnished goods for different brands from in-house designing to prototyping to mass production."
             }
         ]
     };
