@@ -31,6 +31,11 @@ const TeamSection = () => {
             img:'./Rajesh.png',
             name:"Rajesh Mohata",
             designation:"CEO, JSL Lifestyle Limited" 
+        },
+        {
+            img:'./Rajesh.png',
+            name:"Abhishek Poddar",
+            designation:"CEO, JSL Lifestyle Limited" 
         }
 
 
@@ -47,7 +52,7 @@ const TeamSection = () => {
                             <Row>
                                 {
                                     LB.map((obj,id)=>(
-                                        <Col lg="3" xs="6" key={id} className={id==0?"ms-auto text-center":"me-auto text-center"}>
+                                        <Col lg="3" xs="6" key={id} className={id==0?"ms-auto text-center":id==1?"mx-auto text-center":"me-auto text-center"}>
                                             <img src={obj.img} className={styles.image}/>
                                             <p className={[styles.LDTitle]+" "+[styles.title]}>
                                                 {obj.name}
@@ -64,7 +69,7 @@ const TeamSection = () => {
                    
                 </Container>
             </section>
-            <section>
+            {/* <section>
                 <Container>
                     
                     <Row>
@@ -81,7 +86,7 @@ const TeamSection = () => {
                       }
                     </Row>
                 </Container>
-            </section>
+            </section> */}
         </div>
     )
 }

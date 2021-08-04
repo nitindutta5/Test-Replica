@@ -21,25 +21,25 @@ const OurLocations = () =>{
                     <Col lg="12">
                         <h1 className={styles.smallHeading}>Our Locations</h1>
                         <Row>
-                            <Col lg="4" xs="6">
+                            <Col lg="3" xs="6">
                             <div className={classNames({[styles.boxes]:true,
                             [styles.active]:active.plants})}  onClick={()=>handleActive("plants")}>
                                 Plants
                             </div>
                             </Col>
-                            <Col lg="4" xs="6">
+                            <Col lg="3" xs="6">
                             <div className={classNames({[styles.boxes]:true,
                             [styles.active]:active.partners})}  onClick={()=>handleActive("partners")}>
                                 Partners
                             </div>
                             </Col>
-                            <Col lg="4" xs="6">
+                            <Col lg="3" xs="6">
                             <div className={classNames({[styles.boxes]:true,
                             [styles.active]:active.offices})}  onClick={()=>handleActive("offices")}>
                                 Offices
                             </div>
                             </Col>
-                            <Col lg="4" xs="6">
+                            <Col lg="3" xs="6">
                             <div className={classNames({[styles.boxes]:true,
                             [styles.active]:active.stores})}  onClick={()=>handleActive("stores")}>
                                 Stores

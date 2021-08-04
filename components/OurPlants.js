@@ -16,11 +16,11 @@ const OurPlants = () => {
                             </Col>
                             <Col lg="4" className={styles.plantCard + " mx-auto"}>
                                 <img src="./plants/rohand.png" className="img-fluid px-lg-4" />
-                                <p>Rohand Plant</p>
+                                <p>Rohad Plant</p>
                             </Col>
                             <Col lg="4" className={styles.plantCard}>
                                 <img src="./plants/pathrendi.png" className="img-fluid px-lg-4" />
-                                <p>Pathrendi Plant</p>
+                                <p>Pathredi Plant</p>
                             </Col>
                             <Col lg="12" className="text-center mt-lg-5 mt-0">
                                 <Button color="secondary" className="btn mx-auto">Know More</Button>

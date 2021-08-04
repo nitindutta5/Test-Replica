@@ -10,6 +10,7 @@ import Head from 'next/head'
 import ThemeProvider from '../components/ThemeProvider';
 import Overlay from '../components/Overlay';
 import Chat from '../components/Chat';
+import FormOverlay from '../components/FormOverlay';
 
 function MyApp({ Component, pageProps,router }) {
       //For white Overlay
@@ -29,7 +30,8 @@ function MyApp({ Component, pageProps,router }) {
       <Header route={router.route} handleOverlay={handleOverlay}/>
       <Overlay checkOpen={checkOpen} />
       <Component {...pageProps}/>
-      <Chat/>
+      {/* <FormOverlay/> */}
+      {/* <Chat/> */}
       <Footer />
     </ThemeProvider>
   )

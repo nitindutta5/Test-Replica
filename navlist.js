@@ -25,7 +25,7 @@ export const navlist = [
   {
     name: '/our_businesses',
     text: 'Our Businesses',
-    link: '#',
+    link: '/ourBusinesses',
   },
 
   {
