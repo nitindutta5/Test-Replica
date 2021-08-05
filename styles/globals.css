@@ -19,6 +19,10 @@ a {
   text-decoration: none !important;
 }
 
+.mainImg {
+  border-radius: 10px;
+}
+
 .st0 {
   fill: none;
   stroke: #FFFFFF;
@@ -417,6 +421,7 @@ input[type=number] {
 .overlay a {
   padding: 18px;
   padding-left: 7rem;
+  position: relative;
   text-decoration: none;
   color: #EEEFF3;
   display: block;
@@ -468,6 +473,13 @@ input[type=number] {
 .arrow {
   max-width: auto;
   max-height: 12px;
+}
+
+.reverse {
+  transform: rotate(180deg);
+  position: absolute;
+  left: 24%;
+  top: 39%;
 }
 
 .TitleItem {
@@ -604,13 +616,19 @@ section {
 
 
 #businesses .slick-slide p,
-#businesses .slick-slide .btn-secondary {
+#businesses .slick-slide .btn-secondary,
+#businesses .slick-slide .OurBusinesses_innerArrow__2m9Xa,
+#businesses .slick-slide .brand-logo {
   display: none;
 }
 
+#businesses .slick-slide.slick-active.slick-center.slick-current .btn-secondary {
+  display: flex;
+}
 
 #businesses .slick-slide.slick-active.slick-center.slick-current p,
-#businesses .slick-slide.slick-active.slick-center.slick-current .btn-secondary {
+#businesses .slick-slide.slick-active.slick-center.slick-current .OurBusinesses_innerArrow__2m9Xa,
+#businesses .slick-slide.slick-active.slick-center.slick-current .brand-logo {
   display: block;
 }
 
@@ -636,8 +654,8 @@ section {
   height: 45px;
 }
 
-.slick-center img {
-  filter: brightness(0.9);
+#businesses .slick-center .mainImg {
+  filter: brightness(0.6);
 }
 
 .slick-slide div:focus-within {

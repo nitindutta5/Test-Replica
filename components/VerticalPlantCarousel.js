@@ -1,28 +1,62 @@
-import { useRef } from "react";
-import useIsomorphicLayoutEffect from './useIsomorphicLayoutEffect'
+import Slider from "react-slick";
+import { Row, Col, Container } from "reactstrap";
+import { plantData } from '../Data'
+import { useState } from "react";
 
 const VerticalPlantCarousel = () => {
-    useIsomorphicLayoutEffect(() => {
-        window.addEventListener('scroll', () => {
-            if (!mainRef.current) return;
-            mainRef.current.scrollBy({ top: window.innerHeight });
-            console.log(mainRef.current.getBoundingClientRect());
-            console.log(window.innerHeight);
-            // if (mainRef.current.getBoundingClientRect().bottom <= 0) {
-            //     toggle(true);
-            // }
-        })
-    }, []);
-    const mainRef = useRef();
+
+    const params = {
+        autoplay: true,
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        vertical: true,
+        verticalSwiping: false,
+        swipeToSlide: true,
+        arrows: false,
+        adaptiveHeight: true
+    }
+
     return (
         <div className="bg2">
-            <main className="scroll-container" ref={mainRef}>
+            <main className="scroll-container">
                 <section>
-                    <h2 className="heading text-center">Our Plants</h2>
+                    <Container>
+                        <h1 className="heading text-center">Our Plants</h1>
+                        <Slider {...params} >
+                            {
+                                plantData.map((obj, id) => (
+                                    <div key={id}>
+                                        <Row>
+                                            <Col lg="4" className="me-auto d-flex flex-column justify-content-center">
+                                                <div>
+                                                    <small>{id + 1}/{plantData.length}</small>
+                                                    <h2 className="heading">{obj.name}</h2>
+                                                    <p className="mb-3">
+                                                        <b>{obj.dimen}</b>
+                                                    </p>
+                                                    <p className="mb-3">
+                                                        {obj.content}
+                                                    </p>
+                                                </div>
+                                            </Col>
+                                            <Col lg="7">
+                                                <img src={obj.url} className="img-fluid" alt="" />
+                                            </Col>
+                                        </Row>
+                                    </div>
+                                ))
+                            }
+                        </Slider>
+                    </Container>
+
                 </section>
-            </main>
-        </div>
+            </main >
+        </div >
     );
 }
 
 export default VerticalPlantCarousel
+
+

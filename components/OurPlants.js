@@ -1,6 +1,6 @@
 import { Container, Row, Col, Button } from "reactstrap"
 import styles from '../styles/OurPlants.module.css'
-
+import Link from "next/link"
 
 const OurPlants = () => {
     return (
@@ -23,7 +23,12 @@ const OurPlants = () => {
                                 <p>Pathredi Plant</p>
                             </Col>
                             <Col lg="12" className="text-center mt-lg-5 mt-0">
-                                <Button color="secondary" className="btn mx-auto">Know More</Button>
+                                <Link href="/plants_machines">
+                                    <a>
+                                        <Button color="secondary" className="btn mx-auto">Know More</Button>
+                                    </a>
+                                </Link>
+
                             </Col>
                         </Row>
                     </Col>

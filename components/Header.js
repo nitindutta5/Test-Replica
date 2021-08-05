@@ -72,7 +72,9 @@ const Header = (props) => {
                     ) :
                         (
                             <div className="overlay-content">
-                                <a className="TitleItem" onClick={() => setLevelTwo(!levelTwo)}>MAIN MENU</a>
+                                <a className="TitleItem" onClick={() => setLevelTwo(!levelTwo)}><img
+                                                    className=" arrow reverse img-fluid me-2"
+                                                    src="../../dropdown arrow-Right.svg" /> MAIN MENU</a>
                                 <Link href="/ourBusinesses"><a onClick={toggle} className="TitleItem">Our Businesses</a></Link>
                                 {
                                     Businesses.map((obj, id) => (

@@ -3,41 +3,14 @@ import { Container, Row, Col, Button } from 'reactstrap'
 import Slider from 'react-slick';
 import styles from '../styles/OurBusinesses.module.css'
 import { useState } from "react";
+import { BusinessVerticals } from "../Data";
+import Link from 'next/link'
+import classNames from "classnames";
+import NextBtn from "../components/NextBtn";
+import Previous from "../components/Previous";
 
 const downloadBrochure = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const data = [
-        {
-            img: './ourbusinesses/1.png',
-            title: 'Test',
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, reprehenderit error, quibusdam voluptatibus hic delectus nemo dolore culpa laborum perspiciatis nesciunt. Itaque sit maxime harum assumenda hic, fuga sed vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim modi in vero, quidem quam non atque! Culpa, vitae nulla voluptates explicabo facilis earum illo esse libero ipsa, commodi accusamus doloremque."
-        },
-        {
-            img: './ourbusinesses/2.png',
-            title: 'Infra Solutions',
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, reprehenderit error, quibusdam voluptatibus hic delectus nemo dolore culpa laborum perspiciatis nesciunt. Itaque sit maxime harum assumenda hic, fuga sed vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim modi in vero, quidem quam non atque! Culpa, vitae nulla voluptates explicabo facilis earum illo esse libero ipsa, commodi accusamus doloremque."
-        },
-        {
-            img: './ourbusinesses/3.png',
-            title: 'Test',
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, reprehenderit error, quibusdam voluptatibus hic delectus nemo dolore culpa laborum perspiciatis nesciunt. Itaque sit maxime harum assumenda hic, fuga sed vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim modi in vero, quidem quam non atque! Culpa, vitae nulla voluptates explicabo facilis earum illo esse libero ipsa, commodi accusamus doloremque."
-        },
-        {
-            img: './ourbusinesses/4.png',
-            title: 'Test',
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, reprehenderit error, quibusdam voluptatibus hic delectus nemo dolore culpa laborum perspiciatis nesciunt. Itaque sit maxime harum assumenda hic, fuga sed vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim modi in vero, quidem quam non atque! Culpa, vitae nulla voluptates explicabo facilis earum illo esse libero ipsa, commodi accusamus doloremque."
-        },
-        {
-            img: './ourbusinesses/5.png',
-            title: 'Test',
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, reprehenderit error, quibusdam voluptatibus hic delectus nemo dolore culpa laborum perspiciatis nesciunt. Itaque sit maxime harum assumenda hic, fuga sed vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim modi in vero, quidem quam non atque! Culpa, vitae nulla voluptates explicabo facilis earum illo esse libero ipsa, commodi accusamus doloremque."
-        },
-        {
-            img: './ourbusinesses/3.png',
-            title: 'Test',
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, reprehenderit error, quibusdam voluptatibus hic delectus nemo dolore culpa laborum perspiciatis nesciunt. Itaque sit maxime harum assumenda hic, fuga sed vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim modi in vero, quidem quam non atque! Culpa, vitae nulla voluptates explicabo facilis earum illo esse libero ipsa, commodi accusamus doloremque."
-        }
-    ];
 
     const nextClick = (e) => {
         setCurrentIndex(e);
@@ -45,13 +18,17 @@ const downloadBrochure = () => {
     var settings = {
         className: "center",
         centerMode: true,
-        dots: true,
+        nextArrow: <NextBtn />,
+        prevArrow: <Previous />,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 5,
+        swiping:false,
+        swipeToSlide:false,
         autoplay: true,
         centerPadding: "50px",
-        arrows: false,
+        arrows: true,
         afterChange: nextClick,
         responsive: [
             {
@@ -86,17 +63,25 @@ const downloadBrochure = () => {
                             <h2 className="heading text-center">Download Brochure</h2>
                         </Col>
                         <Col lg="12" className="px-0">
-                            <Slider {...settings}>
-                                {
-                                    data.map((obj, id) => (
-                                        <div key={id} >
+                        <Slider {...settings}>
+                            {
+                                BusinessVerticals.map((obj, id) => (
+                                    <div key={id} >
+                                        <Link href={obj.url}>
                                             <div className="main">
-                                                <img src={obj.img} className="img-fluid" />
+                                                <img src={obj.carouselImg} className="img-fluid mainImg" />
+                                                <img className={classNames({
+                                                    [styles.title]: true,
+                                                    [styles.logo]: true,
+                                                    "brand-logo": true
+                                                })} src={obj.logo} />
+                                                <img src="../Know2.svg" className={styles.innerArrow} />
                                             </div>
-                                        </div>
-                                    ))
-                                }
-                            </Slider>
+                                        </Link>
+                                    </div>
+                                ))
+                            }
+                        </Slider>
                         </Col>
                     </Row>
                 </Container>
@@ -104,11 +89,10 @@ const downloadBrochure = () => {
                     <Row>
                         <Col lg="6" md="10" className="pt-4">
                             <div className={styles.holder}>
-                                <h5 className={styles.title2}>{data[currentIndex].title}</h5>
-                                <Button className={styles.secondBtn} color="secondary">Download Brochure</Button>
+                                <h5 className={styles.title2}>{BusinessVerticals[currentIndex].name}</h5>
+                                <Button className={styles.secondBtn} color="secondary"> <img src="../Download-Brochure_02.svg" />Brochure</Button>
                             </div>
-
-                            <p>{data[currentIndex].content}</p>
+                            <p>{BusinessVerticals[currentIndex].text}</p>
                         </Col>
                     </Row>
                 </Container>

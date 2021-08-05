@@ -1,62 +1,43 @@
 import { Container, Row, Col, Button } from 'reactstrap'
 import Slider from 'react-slick';
 import styles from '../styles/OurBusinesses.module.css'
+import Link from 'next/link'
+import { BusinessVerticals } from '../Data';
+import classNames from 'classnames';
+import NextBtn from "./NextBtn";
+import Previous from "./Previous";
 
-const data = [
-    {
-        img: './ourbusinesses/1.png',
-        title: 'Test'
-    },
-    {
-        img: './ourbusinesses/2.png',
-        title: 'Infra Solutions'
-    },
-    {
-        img: './ourbusinesses/3.png',
-        title: 'Test'
-    },
-    {
-        img: './ourbusinesses/4.png',
-        title: 'Test'
-    },
-    {
-        img: './ourbusinesses/5.png',
-        title: 'Test'
-    },
-    {
-        img: './ourbusinesses/3.png',
-        title: 'Test'
-    }
-];
 const OurBusinesses = () => {
     var settings = {
         className: "center",
         centerMode: true,
-        dots: true,
+        dots: false,
         infinite: true,
-        speed: 500,
+        speed: 200,
         slidesToShow: 5,
-        // autoplay: true,
+        autoplay: true,
         centerPadding: "0px",
-        arrows: false,
+        arrows: true,
+        nextArrow: <NextBtn />,
+        prevArrow: <Previous />,
         responsive: [
             {
-              breakpoint: 1300,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-              }
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
             },
             {
                 breakpoint: 500,
                 settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  dots:false,
-                  centerPadding: '50px'
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false,
+                    centerPadding: '50px'
                 }
-              }
-        ]  
+            }
+        ]
     };
     return (
         <section>
@@ -68,13 +49,22 @@ const OurBusinesses = () => {
                     <Col lg="12" className="px-0">
                         <Slider {...settings}>
                             {
-                                data.map((obj, id) => (
+                                BusinessVerticals.map((obj, id) => (
                                     <div key={id} >
-                                        <div className="main">
-                                        <img src={obj.img} className="img-fluid" />
-                                        <p className={styles.title}>{obj.title}</p>
-                                        <Button className={styles.btn} color="secondary">Download Brochure</Button>
-                                        </div>
+                                        <Link href={obj.url}>
+                                            <div className="main">
+                                                <img src={obj.carouselImg} className="img-fluid mainImg" />
+                                                <img className={classNames({
+                                                    [styles.title]: true,
+                                                    [styles.logo]: true,
+                                                    "brand-logo": true
+                                                })} src={obj.logo} />
+                                                <img src="../Know2.svg" className={styles.innerArrow} />
+                                                <Button className={styles.btn} color="secondary">
+                                                    <img src="../Download-Brochure_02.svg" />
+                                                    Brochure</Button>
+                                            </div>
+                                        </Link>
                                     </div>
                                 ))
                             }

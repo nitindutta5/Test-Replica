@@ -11,7 +11,8 @@
 }
 
 .logo {
-    max-width: 250px;
+    max-width: 200px;
+    height: auto;
     top: 20%;
     position: absolute;
     left: 6rem;
@@ -93,6 +94,7 @@
     border: 0.8px solid #fff !important;
     border-top: none !important;
 }
+
 
 
 .button:hover img {
