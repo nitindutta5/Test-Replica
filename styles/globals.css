@@ -938,3 +938,11 @@ section {
     padding-left: 6rem;
   }
 }
+
+@media(max-width:350px) {
+  .btn {
+    font-size: 11px;
+    min-width: 90px;
+    padding: 0.5rem;
+  }
+}

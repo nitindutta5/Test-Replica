@@ -54,22 +54,22 @@ const Infra = () => {
         products: [
             {
                 img: "../../verticals/kitchen/products/Homeware.png",
-                title: "Homeware",
+                title: "Street Furniture",
                 content: "A combination of clean lines and purity of form meets custom-crafted storage and attention to detail with an added character and charm of seamless versatility."
             },
             {
                 img: "../../verticals/kitchen/products/Kitchens.png",
-                title: "Kitchens",
+                title: "Infra Interiors",
                 content: "Explore our world of exquisite bespoke kitchens to suit all your moods. ARC seamlessly integrates durable and hygienic surface materials keeping in mind beauty and function, with efficiency and style."
             },
             {
                 img: "../../verticals/kitchen/products/Wardrobe.png",
-                title: "Wardrobe",
+                title: "Infra Exteriors",
                 content: "The style against which all others are measured in a modern home. It's time to amp up the ultimate design statement that is full of rustic charm, yet is contemporary and minimal."
             },
             {
                 img: "../../verticals/kitchen/products/Vanity.png",
-                title: "Vanity",
+                title: "Art & Sculptures",
                 content: "Inspired by sleek design harmony throughout, with minimal detailing and finishes that are striking in their simplicity; ARC meticulously blends in bespoke craftsmanship with clutter-free living."
             }
         ]

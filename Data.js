@@ -10,7 +10,7 @@ export const BusinessVerticals = [
     {
         img: "../verticals/JINDAL_ARC_KITCHENS.jpg",
         carouselImg:"./ourbusinesses/3.png",
-        name: "Jindal Arc Kitchen",
+        name: "Jindal Kitchen",
         logo:"../verticals/logos/arc.svg",
         text: "ARC is committed towards creating a ‘healthy stainless steel culture’ for Indian homes by making stylish and sustainable life experiences, achieved by blending modern sensibilities with value designs and durability.",
         url: "/ourBusinesses/jindalKitchen"
@@ -18,7 +18,7 @@ export const BusinessVerticals = [
     {
         img: "../verticals/JSLL_INFRA.jpg",
         carouselImg: "../ourbusinesses/2.png",
-        name: "JSLL Infra",
+        name: "Infra Solutions",
         logo:"../verticals/logos/Infra-White.svg",
         text: "At JSLL Infra, we are committed to dynamic and versatile services that drives us to enhance commercial, residential and public sector projects. A wide variety of products such as benches, claddings, dustbins, facades, bus shelters, toilets, etc. ensures that the broad need of every unique project is met with efficient stainless steel solutions.",
         url: "/ourBusinesses/infra"
@@ -26,7 +26,7 @@ export const BusinessVerticals = [
     {
         img: "../verticals/JSLL_MOBILITY.jpg",
         carouselImg: "../ourbusinesses/4.png",
-        name: "JSLL Mobility",
+        name: "Mobility",
         logo:"../verticals/logos/Mobility-White.svg",
         text: "JSLL Mobility caters to the mobility sector, especially Indian Railways and Delhi Metro. Our optimally manufactured products lend great strength and longer durability to the trains along with providing ease and comfort to the commuters.",
         url: "/ourBusinesses/mobility"
@@ -34,7 +34,7 @@ export const BusinessVerticals = [
     {
         img: "../verticals/PLUMBING.jpg",
         carouselImg: "../ourbusinesses/5.png",
-        name: "Plumbing",
+        name: "Plumbing Solutions",
         logo:"../verticals/logos/plumbing-White.svg",
         text: "JSLL Plumbing offers a comprehensive range of stainless steel pipes and fitting solutions in grade EN 316L and JIS 304 & 316L, guaranteeing quality products with easy installation.Comprehensive range of stainless steel pipes and fittings, together with tubing, pressing tools and accessories, taking care of all plumbing requirements.",
         url: "/ourBusinesses/plumbing"

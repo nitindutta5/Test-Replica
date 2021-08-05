@@ -29,6 +29,15 @@ const OurBusinesses = () => {
                 }
             },
             {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: false,
+                    centerPadding: '50px'
+                }
+            },
+            {
                 breakpoint: 500,
                 settings: {
                     slidesToShow: 1,
@@ -51,20 +60,20 @@ const OurBusinesses = () => {
                             {
                                 BusinessVerticals.map((obj, id) => (
                                     <div key={id} >
-                                        <Link href={obj.url}>
-                                            <div className="main">
-                                                <img src={obj.carouselImg} className="img-fluid mainImg" />
-                                                <img className={classNames({
-                                                    [styles.title]: true,
-                                                    [styles.logo]: true,
-                                                    "brand-logo": true
-                                                })} src={obj.logo} />
-                                                <img src="../Know2.svg" className={styles.innerArrow} />
-                                                <Button className={styles.btn} color="secondary">
-                                                    <img src="../Download-Brochure_02.svg" />
-                                                    Brochure</Button>
-                                            </div>
-                                        </Link>
+                                        <div className="main">
+                                            <img src={obj.carouselImg} className="img-fluid mainImg" />
+                                            <img className={classNames({
+                                                [styles.title]: true,
+                                                [styles.logo]: true,
+                                                "brand-logo": true
+                                            })} src={obj.logo} />
+                                            <Link href={obj.url}>
+                                                <Button className={styles.knowMore} color="secondary">
+                                                    Know More</Button></Link>
+                                            <Button className={styles.btn} color="secondary">
+                                                <img src="../Download-Brochure_02.svg" />
+                                                Brochure</Button>
+                                        </div>
                                     </div>
                                 ))
                             }

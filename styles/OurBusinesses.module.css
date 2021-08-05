@@ -8,6 +8,13 @@
     left: 5%;
 }
 
+.knowMore {
+    position: absolute;
+    bottom: 8%;
+    right: 10%;
+}
+
+
 .innerArrow {
     position: absolute;
     bottom: 11%;

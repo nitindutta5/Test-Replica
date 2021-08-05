@@ -4,7 +4,7 @@ import React from 'react'
 
 
 const CertificateCarousel = () => {
-    const data =["./CERTIFICATES/TUV-SUD-E.png","./CERTIFICATES/TUV-SUD-H.png","./CERTIFICATES/TUV-SUD-Q.png","./CERTIFICATES/TUV-Nord.png","./CERTIFICATES/DVS-Zert.png","./CERTIFICATES/CE-Certified.png"]
+    const data =["./CERTIFICATES/TUV-SUD-E.png","./CERTIFICATES/TUV-SUD-H.png","./CERTIFICATES/TUV-SUD-Q.png","./CERTIFICATES/TUV-Nord.png","./CERTIFICATES/DVS-Zert.png","./CERTIFICATES/CE-Certified.png","./CERTIFICATE/IRIS.jpg"]
     const params = {
         spaceBetween: 20,
         slidesPerView: 5,
