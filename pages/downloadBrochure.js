@@ -87,7 +87,7 @@ const downloadBrochure = () => {
                 </Container>
                 <Container>
                     <Row>
-                        <Col lg="6" md="10" className="pt-4">
+                        <Col lg="6" md="10" className="pt-5">
                             <div className={styles.holder}>
                                 <h5 className={styles.title2}>{BusinessVerticals[currentIndex].name}</h5>
                                 <Button className={styles.secondBtn} color="secondary"> <img src="../Download-Brochure_02.svg" />Brochure</Button>

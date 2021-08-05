@@ -4,7 +4,7 @@ export const BusinessVerticals = [
         carouselImg:"./ourbusinesses/6.jpg",
         name: "Homeware",
         logo:"../verticals/logos/Arttdinox_Logo.svg",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
+        text: "Arttd'inox’s range of spatial design adornments are key. Inspired by the many forms of Indian artistry and incepted by celebrated Indian designers; Arttd'inox has always forayed into the space of design whilst decoding a multi-sensorial ambiance that salutes excellence & innovation. From multi-purpose bowls, artisanal vases, candle stands, enchanted centerpieces, and accent furniture we believe in offering something for everyone.",
         url: "/ourBusinesses/jindalKitchen"
     },
     {
@@ -12,7 +12,7 @@ export const BusinessVerticals = [
         carouselImg:"./ourbusinesses/3.png",
         name: "Jindal Arc Kitchen",
         logo:"../verticals/logos/arc.svg",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem! Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
+        text: "ARC is committed towards creating a ‘healthy stainless steel culture’ for Indian homes by making stylish and sustainable life experiences, achieved by blending modern sensibilities with value designs and durability.",
         url: "/ourBusinesses/jindalKitchen"
     },
     {
@@ -20,7 +20,7 @@ export const BusinessVerticals = [
         carouselImg: "../ourbusinesses/2.png",
         name: "JSLL Infra",
         logo:"../verticals/logos/Infra-White.svg",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
+        text: "At JSLL Infra, we are committed to dynamic and versatile services that drives us to enhance commercial, residential and public sector projects. A wide variety of products such as benches, claddings, dustbins, facades, bus shelters, toilets, etc. ensures that the broad need of every unique project is met with efficient stainless steel solutions.",
         url: "/ourBusinesses/infra"
     },
     {
@@ -28,7 +28,7 @@ export const BusinessVerticals = [
         carouselImg: "../ourbusinesses/4.png",
         name: "JSLL Mobility",
         logo:"../verticals/logos/Mobility-White.svg",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
+        text: "JSLL Mobility caters to the mobility sector, especially Indian Railways and Delhi Metro. Our optimally manufactured products lend great strength and longer durability to the trains along with providing ease and comfort to the commuters.",
         url: "/ourBusinesses/mobility"
     },
     {
@@ -36,7 +36,7 @@ export const BusinessVerticals = [
         carouselImg: "../ourbusinesses/5.png",
         name: "Plumbing",
         logo:"../verticals/logos/plumbing-White.svg",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
+        text: "JSLL Plumbing offers a comprehensive range of stainless steel pipes and fitting solutions in grade EN 316L and JIS 304 & 316L, guaranteeing quality products with easy installation.Comprehensive range of stainless steel pipes and fittings, together with tubing, pressing tools and accessories, taking care of all plumbing requirements.",
         url: "/ourBusinesses/plumbing"
     },
     {
@@ -44,7 +44,7 @@ export const BusinessVerticals = [
         carouselImg:"./ourbusinesses/1.png",
         name: "OEM Solutions",
         logo:"../verticals/logos/VE-White.svg",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi adipisci sapiente odio cumque placeat labore eaque quia dignissimos. Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem! Nobis quidem corrupti reprehenderit est assumenda odit iste laboriosam temporibus exercitationem!",
+        text: "The core ambition of JSLL Value Engineering is focused towards manufacturing stainless steel products for development and broad usage across industries. Through our own in-house backhand integration, we design finished end product for B2B and B2C segments.",
         url: "/ourBusinesses/oem_solutions"
     }
 ];
