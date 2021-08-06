@@ -33,7 +33,7 @@ const Section1 = (props) => {
                 <Col lg="12"><h2 className="heading white-color text-center">{props.title2}</h2></Col>
                     {
                         props.data.icons.map((obj, id) => (
-                            <Col key={id} lg="2" xs="6" className="text-center">
+                            <Col key={id} lg="2" xs="6" className="text-center mx-auto">
                                 <div className={styles.iconBox}>
                                     <img src={obj.img} alt={obj.title} className="img-fluid" />
                                     <p>{obj.title}</p>

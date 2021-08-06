@@ -15,40 +15,52 @@ const Infra = () => {
         ],
         icons: [
             {
-                img: "../../verticals/infra/Icons/Corrosion-Protection.png",
+                img: "../../verticals/infra/Icons/01_Fire-Resistance.png",
+                title: "Fire Resistance"
+            },
+            {
+                img: "../../verticals/infra/Icons/02_Termite-Free.png",
+                title: "Termite-Free"
+            },
+            {
+                img: "../../verticals/infra/Icons/03_Corrosion-Protection.png",
                 title: "Corrosion Protection"
             },
             {
-                img: "../../verticals/infra/Icons/Durable.png",
-                title: "Durable"
+                img: "../../verticals/infra/Icons/04_Light-Weight.png",
+                title: "Light-Weight"
             },
             {
-                img: "../../verticals/infra/Icons/Eco-Friendly.png",
-                title: "Eco-Friendly"
+                img: "../../verticals/infra/Icons/05_Longevity.png",
+                title: "Longevity"
             },
             {
-                img: "../../verticals/infra/Icons/Fire-Resistant.png",
-                title: "Fire Resistant"
+                img: "../../verticals/infra/Icons/06_Smooth-Stainless-Steel-Bore.png",
+                title: "06_Smooth-Stainless-Steel-Bore.png"
             },
             {
-                img: "../../verticals/infra/Icons/High-Aesthetic-Value.png",
-                title: "High Aesthetic Value"
-            },
-            {
-                img: "../../verticals/infra/Icons/Hygienic.png",
+                img: "../../verticals/infra/Icons/07_Hygienic.png",
                 title: "Hygienic"
             },
             {
-                img: "../../verticals/infra/Icons/Long-Lasting.png",
-                title: "Long Lasting"
+                img: "../../verticals/infra/Icons/08_High-Pressure-Resistance.png",
+                title: "High Pressure Resistance"
             },
             {
-                img: "../../verticals/infra/Icons/Low-Maintenance.png",
-                title: "Low Maintenance"
+                img: "../../verticals/infra/Icons/09_Low-Maintenance.png",
+                title: "Low-Maintenance"
             },
             {
-                img: "../../verticals/infra/Icons/Termite-Free.png",
-                title: "Termite Free"
+                img: "../../verticals/infra/Icons/10_Aesthetic-Value.png",
+                title: "Aesthetic Value"
+            },
+            {
+                img: "../../verticals/infra/Icons/11_Durable.png",
+                title: "Durable"
+            },
+            {
+                img: "../../verticals/infra/Icons/12_Eco-Friendly.png",
+                title: "Eco Friendly"
             }
         ],
         products: [

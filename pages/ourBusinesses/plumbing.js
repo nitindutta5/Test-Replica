@@ -2,7 +2,7 @@ import Head from "next/head"
 import Banner from "../../components/Banner"
 import Section1 from "../../components/VerticalsSections/Section1"
 import Section2 from "../../components/VerticalsSections/Section2";
-import { Button, Container } from "reactstrap";
+import { Button, Container, Row, Col } from "reactstrap";
 
 
 
@@ -88,6 +88,15 @@ const plumbing = () => {
             </Head>
             <Banner src=".././banner/Plumbing.jpg" text="Plumbing" />
             <Section1 data={data} title2="Why Stainless Steel">Sustainable Plumbing Solutions</Section1>
+            {/* <section className="pt-0">
+                <Container>
+                   <Row>
+                       <Col lg="10" className="mx-auto">
+                           <h2 className="heading text-center"></h2>
+                       </Col>
+                   </Row>
+                </Container>
+            </section> */}
             <Section2 data={data.products}>Our Range of Products</Section2>
             <section className="pt-0">
                 <Container>
