@@ -39,39 +39,62 @@ const mobility = () => {
                 title: "Eco Friendly"
             }
         ],
-        products: [
+        metro: [
             {
-                img: "../../verticals/kitchen/products/Homeware.png",
-                title: "Homeware",
-                content: "A combination of clean lines and purity of form meets custom-crafted storage and attention to detail with an added character and charm of seamless versatility."
+                img: "../../verticals/mobility/products/Metro/Air-Reservoir-Delivered.jpg",
+                title: "Air Reservoir",
+                content: ""
             },
             {
-                img: "../../verticals/kitchen/products/Kitchens.png",
-                title: "Kitchens",
-                content: "Explore our world of exquisite bespoke kitchens to suit all your moods. ARC seamlessly integrates durable and hygienic surface materials keeping in mind beauty and function, with efficiency and style."
+                img:  "../../verticals/mobility/products/Metro/Battery-Box-Delivered.jpg",
+                title: "Battery Box",
+                content: ""
             },
             {
-                img: "../../verticals/kitchen/products/Wardrobe.png",
-                title: "Wardrobe",
-                content: "The style against which all others are measured in a modern home. It's time to amp up the ultimate design statement that is full of rustic charm, yet is contemporary and minimal."
+                img:  "../../verticals/mobility/products/Metro/Mounting-Beam-Delivered.jpg",
+                title: "Mounting Beam",
+                content: ""
             },
             {
-                img: "../../verticals/kitchen/products/Vanity.png",
-                title: "Vanity",
-                content: "Inspired by sleek design harmony throughout, with minimal detailing and finishes that are striking in their simplicity; ARC meticulously blends in bespoke craftsmanship with clutter-free living."
+                img:  "../../verticals/mobility/products/Metro/Valve-Box-Delivered.jpg",
+                title: "Valve Box Delivered",
+                content: ""
+            }
+        ],
+        railways: [
+            {
+                img: "../../verticals/mobility/products/Railway/Bench-Delivered.jpg",
+                title: "Bench",
+                content: ""
+            },
+            {
+                img:  "../../verticals/mobility/products/Railway/Bio-Tank-Delivered.jpg",
+                title: "Bio Tank",
+                content: ""
+            },
+            {
+                img:  "../../verticals/mobility/products/Railway/Modular-Toilet-Delivered.jpg",
+                title: "Modular Toilet",
+                content: ""
+            },
+            {
+                img:  "../../verticals/mobility/products/Railway/Water-Tank-Delivered.jpg",
+                title: "WaterTank",
+                content: ""
             }
         ]
     };
     return (
         <>
             <Head>
-                <title>OEM Solutions</title>
-                <meta name="description" content="OEM Solutions" />
+                <title>Mobility</title>
+                <meta name="description" content="Mobility" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Banner src=".././banner/Mobility.jpg" text="Mobility" />
             <Section1 data={data} title2="Why Stainless Steel">About us</Section1>
-            <Section2 data={data.products}>Our Range of Products</Section2>
+            <Section2 data={data.metro}>Metro</Section2>
+            <Section2 data={data.railways}>Railways</Section2>
             <section className="pt-0">
                 <Container>
                     <Button color="secondary" className="download mx-auto">
