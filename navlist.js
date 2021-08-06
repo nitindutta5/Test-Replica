@@ -56,7 +56,7 @@ export const Businesses = [
   {
     name: '/homeware',
     text: 'Homeware',
-    link: '/ourBusinesses/jindalKitchen',
+    link: '/ourBusinesses/homeware',
   },
   {
     name: '/plumbing_solutions',

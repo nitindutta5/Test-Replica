@@ -2,6 +2,8 @@ import Head from "next/head"
 import Banner from "../../components/Banner"
 import Section1 from "../../components/VerticalsSections/Section1"
 import Section2 from "../../components/VerticalsSections/Section2";
+import { Button, Container } from "reactstrap";
+
 
 const mobility = () => {
     const data = {
@@ -61,16 +63,23 @@ const mobility = () => {
         ]
     };
     return (
-        <div>
+        <>
             <Head>
                 <title>OEM Solutions</title>
                 <meta name="description" content="OEM Solutions" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Banner src=".././banner/jindalkitchen.png" text="Mobility" />
+            <Banner src=".././banner/Mobility.jpg" text="Mobility" />
             <Section1 data={data} title2="Why Stainless Steel">About us</Section1>
             <Section2 data={data.products}>Our Range of Products</Section2>
-        </div>
+            <section className="pt-0">
+                <Container>
+                    <Button color="secondary" className="download mx-auto">
+                        <img src="../Download-Brochure_02.svg" />
+                        Brochure</Button>
+                </Container>
+            </section>
+        </>
     )
 }
 

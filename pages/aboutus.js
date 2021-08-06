@@ -9,7 +9,7 @@ import Apart from "../components/Apart"
 
 const About = () => {
     return (
-        <div>
+        <>
             <Head>
                 <title>About Us | JSLL  Lifestyle</title>
                 <meta name="description" content="About Us Page" />
@@ -22,7 +22,7 @@ const About = () => {
             <TeamSection />
             <Awards />
             <CertificateCarousel />
-        </div>
+        </>
     )
 }
 

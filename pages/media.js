@@ -9,7 +9,7 @@ import VideoGallery from "../components/VideoGallery"
 
 const Media = () => {
     return (
-        <div>
+        <>
             <Head>
                 <title>Media | JSLL  Lifestyle</title>
                 <meta name="description" content="Media Page" />
@@ -21,7 +21,7 @@ const Media = () => {
             <News_Updates />
             <Testimonials />
             <VideoGallery />
-        </div>
+        </>
     )
 }
 

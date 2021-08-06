@@ -6,7 +6,7 @@ import Figures from '../components/Figures'
 
 const Legacy = () => {
     return (
-        <div>
+        <>
             <Head>
                 <title>Legacy | JSLL  Lifestyle</title>
                 <meta name="description" content="About Us Page" />
@@ -21,8 +21,7 @@ const Legacy = () => {
                 <LegacyContentBox />
             </section>
             <Figures />
-
-        </div>
+        </>
     )
 }
 

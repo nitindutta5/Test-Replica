@@ -13,9 +13,7 @@
 .logo {
     max-width: 200px;
     height: auto;
-    top: 20%;
-    position: absolute;
-    left: 6rem;
+    margin-bottom: 5%;
 }
 
 .right {

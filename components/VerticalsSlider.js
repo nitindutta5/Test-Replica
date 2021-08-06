@@ -37,7 +37,6 @@ const VerticalsSlider = () => {
                             BusinessVerticals.map((obj, id) => (
                                 <div key={id}>
                                     <div className={styles.left} style={{ backgroundImage: `url(${obj.img})` }}>
-                                        <img src={obj.logo} alt="" className={styles.logo}/>
                                     </div>
                                 </div>
                             ))
@@ -46,6 +45,7 @@ const VerticalsSlider = () => {
                 </Col>
                 <Col lg="6" className={styles.right} >
                     <div className={`${currentIndex>previousIndex?styles.forward:styles.backward}`}>
+                    <img src={BusinessVerticals[currentIndex].logo} alt="" className={styles.logo}/>
                         <div className={styles.box1}>
                             <h1 className={styles.title}>
                                 {BusinessVerticals[currentIndex].name}

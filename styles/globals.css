@@ -67,6 +67,14 @@ a {
   width: 56px;
 }
 
+.download img {
+  filter: brightness(0.6);
+}
+
+.download:hover img {
+  filter: brightness(1);
+}
+
 
 * {
   box-sizing: border-box;
@@ -675,6 +683,14 @@ section {
   right: 10%;
 }
 
+@media(max-width:1700px) {
+  .btn {
+    min-width: 125px;
+  }
+
+}
+
+
 @media(max-width:1400px) {
   .inn .slick-next {
     right: -30px;
@@ -783,6 +799,11 @@ section {
 }
 
 @media(max-width:768px) {
+
+  .btn {
+    min-width: 110px;
+  }
+
   .wrapper {
     padding-right: 2rem;
     padding-left: 2em;

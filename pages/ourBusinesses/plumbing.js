@@ -2,6 +2,9 @@ import Head from "next/head"
 import Banner from "../../components/Banner"
 import Section1 from "../../components/VerticalsSections/Section1"
 import Section2 from "../../components/VerticalsSections/Section2";
+import { Button, Container } from "reactstrap";
+
+
 
 const plumbing = () => {
     const data = {
@@ -77,17 +80,23 @@ const plumbing = () => {
         ]
     };
     return (
-        <div>
+        <>
             <Head>
                 <title>Plumbing</title>
                 <meta name="description" content="Plumbing" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Banner src=".././banner/jindalkitchen.png" text="Plumbing" />
+            <Banner src=".././banner/Plumbing.jpg" text="Plumbing" />
             <Section1 data={data} title2="Why Stainless Steel">Sustainable Plumbing Solutions</Section1>
             <Section2 data={data.products}>Our Range of Products</Section2>
-            LoremIspem
-        </div>
+            <section className="pt-0">
+                <Container>
+                    <Button color="secondary" className="download mx-auto">
+                        <img src="../Download-Brochure_02.svg" />
+                        Brochure</Button>
+                </Container>
+            </section>
+        </>
     )
 }
 

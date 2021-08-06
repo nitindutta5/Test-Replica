@@ -5,7 +5,7 @@ import CareerIntro from "../components/CareerIntro"
 
 const Careers = () => {
     return (
-        <div>
+        <>
             <Head>
                 <title>Career | JSLL  Lifestyle</title>
                 <meta name="description" content="Media Page" />
@@ -13,7 +13,7 @@ const Careers = () => {
             </Head>
             <Banner src="./banner/Career.png" text="JSLL CAREERS" />
             <CareerIntro />
-        </div>
+        </>
     )
 }
 

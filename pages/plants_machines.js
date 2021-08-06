@@ -5,7 +5,7 @@ import VerticalPlantCarousel from "../components/VerticalPlantCarousel"
 
 const Plants_Machines = () => {
     return (
-        <div>
+        <>
             <Head>
                 <title>Plants & Machines | JSLL  Lifestyle</title>
                 <meta name="description" content="Our Plants & Machine Page" />
@@ -14,7 +14,7 @@ const Plants_Machines = () => {
             <Banner src="./banner/why-stainless.png" text="Our Plants & Machines" />
             <VerticalPlantCarousel />
             <OurMachines />
-        </div>
+        </>
     )
 }
 

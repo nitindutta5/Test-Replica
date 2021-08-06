@@ -2,6 +2,7 @@ import Head from "next/head"
 import Banner from "../../components/Banner"
 import Section1 from "../../components/VerticalsSections/Section1"
 import Section2 from "../../components/VerticalsSections/Section2";
+import { Button, Container } from "reactstrap";
 
 const Infra = () => {
     const data = {
@@ -10,7 +11,6 @@ const Infra = () => {
             {
                 bold: "",
                 content: "At JSLL Infra, we are committed to dynamic and versatile services that drives us to enhance commercial, residential and public sector projects. A wide variety of products such as benches, claddings, dustbins, facades, bus shelters, toilets, etc. ensures that the broad need of every unique project is met with efficient stainless steel solutions. Being a zero maintenance and environment-friendly material, stainless steel is the first choice for architects, builders, planners, etc."
-                
             }
         ],
         icons: [
@@ -53,24 +53,24 @@ const Infra = () => {
         ],
         products: [
             {
-                img: "../../verticals/kitchen/products/Homeware.png",
+                img: "../../verticals/infra/products/Street-Furniture.jpg",
                 title: "Street Furniture",
-                content: "A combination of clean lines and purity of form meets custom-crafted storage and attention to detail with an added character and charm of seamless versatility."
+                content: ""
             },
             {
-                img: "../../verticals/kitchen/products/Kitchens.png",
+                img: "../../verticals/infra/products/Infra-Interior.jpg",
                 title: "Infra Interiors",
-                content: "Explore our world of exquisite bespoke kitchens to suit all your moods. ARC seamlessly integrates durable and hygienic surface materials keeping in mind beauty and function, with efficiency and style."
+                content: ""
             },
             {
-                img: "../../verticals/kitchen/products/Wardrobe.png",
+                img: "../../verticals/infra/products/Infra-Exterior.jpg",
                 title: "Infra Exteriors",
-                content: "The style against which all others are measured in a modern home. It's time to amp up the ultimate design statement that is full of rustic charm, yet is contemporary and minimal."
+                content: ""
             },
             {
-                img: "../../verticals/kitchen/products/Vanity.png",
+                img: "../../verticals/infra/products/Art-Installation.jpg",
                 title: "Art & Sculptures",
-                content: "Inspired by sleek design harmony throughout, with minimal detailing and finishes that are striking in their simplicity; ARC meticulously blends in bespoke craftsmanship with clutter-free living."
+                content: ""
             }
         ]
     };
@@ -81,9 +81,16 @@ const Infra = () => {
                 <meta name="description" content="Infra" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Banner src=".././banner/jindalkitchen.png" text="Infra Solutions" />
+            <Banner src=".././banner/Infra.jpg" text="Infra Solutions" />
             <Section1 data={data} title2="Why Stainless Steel">Crafting Designs Redefining Functionality</Section1>
             <Section2 data={data.products}>Our Range of Products</Section2>
+            <section className="pt-0">
+                <Container>
+                    <Button color="secondary" className="download mx-auto">
+                        <img src="../Download-Brochure_02.svg" />
+                        Brochure</Button>
+                </Container>
+            </section>
         </div>
     )
 }

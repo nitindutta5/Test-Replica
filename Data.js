@@ -11,7 +11,7 @@ export const BusinessVerticals = [
         img: "../verticals/JINDAL_ARC_KITCHENS.jpg",
         carouselImg:"./ourbusinesses/3.png",
         name: "Jindal Kitchen",
-        logo:"../verticals/logos/arc.svg",
+        logo:"../verticals/logos/kitchen.png",
         text: "ARC is committed towards creating a ‘healthy stainless steel culture’ for Indian homes by making stylish and sustainable life experiences, achieved by blending modern sensibilities with value designs and durability.",
         url: "/ourBusinesses/jindalKitchen"
     },

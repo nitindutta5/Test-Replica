@@ -6,17 +6,10 @@ import { Button, Container } from "reactstrap";
 
 const jindalKitchen = () => {
     const data = {
-        type: "kitchen",
+        type: "homeware",
         brands: [
             {
-                logo: "../../verticals/kitchen/arc.svg",
-                bold: "Looking for an ideal kitchen partner which boasts of the<br/> perfect combination of aesthetics & functionality?",
-                content: "ARC is committed towards creating a ‘healthy stainless steel culture’ for Indian homes by making stylish and sustainable life experiences, achieved by blending modern sensibilities with value designs and durability. Today, and in the future, the kitchen takes a central position in the home as a multifunctional space. And we believe in beautifully transforming the heart of the home in vivid hues that integrate functional as well as alluring elements into the space; whilst preventing any hazards, be it — fire, termites, water damage or harmful bacteria. Moreover, an ARC Kitchen comes with a warranty of 5 years & is also 100% eco-friendly."
-            },
-            {
-                logo: "../../verticals/kitchen/Arttdinox_Logo.svg",
-                bold: "Bespoke Indulgence <br/>For a kitchen as unique as you.",
-                content: "The kitchen is the heart of your home. At Arttd’inox, we make sure it’s also an epicenter of refinement, efficiency, and creativity. Ergonomically sculpted and spatially bespoke, an Arttd’inox Kitchen balances the chic of modernity with the gravitas of heritage to make for easy movement and convenient cooking - while evoking an enduring statement about your taste. Every Arttd’inox kitchen is a blend of meticulous craftsmanship, technical sophistication, and quality workmanship. The design is tailored to the lifestyle and personal taste of the homeowner, so the result is an exquisite bespoke kitchen that is not only functional but truly beautiful."
+                content: "Arttd’inox was born out of the belief that art is a holistic expansion of global décor identities, further enhanced by the functionality and beauty of high-quality stainless steel. These contemporary home lifestyle products juxtapose traditional elegance and Karigari with modern whimsy, making each product a timeless masterpiece."
             }
         ],
         icons: [
@@ -47,45 +40,47 @@ const jindalKitchen = () => {
         ],
         products: [
             {
-                img: "../../verticals/kitchen/products/Homeware.jpg",
-                title: "Homeware",
+                img: "../../verticals/kitchen/products/Homeware.png",
+                title: "Tableware",
                 content: "A combination of clean lines and purity of form meets custom-crafted storage and attention to detail with an added character and charm of seamless versatility."
             },
             {
-                img: "../../verticals/kitchen/products/Kitchen.jpg",
-                title: "Kitchens",
+                img: "../../verticals/kitchen/products/Kitchens.png",
+                title: "Serveware",
                 content: "Explore our world of exquisite bespoke kitchens to suit all your moods. ARC seamlessly integrates durable and hygienic surface materials keeping in mind beauty and function, with efficiency and style."
             },
             {
-                img: "../../verticals/kitchen/products/Wardrobe.jpg",
-                title: "Wardrobe",
+                img: "../../verticals/kitchen/products/Wardrobe.png",
+                title: "Dinnerware",
                 content: "The style against which all others are measured in a modern home. It's time to amp up the ultimate design statement that is full of rustic charm, yet is contemporary and minimal."
             },
             {
-                img: "../../verticals/kitchen/products/Vanity.jpg",
-                title: "Vanity",
+                img: "../../verticals/kitchen/products/Vanity.png",
+                title: "Barware",
                 content: "Inspired by sleek design harmony throughout, with minimal detailing and finishes that are striking in their simplicity; ARC meticulously blends in bespoke craftsmanship with clutter-free living."
             }
         ]
     };
     return (
-        <>
+        <div>
             <Head>
-                <title>Jindal Kitchen</title>
-                <meta name="description" content="Download Brochure" />
+                <title>Homeware</title>
+                <meta name="description" content="Homeware" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Banner src=".././banner/Kitchens.jpg" text="Jindal Kitchen" />
+            <Banner src=".././banner/Homeware.jpg" text="Homeware" />
             <Section1 data={data} title2="Why Choose Us">Our Brands</Section1>
             <Section2 data={data.products}>Our Range of Products</Section2>
             <section className="pt-0">
-                <Container>
-                    <Button color="secondary" className="download mx-auto">
+                <Container className="d-flex justify-content-center">
+                    <Button color="secondary" className="download">
                         <img src="../Download-Brochure_02.svg" />
                         Brochure</Button>
+                    <Button color="secondary" className="ms-3">
+                        Shop Now</Button>
                 </Container>
             </section>
-        </>
+        </div>
     )
 }
 

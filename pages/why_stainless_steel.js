@@ -7,7 +7,7 @@ import SSBenefits from "../components/SSBenefits"
 
 const Why_Stainless_Steel = ({ checkOpen }) => {
     return (
-        <div>
+        <>
             <Overlay checkOpen={checkOpen} />
             <Head>
                 <title>Why Stainless Steel | JSLL  Lifestyle</title>
@@ -30,7 +30,7 @@ const Why_Stainless_Steel = ({ checkOpen }) => {
             </section>
             <SSOffers/>
             <SSBenefits/>
-        </div>
+        </>
     );
 }
 

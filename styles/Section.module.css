@@ -55,7 +55,7 @@
 }
 
 .productBox img {
-    filter: grayscale(1)
+    /* filter: grayscale(1) */
 }
 
 .productBox h5 {

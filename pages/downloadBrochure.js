@@ -50,7 +50,7 @@ const downloadBrochure = () => {
         ]
     };
     return (
-        <div>
+        <>
             <Head>
                 <title>Download Brochure | JSLL  Lifestyle</title>
                 <meta name="description" content="Download Brochure" />
@@ -97,7 +97,7 @@ const downloadBrochure = () => {
                     </Row>
                 </Container>
             </section>
-        </div>
+        </>
     )
 }
 

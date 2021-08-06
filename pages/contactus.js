@@ -10,7 +10,7 @@ import OurOffices from "../components/OurOffices"
 
 const ContactUs = () => {
     return (
-        <div>
+        <>
             <Head>
                 <title>Contact Us | JSLL  Lifestyle</title>
                 <meta name="description" content="Contact Us Page" />
@@ -21,7 +21,7 @@ const ContactUs = () => {
             <ContactForms/>
             <OurOffices />
             <GetInTouch />
-        </div>
+        </>
     );
 }
 

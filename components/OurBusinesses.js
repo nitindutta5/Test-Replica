@@ -22,10 +22,18 @@ const OurBusinesses = () => {
         prevArrow: <Previous />,
         responsive: [
             {
+                breakpoint: 1600,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            },
+            {
                 breakpoint: 1300,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
+                    centerPadding: '50px'
                 }
             },
             {
@@ -38,12 +46,12 @@ const OurBusinesses = () => {
                 }
             },
             {
-                breakpoint: 500,
+                breakpoint: 650,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     dots: false,
-                    centerPadding: '50px'
+                    centerPadding: '100px'
                 }
             }
         ]
