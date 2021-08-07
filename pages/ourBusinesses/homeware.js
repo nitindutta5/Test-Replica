@@ -40,24 +40,24 @@ const jindalKitchen = () => {
         // ],
         products: [
             {
-                img: "../../verticals/kitchen/products/Homeware.png",
+                img: "../../verticals/homeware/products/Urban-Horizon-Collection.jpg",
                 title: "Tableware",
-                content: "A combination of clean lines and purity of form meets custom-crafted storage and attention to detail with an added character and charm of seamless versatility."
+                content: "Our range of clean and contemporary stainless steel artisanal tableware essentials are perfect for every day as well as special occasion usage. "
             },
             {
-                img: "../../verticals/kitchen/products/Kitchens.png",
+                img: "../../verticals/homeware/products/Aladdin-Collection.jpg",
                 title: "Serveware",
-                content: "Explore our world of exquisite bespoke kitchens to suit all your moods. ARC seamlessly integrates durable and hygienic surface materials keeping in mind beauty and function, with efficiency and style."
+                content: " Our unique serveware solutions create a welcoming table for everyday meals, casual dinner parties and luncheons."
             },
             {
-                img: "../../verticals/kitchen/products/Wardrobe.png",
+                img: "../../verticals/homeware/products/Pink-Bloom-Collection.jpg",
                 title: "Dinnerware",
-                content: "The style against which all others are measured in a modern home. It's time to amp up the ultimate design statement that is full of rustic charm, yet is contemporary and minimal."
+                content: "From uniquely styled spoons to quarter plates, trays to serve pots, we have got your covered with aesthetical designing! With our bespoke range of dinnerware & elegant serving bowls."
             },
             {
-                img: "../../verticals/kitchen/products/Vanity.png",
+                img: "../../verticals/homeware/products/Bar.jpg",
                 title: "Barware",
-                content: "Inspired by sleek design harmony throughout, with minimal detailing and finishes that are striking in their simplicity; ARC meticulously blends in bespoke craftsmanship with clutter-free living."
+                content: "Handcrafted barware that captures the allure of the past with the sensibilities of the present!"
             }
         ]
     };
@@ -69,7 +69,7 @@ const jindalKitchen = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Banner src=".././banner/Homeware.jpg" text="Homeware" />
-            <Section1 data={data} title2="Why Choose Us">Our Brands</Section1>
+            <Section1 data={data} title2="Why Choose Us">Why Arttdinox</Section1>
             <Section2 data={data.products}>Our Range of Products</Section2>
             <section className="pt-0">
                 <Container className="d-flex justify-content-center">

@@ -67,22 +67,22 @@ const Infra = () => {
             {
                 img: "../../verticals/infra/products/Street-Furniture.jpg",
                 title: "Street Furniture",
-                content: ""
+                content: "We create the finest grade stainless steel street furniture that is easy to install, and stands firm against all climatic changes. These are easy to clean, corrosion-resistant, and last for decades."
             },
             {
                 img: "../../verticals/infra/products/Infra-Interior.jpg",
                 title: "Infra Interiors",
-                content: ""
+                content: "Giving your homes and corporate offices a niche and stunning appeal with modern stainless steel interiors."
             },
             {
                 img: "../../verticals/infra/products/Infra-Exterior.jpg",
                 title: "Infra Exteriors",
-                content: ""
+                content: "Innovative stainless steel exteriors, designed to build a new face of the Indian urban infrastructure."
             },
             {
                 img: "../../verticals/infra/products/Art-Installation.jpg",
                 title: "Art & Sculptures",
-                content: ""
+                content: "High-caliber welding is involved in making stainless steel arts and sculptures. We have all innovative technologies to shape and reshape the structures and bring an aesthetic revolution to urban art."
             }
         ]
     };

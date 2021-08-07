@@ -15,28 +15,28 @@ const mobility = () => {
         ],
         icons: [
             {
-                img: "../../verticals/kitchen/Icons/01_Termite-Proof.png",
-                title: "Termite Proof"
+                img: "../../verticals/mobility/Icons/01_Semi-Automatic-Plant-&-Robotic-Line.png",
+                title: "Semi Automatic Plant & Robotic Life"
             },
             {
-                img: "../../verticals/kitchen/Icons/02_Fire-Resistant.png",
-                title: "Fire Resistant"
+                img: "../../verticals/mobility/Icons/02_25,000-MTAnnum-Fabrication-Capacity.png",
+                title: "02_25,000-MT/Annum Fabrication Capacity"
             },
             {
-                img: "../../verticals/kitchen/Icons/03_Range-of-Hues.png",
-                title: "Range of Hues"
+                img: "../../verticals/mobility/Icons/03_Full-Backward-Integration.png",
+                title: "Full Backward Integration"
             },
             {
-                img: "../../verticals/kitchen/Icons/04_Timely-Delivery.png",
-                title: "Timely Delivery"
+                img: "../../verticals/mobility/Icons/04_SAP-Based-Manufacturing.png",
+                title: "SAP Based Manufacturing"
             },
             {
-                img: "../../verticals/kitchen/Icons/05_Water-Resistant.png",
-                title: "Water Resistant"
+                img: "../../verticals/mobility/Icons/05_Highly-Qualified-Fabricators.png",
+                title: "Highly Qualified Fabricators"
             },
             {
-                img: "../../verticals/kitchen/Icons/06_EcoFriendly.png",
-                title: "Eco Friendly"
+                img: "../../verticals/mobility/Icons/06_On-Time-Delivery.png",
+                title: "On Time Delivery"
             }
         ],
         metro: [
