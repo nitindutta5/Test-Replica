@@ -1,6 +1,5 @@
 import { Container, Row, Col } from "reactstrap";
 import styles from '../styles/Footer.module.css'
-import Image from "next/image";
 import Link from 'next/link';
 import logo from '../public/logo.svg'
 import { navlist, Businesses } from "../navlist";
@@ -36,6 +35,10 @@ const Footer = () => {
                                 <li key={id} className={styles.link}><Link  href={obj.link}><a >{obj.text}</a></Link></li>
                             ))
                         }
+                         </ul>
+                         <p className={styles.linkTitle}>OTHERS</p>
+                         <ul>
+                                <li className={styles.link}><Link href="https://www.jindalstainless.com/#footer"><a target="_blank">Jindal Stainless</a></Link></li>
                          </ul>
                     </Col>
                     <Col lg="2" xs="8"  className={"ms-lg-auto order-2 order-lg-4 "+[styles.social]}  >

@@ -46,12 +46,22 @@ const OurBusinesses = () => {
                 }
             },
             {
-                breakpoint: 650,
+                breakpoint: 620,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     dots: false,
                     centerPadding: '100px'
+                }
+            },
+
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false,
+                    centerPadding: '50px'
                 }
             }
         ]

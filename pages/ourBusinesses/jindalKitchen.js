@@ -9,7 +9,7 @@ const jindalKitchen = () => {
         type: "kitchen",
         brands: [
             {
-                logo: "../../verticals/kitchen/kitchen.png",
+                logo: "../../verticals/kitchen/arc.svg",
                 bold: "Looking for an ideal kitchen partner which boasts of the<br/> perfect combination of aesthetics & functionality?",
                 content: "ARC is committed towards creating a ‘healthy stainless steel culture’ for Indian homes by making stylish and sustainable life experiences, achieved by blending modern sensibilities with value designs and durability. Today, and in the future, the kitchen takes a central position in the home as a multifunctional space. And we believe in beautifully transforming the heart of the home in vivid hues that integrate functional as well as alluring elements into the space; whilst preventing any hazards, be it — fire, termites, water damage or harmful bacteria. Moreover, an ARC Kitchen comes with a warranty of 5 years & is also 100% eco-friendly."
             },

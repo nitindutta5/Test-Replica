@@ -5,7 +5,15 @@ export const BusinessVerticals = [
         name: "Homeware",
         logo:"../verticals/logos/Arttdinox_Logo.svg",
         text: "Arttd'inox’s range of spatial design adornments are key. Inspired by the many forms of Indian artistry and incepted by celebrated Indian designers; Arttd'inox has always forayed into the space of design whilst decoding a multi-sensorial ambiance that salutes excellence & innovation. From multi-purpose bowls, artisanal vases, candle stands, enchanted centerpieces, and accent furniture we believe in offering something for everyone.",
-        url: "/ourBusinesses/jindalKitchen"
+        url: "/ourBusinesses/homeware"
+    },
+    {
+        img: "../verticals/PLUMBING.jpg",
+        carouselImg: "../ourbusinesses/5.png",
+        name: "Plumbing Solutions",
+        logo:"../verticals/logos/plumbing-White.svg",
+        text: "JSLL Plumbing offers a comprehensive range of stainless steel pipes and fitting solutions in grade EN 316L and JIS 304 & 316L, guaranteeing quality products with easy installation.Comprehensive range of stainless steel pipes and fittings, together with tubing, pressing tools and accessories, taking care of all plumbing requirements.",
+        url: "/ourBusinesses/plumbing"
     },
     {
         img: "../verticals/JINDAL_ARC_KITCHENS.jpg",
@@ -24,28 +32,20 @@ export const BusinessVerticals = [
         url: "/ourBusinesses/infra"
     },
     {
-        img: "../verticals/JSLL_MOBILITY.jpg",
-        carouselImg: "../ourbusinesses/4.png",
-        name: "Mobility",
-        logo:"../verticals/logos/Mobility-White.svg",
-        text: "JSLL Mobility caters to the mobility sector, especially Indian Railways and Delhi Metro. Our optimally manufactured products lend great strength and longer durability to the trains along with providing ease and comfort to the commuters.",
-        url: "/ourBusinesses/mobility"
-    },
-    {
-        img: "../verticals/PLUMBING.jpg",
-        carouselImg: "../ourbusinesses/5.png",
-        name: "Plumbing Solutions",
-        logo:"../verticals/logos/plumbing-White.svg",
-        text: "JSLL Plumbing offers a comprehensive range of stainless steel pipes and fitting solutions in grade EN 316L and JIS 304 & 316L, guaranteeing quality products with easy installation.Comprehensive range of stainless steel pipes and fittings, together with tubing, pressing tools and accessories, taking care of all plumbing requirements.",
-        url: "/ourBusinesses/plumbing"
-    },
-    {
         img: "../verticals/VE.jpg",
         carouselImg:"./ourbusinesses/1.png",
         name: "OEM Solutions",
         logo:"../verticals/logos/VE-White.svg",
         text: "The core ambition of JSLL Value Engineering is focused towards manufacturing stainless steel products for development and broad usage across industries. Through our own in-house backhand integration, we design finished end product for B2B and B2C segments.",
         url: "/ourBusinesses/oem_solutions"
+    },
+    {
+        img: "../verticals/JSLL_MOBILITY.jpg",
+        carouselImg: "../ourbusinesses/4.png",
+        name: "Mobility",
+        logo:"../verticals/logos/Mobility-White.svg",
+        text: "JSLL Mobility caters to the mobility sector, especially Indian Railways and Delhi Metro. Our optimally manufactured products lend great strength and longer durability to the trains along with providing ease and comfort to the commuters.",
+        url: "/ourBusinesses/mobility"
     }
 ];
 

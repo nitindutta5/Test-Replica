@@ -97,7 +97,7 @@ const plumbing = () => {
                    </Row>
                 </Container>
             </section> */}
-            <Section2 data={data.products}>Our Range of Products</Section2>
+            <Section2 data={data.products}>Pipes & Fittings</Section2>
             <section className="pt-0">
                 <Container>
                     <Button color="secondary" className="download mx-auto">

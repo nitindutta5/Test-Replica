@@ -12,32 +12,32 @@ const jindalKitchen = () => {
                 content: "Arttd’inox was born out of the belief that art is a holistic expansion of global décor identities, further enhanced by the functionality and beauty of high-quality stainless steel. These contemporary home lifestyle products juxtapose traditional elegance and Karigari with modern whimsy, making each product a timeless masterpiece."
             }
         ],
-        icons: [
-            {
-                img: "../../verticals/kitchen/Icons/01_Termite-Proof.png",
-                title: "Termite Proof"
-            },
-            {
-                img: "../../verticals/kitchen/Icons/02_Fire-Resistant.png",
-                title: "Fire Resistant"
-            },
-            {
-                img: "../../verticals/kitchen/Icons/03_Range-of-Hues.png",
-                title: "Range of Hues"
-            },
-            {
-                img: "../../verticals/kitchen/Icons/04_Timely-Delivery.png",
-                title: "Timely Delivery"
-            },
-            {
-                img: "../../verticals/kitchen/Icons/05_Water-Resistant.png",
-                title: "Water Resistant"
-            },
-            {
-                img: "../../verticals/kitchen/Icons/06_EcoFriendly.png",
-                title: "Eco Friendly"
-            }
-        ],
+        // icons: [
+        //     {
+        //         img: "../../verticals/kitchen/Icons/01_Termite-Proof.png",
+        //         title: "Termite Proof"
+        //     },
+        //     {
+        //         img: "../../verticals/kitchen/Icons/02_Fire-Resistant.png",
+        //         title: "Fire Resistant"
+        //     },
+        //     {
+        //         img: "../../verticals/kitchen/Icons/03_Range-of-Hues.png",
+        //         title: "Range of Hues"
+        //     },
+        //     {
+        //         img: "../../verticals/kitchen/Icons/04_Timely-Delivery.png",
+        //         title: "Timely Delivery"
+        //     },
+        //     {
+        //         img: "../../verticals/kitchen/Icons/05_Water-Resistant.png",
+        //         title: "Water Resistant"
+        //     },
+        //     {
+        //         img: "../../verticals/kitchen/Icons/06_EcoFriendly.png",
+        //         title: "Eco Friendly"
+        //     }
+        // ],
         products: [
             {
                 img: "../../verticals/kitchen/products/Homeware.png",
@@ -76,8 +76,10 @@ const jindalKitchen = () => {
                     <Button color="secondary" className="download">
                         <img src="../Download-Brochure_02.svg" />
                         Brochure</Button>
-                    <Button color="secondary" className="ms-3">
-                        Shop Now</Button>
+                    <a target="_blank" href="https://www.arttdinox.com/">
+                        <Button color="secondary" className="ms-3">
+                            Shop Now</Button>
+                    </a>
                 </Container>
             </section>
         </div>
