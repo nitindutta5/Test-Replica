@@ -60,22 +60,22 @@ const plumbing = () => {
             {
                 img: "../../verticals/plumbing/products/90-Elbow.jpg",
                 title: "90-Elbow",
-                content: "LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem"
+                content: ""
             },
             {
                 img: "../../verticals/plumbing/products/Crossover.jpg",
                 title: "Crossover",
-                content: "LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem"
+                content: ""
             },
             {
                 img: "../../verticals/plumbing/products/End-Cap.jpg",
                 title: "End-Cap",
-                content: "LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem"
+                content: ""
             },
             {
                 img: "../../verticals/plumbing/products/Equal-Tee.jpg",
                 title: "Equal-Tee",
-                content: "LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem LoremIspem"
+                content: ""
             }
         ]
     };

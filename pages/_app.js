@@ -12,13 +12,14 @@ import Overlay from '../components/Overlay';
 import Chat from '../components/Chat';
 import FormOverlay from '../components/FormOverlay';
 
-function MyApp({ Component, pageProps,router }) {
-      //For white Overlay
-      const [checkOpen, setOpen] = useState(false);
 
-      const handleOverlay = (value) => {
-        setOpen(value)
-      }
+
+function MyApp({ Component, pageProps, router }) {
+  //For white Overlay
+  const [checkOpen, setOpen] = useState(false);
+  const handleOverlay = (value) => setOpen(value);
+
+
   return (
     <ThemeProvider>
       <Head>
@@ -27,9 +28,9 @@ function MyApp({ Component, pageProps,router }) {
           content="upgrade-insecure-requests"
         ></meta>
       </Head>
-      <Header route={router.route} handleOverlay={handleOverlay}/>
+      <Header route={router.route} handleOverlay={handleOverlay} />
       <Overlay checkOpen={checkOpen} />
-      <Component {...pageProps}/>
+      <Component {...pageProps} />
       {/* <FormOverlay/> */}
       {/* <Chat/> */}
       <Footer />

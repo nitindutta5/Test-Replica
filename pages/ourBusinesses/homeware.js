@@ -69,7 +69,7 @@ const jindalKitchen = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Banner src=".././banner/Homeware.jpg" text="Homeware" />
-            <Section1 data={data} title2="Why Choose Us">Why Arttdinox</Section1>
+            <Section1 data={data} title2="Why Choose Us">Why Arttd'inox</Section1>
             <Section2 data={data.products}>Our Range of Products</Section2>
             <section className="pt-0">
                 <Container className="d-flex justify-content-center">

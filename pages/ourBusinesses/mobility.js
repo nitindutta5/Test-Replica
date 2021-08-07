@@ -16,7 +16,7 @@ const mobility = () => {
         icons: [
             {
                 img: "../../verticals/mobility/Icons/01_Semi-Automatic-Plant-&-Robotic-Line.png",
-                title: "Semi Automatic Plant & Robotic Life"
+                title: "Semi Automatic Plant & Robotic Line"
             },
             {
                 img: "../../verticals/mobility/Icons/02_25,000-MTAnnum-Fabrication-Capacity.png",

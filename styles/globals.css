@@ -39,6 +39,23 @@ a {
   max-width: 40px;
 }
 
+.modal {
+  height: auto;
+}
+
+.modal .modal-body,
+.modal .modal-footer {
+  background-color: #363C4C;
+  color: #fff;
+}
+
+.modal-dailog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .chatOuter {
   position: fixed;
   right: 30px;
@@ -726,7 +743,12 @@ section {
     right: 4rem;
   }
 
+}
 
+@media(min-width:1000px) {
+  .modal-dialog {
+    max-width: 800px;
+  }
 }
 
 @media(max-width:1100px) {

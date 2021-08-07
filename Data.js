@@ -12,7 +12,7 @@ export const BusinessVerticals = [
         carouselImg: "../ourbusinesses/5.png",
         name: "Plumbing Solutions",
         logo:"../verticals/logos/plumbing-White.svg",
-        text: "JSLL Plumbing offers a comprehensive range of stainless steel pipes and fitting solutions in grade EN 316L and JIS 304 & 316L, guaranteeing quality products with easy installation.Comprehensive range of stainless steel pipes and fittings, together with tubing, pressing tools and accessories, taking care of all plumbing requirements.",
+        text: "JSLL Plumbing offers a comprehensive range of stainless steel pipes and fitting solutions in grade EN 316L and JIS 304 & 316L, guaranteeing quality products with easy installation. Comprehensive range of stainless steel pipes and fittings, together with tubing, pressing tools and accessories, taking care of all plumbing requirements.",
         url: "/ourBusinesses/plumbing"
     },
     {

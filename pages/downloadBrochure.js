@@ -8,13 +8,16 @@ import Link from 'next/link'
 import classNames from "classnames";
 import NextBtn from "../components/NextBtn";
 import Previous from "../components/Previous";
+import ModalForm from "../components/Form/ModalForm";
+
 
 const downloadBrochure = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+    // For Modal Form
+    const [modal, setModal] = useState(false);
+    const toggle = () => setModal(!modal);
 
-    const nextClick = (e) => {
-        setCurrentIndex(e);
-    }
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const nextClick = (e) => setCurrentIndex(e);
     var settings = {
         className: "center",
         centerMode: true,
@@ -24,8 +27,8 @@ const downloadBrochure = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 5,
-        swiping:false,
-        swipeToSlide:false,
+        swiping: false,
+        swipeToSlide: false,
         autoplay: true,
         centerPadding: "50px",
         arrows: true,
@@ -63,25 +66,25 @@ const downloadBrochure = () => {
                             <h2 className="heading text-center">Download Brochure</h2>
                         </Col>
                         <Col lg="12" className="px-0">
-                        <Slider {...settings}>
-                            {
-                                BusinessVerticals.map((obj, id) => (
-                                    <div key={id} >
-                                        <Link href={obj.url}>
-                                            <div className="main">
-                                                <img src={obj.carouselImg} className="img-fluid mainImg" />
-                                                <img className={classNames({
-                                                    [styles.title]: true,
-                                                    [styles.logo]: true,
-                                                    "brand-logo": true
-                                                })} src={obj.logo} />
-                                                <img src="../Know2.svg" className={styles.innerArrow} />
-                                            </div>
-                                        </Link>
-                                    </div>
-                                ))
-                            }
-                        </Slider>
+                            <Slider {...settings}>
+                                {
+                                    BusinessVerticals.map((obj, id) => (
+                                        <div key={id} >
+                                            <Link href={obj.url}>
+                                                <div className="main">
+                                                    <img src={obj.carouselImg} className="img-fluid mainImg" />
+                                                    <img className={classNames({
+                                                        [styles.title]: true,
+                                                        [styles.logo]: true,
+                                                        "brand-logo": true
+                                                    })} src={obj.logo} />
+                                                    <img src="../Know2.svg" className={styles.innerArrow} />
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    ))
+                                }
+                            </Slider>
                         </Col>
                     </Row>
                 </Container>
@@ -97,6 +100,7 @@ const downloadBrochure = () => {
                     </Row>
                 </Container>
             </section>
+            <ModalForm toggle={toggle} modal={modal} />
         </>
     )
 }
