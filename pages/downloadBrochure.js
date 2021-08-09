@@ -17,6 +17,7 @@ const downloadBrochure = ({ verticals }) => {
     const toggle = () => setModal(!modal);
 
     const [file, setFile] = useState("");
+    const [name, setName] = useState("");
 
     const OpenModal = (file) => {
         setFile(file);

@@ -7,7 +7,8 @@ const ModalForm = (props) => {
   const {
     modal,
     toggle,
-    file
+    file,
+    name
   } = props;
 
 
@@ -40,10 +41,10 @@ const ModalForm = (props) => {
 
   const downloadBrochure = () => {
     let a = document.createElement('a');
-    a.href = file;
+    a.href = "../Plumbing_brochure.pdfs";
 
     // Give filename you wish to download
-    a.download = `${file.substring(file.lastIndexOf('/') + 1)}`;
+    a.download = `Plumbing_Brochure`;
     a.style.display = 'none';
     document.body.appendChild(a);
     a.click();

@@ -6,7 +6,8 @@ import { Button, Container, Row, Col } from "reactstrap";
 
 
 
-const plumbing = () => {
+
+const plumbing = ({ModalToggle}) => {
     const data = {
         type: "plumbing",
         brands: [
@@ -99,10 +100,12 @@ const plumbing = () => {
             </section> */}
             <Section2 data={data.products}>Pipes & Fittings</Section2>
             <section className="pt-0">
-                <Container>
-                    <Button color="secondary" className="download mx-auto">
+                <Container className="d-flex justify-content-center">
+                    <Button color="secondary" onClick={ModalToggle} className="download">
                         <img src="../Download-Brochure_02.svg" />
                         Brochure</Button>
+                        <Button color="secondary" onClick={ModalToggle} className="ms-3">
+                           Enquire</Button>
                 </Container>
             </section>
         </>

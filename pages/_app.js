@@ -11,6 +11,7 @@ import ThemeProvider from '../components/ThemeProvider';
 import Overlay from '../components/Overlay';
 import Chat from '../components/Chat';
 import FormOverlay from '../components/FormOverlay';
+import ModalForm from '../components/Form/ModalForm';
 
 
 
@@ -19,6 +20,11 @@ function MyApp({ Component, pageProps, router }) {
   const [checkOpen, setOpen] = useState(false);
   const handleOverlay = (value) => setOpen(value);
 
+  const [modal, setModal] = useState(false);
+  const toggle = () => setModal(!modal);
+
+  const [file, setFile] = useState("");
+  const [name, setName] = useState("");
 
   return (
     <ThemeProvider>
@@ -30,9 +36,10 @@ function MyApp({ Component, pageProps, router }) {
       </Head>
       <Header route={router.route} handleOverlay={handleOverlay} />
       <Overlay checkOpen={checkOpen} />
-      <Component {...pageProps} />
+      <Component {...pageProps} ModalToggle={toggle} />
       {/* <FormOverlay/> */}
       {/* <Chat/> */}
+      <ModalForm toggle={toggle} modal={modal} file={file} name={name} />
       <Footer />
     </ThemeProvider>
   )

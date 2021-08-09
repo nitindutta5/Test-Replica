@@ -5,7 +5,7 @@ import Section2 from "../../components/VerticalsSections/Section2";
 import { Button, Container } from "reactstrap";
 
 
-const mobility = () => {
+const mobility = ({ModalToggle}) => {
     const data = {
         type: "mobility",
         brands: [
@@ -96,10 +96,12 @@ const mobility = () => {
             <Section2 data={data.metro}>Metro</Section2>
             <Section2 data={data.railways}>Railways</Section2>
             <section className="pt-0">
-                <Container>
-                    <Button color="secondary" className="download mx-auto">
+                <Container className="d-flex justify-content-center">
+                <Button color="secondary" className="download" onClick={ModalToggle}>
                         <img src="../Download-Brochure_02.svg" />
                         Brochure</Button>
+                        <Button color="secondary" onClick={ModalToggle} className="ms-3">
+                           Enquire</Button>
                 </Container>
             </section>
         </>

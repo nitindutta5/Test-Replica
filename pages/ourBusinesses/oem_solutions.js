@@ -3,10 +3,11 @@ import Banner from "../../components/Banner"
 import Section1 from "../../components/VerticalsSections/Section1"
 import Section2 from "../../components/VerticalsSections/Section2";
 import { Button, Container } from "reactstrap";
+import { Modal } from "bootstrap";
 
 
 
-const oem_solutions = () => {
+const oem_solutions = ({ModalToggle}) => {
     const data = {
         type: "oem",
         brands: [
@@ -86,10 +87,12 @@ const oem_solutions = () => {
             <Section1 data={data} title2="Why Stainless Steel">Manufacturing Tomorrow’s Products</Section1>
             <Section2 data={data.products}>Our Range of Products</Section2>
             <section className="pt-0">
-                <Container>
-                    <Button color="secondary" className="download mx-auto">
-                        <img src="../Download-Brochure_02.svg" />
+                <Container className="d-flex justify-content-center">
+                    <Button color="secondary" className="download" onClick={ModalToggle}>
+                        <img src="../Download-Brochure_02.svg"/>
                         Brochure</Button>
+                        <Button color="secondary" onClick={ModalToggle} className="ms-3">
+                           Enquire</Button>
                 </Container>
             </section>
         </>

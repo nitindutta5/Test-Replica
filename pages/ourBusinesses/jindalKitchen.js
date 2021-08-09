@@ -4,7 +4,7 @@ import Section1 from "../../components/VerticalsSections/Section1"
 import Section2 from "../../components/VerticalsSections/Section2";
 import { Button, Container } from "reactstrap";
 
-const jindalKitchen = () => {
+const jindalKitchen = ({ModalToggle}) => {
     const data = {
         type: "kitchen",
         brands: [
@@ -79,10 +79,12 @@ const jindalKitchen = () => {
             <Section1 data={data} title2="Why Choose Us">Our Brands</Section1>
             <Section2 data={data.products}>Our Range of Products</Section2>
             <section className="pt-0">
-                <Container>
-                    <Button color="secondary" className="download mx-auto">
-                        <img src="../Download-Brochure_02.svg" />
+                <Container className="d-flex justify-content-center">
+                <Button color="secondary" className="download" onClick={ModalToggle}>
+                        <img src="../Download-Brochure_02.svg"/>
                         Brochure</Button>
+                        <Button color="secondary" onClick={ModalToggle} className="ms-3">
+                           Enquire</Button>
                 </Container>
             </section>
         </>
