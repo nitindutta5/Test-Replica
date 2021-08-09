@@ -2,40 +2,40 @@ import { Container, Row, Col } from "reactstrap"
 import styles from '../styles/TeamSection.module.css'
 
 const TeamSection = () => {
-    const BOD= [
+    const BOD = [
         {
-            img:"",
-            name:"Ashok Kumar Agarwal"
+            img: "",
+            name: "Ashok Kumar Agarwal"
         },
         {
-            img:"",
-            name:"Abhishek Poddar"
+            img: "",
+            name: "Abhishek Poddar"
         },
         {
-            img:"",
-            name:"Vijay Kumar Sharma"
+            img: "",
+            name: "Vijay Kumar Sharma"
         },
         {
-            img:"",
-            name:"Deepika Jindal"
+            img: "",
+            name: "Deepika Jindal"
         }
     ];
 
     const LB = [
         {
-            img:'./Deepika.png',
-            name:"Deepika Jindal",
-            designation:"Creative & Managing Director"
+            img: './Deepika.png',
+            name: "Deepika Jindal",
+            designation: "Creative & Managing Director"
         },
         {
-            img:'./Rajesh.png',
-            name:"Rajesh Mohata",
-            designation:"CEO, JSL Lifestyle Limited" 
+            img: './Rajesh.png',
+            name: "Rajesh Mohata",
+            designation: "CEO, JSL Lifestyle Limited"
         },
         {
-            img:'./Rajesh.png',
-            name:"Abhishek Poddar",
-            designation:"CEO, JSL Lifestyle Limited" 
+            // img:'./Rajesh.png',
+            name: "Abhishek Poddar",
+            designation: "Director, JSL Lifestyle Limited"
         }
 
 
@@ -46,27 +46,41 @@ const TeamSection = () => {
                 <Container>
                     <Row>
                         <Col lg="12">
-                        <h2 className="heading text-center">Our Leadership Team</h2>
+                            <h2 className="heading text-center">Our Leadership Team</h2>
                         </Col>
                         <Col lg="12" className={styles.bg}>
                             <Row>
                                 {
-                                    LB.map((obj,id)=>(
-                                        <Col lg="3" xs="6" key={id} className={id==0?"ms-auto text-center":id==1?"mx-auto text-center":"me-auto text-center"}>
-                                            <img src={obj.img} className={styles.image}/>
-                                            <p className={[styles.LDTitle]+" "+[styles.title]}>
-                                                {obj.name}
-                                            </p>
-                                            <p className={styles.LDDesignation}>
-                                                {obj.designation}
-                                            </p>
-                                        </Col>
+                                    LB.map((obj, id) => (
+                                        id === 2 ?
+                                            (
+                                                <Col lg="3" xs="6" key={id} className={id == 0 ? "ms-auto text-center mb-4" : id == 1 ? "mx-auto text-center mb-4" : "me-auto text-center mb-4"}>
+                                                    <div className={styles.dummy}></div>
+                                                    <p className={[styles.LDTitle] + " " + [styles.title]}>
+                                                        {obj.name}
+                                                    </p>
+                                                    <p className={styles.LDDesignation}>
+                                                        {obj.designation}
+                                                    </p>
+                                                </Col>
+                                            ) :
+                                            (
+                                                <Col lg="3" xs="6" key={id} className={id == 0 ? "ms-auto text-center mb-4" : id == 1 ? "mx-auto text-center mb-4" : "me-auto text-center mb-4"}>
+                                                    <img src={obj.img} className={styles.image} />
+                                                    <p className={[styles.LDTitle] + " " + [styles.title]}>
+                                                        {obj.name}
+                                                    </p>
+                                                    <p className={styles.LDDesignation}>
+                                                        {obj.designation}
+                                                    </p>
+                                                </Col>
+                                            )
                                     ))
                                 }
                             </Row>
                         </Col>
                     </Row>
-                   
+
                 </Container>
             </section>
             {/* <section>
