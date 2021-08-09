@@ -32,8 +32,6 @@ const WritetoUs = () =>{
           <Input type="textarea" name="text" id="exampleText"  placeholder="Message"/>
         </Col>
       </FormGroup>
- 
-
       <FormGroup row>
         <Col sm={{ size: 12}}>
           <Button color="primary">SEND</Button>

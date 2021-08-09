@@ -41,12 +41,25 @@ a {
 
 .modal {
   height: auto;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.modal .modal-body,
-.modal .modal-footer {
+.modal-backdrop.show {
+  opacity: .7;
+}
+
+.modal-backdrop {
+  background-color: #fff;
+}
+
+.modal .modal-body {
   background-color: #363C4C;
   color: #fff;
+}
+
+.modal .heading {
+  font-size: 2rem;
 }
 
 .modal-dailog {
@@ -248,8 +261,18 @@ li {
   padding-left: 0;
 }
 
+#ModalForm .form-control {
+  background-color: #363C4C;
+  border-bottom: 1px solid #ffffffb0 !important;
+  color: #ffffffb0;
+}
+
 .form-control::placeholder {
   color: #363C4C;
+}
+
+#ModalForm .form-control::placeholder {
+  color: #ffffffb0;
 }
 
 input::-webkit-outer-spin-button,
@@ -707,10 +730,19 @@ section {
 
 }
 
+@media(max-width:1500px) {
+  .btn {
+    min-width: 115px;
+  }
+}
 
 @media(max-width:1400px) {
   .inn .slick-next {
     right: -30px;
+  }
+
+  .btn {
+    min-width: 110px;
   }
 
   .inn .slick-prev {
@@ -747,7 +779,7 @@ section {
 
 @media(min-width:1000px) {
   .modal-dialog {
-    max-width: 800px;
+    max-width: 900px;
   }
 }
 
@@ -822,9 +854,7 @@ section {
 
 @media(max-width:768px) {
 
-  .btn {
-    min-width: 110px;
-  }
+
 
   .wrapper {
     padding-right: 2rem;

@@ -4,7 +4,7 @@ import Section1 from "../../components/VerticalsSections/Section1"
 import Section2 from "../../components/VerticalsSections/Section2";
 import { Button, Container } from "reactstrap";
 
-const jindalKitchen = () => {
+const jindalKitchen = ({homeware}) => {
     const data = {
         type: "homeware",
         brands: [
@@ -85,5 +85,21 @@ const jindalKitchen = () => {
         </div>
     )
 }
+export async function getStaticProps() {
+    const baseURL = process.env.API_URL;
+    let data;
+    try {
+        const res = await fetch(baseURL + `brochures?slug=homeware`);
+        data = await res.json();
+    } catch (error) {
+        console.log("Server Error Occured");
+    }
+  
+    return {
+        props: {
+            homeware: data,
+        }
+    }
+  }
 
 export default jindalKitchen

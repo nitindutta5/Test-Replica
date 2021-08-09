@@ -7,7 +7,8 @@ import classNames from 'classnames';
 import NextBtn from "./NextBtn";
 import Previous from "./Previous";
 
-const OurBusinesses = () => {
+const OurBusinesses = ({data}) => {
+    console.log(data);
     var settings = {
         className: "center",
         centerMode: true,
@@ -21,13 +22,13 @@ const OurBusinesses = () => {
         nextArrow: <NextBtn />,
         prevArrow: <Previous />,
         responsive: [
-            {
-                breakpoint: 1600,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                }
-            },
+            // {
+            //     breakpoint: 1600,
+            //     settings: {
+            //         slidesToShow: 4,
+            //         slidesToScroll: 1,
+            //     }
+            // },
             {
                 breakpoint: 1300,
                 settings: {
@@ -76,16 +77,16 @@ const OurBusinesses = () => {
                     <Col lg="12" className="px-0">
                         <Slider {...settings}>
                             {
-                                BusinessVerticals.map((obj, id) => (
+                                data.map((obj, id) => (
                                     <div key={id} >
                                         <div className="main">
-                                            <img src={obj.carouselImg} className="img-fluid mainImg" />
+                                            <img src={obj.Carousel_Image.url} className="img-fluid mainImg" />
                                             <img className={classNames({
                                                 [styles.title]: true,
                                                 [styles.logo]: true,
                                                 "brand-logo": true
-                                            })} src={obj.logo} />
-                                            <Link href={obj.url}>
+                                            })} src={obj.logo.url} />
+                                            <Link href={`ourBusinesses/${obj.slug}`}>
                                                 <Button className={styles.knowMore} color="secondary">
                                                     Know More</Button></Link>
                                             <Button className={styles.btn} color="secondary">

@@ -9,7 +9,7 @@ import OurBusinesses from '../components/OurBusinesses'
 import BannerCarousel from '../components/BannerCarousel'
 import { homePageBanners } from '../Data'
 
-export default function Home({checkOpen}) {
+export default function Home({verticals}) {
   return (
     <>
       <Head>
@@ -20,10 +20,28 @@ export default function Home({checkOpen}) {
       {/* <Banner src={BannerImage} text="CRAFTING A SMART FUTURE FOR A BEAUTIFUL LIVING"/> */}
       <BannerCarousel data={homePageBanners}/>
       <AboutUs />
-      <OurBusinesses/>
+      <OurBusinesses data={verticals}/>
       <OurPlants/>
       <Media />
       <SocialMedia/>
     </>
   )
+}
+
+
+export async function getStaticProps() {
+  const baseURL = process.env.API_URL;
+  let data;
+  try {
+      const res = await fetch(baseURL + 'brochures');
+      data = await res.json();
+  } catch (error) {
+      console.log("Server Error Occured");
+  }
+
+  return {
+      props: {
+          verticals: data,
+      }
+  }
 }

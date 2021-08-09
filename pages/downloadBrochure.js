@@ -11,10 +11,17 @@ import Previous from "../components/Previous";
 import ModalForm from "../components/Form/ModalForm";
 
 
-const downloadBrochure = () => {
+const downloadBrochure = ({ verticals }) => {
     // For Modal Form
     const [modal, setModal] = useState(false);
     const toggle = () => setModal(!modal);
+
+    const [file, setFile] = useState("");
+
+    const OpenModal = (file) => {
+        setFile(file);
+        toggle();
+    }
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const nextClick = (e) => setCurrentIndex(e);
@@ -68,19 +75,19 @@ const downloadBrochure = () => {
                         <Col lg="12" className="px-0">
                             <Slider {...settings}>
                                 {
-                                    BusinessVerticals.map((obj, id) => (
+                                    verticals.map((obj, id) => (
                                         <div key={id} >
-                                            <Link href={obj.url}>
-                                                <div className="main">
-                                                    <img src={obj.carouselImg} className="img-fluid mainImg" />
-                                                    <img className={classNames({
-                                                        [styles.title]: true,
-                                                        [styles.logo]: true,
-                                                        "brand-logo": true
-                                                    })} src={obj.logo} />
+                                            <div className="main">
+                                                <img src={obj.Carousel_Image.url} className="img-fluid mainImg" />
+                                                <img className={classNames({
+                                                    [styles.title]: true,
+                                                    [styles.logo]: true,
+                                                    "brand-logo": true
+                                                })} src={obj.logo.url} />
+                                                <Link href={`/ourBusinesses/${obj.slug}`}>
                                                     <img src="../Know2.svg" className={styles.innerArrow} />
-                                                </div>
-                                            </Link>
+                                                </Link>
+                                            </div>
                                         </div>
                                     ))
                                 }
@@ -92,17 +99,33 @@ const downloadBrochure = () => {
                     <Row>
                         <Col lg="6" md="10" className="pt-5">
                             <div className={styles.holder}>
-                                <h5 className={styles.title2}>{BusinessVerticals[currentIndex].name}</h5>
-                                <Button className={styles.secondBtn} color="secondary"> <img src="../Download-Brochure_02.svg" />Brochure</Button>
+                                <h5 className={styles.title2}>{verticals[currentIndex].name}</h5>
+                                <Button className={styles.secondBtn} onClick={() => OpenModal(verticals[currentIndex].File.url)} color="secondary"> <img src="../Download-Brochure_02.svg" />Brochure</Button>
                             </div>
-                            <p>{BusinessVerticals[currentIndex].text}</p>
+                            <p>{verticals[currentIndex].Description}</p>
                         </Col>
                     </Row>
                 </Container>
             </section>
-            <ModalForm toggle={toggle} modal={modal} />
+            <ModalForm toggle={toggle} modal={modal} file={file} />
         </>
     )
+}
+export async function getStaticProps() {
+    const baseURL = process.env.API_URL;
+    let data;
+    try {
+        const res = await fetch(baseURL + 'brochures');
+        data = await res.json();
+    } catch (error) {
+        console.log("Server Error Occured");
+    }
+
+    return {
+        props: {
+            verticals: data,
+        }
+    }
 }
 
 export default downloadBrochure
