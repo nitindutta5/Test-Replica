@@ -55,7 +55,7 @@ const jindalKitchen = ({homeware,ModalToggle}) => {
                 content: "From uniquely styled spoons to quarter plates, trays to serve pots, we have got your covered with aesthetical designing! With our bespoke range of dinnerware & elegant serving bowls."
             },
             {
-                img: "../../verticals/homeware/products/Bar.jpg",
+                img: "../../verticals/homeware/products/barware.png",
                 title: "Barware",
                 content: "Handcrafted barware that captures the allure of the past with the sensibilities of the present!"
             }
