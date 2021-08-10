@@ -3,7 +3,7 @@ import Banner from "../../components/Banner"
 import Section1 from "../../components/VerticalsSections/Section1"
 import Section2 from "../../components/VerticalsSections/Section2";
 import { Button, Container } from "reactstrap";
-import { Modal } from "bootstrap";
+
 
 
 
