@@ -25,17 +25,17 @@ const PlantMap = () => {
         {
             name: "Rohad Plant",
             dem: "20,234 sq.m.",
-            desc: "The Rohad plant is spread across 20,234 sq. m. and offers a wide range of in-house production and finishing capabilities for best-in-class quality products. The plant caters to Value Engineering and Arttd’inox."
+            desc: "48th km stone, Delhi Rohtak, highway, Rohtak, Haryana 124001"
         },
         {
             name: "Pathredi Plant",
             dem: "30,351 sq.m",
-            desc: "The Pathredi facility is spread over a covered area of massive 30,351 sq. m. with a fabrication capacity of 5000 MT per annum and caters to Mobility, Infrastructure, Value Engineering, Sanitation and Kitchen verticals."
+            desc: "Village Pathredi, Bilaspur Tauru Road, Gurugram, Haryana – 122413"
         },
         {
             name: "Chennai Plant",
             dem: "30,351 sq.m",
-            desc: "The Chennai plant is semi-automated and is spread across 8,093 sq. m. with a fabrication capacity of 3000 MT per annum. The plant is dedicated to Mobility and specializes in products for Railways and Metros."
+            desc: "D2, CMDA St, Industrial Estate, Maraimalai Nagar, Tamil Nadu-603209"
         }
     ];
     return (

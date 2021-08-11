@@ -2,6 +2,7 @@ import styles from '../../styles/ModalForm.module.css'
 import { Button, Modal, FormGroup, ModalBody, Form, Row, Col, Input } from 'reactstrap';
 import { useRouter } from 'next/router'
 import { useState } from 'react';
+import FileSaver from 'file-saver';
 
 const ModalForm = (props) => {
   const {
@@ -40,11 +41,13 @@ const ModalForm = (props) => {
   }
 
   const downloadBrochure = () => {
-    let link = document.createElement('a');
-    link.href = file;
-    link.target = "_blank";
-    link.download = file.substring(file.lastIndexOf('/') + 1);
-    link.dispatchEvent(new MouseEvent('click'));
+    // let link = document.createElement('a');
+    // link.href = file;
+    // link.target = "_blank";
+    // link.download = file.substring(file.lastIndexOf('/') + 1);
+    // link.dispatchEvent(new MouseEvent('click'));
+
+    FileSaver.saveAs(file, file.substring(file.lastIndexOf('/') + 1));
   }
 
 
