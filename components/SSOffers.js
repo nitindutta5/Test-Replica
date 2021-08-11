@@ -100,7 +100,7 @@ const SSOffers = () => {
     return (
         <section className="bg3">
             <Container>
-                <Row>
+                <Row className="justify-content-center">
                     <Col lg="12">
                         <h2 className="text-center heading white-color">What Stainless Steel Offers</h2>
                     </Col>

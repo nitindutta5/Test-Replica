@@ -9,6 +9,7 @@ const WritetoUs = () => {
     department: "",
     msg: ""
   });
+  const router = useRouter();
   const [nameError, setNameError] = useState({});
   const [emailError, setEmailError] = useState({});
   const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;

@@ -16,7 +16,8 @@ const GrandTimeline = () => {
         <Col md="10" className="mx-auto">
 
           <div id="mytimeline2" style={{ width: '100%', height: '100px', margin: '0 auto' }}>
-            <HorizontalTimeline slidingMotion={{ stiffness: '150', damping: '25' }} getLabel={(date) => date} styles={{ background: '#fff', foreground: '#363C4C', outline: '#363C4C' }}
+            <HorizontalTimeline 
+            slidingMotion={{ stiffness: '150', damping: '25' }} getLabel={(date) => date} styles={{ background: '#fff', foreground: '#363C4C', outline: '#363C4C' }}
               index={initialState.value}
               index={initialState.value}
               indexClick={(index) => {

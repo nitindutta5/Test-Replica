@@ -1,7 +1,7 @@
 import Head from "next/head"
 import Banner from "../components/Banner"
 import CareerIntro from "../components/CareerIntro"
-
+import MainCareer from "../components/Career/Main"
 
 const Careers = () => {
     return (
@@ -13,6 +13,7 @@ const Careers = () => {
             </Head>
             <Banner src="./banner/Career.png" text="JSLL CAREERS" />
             <CareerIntro />
+            <MainCareer/>
         </>
     )
 }

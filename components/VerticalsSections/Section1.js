@@ -31,7 +31,7 @@ const Section1 = (props) => {
                 </Row>
                 {
                     props.data.icons &&
-                    <Row className="mt-5">
+                    <Row className="mt-5  justify-content-center">
                         <Col lg="12"><h2 className="heading white-color text-center">{props.title2}</h2></Col>
                         {
                             props.data.icons.map((obj, id) => (
