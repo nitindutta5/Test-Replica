@@ -45,7 +45,7 @@ const PlantMap = () => {
         <Row className="mt-5">
             {
                 data.map((location, id) => (
-                    <Col lg="3" md="3" key={id}>
+                    <Col lg="3" md="3" key={id} className="mb-4">
                         <small className="heading mb-2">{location.name}</small>
                         <p className="pe-2 mb-3">{location.desc}</p>
                         <a href={location.href} target="_blank" >

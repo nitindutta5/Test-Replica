@@ -56,11 +56,11 @@ export const homePageBanners = [
         text:"CRAFTING A SMART FUTURE FOR A BEAUTIFUL LIVING"
     },
     {
-        url: "../banner/jindalkitchen.png",
+        url: "../banner/Kitchens.jpg",
         text: "CRAFTING A SMART FUTURE FOR A BEAUTIFUL LIVING",
     },
     {
-        url: "../banner/homepage.jpg",
+        url: "../banner/about.jpg",
         text: "CRAFTING A SMART FUTURE FOR A BEAUTIFUL LIVING"
     }
 ];

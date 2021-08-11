@@ -4,10 +4,10 @@ import { useRouter } from 'next/router'
 
 const WritetoUs = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    department: "",
-    msg: ""
+    Name: "",
+    Email: "",
+    Department: "",
+    Msg: ""
   });
   const router = useRouter();
   const [nameError, setNameError] = useState({});
