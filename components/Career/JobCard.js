@@ -3,20 +3,22 @@ import { Container, Row, Col } from 'reactstrap'
 
 const JobCard = ({slug, name, type, location}) =>{
     return(
-        <div>
-            <Row>
-                <Col>
-                    <p>{name}</p>
+        <div className={styles.card}>
+            <Row className="justify-content-between  align-items-center">
+                <Col xs="auto">
+                    <p className={styles.jobTitle}>{name}</p>
                     <p>{type}</p>
                 </Col>
-                <Col>
+                <Col  xs="auto">
                     <p>{location}</p>
                 </Col>
-                <Col>
-                <span></span>
+                <Col  xs="auto">
+                <b>Read More</b>
                                 </Col>
             </Row>
         </div>
     )
 }
+
+export default JobCard
 

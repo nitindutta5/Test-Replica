@@ -1,9 +1,10 @@
 import Head from "next/head"
 import Banner from "../components/Banner"
 import CareerIntro from "../components/CareerIntro"
-import MainCareer from "../components/Career/Main"
+import MainCareer from "../components/Career/MainCareer"
+import NotFound from '../components/Career/NotFound'
 
-const Careers = () => {
+const Careers = ({jobs}) => {
     return (
         <>
             <Head>
@@ -13,9 +14,27 @@ const Careers = () => {
             </Head>
             <Banner src="./banner/Career.png" text="JSLL CAREERS" />
             <CareerIntro />
-            <MainCareer/>
+            <MainCareer data={jobs}/>
+            <NotFound/>
         </>
     )
 }
+export async function getStaticProps() {
+    const baseURL = process.env.API_URL;
+    let data;
+    try {
+        const res = await fetch(baseURL + `jobs`);
+        data = await res.json();
+    } catch (error) {
+        console.log("Server Error Occured");
+    }
 
+   
+
+    return {
+        props: {
+            jobs: data,
+        }
+    }
+}
 export default Careers

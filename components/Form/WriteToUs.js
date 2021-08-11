@@ -54,11 +54,11 @@ const WritetoUs = () => {
     const nameError = {};
     const emailError = {};
     let isValid = true;
-    if (formData.name.trim().length < 3) {
+    if (formData.Name.trim().length < 3) {
       nameError.shortName = "Name is must have atleast 3 characters!"
       isValid = false;
     }
-    if (!formData.email.trim().match(emailRegex)) {
+    if (!formData.Email.trim().match(emailRegex)) {
       emailError.invalidEmail = "Please enter a valid email!";
       isValid = false;
     }
