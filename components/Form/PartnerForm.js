@@ -1,5 +1,5 @@
 import { Row, Col, Button, Form, FormGroup, Input, Label } from 'reactstrap';
-
+import { useState } from 'react';
 
 const PartnerForm = () => {
   return (
@@ -44,19 +44,19 @@ const PartnerForm = () => {
               <Row>
                 <Col sm={4} className="mb-4">
                   <Label check>
-                    <Input type="checkbox" id="checkbox2" />{' '}
+                    <Input type="checkbox" id="checkbox2" />
                     Homeware
                   </Label>
                 </Col>
                 <Col sm={4} className="mb-4">
                   <Label check>
-                    <Input type="checkbox" id="checkbox2" />{' '}
+                    <Input type="checkbox" id="checkbox2" />
                     Plumbing Solutions
                   </Label>
                 </Col>
                 <Col sm={4} className="mb-4">
                   <Label check>
-                    <Input type="checkbox" id="checkbox2" />{' '}
+                    <Input type="checkbox" id="checkbox2" />
                     Jindal Kitchens
                   </Label>
                 </Col>
@@ -66,19 +66,19 @@ const PartnerForm = () => {
               <Row>
                 <Col sm={4} className="mb-4">
                   <Label check>
-                    <Input type="checkbox" id="checkbox2" />{' '}
+                    <Input type="checkbox" id="checkbox2" />
                     Infra Solutions
                   </Label>
                 </Col>
                 <Col sm={4} className="mb-4">
                   <Label check>
-                    <Input type="checkbox" id="checkbox2" />{' '}
+                    <Input type="checkbox" id="checkbox2" />
                     OEM Solutions
                   </Label>
                 </Col>
                 <Col sm={4} className="mb-4">
                   <Label check>
-                    <Input type="checkbox" id="checkbox2" />{' '}
+                    <Input type="checkbox" id="checkbox2" />
                     Mobility
                   </Label>
                 </Col>

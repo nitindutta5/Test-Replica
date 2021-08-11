@@ -12,9 +12,6 @@ const ModalForm = (props) => {
     type
   } = props;
 
-
-  console.log(file, name, type);
-
   const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   const mobRegex = /^(\+\d{1,3}[- ]?)?\d{10}$/;
   const router = useRouter();
@@ -52,7 +49,6 @@ const ModalForm = (props) => {
 
 
   const handleBrochureSubmit = (event) => {
-
     event.preventDefault();
     const isValid = formValidation();
     if (isValid) {
@@ -68,7 +64,6 @@ const ModalForm = (props) => {
           "CompanyName": formData.CompanyName
         })
       })
-
         .then(() => {
           toggle();
           router.push('/thankyou');
@@ -96,6 +91,7 @@ const ModalForm = (props) => {
       })
 
         .then(() => {
+          toggle();
           router.push('/thankyou');
         })
         .catch(error => alert(error))

@@ -6,6 +6,16 @@ class MyDocument extends Document {
       <Html>
         <Head />
         <body>
+
+          {/* Netlify Download Brochure Form */}
+          <form data-netlify="true" hidden name="contact-form" netlify-honeypot="bot-field">
+            <input type="text" name="name" />
+            <input type="email" name="email" />
+            <input type="select" name="department" />
+            <input type="textarea" name="msg" />
+            <input type="submit" />
+          </form>
+
           {/* Netlify Download Brochure Form */}
           <form data-netlify="true" hidden name="download-brochure" netlify-honeypot="bot-field">
             <input type="text" name="Name" />

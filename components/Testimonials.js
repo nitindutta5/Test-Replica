@@ -12,7 +12,7 @@ const Testimonials = () =>{
         autoplay:true,
         fade: true,
     };
-    const data=[{img:"../Testimonial.jpg",name:"SANJEEV KATARIA"},{img:"../Rajesh.png",name:"RAJESH"}];
+    const data=[{img:"../Testimonial.jpg",name:"SANJEEV KATARIA"}];
     return(
         <section>
             <Container>

@@ -61,7 +61,7 @@ const VerticalsSlider = ({data,ModalToggle, UpdateName, UpdateFile, UpdateType})
                         <p className={styles.content}>
                             {data[currentIndex].Description}
                         </p>
-                        <Link href={data[currentIndex].slug}>
+                        <Link href={`ourBusinesses/${data[currentIndex].slug}`}>
                             <Button className={styles.button}>Know more
                                 <img src="../Know-more-arrow-white.svg" className="img-fluid" />
                             </Button>

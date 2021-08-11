@@ -6,12 +6,7 @@ import { Button, Container } from "reactstrap";
 
 
 const mobility = ({ mobility, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
-    const handleForm = (file, name, type) => {
-        UpdateName(name);
-        UpdateFile(file);
-        UpdateType(type);
-        ModalToggle();
-    }
+
     const data = {
         type: "mobility",
         brands: [

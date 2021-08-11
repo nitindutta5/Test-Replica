@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "reactstrap"
 import { useState } from "react"
-import styles from "../styles/ContactForm.module.css"
+import styles from "../../styles/ContactForm.module.css"
 import WritetoUs from "./WriteToUs";
 import PartnerForm from "./PartnerForm";
 

@@ -47,11 +47,6 @@ const jindalKitchen = ({ jindalKitchen, ModalToggle, UpdateName, UpdateFile, Upd
         ],
         products: [
             {
-                img: "../../verticals/kitchen/products/Bar.jpg",
-                title: "Homeware",
-                content: "A combination of clean lines and purity of form meets custom-crafted storage and attention to detail with an added character and charm of seamless versatility."
-            },
-            {
                 img: "../../verticals/kitchen/products/Kitchen.jpg",
                 title: "Kitchens",
                 content: "Explore our world of exquisite bespoke kitchens to suit all your moods. ARC seamlessly integrates durable and hygienic surface materials keeping in mind beauty and function, with efficiency and style."
@@ -65,6 +60,11 @@ const jindalKitchen = ({ jindalKitchen, ModalToggle, UpdateName, UpdateFile, Upd
                 img: "../../verticals/kitchen/products/Vanity.jpg",
                 title: "Vanity",
                 content: "Inspired by sleek design harmony throughout, with minimal detailing and finishes that are striking in their simplicity; ARC meticulously blends in bespoke craftsmanship with clutter-free living."
+            },
+            {
+                img: "../../verticals/kitchen/products/Bar.jpg",
+                title: "Bar",
+                content: "A combination of clean lines and purity of form meets custom-crafted storage and attention to detail with an added character and charm of seamless versatility."
             }
         ]
     };

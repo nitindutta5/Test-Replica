@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Banner from "../components/Banner"
-import ContactForms from "../components/ContactForms"
+import ContactForms from "../components/Form/ContactForms"
 import GetInTouch from "../components/GetInTouch"
 import OurLocations from "../components/OurLocations"
 import OurOffices from "../components/OurOffices"
