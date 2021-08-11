@@ -64,7 +64,7 @@ const jindalKitchen = ({ jindalKitchen, ModalToggle, UpdateName, UpdateFile, Upd
             {
                 img: "../../verticals/kitchen/products/Bar.jpg",
                 title: "Bar",
-                content: "A combination of clean lines and purity of form meets custom-crafted storage and attention to detail with an added character and charm of seamless versatility."
+                content: "Unique and stainless accessories for bedecking your bars."
             }
         ]
     };

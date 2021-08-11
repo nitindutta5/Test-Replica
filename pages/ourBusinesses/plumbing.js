@@ -59,24 +59,24 @@ const plumbing = ({ plumbing, ModalToggle, UpdateName, UpdateFile, UpdateType })
         ],
         products: [
             {
-                img: "../../verticals/plumbing/products/90-Elbow.jpg",
-                title: "90-Elbow",
-                content: ""
+                img: "../../verticals/plumbing/products/Steps/1.jpg",
+                title: "Step 1",
+                content: "Tube is cut to the required length using the mechanical cutting tool."
             },
             {
-                img: "../../verticals/plumbing/products/Crossover.jpg",
-                title: "Crossover",
-                content: ""
+                img: "../../verticals/plumbing/products/Steps/2.jpg",
+                title: "Step 2",
+                content: "Tube is pushed in the stainless steel press fittings until the tube stops"
             },
             {
-                img: "../../verticals/plumbing/products/End-Cap.jpg",
-                title: "End-Cap",
-                content: ""
+                img: "../../verticals/plumbing/products/Steps/3.jpg",
+                title: "Step 3",
+                content: "Jaws of the electro-mechanical press tool are then fitted on the press-fitting where a single button operates the press tool and the joint is crimped."
             },
             {
-                img: "../../verticals/plumbing/products/Equal-Tee.jpg",
-                title: "Equal-Tee",
-                content: ""
+                img: "../../verticals/plumbing/products/Steps/4.jpg",
+                title: "Step 4",
+                content: "The crimped joint is checked using the gauge."
             }
         ]
     };
@@ -106,7 +106,7 @@ const plumbing = ({ plumbing, ModalToggle, UpdateName, UpdateFile, UpdateType })
                    </Row>
                 </Container>
             </section> */}
-            <Section2 data={data.products}>Pipes & Fittings</Section2>
+            <Section2 data={data.products}>Installation Steps</Section2>
             <section className="pt-0">
                 <Container className="d-flex justify-content-center">
                 <Button color="secondary" onClick={() => handleForm(plumbing.File.url, "plumbing", "downloadBrochure")} className="download">

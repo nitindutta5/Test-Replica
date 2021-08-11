@@ -81,6 +81,9 @@
 }
 
 @media(max-width:480px) {
+    .bg {
+        background-position: 0px 60px;
+    }
 
     .image {
         max-width: 120px;
