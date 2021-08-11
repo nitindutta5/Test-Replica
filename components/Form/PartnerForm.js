@@ -168,7 +168,7 @@ const PartnerForm = () => {
                 </Col>
                 <Col sm={4} className="mb-4">
                   <Label check>
-                    <Input type="checkbox" id="checkbox2" name="PlumbingSolution" onChange={handleCheck} />
+                    <Input type="checkbox" id="checkbox2" name="PlumbingSolutions" onChange={handleCheck} />
                     Plumbing Solutions
                   </Label>
                 </Col>

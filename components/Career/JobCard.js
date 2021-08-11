@@ -7,14 +7,14 @@ const JobCard = ({slug, name, type, location}) =>{
             <Row className="justify-content-between  align-items-center">
                 <Col xs="auto">
                     <p className={styles.jobTitle}>{name}</p>
-                    <p>{type}</p>
+                    <p className={styles.type}>{type}</p>
                 </Col>
                 <Col  xs="auto">
                     <p>{location}</p>
                 </Col>
                 <Col  xs="auto">
-                <b>Read More</b>
-                                </Col>
+                    <b>Read More</b>
+                 </Col>
             </Row>
         </div>
     )

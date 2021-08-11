@@ -1,6 +1,5 @@
 .card {
     background-color: #fff;
-    color: #707070;
     padding: 2%;
     margin-bottom: 4%;
 }
@@ -9,4 +8,10 @@
 .jobTitle {
     font-size: 1.4rem;
     font-weight: 600;
+    color: #707070;
+}
+
+
+.type {
+    color: #0B0B0B;
 }

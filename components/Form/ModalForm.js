@@ -71,7 +71,7 @@ const ModalForm = (props) => {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
           "form-name": "download-brochure",
-          "Brochure": props.name,
+          "BrochureName": props.name,
           "Name": formData.Name,
           "Email": formData.Email,
           "Mob": formData.Mob,

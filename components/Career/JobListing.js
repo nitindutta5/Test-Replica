@@ -2,7 +2,6 @@ import { Container , Row, Col } from "reactstrap"
 import JobCard from "./JobCard"
 
 const JobListing = ({data}) =>{
-    console.log(data);
     return(
         <Col lg="10" className="mx-auto">
             {data.map((job,id)=>(
