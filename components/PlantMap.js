@@ -42,7 +42,7 @@ const PlantMap = () => {
         <Row className="mt-5">
             <Col lg={7} className="d-flex flex-column justify-content-center">
                 <h2 className="heading">{data[currentIndex].name}</h2>
-                <p>{data[currentIndex].dem}</p>
+                {/* <p>{data[currentIndex].dem}</p> */}
                 <p className="pe-5">{data[currentIndex].desc}</p>
             </Col>
             <Col lg={5} className="mx-auto mt-lg-0 mt-3">

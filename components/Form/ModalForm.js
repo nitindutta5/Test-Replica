@@ -13,8 +13,19 @@ const ModalForm = (props) => {
     type
   } = props;
 
+
+  const closeModal =() =>{
+    updateFormData({
+      Name: '',
+      Email: '',
+      Mob: '',
+      CompanyName: ''
+    });
+    toggle();
+  }
   const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-  const mobRegex = /^(\+\d{1,3}[- ]?)?\d{10}$/;
+  // const mobRegex = /^(\+\d{1,3}[- ]?)?\d{10}$/;
+  const mobRegex = /^\d{10}$/;
   const router = useRouter();
   const [formData, updateFormData] = useState({
     Name: '',
@@ -121,7 +132,7 @@ const ModalForm = (props) => {
       isValid = false;
     }
     if (!formData.Mob.trim().match(mobRegex)) {
-      mobError.invalidMob = "Please enter a valid mobile no. (+xx-xxxxxxxxxx)!";
+      mobError.invalidMob = "Please enter a valid mobile no. (xxxxxxxxxx)!";
       isValid = false;
     }
     setNameError(nameError);
@@ -135,13 +146,18 @@ const ModalForm = (props) => {
   return (
     <div>
       <Modal isOpen={modal} toggle={toggle} id="ModalForm">
-        <img src="../../Cross.svg" className={styles.cross} onClick={toggle} />
+        <img src="../../Cross.svg" className={styles.cross} onClick={closeModal} />
         <ModalBody className="py-5">
           <h2 className="text-center my-4 heading white-color">{type === "downloadBrochure" ? 'Download Brochure' : 'Enquiry Form'}</h2>
           <Row>
             <Col lg="8" className="mx-auto">
               <Form method="post" name={type === "downloadBrochure" ? 'download-brochure' : 'enquiry'} onSubmit={type === "downloadBrochure" ? handleBrochureSubmit : handleEnquirySubmit}>
                 <input type="hidden" name="form-name" value={type === "downloadBrochure" ? 'download-brochure' : 'enquiry'} />
+                {
+                  type==="downloadBrochure" &&
+                  <input type="hidden" name="brochureName" value={props.name} />
+                }
+
                 <FormGroup row>
                   <Col sm={12} className="mb-4" >
                     <Input type="text" name="Name" onChange={handleChange} value={formData.Name} placeholder="Name" className={styles.formcontrol} />

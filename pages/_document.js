@@ -23,7 +23,7 @@ class MyDocument extends Document {
             <input type="submit" />
           </form>
 
-          {/* Netlify Download Brochure Form */}
+          {/* Netlify Contact Form */}
           <form data-netlify="true" hidden name="contact-form" netlify-honeypot="bot-field">
             <input type="text" name="name" />
             <input type="email" name="email" />
@@ -34,6 +34,7 @@ class MyDocument extends Document {
 
           {/* Netlify Download Brochure Form */}
           <form data-netlify="true" hidden name="download-brochure" netlify-honeypot="bot-field">
+            <input type="hidden" name="brochureName" />
             <input type="text" name="Name" />
             <input type="email" name="Email" />
             <input type="tel" name="Mob" />

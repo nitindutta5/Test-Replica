@@ -36,7 +36,7 @@ const Infra = ({ infra, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
             },
             {
                 img: "../../verticals/infra/Icons/06_Smooth-Stainless-Steel-Bore.png",
-                title: "06_Smooth-Stainless-Steel-Bore.png"
+                title: "Smooth Stainless Steel Bore"
             },
             {
                 img: "../../verticals/infra/Icons/07_Hygienic.png",

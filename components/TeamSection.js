@@ -36,8 +36,12 @@ const TeamSection = () => {
             // img:'./Rajesh.png',
             name: "Abhishek Poddar",
             designation: "Director, JSL Lifestyle Limited"
+        },
+        {
+            img:'./VS1.jpg',
+            name: "Vijay Sharma",
+            designation: "Director, JSL Lifestyle Limited"
         }
-
 
     ]
     return (

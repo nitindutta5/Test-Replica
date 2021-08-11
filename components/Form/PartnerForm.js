@@ -4,7 +4,8 @@ import { useRouter } from 'next/router';
 
 const PartnerForm = () => {
   const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-  const mobRegex = /^(\+\d{1,3}[- ]?)?\d{10}$/;
+  // const mobRegex = /^(\+\d{1,3}[- ]?)?\d{10}$/;
+  const mobRegex = /^\d{10}$/;
   const router = useRouter();
   const [formData, updateFormData] = useState({
     Name: '',
@@ -97,7 +98,7 @@ const PartnerForm = () => {
       isValid = false;
     }
     if (!formData.Mob.trim().match(mobRegex)) {
-      mobError.invalidMob = "Please enter a valid mobile no. (+xx-xxxxxxxxxx)!";
+      mobError.invalidMob = "Please enter a valid mobile no. (xxxxxxxxxx)!";
       isValid = false;
     }
     setNameError(nameError);
@@ -147,7 +148,7 @@ const PartnerForm = () => {
         <FormGroup row>
           <Col sm={8} className="mb-5">
             <Input type="select" name="Location" id="exampleSelect" onChange={handleChange} value={formData.Location}>
-              <option selected>Location</option>
+              <option>Location</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>

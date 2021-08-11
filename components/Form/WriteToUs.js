@@ -92,7 +92,7 @@ const WritetoUs = () => {
         <FormGroup row>
           <Col sm={8} className="mb-5">
             <Input type="select" name="department" id="exampleSelect" onChange={handleChange} value={formData.department}>
-              <option selected>Select Department</option>
+              <option>Select Department</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>

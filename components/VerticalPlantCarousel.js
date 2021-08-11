@@ -31,7 +31,7 @@ const VerticalPlantCarousel = () => {
                                         <Row>
                                             <Col lg="4" className="me-auto d-flex flex-column justify-content-center">
                                                 <div>
-                                                    <small>{id + 1}/{plantData.length}</small>
+                                                    {/* <small>{id + 1}/{plantData.length}</small> */}
                                                     <h2 className="heading">{obj.name}</h2>
                                                     <p className="mb-3">
                                                         <b>{obj.dimen}</b>

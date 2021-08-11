@@ -98,7 +98,7 @@ const plumbing = ({ plumbing, ModalToggle, UpdateName, UpdateFile, UpdateType })
                    </Row>
                 </Container>
             </section> */}
-            <Section2 data={data.products}>Installation Steps</Section2>
+            <Section2 data={data.products}>Installation Process</Section2>
             <section className="pt-0">
                 <Container className="d-flex justify-content-center">
                 <Button color="secondary" onClick={() => handleForm(plumbing.File.url, "plumbing", "downloadBrochure")} className="download">
