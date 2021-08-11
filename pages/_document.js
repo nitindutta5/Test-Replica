@@ -14,21 +14,21 @@ class MyDocument extends Document {
             <input type="tel" name="Mob" />
             <input type="text" name="CompanyName" />
             <input type="select" name="Location" />
-            <input type="checkbox" name="homeware" />
-            <input type="checkbox" name="plumbingSolution" />
-            <input type="checkbox" name="jindalKitchen" />
-            <input type="checkbox" name="infraSolution" />
-            <input type="checkbox" name="oemSolutions" />
-            <input type="checkbox" name="mobility" />
+            <input type="checkbox" name="Homeware" />
+            <input type="checkbox" name="PlumbingSolution" />
+            <input type="checkbox" name="JindalKitchen" />
+            <input type="checkbox" name="InfraSolution" />
+            <input type="checkbox" name="OemSolutions" />
+            <input type="checkbox" name="Mobility" />
             <input type="submit" />
           </form>
 
           {/* Netlify Contact Form */}
           <form data-netlify="true" hidden name="contact-form" netlify-honeypot="bot-field">
-            <input type="text" name="name" />
-            <input type="email" name="email" />
-            <input type="select" name="department" />
-            <input type="textarea" name="msg" />
+            <input type="text" name="Name" />
+            <input type="email" name="Email" />
+            <input type="select" name="Department" />
+            <input type="textarea" name="Msg" />
             <input type="submit" />
           </form>
 

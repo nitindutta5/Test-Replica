@@ -17,39 +17,39 @@ const oem_solutions = ({ oem_solutions, ModalToggle, UpdateName, UpdateFile, Upd
         ],
         icons: [
             {
-                img: "../../verticals/ve/Icons/1.png",
+                img: "../../verticals/ve/Icons/01.png",
                 title: "Extensive Fire & Heat Resistant"
             },
             {
-                img: "../../verticals/ve/Icons/2.png",
+                img: "../../verticals/ve/Icons/02.png",
                 title: "Great Combination Of Strength & Pliability"
             },
             {
-                img: "../../verticals/ve/Icons/3.png",
+                img: "../../verticals/ve/Icons/03.png",
                 title: "Aesthetic Appeal With Ease Of Fabrication"
             },
             {
-                img: "../../verticals/ve/Icons/4.png",
+                img: "../../verticals/ve/Icons/04.png",
                 title: "Hygienic And Extremely Sturdy With Long Term Values"
             },
             {
-                img: "../../verticals/ve/Icons/5.png",
+                img: "../../verticals/ve/Icons/05.png",
                 title: "Recyclable With Reduced Waste"
             },
             {
-                img: "../../verticals/ve/Icons/6.png",
+                img: "../../verticals/ve/Icons/06.png",
                 title: "Earthquake Proof as it can withstand vibrations and shocks"
             },
             {
-                img: "../../verticals/ve/Icons/7.png",
+                img: "../../verticals/ve/Icons/07.png",
                 title: "Enhanced Formability With Corrosion Resistance"
             },
             {
-                img: "../../verticals/ve/Icons/8.png",
+                img: "../../verticals/ve/Icons/08.png",
                 title: "Maintenance Free With A Long Life"
             },
             {
-                img: "../../verticals/ve/Icons/9.png",
+                img: "../../verticals/ve/Icons/09.png",
                 title: "Environment Friendly & 100% Green Metal"
             }
         ],

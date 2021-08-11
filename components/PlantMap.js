@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Row, Col, Tooltip } from 'reactstrap'
+import { Row, Col, Tooltip, Button } from 'reactstrap'
 
 const isBrowser = typeof window !== "undefined";
 
@@ -25,27 +25,43 @@ const PlantMap = () => {
         {
             name: "Rohad Plant",
             dem: "20,234 sq.m.",
-            desc: "48th km stone, Delhi Rohtak, highway, Rohtak, Haryana 124001"
+            desc: "48th km stone, Delhi Rohtak, highway, Rohtak, Haryana 124001",
+            href: "https://www.google.com/maps/dir//JSL+Lifestyle+Limited,+48th+km+stone,+Delhi+Rohtak,+highway,+Rohtak,+Haryana+124001/@28.657676,76.716589,10z/data=!4m9!4m8!1m0!1m5!1m1!1s0x390d756f9a4b3a1d:0x4ec4e5ba587d4edd!2m2!1d76.7944366!2d28.7546799!3e0?hl=en"
         },
         {
             name: "Pathredi Plant",
             dem: "30,351 sq.m",
-            desc: "Village Pathredi, Bilaspur Tauru Road, Gurugram, Haryana – 122413"
+            desc: "Village Pathredi, Bilaspur Tauru Road, Gurugram, Haryana – 122413",
+            href: "https://www.google.com/maps/dir//Jindal+Lifestyle+Ltd.,+Gurugram,+Haryana+122413/@28.347021,76.814721,10z/data=!4m9!4m8!1m0!1m5!1m1!1s0x390d390be40e9527:0x6263994310e42157!2m2!1d76.8897798!2d28.2752269!3e0?hl=en"
         },
         {
             name: "Chennai Plant",
             dem: "30,351 sq.m",
-            desc: "D2, CMDA St, Industrial Estate, Maraimalai Nagar, Tamil Nadu-603209"
+            desc: "D2, CMDA St, Industrial Estate, Maraimalai Nagar, Tamil Nadu-603209",
+            href: "https://www.google.com/maps/dir/28.682739,77.4816688/CMDA+St,+Rail+Nagar,+Maraimalai+Nagar,+Tamil+Nadu+603203/@20.6943674,74.0554031,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3a52f9deb37fff75:0x622e9fb6e49fc1cd!2m2!1d80.0373771!2d12.7953472"
         }
     ];
     return (
         <Row className="mt-5">
-            <Col lg={7} className="d-flex flex-column justify-content-center">
+            {
+                data.map((location, id) => (
+                    <Col lg="3" md="3" key={id}>
+                        <small className="heading mb-2">{location.name}</small>
+                        <p className="pe-2 mb-3">{location.desc}</p>
+                        <a href={location.href} target="_blank" >
+                            <Button color="primary">Navigate</Button>
+                        </a>
+                    </Col>
+                ))
+            }
+
+
+            {/* <Col lg={7} className="d-flex flex-column justify-content-center">
                 <h2 className="heading">{data[currentIndex].name}</h2>
-                {/* <p>{data[currentIndex].dem}</p> */}
+                <p>{data[currentIndex].dem}</p>
                 <p className="pe-5">{data[currentIndex].desc}</p>
-            </Col>
-            <Col lg={5} className="mx-auto mt-lg-0 mt-3">
+            </Col> */}
+            {/* <Col lg={5} className="mx-auto mt-lg-0 mt-3">
                 <svg id="indiamap" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 931.007 1046.191">
                     <g transform="translate(-494 -3209)">
                         <path className="a"
@@ -4041,8 +4057,8 @@ const PlantMap = () => {
                         <p className="para mydetails white">Haryana 134202, India</p>
                     </Tooltip>
                 </>}
-            </Col>
-        </Row>
+            </Col> */}
+        </Row >
     );
 
 }

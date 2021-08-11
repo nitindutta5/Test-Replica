@@ -39,7 +39,7 @@ const WritetoUs = () => {
           "Name": formData.name,
           "Email": formData.email,
           "Department": formData.department,
-          "Message": formData.msg,
+          "Msg": formData.msg,
         })
       })
 
@@ -75,7 +75,7 @@ const WritetoUs = () => {
         <input type="hidden" name="form-name" value="contact-form" />
         <FormGroup row>
           <Col sm={8} className="mb-5" >
-            <Input type="text" name="name" placeholder="Name" onChange={handleChange} value={formData.name} />
+            <Input type="text" name="Name" placeholder="Name" onChange={handleChange} value={formData.name} />
             {Object.keys(nameError).map((key) => {
               return <span style={{ color: "red", fontSize: '12px' }}>{nameError[key]}</span>
             })}
@@ -83,7 +83,7 @@ const WritetoUs = () => {
         </FormGroup>
         <FormGroup row>
           <Col sm={8} className="mb-5">
-            <Input type="email" name="email" id="exampleEmail" placeholder="Business E-mail" onChange={handleChange} value={formData.email} />
+            <Input type="email" name="Email" id="exampleEmail" placeholder="Business E-mail" onChange={handleChange} value={formData.email} />
             {Object.keys(emailError).map((key) => {
               return <span style={{ color: "red", fontSize: '12px' }}>{emailError[key]}</span>
             })}
@@ -91,7 +91,7 @@ const WritetoUs = () => {
         </FormGroup>
         <FormGroup row>
           <Col sm={8} className="mb-5">
-            <Input type="select" name="department" id="exampleSelect" onChange={handleChange} value={formData.department}>
+            <Input type="select" name="Department" id="exampleSelect" onChange={handleChange} value={formData.department}>
               <option>Select Department</option>
               <option>2</option>
               <option>3</option>
@@ -102,7 +102,7 @@ const WritetoUs = () => {
         </FormGroup>
         <FormGroup row>
           <Col sm={8} className="mb-5">
-            <Input type="textarea" name="msg" id="exampleText" placeholder="Message" onChange={handleChange} value={formData.msg} />
+            <Input type="textarea" name="Msg" id="exampleText" placeholder="Message" onChange={handleChange} value={formData.msg} />
           </Col>
         </FormGroup>
         <FormGroup row>

@@ -13,7 +13,12 @@ const PartnerForm = () => {
     Mob: '',
     CompanyName: '',
     Location: '',
-    Interests: ''
+    Homeware: false,
+    PlumbingSolutions: false,
+    JindalKitchen: false,
+    InfraSolution: false,
+    OemSolutions: false,
+    Mobility: false
   });
   const [nameError, setNameError] = useState({});
   const [companyNameError, setCompanyNameError] = useState({});
@@ -28,24 +33,13 @@ const PartnerForm = () => {
   };
 
   const handleCheck = (e) => {
-    if (e.target.checked) {
-      let oldInterest = formData.Interests;
-      updateFormData(prevState => ({
-        ...prevState,
-        Interests: oldInterest.concat(`${e.target.name}, `)
-      }));
-    }
-    else {
-      if (formData.Interests.includes(e.target.name)) {
-        let oldInterest = formData.Interests;
-        let newInterest = oldInterest.replace(`${e.target.name},`, '')
-        updateFormData(prevState => ({
-          ...prevState,
-          Interests: newInterest
-        }));
-      }
-    }
+    const { name, checked } = e.target;
+    updateFormData(prevState => ({
+      ...prevState,
+      [name]: checked
+    }));
   }
+
 
   function encode(data) {
     return Object.keys(data)
@@ -67,7 +61,12 @@ const PartnerForm = () => {
           "Mob": formData.Mob,
           "CompanyName": formData.CompanyName,
           "Location": formData.Location,
-          "Interest": formData.Interests
+          "Homeware": formData.Homeware,
+          "PlumbingSolutions": formData.PlumbingSolutions,
+          "JindalKitchen": formData.JindalKitchen,
+          "InfraSolution": formData.InfraSolution,
+          "OemSolutions": formData.OemSolutions,
+          "Mobility": formData.Mobility
         })
       })
         .then(() => {
@@ -163,19 +162,19 @@ const PartnerForm = () => {
               <Row>
                 <Col sm={4} className="mb-4">
                   <Label check>
-                    <Input type="checkbox" id="checkbox2" name="homeware" onChange={handleCheck} />
+                    <Input type="checkbox" id="checkbox2" name="Homeware" onChange={handleCheck} />
                     Homeware
                   </Label>
                 </Col>
                 <Col sm={4} className="mb-4">
                   <Label check>
-                    <Input type="checkbox" id="checkbox2" name="plumbingSolution" onChange={handleCheck} />
+                    <Input type="checkbox" id="checkbox2" name="PlumbingSolution" onChange={handleCheck} />
                     Plumbing Solutions
                   </Label>
                 </Col>
                 <Col sm={4} className="mb-4">
                   <Label check>
-                    <Input type="checkbox" id="checkbox2" name="jindalKitchen" onChange={handleCheck} />
+                    <Input type="checkbox" id="checkbox2" name="JindalKitchen" onChange={handleCheck} />
                     Jindal Kitchens
                   </Label>
                 </Col>
@@ -185,19 +184,19 @@ const PartnerForm = () => {
               <Row>
                 <Col sm={4} className="mb-4">
                   <Label check>
-                    <Input type="checkbox" id="checkbox2" name="infraSolution" onChange={handleCheck} />
+                    <Input type="checkbox" id="checkbox2" name="InfraSolution" onChange={handleCheck} />
                     Infra Solutions
                   </Label>
                 </Col>
                 <Col sm={4} className="mb-4">
                   <Label check>
-                    <Input type="checkbox" id="checkbox2" name="oemSolutions" onChange={handleCheck} />
+                    <Input type="checkbox" id="checkbox2" name="OemSolutions" onChange={handleCheck} />
                     OEM Solutions
                   </Label>
                 </Col>
                 <Col sm={4} className="mb-4">
                   <Label check>
-                    <Input type="checkbox" id="checkbox2" name="mobility" onChange={handleCheck} />
+                    <Input type="checkbox" id="checkbox2" name="Mobility" onChange={handleCheck} />
                     Mobility
                   </Label>
                 </Col>
