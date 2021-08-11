@@ -18,44 +18,36 @@ const plumbing = ({ plumbing, ModalToggle, UpdateName, UpdateFile, UpdateType })
         icons: [
             {
                 img: "../../verticals/plumbing/Icons/01.png",
-                title: "The leading player in stainless steel space for both B2B and B2C, backed by the House of Jindals, the largest producer of stainless steel in India"
+                title: "Easily Installed"
             },
             {
                 img: "../../verticals/plumbing/Icons/02.png",
-                title: "Forward integration with our retail footprint"
+                title: "Hygeine"
             },
             {
                 img: "../../verticals/plumbing/Icons/03.png",
-                title: "Honing business partner relationships with long-term vision and perspective"
+                title: "Light Weight"
             },
             {
                 img: "../../verticals/plumbing/Icons/04.png",
-                title: "100% customer satisfaction focus and compliance with customer SOP for each process"
+                title: "Long Lasting"
             },
             {
                 img: "../../verticals/plumbing/Icons/05.png",
-                title: "Customised solutions, hassle-free services for all products"
+                title: "Recyclable"
             },
             {
                 img: "../../verticals/plumbing/Icons/06.png",
-                title: "Best-in-class product portfolio catering to all plumbing needs in powerful stainless steel"
+                title: "Safe"
             },
             {
                 img: "../../verticals/plumbing/Icons/07.png",
-                title: "State-of-the-art plant with the ability to serve large quantities in short lead time"
+                title: "Seemless Connection"
             },
             {
                 img: "../../verticals/plumbing/Icons/08.png",
-                title: "Self-reliant and sturdy group securing competitive pricing with backward integration of raw material for most of our products"
-            },
-            {
-                img: "../../verticals/plumbing/Icons/09.png",
-                title: "A unique blend of manufacturing abilities and marketplace sensibilities"
-            },
-            {
-                img: "../../verticals/plumbing/Icons/10.png",
-                title: "Extremely eco-friendly, contributing to the larger environmental drives"
-            }
+                title: "Zero Maintenance"
+            }                                                                                                                                                                                                                               
         ],
         products: [
             {
