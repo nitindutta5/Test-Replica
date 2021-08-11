@@ -7,7 +7,7 @@ import { Button, Container } from "reactstrap";
 
 
 
-const oem_solutions = ({ModalToggle}) => {
+const oem_solutions = ({ oem_solutions, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
     const data = {
         type: "oem",
         brands: [
@@ -76,6 +76,14 @@ const oem_solutions = ({ModalToggle}) => {
             }
         ]
     };
+
+
+    const handleForm = (file, name, type) => {
+        UpdateName(name);
+        UpdateFile(file);
+        UpdateType(type);
+        ModalToggle();
+    }
     return (
         <>
             <Head>
@@ -88,15 +96,30 @@ const oem_solutions = ({ModalToggle}) => {
             <Section2 data={data.products}>Our Range of Products</Section2>
             <section className="pt-0">
                 <Container className="d-flex justify-content-center">
-                    <Button color="secondary" className="download" onClick={ModalToggle}>
-                        <img src="../Download-Brochure_02.svg"/>
+                <Button color="secondary" onClick={() => handleForm(oem_solutions.File.url, "oem_solutions", "downloadBrochure")} className="download">
+                        <img src="../Download-Brochure_02.svg" />
                         Brochure</Button>
-                        <Button color="secondary" onClick={ModalToggle} className="ms-3">
-                           Enquire</Button>
+                    <Button color="secondary" onClick={() => handleForm("", "oem_solutions", "enquiry")} className="ms-3">
+                        Enquire</Button>
                 </Container>
             </section>
         </>
     )
 }
+export async function getStaticProps() {
+    const baseURL = process.env.API_URL;
+    let data;
+    try {
+        const res = await fetch(baseURL + `brochures?slug=oem_solutions`);
+        data = await res.json();
+    } catch (error) {
+        console.log("Server Error Occured");
+    }
 
+    return {
+        props: {
+            oem_solutions: data[0],
+        }
+    }
+}
 export default oem_solutions

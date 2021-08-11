@@ -14,6 +14,16 @@ class MyDocument extends Document {
             <input type="text" name="CompanyName" />
             <input type="submit" />
           </form>
+
+          {/* Netlify Enquiry Form */}
+          <form data-netlify="true" hidden name="enquiry" netlify-honeypot="bot-field">
+            <input type="text" name="Name" />
+            <input type="email" name="Email" />
+            <input type="tel" name="Mob" />
+            <input type="text" name="CompanyName" />
+            <input type="textarea" name="Msg" />
+            <input type="submit" />
+          </form>
           <Main />
           <NextScript />
         </body>

@@ -613,6 +613,8 @@ section {
 
 .ss-card {
   padding: 2%;
+  text-align: center;
+  margin: 0px auto;
 }
 
 .ss-card img {
@@ -642,9 +644,10 @@ section {
   margin-bottom: 2%;
 }
 
+/* 
 .ss-card p {
   padding-right: 25%;
-}
+} */
 
 .bg-dark {
   background-color: #fff !important;

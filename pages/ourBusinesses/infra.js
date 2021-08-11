@@ -4,7 +4,7 @@ import Section1 from "../../components/VerticalsSections/Section1"
 import Section2 from "../../components/VerticalsSections/Section2";
 import { Button, Container } from "reactstrap";
 
-const Infra = ({ModalToggle}) => {
+const Infra = ({ infra, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
     const data = {
         type: "infra",
         brands: [
@@ -86,6 +86,14 @@ const Infra = ({ModalToggle}) => {
             }
         ]
     };
+
+
+    const handleForm = (file, name, type) => {
+        UpdateName(name);
+        UpdateFile(file);
+        UpdateType(type);
+        ModalToggle();
+    }
     return (
         <div>
             <Head>
@@ -98,15 +106,30 @@ const Infra = ({ModalToggle}) => {
             <Section2 data={data.products}>Our Range of Products</Section2>
             <section className="pt-0">
                 <Container className="d-flex justify-content-center">
-                <Button color="secondary" onClick={ModalToggle} className="download">
-                        <img src="../Download-Brochure_02.svg"/>
+                    <Button color="secondary" onClick={() => handleForm(infra.File.url, "infra", "downloadBrochure")} className="download">
+                        <img src="../Download-Brochure_02.svg" />
                         Brochure</Button>
-                        <Button color="secondary" onClick={ModalToggle} className="ms-3">
-                           Enquire</Button>
+                    <Button color="secondary" onClick={() => handleForm("", "infra", "enquiry")} className="ms-3">
+                        Enquire</Button>
                 </Container>
             </section>
         </div>
     )
 }
+export async function getStaticProps() {
+    const baseURL = process.env.API_URL;
+    let data;
+    try {
+        const res = await fetch(baseURL + `brochures?slug=infra`);
+        data = await res.json();
+    } catch (error) {
+        console.log("Server Error Occured");
+    }
 
+    return {
+        props: {
+            infra: data[0],
+        }
+    }
+}
 export default Infra

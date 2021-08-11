@@ -4,7 +4,13 @@ import Section1 from "../../components/VerticalsSections/Section1"
 import Section2 from "../../components/VerticalsSections/Section2";
 import { Button, Container } from "reactstrap";
 
-const jindalKitchen = ({homeware,ModalToggle}) => {
+const jindalKitchen = ({ homeware, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
+    const handleDownloadBrochure = (file, name, type) => {
+        UpdateName(name);
+        UpdateFile(file);
+        UpdateType(type);
+        ModalToggle();
+    }
     const data = {
         type: "homeware",
         brands: [
@@ -73,8 +79,8 @@ const jindalKitchen = ({homeware,ModalToggle}) => {
             <Section2 data={data.products}>Our Range of Products</Section2>
             <section className="pt-0">
                 <Container className="d-flex justify-content-center">
-                <Button color="secondary" onClick={ModalToggle} className="download">
-                        <img src="../Download-Brochure_02.svg"  />
+                    <Button color="secondary" onClick={() => handleDownloadBrochure(homeware.File.url, "homeware", "downloadBrochure")} className="download">
+                        <img src="../Download-Brochure_02.svg" />
                         Brochure</Button>
                     <a target="_blank" href="https://www.arttdinox.com/">
                         <Button color="secondary" className="ms-3">
@@ -94,12 +100,12 @@ export async function getStaticProps() {
     } catch (error) {
         console.log("Server Error Occured");
     }
-  
+
     return {
         props: {
-            homeware: data,
+            homeware: data[0],
         }
     }
-  }
+}
 
 export default jindalKitchen

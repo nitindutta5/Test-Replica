@@ -9,7 +9,7 @@ import OurBusinesses from '../components/OurBusinesses'
 import BannerCarousel from '../components/BannerCarousel'
 import { homePageBanners } from '../Data'
 
-export default function Home({verticals}) {
+export default function Home({verticals, ModalToggle, UpdateName, UpdateFile, UpdateType }) {
   return (
     <>
       <Head>
@@ -20,7 +20,7 @@ export default function Home({verticals}) {
       {/* <Banner src={BannerImage} text="CRAFTING A SMART FUTURE FOR A BEAUTIFUL LIVING"/> */}
       <BannerCarousel data={homePageBanners}/>
       <AboutUs />
-      <OurBusinesses data={verticals}/>
+      <OurBusinesses data={verticals} ModalToggle={ModalToggle} UpdateFile={UpdateFile} UpdateName={UpdateName} UpdateType={UpdateType}/>
       <OurPlants/>
       <Media />
       <SocialMedia/>

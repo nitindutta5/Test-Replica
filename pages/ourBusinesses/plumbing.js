@@ -7,7 +7,7 @@ import { Button, Container, Row, Col } from "reactstrap";
 
 
 
-const plumbing = ({ModalToggle}) => {
+const plumbing = ({ plumbing, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
     const data = {
         type: "plumbing",
         brands: [
@@ -80,6 +80,14 @@ const plumbing = ({ModalToggle}) => {
             }
         ]
     };
+
+
+    const handleForm = (file, name, type) => {
+        UpdateName(name);
+        UpdateFile(file);
+        UpdateType(type);
+        ModalToggle();
+    }
     return (
         <>
             <Head>
@@ -101,15 +109,30 @@ const plumbing = ({ModalToggle}) => {
             <Section2 data={data.products}>Pipes & Fittings</Section2>
             <section className="pt-0">
                 <Container className="d-flex justify-content-center">
-                    <Button color="secondary" onClick={ModalToggle} className="download">
+                <Button color="secondary" onClick={() => handleForm(plumbing.File.url, "plumbing", "downloadBrochure")} className="download">
                         <img src="../Download-Brochure_02.svg" />
                         Brochure</Button>
-                        <Button color="secondary" onClick={ModalToggle} className="ms-3">
-                           Enquire</Button>
+                    <Button color="secondary" onClick={() => handleForm("", "plumbing", "enquiry")} className="ms-3">
+                        Enquire</Button>
                 </Container>
             </section>
         </>
     )
 }
+export async function getStaticProps() {
+    const baseURL = process.env.API_URL;
+    let data;
+    try {
+        const res = await fetch(baseURL + `brochures?slug=plumbing`);
+        data = await res.json();
+    } catch (error) {
+        console.log("Server Error Occured");
+    }
 
+    return {
+        props: {
+            plumbing: data[0],
+        }
+    }
+}
 export default plumbing

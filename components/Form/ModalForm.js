@@ -8,9 +8,12 @@ const ModalForm = (props) => {
     modal,
     toggle,
     file,
-    name
+    name,
+    type
   } = props;
 
+
+  console.log(file, name, type);
 
   const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   const mobRegex = /^(\+\d{1,3}[- ]?)?\d{10}$/;
@@ -40,18 +43,15 @@ const ModalForm = (props) => {
   }
 
   const downloadBrochure = () => {
-    let a = document.createElement('a');
-    a.href = "../Plumbing_brochure.pdfs";
-
-    // Give filename you wish to download
-    a.download = `Plumbing_Brochure`;
-    a.style.display = 'none';
-    document.body.appendChild(a);
-    a.click();
+    let link = document.createElement('a');
+    link.href = file;
+    link.target = "_blank";
+    link.download = file.substring(file.lastIndexOf('/') + 1);
+    link.dispatchEvent(new MouseEvent('click'));
   }
 
 
-  const handleSubmit = (event) => {
+  const handleBrochureSubmit = (event) => {
 
     event.preventDefault();
     const isValid = formValidation();
@@ -61,6 +61,7 @@ const ModalForm = (props) => {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
           "form-name": "download-brochure",
+          "Brochure": props.name,
           "Name": formData.Name,
           "Email": formData.Email,
           "Mob": formData.Mob,
@@ -77,7 +78,7 @@ const ModalForm = (props) => {
     }
   }
 
-  const handleCaseStudySubmit = (event) => {
+  const handleEnquirySubmit = (event) => {
     event.preventDefault();
     const isValid = formValidation();
     if (isValid) {
@@ -85,18 +86,17 @@ const ModalForm = (props) => {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
-          "form-name": "download-casestudy",
+          "form-name": "enquiry",
           "Name": formData.Name,
           "Email": formData.Email,
           "Mob": formData.Mob,
           "CompanyName": formData.CompanyName,
-          "Casestudy-Title": props.caseStudyName
+
         })
       })
 
         .then(() => {
           router.push('/thankyou');
-          downloadCaseStudy();
         })
         .catch(error => alert(error))
     }
@@ -138,11 +138,11 @@ const ModalForm = (props) => {
       <Modal isOpen={modal} toggle={toggle} id="ModalForm">
         <img src="../../Cross.svg" className={styles.cross} onClick={toggle} />
         <ModalBody className="py-5">
-          <h2 className="text-center my-4 heading white-color">Download Brochure</h2>
+          <h2 className="text-center my-4 heading white-color">{type === "downloadBrochure" ? 'Download Brochure' : 'Enquiry Form'}</h2>
           <Row>
             <Col lg="8" className="mx-auto">
-              <Form method="post" name='download-brochure' onSubmit={handleSubmit}>
-                <input type="hidden" name="form-name" value='download-brochure' />
+              <Form method="post" name={type === "downloadBrochure" ? 'download-brochure' : 'enquiry'} onSubmit={type === "downloadBrochure" ? handleBrochureSubmit : handleEnquirySubmit}>
+                <input type="hidden" name="form-name" value={type === "downloadBrochure" ? 'download-brochure' : 'enquiry'} />
                 <FormGroup row>
                   <Col sm={12} className="mb-4" >
                     <Input type="text" name="Name" onChange={handleChange} value={formData.Name} placeholder="Name" className={styles.formcontrol} />
@@ -177,7 +177,7 @@ const ModalForm = (props) => {
                 </FormGroup>
                 <FormGroup row>
                   <Col sm={{ size: 12 }}>
-                    <Button color="primary">Download</Button>
+                    <Button color="primary">{type === "downloadBrochure" ? 'Download' : 'Submit'}</Button>
                   </Col>
                 </FormGroup>
               </Form>

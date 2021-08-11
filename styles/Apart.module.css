@@ -36,6 +36,10 @@
     .icon {
         max-width: 70px;
     }
+
+    .left {
+        max-width: 290px;
+    }
 }
 
 @media(max-width:480px) {

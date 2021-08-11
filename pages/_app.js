@@ -22,9 +22,9 @@ function MyApp({ Component, pageProps, router }) {
 
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
-
   const [file, setFile] = useState("");
   const [name, setName] = useState("");
+  const [type, setType] = useState("");
 
   return (
     <ThemeProvider>
@@ -36,10 +36,10 @@ function MyApp({ Component, pageProps, router }) {
       </Head>
       <Header route={router.route} handleOverlay={handleOverlay} />
       <Overlay checkOpen={checkOpen} />
-      <Component {...pageProps} ModalToggle={toggle} />
+      <Component {...pageProps} ModalToggle={toggle} UpdateFile={setFile} UpdateName={setName} UpdateType={setType} />
       {/* <FormOverlay/> */}
       {/* <Chat/> */}
-      <ModalForm toggle={toggle} modal={modal} file={file} name={name} />
+      <ModalForm toggle={toggle} modal={modal} file={file} name={name} type={type} />
       <Footer />
     </ThemeProvider>
   )

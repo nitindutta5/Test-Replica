@@ -5,11 +5,18 @@ import { useState } from "react";
 import Link from "next/link";
 import {BusinessVerticals} from '../Data'
 
-const VerticalsSlider = () => {
+const VerticalsSlider = ({data,ModalToggle, UpdateName, UpdateFile, UpdateType}) => {
 
     const getIndex = (e) => {
         setPreviousIndex(currentIndex);
         setCurrentIndex(e);
+    }
+
+    const handleDownloadBrochure = (file, name, type) => {
+        UpdateName(name);
+        UpdateFile(file);
+        UpdateType(type);
+        ModalToggle();
     }
     const params = {
         autoplay: true,
@@ -34,9 +41,9 @@ const VerticalsSlider = () => {
                 <Col lg="6" className="px-0">
                     <Slider {...params} className={styles.slider} >
                         {
-                            BusinessVerticals.map((obj, id) => (
+                            data.map((obj, id) => (
                                 <div key={id}>
-                                    <div className={styles.left} style={{ backgroundImage: `url(${obj.img})` }}>
+                                    <div className={styles.left} style={{ backgroundImage: `url(${obj.Featured_Img.url})` }}>
                                     </div>
                                 </div>
                             ))
@@ -45,26 +52,25 @@ const VerticalsSlider = () => {
                 </Col>
                 <Col lg="6" className={styles.right} >
                     <div className={`${currentIndex>previousIndex?styles.forward:styles.backward}`}>
-                    <img src={BusinessVerticals[currentIndex].logo} alt="" className={styles.logo}/>
+                    <img src={data[currentIndex].logo.url} alt="" className={styles.logo}/>
                         <div className={styles.box1}>
                             <h1 className={styles.title}>
-                                {BusinessVerticals[currentIndex].name}
+                                {data[currentIndex].name}
                             </h1>
                         </div>
                         <p className={styles.content}>
-                            {BusinessVerticals[currentIndex].text}
+                            {data[currentIndex].Description}
                         </p>
-                        <Link href={BusinessVerticals[currentIndex].url}>
+                        <Link href={data[currentIndex].slug}>
                             <Button className={styles.button}>Know more
                                 <img src="../Know-more-arrow-white.svg" className="img-fluid" />
                             </Button>
                         </Link>
-                        <Button className="mt-5" color="secondary">Download Brochure
+                        <Button className="mt-5" color="secondary" onClick={() => handleDownloadBrochure(data[currentIndex].File.url, data[currentIndex].slug, "downloadBrochure")}>Download Brochure
                         </Button>
                     </div>
                 </Col>
             </Row>
-
         </div>
     )
 }

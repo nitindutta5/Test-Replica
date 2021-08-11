@@ -11,17 +11,14 @@ import Previous from "../components/Previous";
 import ModalForm from "../components/Form/ModalForm";
 
 
-const downloadBrochure = ({ verticals }) => {
-    // For Modal Form
-    const [modal, setModal] = useState(false);
-    const toggle = () => setModal(!modal);
+const downloadBrochure = ({ verticals, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
 
-    const [file, setFile] = useState("");
-    const [name, setName] = useState("");
 
-    const OpenModal = (file) => {
-        setFile(file);
-        toggle();
+    const OpenModal = (file, name, type) => {
+        UpdateFile(file);
+        UpdateName(name);
+        UpdateType(type);
+        ModalToggle();
     }
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -101,14 +98,13 @@ const downloadBrochure = ({ verticals }) => {
                         <Col lg="6" md="10" className="pt-5">
                             <div className={styles.holder}>
                                 <h5 className={styles.title2}>{verticals[currentIndex].name}</h5>
-                                <Button className={styles.secondBtn} onClick={() => OpenModal(verticals[currentIndex].File.url)} color="secondary"> <img src="../Download-Brochure_02.svg" />Brochure</Button>
+                                <Button className={styles.secondBtn} onClick={() => OpenModal(verticals[currentIndex].File.url, verticals[currentIndex].name, "downloadBrochure")} color="secondary"> <img src="../Download-Brochure_02.svg" />Brochure</Button>
                             </div>
                             <p>{verticals[currentIndex].Description}</p>
                         </Col>
                     </Row>
                 </Container>
             </section>
-            <ModalForm toggle={toggle} modal={modal} file={file} />
         </>
     )
 }

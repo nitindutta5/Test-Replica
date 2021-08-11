@@ -7,8 +7,14 @@ import classNames from 'classnames';
 import NextBtn from "./NextBtn";
 import Previous from "./Previous";
 
-const OurBusinesses = ({data}) => {
-    console.log(data);
+const OurBusinesses = ({data,ModalToggle, UpdateName, UpdateFile, UpdateType}) => {
+    const handleDownloadBrochure = (file, name, type) => {
+        UpdateName(name);
+        UpdateFile(file);
+        UpdateType(type);
+        ModalToggle();
+    }
+
     var settings = {
         className: "center",
         centerMode: true,
@@ -89,7 +95,7 @@ const OurBusinesses = ({data}) => {
                                             <Link href={`ourBusinesses/${obj.slug}`}>
                                                 <Button className={styles.knowMore} color="secondary">
                                                     Know More</Button></Link>
-                                            <Button className={styles.btn} color="secondary">
+                                            <Button className={styles.btn} onClick={() => handleDownloadBrochure(obj.File.url,obj.slug, "downloadBrochure")}color="secondary">
                                                 <img src="../Download-Brochure_02.svg" />
                                                 Brochure</Button>
                                         </div>
