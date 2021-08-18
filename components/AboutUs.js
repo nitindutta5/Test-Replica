@@ -8,7 +8,7 @@ const AboutUs = () =>{
             <Container fluid className="wrapper">
                 <Row>
                 <Col lg="5">
-                    <h1 className="heading">About JSLL</h1>
+                    <h1 className="heading">Jindal Lifestyle</h1>
                     <p className="para">JSL Lifestyle is creating a Stainless Steel culture committed to a vision of sustainable development & innovation. The hallmark of a JSLL creation lies in its flawless quality and exquisite finish, both a function of its world class manufacturing acumen and master-craftsmanship abilities. Nothing embodies this more than our proprietary, ahead-of-the-curve production facilities. Being the leading integrated stainless steel solution provider for B2B & B2C domestic & international customers, we offer a wide range of bespoke & innovative designer products with superior quality, to elevate lifestyle. </p>
             </Col>
                 </Row>

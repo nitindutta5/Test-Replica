@@ -7,7 +7,7 @@ import Testimonials from "../components/Testimonials"
 import VideoGallery from "../components/VideoGallery"
 
 
-const Media = () => {
+const Media = ({blogs}) => {
     return (
         <>
             <Head>
@@ -16,13 +16,29 @@ const Media = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Banner src="./banner/media.png" text="JSLL LIFESTYLE DIARIES" />
-            <Blogs />
+            <Blogs data={blogs}/>
             <CaseStudies />
             <News_Updates />
             <Testimonials />
             <VideoGallery />
         </>
     )
+}
+export async function getStaticProps() {
+    const baseURL = process.env.API_URL;
+    let data;
+    try {
+        const res = await fetch(baseURL + `blogs?_sort=Id:desc`);
+        data = await res.json();
+    } catch (error) {
+        console.log("Server Error Occured");
+    }
+
+    return {
+        props: {
+            blogs: data,
+        }
+    }
 }
 
 export default Media

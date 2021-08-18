@@ -7,9 +7,10 @@ import Slider from 'react-slick';
 import NextBtn from "../../components/NextBtn";
 import Previous from "../../components/Previous";
 import BlogCard from "../../components/Blogs/BlogCard"
-import { blogData } from '../../components/Blogs/Blogs'
+const baseUrl = process.env.API_URL;
+// import { blogData } from '../../components/Blogs/Blogs'
 
-const BlogInnerPage = () => {
+const BlogInnerPage = ({blog, allBlogs}) => {
     var settings = {
         infinite: true,
         autoplay:true,
@@ -46,25 +47,25 @@ const BlogInnerPage = () => {
                 <meta name="description" content="Media Page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Banner src=".././banner/blog-inner.png" text="Lorem ipsum dolor sit amet, consetetur ipsum dolor sit amet, consetetur." />
+            <Banner src={blog[0].Banner_img.url} text={blog[0].Title} />
             <div className="bg2">
                 <Container>
                     <Row>
                         <Col lg="11" className={"mx-auto " + [styles.contentBox]}>
-                            <p className={styles.date}>13th June 2021</p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<br /><br /> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolo Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolo Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolo Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            <p className={styles.date}>{blog[0].Date}</p>
+                            <p dangerouslySetInnerHTML={{__html:blog[0].Content}} />
                             <Link href="/media"><a className={styles.back}>Back to Media</a></Link>
                         </Col>
                     </Row>
                 </Container>
-                <Container fluid className="wrapper">
+                {/* <Container fluid className="wrapper">
                     <section>
                         <Row>
                             <Col lg="11" className="mx-auto">
                                 <h2 className="heading text-center">More Blogs</h2>
                                 <Slider {...settings} className="inn">
                                     {
-                                        blogData.map((obj, id) => (
+                                        allBlogs.map((obj, id) => (
                                             <div key={id} className="position-relative">
                                                 <BlogCard data={obj} />
                                             </div>
@@ -74,10 +75,32 @@ const BlogInnerPage = () => {
                             </Col>
                         </Row>
                     </section>
-                </Container>
+                </Container> */}
             </div>
         </div>
     )
 }
 
+export async function getStaticPaths() {
+
+    const res = await fetch(`${baseUrl}blogs`);
+    const posts = await res.json();
+    console.log(posts);
+    const paths = posts.map((post) => ({
+      params: { slug: post.slug },
+    }))
+  
+    return { paths, fallback: false }
+  }
+  
+  export async function getStaticProps(context) {
+    let slug = context.params.slug;
+    const res = await fetch(`${baseUrl}blogs?slug=${slug}`)
+    const blog = await res.json()
+    const res1 = await fetch(baseUrl + "blogs");
+    const allBlogs = await res1.json();
+  
+    return { props: { blog, allBlogs } }
+  }
+  
 export default BlogInnerPage

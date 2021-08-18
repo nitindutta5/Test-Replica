@@ -5,6 +5,11 @@
     line-height: 1.8;
 }
 
+.logo {
+    max-width: 200px;
+}
+
+
 .category2 {
     text-align: center;
     margin: 0px auto;

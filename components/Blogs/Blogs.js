@@ -2,39 +2,40 @@ import { Container, Row, Col, Pagination, PaginationLink, PaginationItem } from 
 import BlogCard from "./BlogCard";
 import { useState } from "react";
 
-export const blogData = [
-    {
-        img: "../../blog/dummy1.png",
-        title: "Lorem ipsum dolor sit amet, consetetur",
-        date: "13th June 2021",
-        info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum",
-        slug: "lorem_Ispem"
-    },
-    {
-        img: ".././blog/dummy2.png",
-        title: "Lorem ipsum dolor sit amet, consetetur",
-        date: "13th June 2021",
-        info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum",
-        slug: "lorem_Ispem"
-    },
-    {
-        img: "../../blog/dummy3.png",
-        title: "Lorem ipsum dolor sit amet, consetetur",
-        date: "13th June 2021",
-        info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum",
-        slug: "lorem_Ispem"
-    },
-    {
-        img: "../../blog/dummy2.png",
-        title: "Lorem ipsum dolor sit amet, consetetur",
-        date: "13th June 2021",
-        info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum",
-        slug: "lorem_Ispem"
-    }
-];
-const Blogs = () => {
+// export const blogData = [
+//     {
+//         img: "../../blog/dummy1.png",
+//         title: "Lorem ipsum dolor sit amet, consetetur",
+//         date: "13th June 2021",
+//         info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum",
+//         slug: "lorem_Ispem"
+//     },
+//     {
+//         img: ".././blog/dummy2.png",
+//         title: "Lorem ipsum dolor sit amet, consetetur",
+//         date: "13th June 2021",
+//         info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum",
+//         slug: "lorem_Ispem"
+//     },
+//     {
+//         img: "../../blog/dummy3.png",
+//         title: "Lorem ipsum dolor sit amet, consetetur",
+//         date: "13th June 2021",
+//         info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum",
+//         slug: "lorem_Ispem"
+//     },
+//     {
+//         img: "../../blog/dummy2.png",
+//         title: "Lorem ipsum dolor sit amet, consetetur",
+//         date: "13th June 2021",
+//         info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum",
+//         slug: "lorem_Ispem"
+//     }
+// ];
+const Blogs = ({data}) => {
     const pageSize = 6;
-    const pagesCount = 2;
+    const pagesCount = Math.ceil(data.length/pageSize);
+    console.log(pagesCount);
     const [currentPage, setCurrentPage] = useState(0);
 
     const handlePageClick = (e, index) => {
@@ -73,7 +74,7 @@ const Blogs = () => {
                     <Col lg="11" className="mx-auto">
                         <Row>
                             {
-                                blogData.slice(currentPage * pageSize, (currentPage + 1) * pageSize).map((obj, id) => (
+                                data.slice(currentPage * pageSize, (currentPage + 1) * pageSize).map((obj, id) => (
                                     <Col lg="4" md="6" xs="6" key={id} className="mb-5">
                                         <BlogCard data={obj} />
                                     </Col>

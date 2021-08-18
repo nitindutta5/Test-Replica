@@ -12,7 +12,7 @@ const plumbing = ({ plumbing, ModalToggle, UpdateName, UpdateFile, UpdateType })
         type: "plumbing",
         brands: [
             {
-                content: "JSLL Plumbing provides sustainable solutions for the versatile domestic market panning from residential to industrial projects in pure stainless steel. Our well-oriented global technology along with the best-in-class quality assurance extends the exhaustive range for varied use, stretching aggressive support in project development. Our entire product range of pipes and fittings is exclusively in EN 316L and JIS 304 & 316L grade stainless steel. Given that stainless steel is widely known as 'Green Metal', it is the only metal suitable for 'drinking-water pipes'. JSLL Plumbing is your one-stop solution for all the plumbing requirements."
+                content: "We provide sustainable solutions for the versatile domestic market panning from residential to industrial projects in pure stainless steel. Our well-oriented global technology along with the best-in-class quality assurance extends the exhaustive range for varied use, stretching aggressive support in project development. Our entire product range of pipes and fittings is exclusively in EN 316L and JIS 304 & 316L grade stainless steel. Stainless steel, widely known as 'Green Metal', is the only metal suitable for 'drinking-water pipes'. We are your one-stop solution for all the plumbing requirements."
             }
         ],
         icons: [
@@ -88,7 +88,7 @@ const plumbing = ({ plumbing, ModalToggle, UpdateName, UpdateFile, UpdateType })
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Banner src=".././banner/Plumbing.jpg" text="Plumbing" />
-            <Section1 data={data} title2="Why Stainless Steel">Sustainable Plumbing Solutions</Section1>
+            <Section1 data={data} title2="Benefits of Stainless Steel in Plumbing">Sustainable Plumbing Solutions</Section1>
             {/* <section className="pt-0">
                 <Container>
                    <Row>

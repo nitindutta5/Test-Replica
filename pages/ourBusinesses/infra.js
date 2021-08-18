@@ -10,7 +10,7 @@ const Infra = ({ infra, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
         brands: [
             {
                 bold: "",
-                content: "At JSLL Infra, we are committed to dynamic and versatile services that drives us to enhance commercial, residential and public sector projects. A wide variety of products such as benches, claddings, dustbins, facades, bus shelters, toilets, etc. ensures that the broad need of every unique project is met with efficient stainless steel solutions. Being a zero maintenance and environment-friendly material, stainless steel is the first choice for architects, builders, planners, etc."
+                content: "We are committed to dynamic and versatile services that drive us to enhance commercial, residential and public sector projects. A wide variety of products such as benches, claddings, dustbins, facades, bus shelters, toilets, etc. ensures that the broad need of every unique project is met with efficient stainless steel solutions. Being a zero maintenance and environment-friendly material, stainless steel is the first choice for architects, builders and planners."
             }
         ],
         icons: [

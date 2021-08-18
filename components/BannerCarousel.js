@@ -8,6 +8,7 @@ const BannerCarousel = ({ data }) => {
   const params = {
     spaceBetween: 0,
     effect: 'fade',
+    speed: 2000,
     autoplay: {
         delay: 2500,
         disableOnInteraction: false

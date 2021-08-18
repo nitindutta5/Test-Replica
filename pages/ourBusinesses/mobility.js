@@ -11,7 +11,7 @@ const mobility = ({ mobility, ModalToggle, UpdateName, UpdateFile, UpdateType })
         type: "mobility",
         brands: [
             {
-                content: "JSLL Mobility caters to the mobility sector, especially Indian Railways and Delhi Metro. Our optimally manufactured products lend great strength and longer durability to the trains along with providing ease and comfort to the commuters. The components of stainless steel range in many grades that are used in railways operations. We majorly use austenitic stainless-steel in grades 301LN, 201, 301, 201LN and 304 which are used in the construction of railway coaches to build components of ferritic stainless steel 409M / IRSM 44 97 and Nitronic 30 that is majorly used for freight wagons."
+                content: 'We cater to the mobility sector, especially Indian Railways and Metros. Our optimally manufactured products lend great strength and longer durability to the trains along with providing ease and comfort to the commuters. The components of stainless steel range in many grades that are used in railways operations. We majorly use austenitic stainless-steel in grades 301LN, 201, 301, 201LN and 304 which are used in the construction of railway coaches to build components of ferritic stainless steel 409M / IRSM 44 97 and Nitronic 30 that is majorly used for freight wagons.'
             }
         ],
         icons: [
@@ -21,7 +21,7 @@ const mobility = ({ mobility, ModalToggle, UpdateName, UpdateFile, UpdateType })
             },
             {
                 img: "../../verticals/mobility/Icons/02_25,000-MTAnnum-Fabrication-Capacity.png",
-                title: "02_25,000-MT/Annum Fabrication Capacity"
+                title: "25,000-MT/Annum Fabrication Capacity"
             },
             {
                 img: "../../verticals/mobility/Icons/03_Full-Backward-Integration.png",
@@ -100,7 +100,7 @@ const mobility = ({ mobility, ModalToggle, UpdateName, UpdateFile, UpdateType })
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Banner src=".././banner/Mobility.jpg" text="Mobility" />
-            <Section1 data={data} title2="Why Stainless Steel">About us</Section1>
+            <Section1 data={data} title2="We Deliver">Adding Strength To Mobility</Section1>
             <Section2 data={data.metro}>Metro</Section2>
             <Section2 data={data.railways}>Railways</Section2>
             <section className="pt-0">

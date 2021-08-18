@@ -14,7 +14,7 @@ const Legacy = () => {
             </Head>
             <Banner src="./banner/legacy.png" text="Our Legacy" />
             <section>
-                <h1 className="text-center heading">The Grand Timeline</h1>
+                <h1 className="text-center heading">The Grand Milestones</h1>
                 <GrandTimeline />
             </section>
             <section className="pt-0">

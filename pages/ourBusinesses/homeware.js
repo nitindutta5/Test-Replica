@@ -15,7 +15,7 @@ const jindalKitchen = ({ homeware, ModalToggle, UpdateName, UpdateFile, UpdateTy
         type: "homeware",
         brands: [
             {
-                content: "Arttd’inox was born out of the belief that art is a holistic expansion of global décor identities, further enhanced by the functionality and beauty of high-quality stainless steel. These contemporary home lifestyle products juxtapose traditional elegance and Karigari with modern whimsy, making each product a timeless masterpiece."
+                content: "Born out of the belief that art is a holistic expansion of global décor identities, further enhanced by the functionality and beauty of high-quality stainless steel. These contemporary home lifestyle products juxtapose traditional elegance and Karigari with modern whimsy, making each product a timeless masterpiece."
             }
         ],
         // icons: [

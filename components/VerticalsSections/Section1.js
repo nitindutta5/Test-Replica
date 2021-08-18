@@ -13,7 +13,7 @@ const Section1 = (props) => {
                         props.data.type === "kitchen" ?
                             props.data.brands.map((obj, id) => (
                                 <Col key={id} lg="5" className={id + 2 % 2 === 0 ? "me-auto my-4" : "ms-auto my-4"}>
-                                    <img src={obj.logo} alt="" className="img-fluid" />
+                                    <img src={obj.logo} alt="" className={styles.logo} />
                                     <p className={styles.bold} dangerouslySetInnerHTML={{ __html: obj.bold }} />
                                     <p className={styles.content}>
                                         {obj.content}

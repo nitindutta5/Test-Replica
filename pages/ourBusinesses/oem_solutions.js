@@ -12,7 +12,7 @@ const oem_solutions = ({ oem_solutions, ModalToggle, UpdateName, UpdateFile, Upd
         type: "oem",
         brands: [
             {
-                content: "The core ambition of JSLL Value Engineering is focused towards manufacturing stainless steel products for development and broad usage across industries. Through our own in-house backhand integration, we design finished end product for B2B and B2C segments. Being an original equipment manufacturer, JSLL Value Engineering fabricates daily use and industrial components in varied sectors."
+                content: "We are focused towards manufacturing stainless steel products for development and broad usage across industries. Through our own in-house backend integration, we design finished end products for B2B and B2C segments. Being an original equipment manufacturer, we fabricate daily use and industrial components in varied sectors."
             }
         ],
         icons: [
