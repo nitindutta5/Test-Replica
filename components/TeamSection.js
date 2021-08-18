@@ -33,7 +33,7 @@ const TeamSection = () => {
             designation: "CEO, JSL Lifestyle Limited"
         },
         {
-            // img:'./Rajesh.png',
+            img:'./poddar.jpg',
             name: "Abhishek Poddar",
             designation: "Director, JSL Lifestyle Limited"
         },
@@ -56,19 +56,6 @@ const TeamSection = () => {
                             <Row>
                                 {
                                     LB.map((obj, id) => (
-                                        id === 2 ?
-                                            (
-                                                <Col lg="3" xs="6" key={id} className={id == 0 ? "ms-auto text-center mb-4" : id == 1 ? "mx-auto text-center mb-4" : "me-auto text-center mb-4"}>
-                                                    <div className={styles.dummy}></div>
-                                                    <p className={[styles.LDTitle] + " " + [styles.title]}>
-                                                        {obj.name}
-                                                    </p>
-                                                    <p className={styles.LDDesignation}>
-                                                        {obj.designation}
-                                                    </p>
-                                                </Col>
-                                            ) :
-                                            (
                                                 <Col lg="3" xs="6" key={id} className={id == 0 ? "ms-auto text-center mb-4" : id == 1 ? "mx-auto text-center mb-4" : "me-auto text-center mb-4"}>
                                                     <img src={obj.img} className={styles.image} />
                                                     <p className={[styles.LDTitle] + " " + [styles.title]}>
@@ -78,7 +65,6 @@ const TeamSection = () => {
                                                         {obj.designation}
                                                     </p>
                                                 </Col>
-                                            )
                                     ))
                                 }
                             </Row>

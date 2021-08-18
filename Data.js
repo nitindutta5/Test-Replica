@@ -52,15 +52,27 @@ export const BusinessVerticals = [
 
 export const homePageBanners = [
     {
-        url: "../banner/homepage.jpg",
+        url: "../banner/ValueEngineering.jpg",
+        text: "CRAFTING A SMART FUTURE FOR A BEAUTIFUL LIVING"
+    },
+    {
+        url: "../banner/Homeware.jpg",
         text:"CRAFTING A SMART FUTURE FOR A BEAUTIFUL LIVING"
     },
     {
-        url: "../banner/Kitchens.jpg",
+        url: "../banner/Infra.jpg",
         text: "CRAFTING A SMART FUTURE FOR A BEAUTIFUL LIVING",
     },
     {
-        url: "../banner/about.jpg",
+        url: "../banner/Kitchens.jpg",
+        text: "CRAFTING A SMART FUTURE FOR A BEAUTIFUL LIVING"
+    },
+    {
+        url: "../banner/Plumbing.jpg",
+        text: "CRAFTING A SMART FUTURE FOR A BEAUTIFUL LIVING"
+    },
+    {
+        url: "../banner/Mobility.jpg",
         text: "CRAFTING A SMART FUTURE FOR A BEAUTIFUL LIVING"
     }
 ];

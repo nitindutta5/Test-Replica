@@ -1,12 +1,17 @@
 import { Row, Col, Button, Form, FormGroup, Input, Label } from 'reactstrap';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+const countryCode = require('country-codes-list');
 
 const PartnerForm = () => {
   const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   // const mobRegex = /^(\+\d{1,3}[- ]?)?\d{10}$/;
   const mobRegex = /^\d{10}$/;
   const router = useRouter();
+
+  const myCountryCodesObject = countryCode.customList('countryCode', '[{countryCode}] {countryNameEn}: +{countryCallingCode}');
+
+  console.log(myCountryCodesObject);
   const [formData, updateFormData] = useState({
     Name: '',
     Email: '',
