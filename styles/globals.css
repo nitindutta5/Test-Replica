@@ -27,6 +27,10 @@ a {
   border-radius: 10px;
 }
 
+.swiper-pagination-bullet-active {
+  background-color: #808285;
+}
+
 .st0 {
   fill: none;
   stroke: #FFFFFF;

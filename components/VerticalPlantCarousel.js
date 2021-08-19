@@ -11,7 +11,7 @@ const VerticalPlantCarousel = () => {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        vertical: true,
+        vertical: false,
         verticalSwiping: false,
         swipeToSlide: true,
         arrows: false,

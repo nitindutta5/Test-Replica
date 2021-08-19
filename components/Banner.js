@@ -8,28 +8,6 @@ let width;
 
 
 const Banner = (props) => {
-  // const [windowWidth, setWindowWidth] = useState(null);
-  // const imgUrl = windowWidth > 480 ? props.srcWeb : props.srcMob;
-
-  // useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     width = window.innerWidth;
-  //     console.log(windowWidth,"Inner");
-  //     setWindowWidth(width);
-  //   }
-  //   console.log(windowWidth,"Outer");
-  //     const handleWindowResize = () => {
-  //         setWindowWidth(window.innerWidth);
-  //     };
-
-  //     window.addEventListener('resize', handleWindowResize);
-
-  //     return () => {
-  //         window.removeEventListener('resize', handleWindowResize);
-  //     }
-  // }, []);
-
-
   const containerRef = useRef();
   const { toggle } = useContext(ThemeContext);
   useIsomorphicLayoutEffect(() => {

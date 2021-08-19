@@ -1,0 +1,51 @@
+.dummyBanner {
+    background: linear-gradient(180deg, #363C4C 70%, #EEEFF3 0);
+}
+
+.mainHeading {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+.smallHeading {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5rem;
+    padding-bottom: 8%;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: -6px 6px 20px #0000001A;
+    min-height: 300px;
+    margin: 0px auto;
+    padding: 4%;
+}
+
+.navigator {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Title {
+    color: #363C4C;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.mainContent {
+    padding-right: 8%;
+}
+
+.mainContentList {
+    padding-right: 8%;
+    padding-left: 2%;
+}

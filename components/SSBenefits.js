@@ -39,7 +39,7 @@ const SSBenefits = () => {
             <Container>
                 <Row>
                     <Col lg="12">
-                        <h2 className="text-center heading">Stainless Steel Competitive Benefits</h2>
+                        <h2 className="text-center heading">Stainless Steel Competitive Advantages</h2>
                     </Col>
                     {
                         data.map((obj, id) => (

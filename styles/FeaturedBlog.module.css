@@ -1,14 +1,14 @@
 .blogImg {
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-image: url('../public/Group-45510.png');
+    max-height: 380px;
 }
 
 .rightSection {
     background: #fff;
     position: relative;
-    min-height: 380px;
 }
 
 .triangleLeft {
@@ -44,6 +44,7 @@
     width: auto;
     line-height: 1.5;
     font-weight: 700;
+
 }
 
 .DataTitle {
@@ -51,11 +52,12 @@
     font-family: 'Jost', sans-serif;
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 700;
+    font-weight: 600;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    max-width: 70%;
 }
 
 
@@ -77,6 +79,7 @@
     display: block;
     font-weight: 500;
     margin-top: 20px;
+    color: #363C4C !important;
 }
 
 @media(max-width:1600px) {
@@ -186,7 +189,7 @@
 
 
     .blogImg {
-        min-height: 200px;
+        max-height: 200px;
     }
 
     .rightSection {
@@ -219,6 +222,7 @@
     .DataTitle {
         font-size: 15px;
         margin-top: 10px;
+        max-width: 80%;
     }
 
     .Content {

@@ -6,12 +6,29 @@
 
 
 .jobTitle {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #707070;
+    transition: all 0.2s ease-in;
+}
+
+.jobTitle:hover {
+    color: black;
+}
+
+.location {
+    color: #0B0B0B;
+    font-size: 0.9rem;
+}
+
+.readMore {
+    color: #0B0B0B !important;
+    font-weight: 600;
+    font-size: 0.9rem;
 }
 
 
 .type {
     color: #0B0B0B;
+    font-size: 0.9rem;
 }

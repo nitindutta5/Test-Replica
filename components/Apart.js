@@ -87,7 +87,7 @@ const Apart = () => {
             <Container fluid >
                 <Row>
                     <Col lg="12" >
-                        <h2 className="heading text-center">What Sets Us Apart</h2>
+                        <h2 className="heading text-center">Our Unique Contribution</h2>
                     </Col>
                     <Col lg="12" className="px-0 position-relative">
                         <Slider {...settings}>

@@ -102,7 +102,7 @@ const SSOffers = () => {
             <Container>
                 <Row className="justify-content-center">
                     <Col lg="12">
-                        <h2 className="text-center heading white-color">What Stainless Steel Offers</h2>
+                        <h2 className="text-center heading white-color">Benefits of Stainless Steel</h2>
                     </Col>
                     {
                         data.map((obj, id) => (

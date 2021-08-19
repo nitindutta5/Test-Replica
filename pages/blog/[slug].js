@@ -82,7 +82,6 @@ const BlogInnerPage = ({blog, allBlogs}) => {
 }
 
 export async function getStaticPaths() {
-
     const res = await fetch(`${baseUrl}blogs`);
     const posts = await res.json();
     console.log(posts);

@@ -21,6 +21,8 @@ const VerticalsSlider = ({data,ModalToggle, UpdateName, UpdateFile, UpdateType})
     const params = {
         autoplay: true,
         dots: true,
+        fade: true,
+        speed:600,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
