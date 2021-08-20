@@ -23,7 +23,7 @@ const Banner = (props) => {
   }, []);
   return (
     <div ref={containerRef}>
-      <Container fluid className={styles.bannerholder} style={{backgroundImage:`linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(${props.src})`}}>
+      <Container fluid className={styles.bannerholder} style={{backgroundImage:`linear-gradient(rgb(0 0 0 / 45%), rgb(0 0 0 / 30%)), url(${props.src})`}}>
         <img className="img-fluid invisible" src={props.src} alt="TopBanner" />
         <div className={styles.carouseltext}>
           <p className={styles.Bannertext}>{props.text}</p>

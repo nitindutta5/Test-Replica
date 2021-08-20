@@ -14,12 +14,12 @@ const Section2 = (props) => {
                         <Row>
                             {
                                 props.data.map((obj, id) => (
-                                    <Col lg="6" key={id}>
+                                    <Col lg="6" xs="12" md="6" key={id}>
                                         <div className={styles.productBox}>
-                                            <img src={obj.img} alt="" className="img-fluid" />
+                                            <img src={obj.Image.url} alt="" className="img-fluid" />
                                             <div className="p-4">
-                                                <h4>{obj.title}</h4>
-                                                <p>{obj.content}</p>
+                                                <h4>{obj.Name}</h4>
+                                                <p>{obj.Brief}</p>
                                             </div>
                                         </div>
                                     </Col>

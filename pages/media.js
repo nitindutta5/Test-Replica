@@ -8,6 +8,7 @@ import VideoGallery from "../components/VideoGallery"
 
 
 const Media = ({blogs}) => {
+    const videoData = [{ video: "https://player.vimeo.com/video/534314647", title: "", time: "4min" }, { video: "https://player.vimeo.com/video/534314647", title: "", time: "4min" }];
     return (
         <>
             <Head>
@@ -20,7 +21,7 @@ const Media = ({blogs}) => {
             <CaseStudies />
             <News_Updates />
             <Testimonials />
-            <VideoGallery />
+            <VideoGallery data={videoData} />
         </>
     )
 }

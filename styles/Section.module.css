@@ -76,6 +76,8 @@
 .title {
     font-weight: 600;
     font-size: 1.3rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
     color: #363C4C;
     margin-bottom: 20px;
 }
