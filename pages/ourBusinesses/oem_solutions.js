@@ -2,12 +2,31 @@ import Head from "next/head"
 import Banner from "../../components/Banner"
 import Section1 from "../../components/VerticalsSections/Section1"
 import Section2 from "../../components/VerticalsSections/Section2";
-import { Button, Container } from "reactstrap";
+import { Button, Container, Row, Col } from "reactstrap";
+import Slider from 'react-slick';
+import MoreProducts from "../../components/VerticalsSections/MoreProducts";
+import NextBtn from "../../components/NextBtn";
+import Previous from "../../components/Previous";
 
 
 
 
 const oem_solutions = ({ oem_solutions, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
+    const params = {
+        autoplay: true,
+        dots: false,
+        fade: true,
+        speed: 400,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        arrows: true,
+        nextArrow: <NextBtn />,
+        prevArrow: <Previous />,
+        adaptiveHeight: true,
+    }
+
     const data = {
         type: "oem",
         brands: [
@@ -94,6 +113,24 @@ const oem_solutions = ({ oem_solutions, ModalToggle, UpdateName, UpdateFile, Upd
             <Banner src=".././banner/ValueEngineering.jpg" text="OEM Solutions" />
             <Section1 data={data} title2="Why Stainless Steel">Manufacturing Tomorrow’s Products</Section1>
             <Section2 data={data.products}>Our Range of Products</Section2>
+            <section className="pt-0">
+                <Container>
+                    <Row className="mx-auto">
+                        <Col md="10" className="mx-auto">
+                            <h3 className="heading text-center">More Products</h3>
+                            <Slider {...params}>
+                                {
+                                    oem_solutions.MoreProducts.Product.map((product, id) => (
+                                        <div className="mx-auto text-center" key={id}>
+                                            <MoreProducts img={product.Product_Img.url} name={product.Product_Name} brief={product.Product_Brief} />
+                                        </div>
+                                    ))
+                                }
+                            </Slider>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
             <section className="pt-0">
                 <Container className="d-flex justify-content-center">
                 <Button color="secondary" onClick={() => handleForm(oem_solutions.File.url, "oem_solutions", "downloadBrochure")} className="download">

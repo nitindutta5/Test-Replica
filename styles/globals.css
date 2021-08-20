@@ -669,6 +669,12 @@ section {
   background-color: #363C4C;
 }
 
+.form-Section {
+  color: #363C4C;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
 .white-color {
   color: #fff;
 }

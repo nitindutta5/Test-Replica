@@ -4,7 +4,7 @@ import styles from "../../styles/Section.module.css"
 
 const Section2 = (props) => {
     return (
-        <section>
+        <section className={props.className}>
             <Container>
                 <Row>
                     <Col lg="12"><h1 className="heading text-center">{props.children}</h1></Col>

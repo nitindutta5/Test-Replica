@@ -3,11 +3,29 @@ import Banner from "../../components/Banner"
 import Section1 from "../../components/VerticalsSections/Section1"
 import Section2 from "../../components/VerticalsSections/Section2";
 import { Button, Container, Row, Col } from "reactstrap";
+import Slider from 'react-slick';
+import MoreProducts from "../../components/VerticalsSections/MoreProducts";
+import NextBtn from "../../components/NextBtn";
+import Previous from "../../components/Previous";
 
 
 
 
 const plumbing = ({ plumbing, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
+    const params = {
+        autoplay: true,
+        dots: false,
+        fade: true,
+        speed: 400,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        arrows: true,
+        nextArrow: <NextBtn />,
+        prevArrow: <Previous />,
+        adaptiveHeight: true,
+    }
     const data = {
         type: "plumbing",
         brands: [
@@ -89,16 +107,25 @@ const plumbing = ({ plumbing, ModalToggle, UpdateName, UpdateFile, UpdateType })
             </Head>
             <Banner src=".././banner/Plumbing.jpg" text="Plumbing" />
             <Section1 data={data} title2="Benefits of Stainless Steel in Plumbing">Sustainable Plumbing Solutions</Section1>
-            {/* <section className="pt-0">
-                <Container>
-                   <Row>
-                       <Col lg="10" className="mx-auto">
-                           <h2 className="heading text-center"></h2>
-                       </Col>
-                   </Row>
-                </Container>
-            </section> */}
             <Section2 data={data.products}>Installation Process</Section2>
+            <section className="pt-0">
+                <Container>
+                    <Row className="mx-auto">
+                        <Col md="10" className="mx-auto">
+                            <h3 className="heading text-center">More Products</h3>
+                            <Slider {...params}>
+                                {
+                                    plumbing.MoreProducts.Product.map((product, id) => (
+                                        <div className="mx-auto text-center" key={id}>
+                                            <MoreProducts img={product.Product_Img.url} name={product.Product_Name} brief={product.Product_Brief} />
+                                        </div>
+                                    ))
+                                }
+                            </Slider>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
             <section className="pt-0">
                 <Container className="d-flex justify-content-center">
                 <Button color="secondary" onClick={() => handleForm(plumbing.File.url, "plumbing", "downloadBrochure")} className="download">

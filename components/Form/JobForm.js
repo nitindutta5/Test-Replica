@@ -1,4 +1,4 @@
-import { Col, Button, Form, FormGroup, Input } from 'reactstrap';
+import { Col, Button, Form, FormGroup, Input, Label } from 'reactstrap';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 const countryCode = require('country-codes-list');
@@ -96,13 +96,15 @@ const JobForm = () => {
                 <input type="hidden" name="form-name" value="job-form" />
                 <FormGroup row>
                     <Col sm={8} className="my-4" >
+                        <Label className="mb-2">Attach CV*</Label>
                         <div className="border p-2">
                             <Input type="file" name="Resume" />
                         </div>
                     </Col>
                 </FormGroup>
+                <p className="mb-2 bold form-Section">Personal Details</p>
                 <FormGroup row>
-                    <Col sm={8} className="my-4" >
+                    <Col sm={8} className="mb-4" >
                         <Input type="text" name="Name" placeholder="Name*" onChange={handleChange} value={formData.Name} />
                         {Object.keys(nameError).map((key) => {
                             return <span style={{ color: "red", fontSize: '12px' }}>{nameError[key]}</span>
@@ -138,10 +140,17 @@ const JobForm = () => {
                 </FormGroup>
                 <FormGroup row>
                     <Col sm={8} className="mb-4" >
+                        <Label>Date of Birth</Label>
                         <Input type="date" name="Dob" placeholder="Date of Birth" />
                     </Col>
                 </FormGroup>
+                <p className="mb-2 bold form-Section">Employment Details</p>
 
+                <FormGroup row>
+                    <Col sm={8} className="mb-4" >
+                        <Input type="text" name="currentLocation" placeholder="Total Experience (yrs)*" />
+                    </Col>
+                </FormGroup>
                 <FormGroup row>
                     <Col sm={{ size: 12 }}>
                         <Button color="primary">SEND</Button>

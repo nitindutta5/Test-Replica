@@ -59,9 +59,7 @@
     overflow: hidden;
 }
 
-.productBox img {
-    /* filter: grayscale(1) */
-}
+
 
 .productBox h5 {
     font-weight: 600;
@@ -71,6 +69,18 @@
 }
 
 .productBox p {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #363C4C;
+    margin-bottom: 20px;
+}
+
+.brief {
     font-size: 13px;
     line-height: 1.7;
 }

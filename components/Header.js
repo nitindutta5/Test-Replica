@@ -53,7 +53,7 @@ const Header = (props) => {
                                 navlist.map((obj, id) => (
                                     obj.text === "Our Businesses" ?
                                         <Link key={id}
-                                            href="#"><a
+                                            href=""><a
                                                 onClick={() => setLevelTwo(!levelTwo)}>{obj.text}
                                                 <img
                                                     className=" arrow img-fluid ms-2"
@@ -73,15 +73,15 @@ const Header = (props) => {
                         (
                             <div className="overlay-content">
                                 <a className="TitleItem" onClick={() => setLevelTwo(!levelTwo)}><img
-                                                    className=" arrow reverse img-fluid me-2"
-                                                    src="../../dropdown arrow-Right.svg" /> MAIN MENU</a>
+                                    className=" arrow reverse img-fluid me-2"
+                                    src="../../dropdown arrow-Right.svg" /> MAIN MENU</a>
                                 <Link href="/ourBusinesses"><a onClick={toggle} className="TitleItem">Our Businesses</a></Link>
                                 {
                                     Businesses.map((obj, id) => (
                                         <Link key={id} href={obj.link}>
-                                        <a onClick={toggle} className={props.route === obj.link ? "active" : ""}>{obj.text}
-                                            <div className={props.route === obj.link ? "bottom show-line" : "bottom"}></div></a>
-                                    </Link>
+                                            <a onClick={toggle} className={props.route === obj.link ? "active" : ""}>{obj.text}
+                                                <div className={props.route === obj.link ? "bottom show-line" : "bottom"}></div></a>
+                                        </Link>
                                     ))
                                 }
                             </div>
