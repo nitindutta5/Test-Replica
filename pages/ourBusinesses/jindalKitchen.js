@@ -3,6 +3,9 @@ import Banner from "../../components/Banner"
 import Section1 from "../../components/VerticalsSections/Section1"
 import Section2 from "../../components/VerticalsSections/Section2";
 import { Button, Container } from "reactstrap";
+import VideoGallery from "../../components/VideoGallery";
+
+
 
 const jindalKitchen = ({ jindalKitchen, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
 
@@ -25,6 +28,11 @@ const jindalKitchen = ({ jindalKitchen, ModalToggle, UpdateName, UpdateFile, Upd
                 jindalKitchen.SectionBox.map((Section,id)=>(
                     <Section2 key={id} data={Section.Section}>{Section.Title}</Section2>
                 ))
+            }
+                        {
+                jindalKitchen.VideoBox &&
+                                <VideoGallery className="pt-0" data={jindalKitchen.VideoBox.Video} dimension={1080 / 1920} />
+
             }
             <section className="pt-0">
                 <Container className="d-flex justify-content-center">

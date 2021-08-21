@@ -45,7 +45,7 @@ const plumbing = ({ plumbing, ModalToggle, UpdateName, UpdateFile, UpdateType })
             <Banner src=".././banner/Plumbing.jpg" text="Plumbing" />
             <Section1 data={plumbing} type="plumbing">{plumbing.DescriptionBox.Title}</Section1>
             {
-                plumbing.SectionBox.map((Section,id)=>(
+                plumbing.SectionBox.map((Section, id) => (
                     <Section2 key={id} data={Section.Section}>{Section.Title}</Section2>
                 ))
             }
@@ -67,18 +67,14 @@ const plumbing = ({ plumbing, ModalToggle, UpdateName, UpdateFile, UpdateType })
                     </Row>
                 </Container>
             </section>
-            <section className="pt-0">
-                <Container>
-                    <Row className="mx-auto">
-                        <Col md="10" className="mx-auto">
-                                <VideoGallery data={videoData} dimension={1080/1920}/>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
+            {
+                plumbing.VideoBox &&
+                <VideoGallery className="pt-0" data={plumbing.VideoBox.Video} dimension={1080 / 1920} />
+
+            }
             <section className="pt-0">
                 <Container className="d-flex justify-content-center">
-                <Button color="secondary" onClick={() => handleForm(plumbing.File.url, "plumbing", "downloadBrochure")} className="download">
+                    <Button color="secondary" onClick={() => handleForm(plumbing.File.url, "plumbing", "downloadBrochure")} className="download">
                         <img src="../Download-Brochure_02.svg" />
                         Brochure</Button>
                     <Button color="secondary" onClick={() => handleForm("", "plumbing", "enquiry")} className="ms-3">

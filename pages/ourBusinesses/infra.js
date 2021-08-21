@@ -7,6 +7,8 @@ import Slider from 'react-slick';
 import MoreProducts from "../../components/VerticalsSections/MoreProducts";
 import NextBtn from "../../components/NextBtn";
 import Previous from "../../components/Previous";
+import VideoGallery from "../../components/VideoGallery";
+
 
 const Infra = ({ infra, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
     const params = {
@@ -65,6 +67,18 @@ const Infra = ({ infra, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
                     </Row>
                 </Container>
             </section>
+            {
+                infra.VideoBox &&
+                <section className="pt-0">
+                    <Container>
+                        <Row className="mx-auto">
+                            <Col md="10" className="mx-auto">
+                                <VideoGallery data={infra.VideoBox.Video} dimension={1080 / 1920} />
+                            </Col>
+                        </Row>
+                    </Container>
+                </section>
+            }
             <section className="pt-0">
                 <Container className="d-flex justify-content-center">
                     <Button color="secondary" onClick={() => handleForm(infra.File.url, "infra", "downloadBrochure")} className="download">

@@ -29,7 +29,7 @@ const VideoGallery = (props) => {
 
 
     return (
-        <section>
+        <section className={props.className}>
             <Container>
                 <Row>
                     <Col lg="8" className="mx-auto">
@@ -39,7 +39,7 @@ const VideoGallery = (props) => {
                                 props.data.map((obj, id) => (
                                     <div key={id} ref={videoDiv} style={{ maxWidth: "90%" }}>
                                         <iframe
-                                            src={`${obj.video}?autoplay=0&controls=1`}
+                                            src={`${obj.video||obj.media.url}?autoplay=0&controls=1`}
                                             width="100%"
                                             height={videoHeight}
                                             frameBorder="0">

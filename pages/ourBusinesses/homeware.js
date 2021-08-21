@@ -3,6 +3,8 @@ import Banner from "../../components/Banner"
 import Section1 from "../../components/VerticalsSections/Section1"
 import Section2 from "../../components/VerticalsSections/Section2";
 import { Button, Container } from "reactstrap";
+import VideoGallery from "../../components/VideoGallery";
+
 
 const jindalKitchen = ({ homeware, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
     const handleDownloadBrochure = (file, name, type) => {
@@ -25,6 +27,11 @@ const jindalKitchen = ({ homeware, ModalToggle, UpdateName, UpdateFile, UpdateTy
                 homeware.SectionBox.map((Section,id)=>(
                     <Section2 key={id} data={Section.Section}>{Section.Title}</Section2>
                 ))
+            }
+
+{
+                homeware.VideoBox &&
+                                <VideoGallery className="pt-0" data={homeware.VideoBox.Video} dimension={1080 / 1920} />
             }
 
             <section className="pt-0">

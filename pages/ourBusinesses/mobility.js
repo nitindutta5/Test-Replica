@@ -7,6 +7,8 @@ import Slider from 'react-slick';
 import MoreProducts from "../../components/VerticalsSections/MoreProducts";
 import NextBtn from "../../components/NextBtn";
 import Previous from "../../components/Previous";
+import VideoGallery from "../../components/VideoGallery";
+
 
 const mobility = ({ mobility, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
     const params = {
@@ -64,6 +66,11 @@ const mobility = ({ mobility, ModalToggle, UpdateName, UpdateFile, UpdateType })
                     </Row>
                 </Container>
             </section>
+            {
+                mobility.VideoBox &&
+                <VideoGallery className="pt-0" data={mobility.VideoBox.Video} dimension={1080 / 1920} />
+
+            }
             <section className="pt-0">
                 <Container className="d-flex justify-content-center">
                     <Button color="secondary" onClick={() => handleForm(mobility.File.url, "mobility", "downloadBrochure")} className="download">

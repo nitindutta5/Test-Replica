@@ -7,7 +7,7 @@ import Slider from 'react-slick';
 import MoreProducts from "../../components/VerticalsSections/MoreProducts";
 import NextBtn from "../../components/NextBtn";
 import Previous from "../../components/Previous";
-
+import VideoGallery from "../../components/VideoGallery";
 
 
 
@@ -67,6 +67,11 @@ const oem_solutions = ({ oem_solutions, ModalToggle, UpdateName, UpdateFile, Upd
                     </Row>
                 </Container>
             </section>
+            {
+                oem_solutions.VideoBox &&
+                                <VideoGallery className="pt-0" data={oem_solutions.VideoBox.Video} dimension={1080 / 1920} />
+
+            }
             <section className="pt-0">
                 <Container className="d-flex justify-content-center">
                 <Button color="secondary" onClick={() => handleForm(oem_solutions.File.url, "oem_solutions", "downloadBrochure")} className="download">
