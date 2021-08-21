@@ -21,7 +21,7 @@ const VideoGallery = (props) => {
     const videoDiv = useRef(null);
 
     useEffect(() => {
-        let ratioVideo = 720 / 1063; // reverse the ratio for get new height
+        let ratioVideo = props.dimension; // reverse the ratio for get new height
         let _videoDiv = videoDiv.current.offsetWidth;
         let height = ratioVideo * _videoDiv;
         setVideoHeight(height);

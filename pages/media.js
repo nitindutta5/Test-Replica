@@ -21,7 +21,7 @@ const Media = ({blogs}) => {
             <CaseStudies />
             <News_Updates />
             <Testimonials />
-            <VideoGallery data={videoData} />
+            <VideoGallery data={videoData} dimension={1080/1920}/>
         </>
     )
 }

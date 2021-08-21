@@ -71,7 +71,7 @@ const plumbing = ({ plumbing, ModalToggle, UpdateName, UpdateFile, UpdateType })
                 <Container>
                     <Row className="mx-auto">
                         <Col md="10" className="mx-auto">
-                                <VideoGallery data={videoData}/>
+                                <VideoGallery data={videoData} dimension={1080/1920}/>
                         </Col>
                     </Row>
                 </Container>
