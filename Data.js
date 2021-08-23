@@ -82,20 +82,20 @@ export const plantData = [
     {
         url:"../ourplants/chennai.png",
         name:"Chennai Plant",
-        content:"The Chennai plant is semi-automated and is spread across 8,093 sq. m. with a fabrication capacity of 3000 MT per annum. The plant is dedicated to Mobility and specializes in products for Railways and Metros.",
-        dimen:"8093 sq.m."
+        content:"The Chennai plant is semi-automated and is spread across <b>8,093 sq. m.</b> with a fabrication capacity of 3000 MT per annum. The plant is dedicated to Mobility and specializes in products for Railways and Metros.",
+        // dimen:"8093 sq.m."
     },
     {
         url:"../ourplants/pathredi.png",
         name:"Pathredi Plant",
-        content:"The Pathredi facility is spread over a covered area of massive 30,351 sq. m. with a fabrication capacity of 5000 MT per annum and caters to Mobility, Infrastructure, Value Engineering, Sanitation and Kitchen verticals.",
-        dimen:"30,351 sq.m."
+        content:"The Pathredi facility is spread over a covered area of massive <b>30,351 sq. m.</b> with a fabrication capacity of 5000 MT per annum and caters to Mobility, Infrastructure, Value Engineering, Sanitation and Kitchen verticals.",
+        // dimen:"30,351 sq.m."
 
     },
     {
         url:"../ourplants/rohad.png",
         name:"Rohad Plant",
-        content:"The Rohad plant is spread across 20,234 sq. m. and offers a wide range of in-house production and finishing capabilities for best-in-class quality products. The plant caters to Value Engineering and Arttd’inox.",
-        dimen:"20,234 sq.m."
+        content:"The Rohad plant is spread across <b>20,234 sq. m.</b> and offers a wide range of in-house production and finishing capabilities for best-in-class quality products. The plant caters to Value Engineering and Arttd’inox.",
+        // dimen:"20,234 sq.m."
     }
 ];

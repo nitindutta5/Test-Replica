@@ -53,7 +53,7 @@ const oem_solutions = ({ oem_solutions, ModalToggle, UpdateName, UpdateFile, Upd
                 <Container>
                     <Row className="mx-auto">
                         <Col md="10" className="mx-auto">
-                            <h3 className="heading text-center">More Products</h3>
+                            <h3 className="heading text-center">Product Gallery</h3>
                             <Slider {...params}>
                                 {
                                     oem_solutions.MoreProducts.Product.map((product, id) => (

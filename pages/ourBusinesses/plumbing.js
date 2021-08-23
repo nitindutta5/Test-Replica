@@ -53,7 +53,7 @@ const plumbing = ({ plumbing, ModalToggle, UpdateName, UpdateFile, UpdateType })
                 <Container>
                     <Row className="mx-auto">
                         <Col md="10" className="mx-auto">
-                            <h3 className="heading text-center">More Products</h3>
+                            <h3 className="heading text-center">Product Gallery</h3>
                             <Slider {...params}>
                                 {
                                     plumbing.MoreProducts.Product.map((product, id) => (
