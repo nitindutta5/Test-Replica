@@ -59,19 +59,20 @@ export const Businesses = [
     link: '/ourBusinesses/homeware',
   },
   {
-    name: '/plumbing_solutions',
-    text: 'Plumbing Solutions',
-    link: '/ourBusinesses/plumbing',
-  },
-  {
     name: '/jindal_kitchens',
     text: 'Jindal Kitchens',
     link: '/ourBusinesses/jindalKitchen',
   },
+
   {
     name: '/infra_solutions',
     text: 'Infra Solutions',
     link: '/ourBusinesses/infra',
+  },
+  {
+    name: '/plumbing_solutions',
+    text: 'Plumbing Solutions',
+    link: '/ourBusinesses/plumbing',
   },
   {
     name: '/oem_solutions',

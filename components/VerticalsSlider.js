@@ -7,10 +7,11 @@ import { BusinessVerticals } from '../Data'
 
 const VerticalsSlider = ({ data, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
 
-    const getIndex = (e) => {
-        setPreviousIndex(currentIndex);
-        setCurrentIndex(e);
-    }
+    // const getIndex = (e) => {
+    //     // setPreviousIndex(currentIndex);
+    //     setCurrentIndex(e);
+    // }
+    console.log(data);
 
     const handleDownloadBrochure = (file, name, type) => {
         UpdateName(name);
@@ -22,20 +23,20 @@ const VerticalsSlider = ({ data, ModalToggle, UpdateName, UpdateFile, UpdateType
         autoplay: true,
         dots: true,
         fade: true,
-        speed: 500,
+        speed: 600,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        vertical: true,
+        vertical: false,
         verticalSwiping: false,
         swipeToSlide: true,
         arrows: false,
         adaptiveHeight: true,
-        afterChange: getIndex
+        // afterChange: getIndex
     }
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [previousIndex, setPreviousIndex] = useState(null);
+    // const [previousIndex, setPreviousIndex] = useState(null);
     return (
         <div id="our-Businesses">
             <Slider {...params} className={styles.slider} >
@@ -48,7 +49,7 @@ const VerticalsSlider = ({ data, ModalToggle, UpdateName, UpdateFile, UpdateType
                                     </div>
                                 </Col>
                                 <Col lg="6" className={styles.right} >
-                                    <div className={`${currentIndex > previousIndex ? styles.forward : styles.backward}`}>
+                                    <div>
                                         <img src={obj.logo.url} alt="" className={styles.logo} />
                                         <div className={styles.box1}>
                                             <h1 className={styles.title}>
@@ -58,10 +59,12 @@ const VerticalsSlider = ({ data, ModalToggle, UpdateName, UpdateFile, UpdateType
                                         <p className={styles.content}>
                                             {obj.Description}
                                         </p>
-                                        <Link href={`ourBusinesses/${obj.slug}`}>
-                                            <Button className={styles.button}>Know more
-                                                <img src="../Know-more-arrow-white.svg" className="img-fluid" />
-                                            </Button>
+                                        <Link href={`/ourBusinesses/${obj.slug}`}>
+                                            <a>
+                                                <Button className={styles.button}>Know more
+                                                    <img src="../Know-more-arrow-white.svg" className="img-fluid" />
+                                                </Button>
+                                            </a>
                                         </Link>
                                         <Button className="mt-5" color="secondary" onClick={() => handleDownloadBrochure(obj.File.url, obj.slug, "downloadBrochure")}>Download Brochure
                                         </Button>
@@ -72,7 +75,7 @@ const VerticalsSlider = ({ data, ModalToggle, UpdateName, UpdateFile, UpdateType
                     ))
                 }
             </Slider >
-        </div>
+        </div >
 
     )
 }

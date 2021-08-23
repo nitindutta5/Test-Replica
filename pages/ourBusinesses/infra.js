@@ -69,15 +69,8 @@ const Infra = ({ infra, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
             </section>
             {
                 infra.VideoBox &&
-                <section className="pt-0">
-                    <Container>
-                        <Row className="mx-auto">
-                            <Col md="10" className="mx-auto">
-                                <VideoGallery data={infra.VideoBox.Video} dimension={1080 / 1920} />
-                            </Col>
-                        </Row>
-                    </Container>
-                </section>
+                                <VideoGallery className="pt-0" data={infra.VideoBox.Video} dimension={1080 / 1920} />
+
             }
             <section className="pt-0">
                 <Container className="d-flex justify-content-center">

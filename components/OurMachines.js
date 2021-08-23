@@ -63,7 +63,7 @@ const OurMachines = () => {
             <Container fluid id="businesses">
                 <Row>
                     <Col lg="12" >
-                        <h2 className="heading text-center">Our Machines</h2>
+                        <h2 className="heading text-center">Our Manufacturing Units & Equipments</h2>
                     </Col>
                     <Col lg="12" className="px-0">
                         <Slider {...settings}>

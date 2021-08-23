@@ -30,17 +30,17 @@ const TeamSection = () => {
         {
             img: './Rajesh.png',
             name: "Rajesh Mohata",
-            designation: "CEO, JSL Lifestyle Limited"
+            designation: "CEO,  Jindal Lifestyle Limited"
         },
         {
             img:'./poddar.jpg',
             name: "Abhishek Poddar",
-            designation: "Director, JSL Lifestyle Limited"
+            designation: "Director,  Jindal Lifestyle Limited"
         },
         {
             img:'./VS1.jpg',
             name: "Vijay Sharma",
-            designation: "Director, JSL Lifestyle Limited"
+            designation: "Director,  Jindal Lifestyle Limited"
         }
 
     ]
