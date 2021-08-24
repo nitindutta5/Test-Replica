@@ -2,7 +2,9 @@ import {Container, Row, Col} from 'reactstrap'
 import styles from '../styles/OurLocations.module.css'
 import { useState } from 'react'
 import classNames from 'classnames'
-import PlantMap from './PlantMap'
+import Location from './Location'
+import { stores, offices ,plantLocation } from '../Data'
+
 
 const OurLocations = () =>{
 
@@ -49,10 +51,10 @@ const OurLocations = () =>{
                     </Col>
                 </Row>
                 {
-                    active.plants&&<PlantMap/> ||
-                    active.stores&&<h4 className="mt-5">Comming Soon</h4>||
+                    active.plants&&<Location data={plantLocation}/> ||
+                    active.stores&&<Location data={stores}/>||
                     active.partners&&<h4 className="mt-5">Comming Soon</h4>||
-                    active.offices&&<h4 className="mt-5">Comming Soon</h4>
+                    active.offices&&<Location data={offices}/>
                 }
             </Container>
         </section>

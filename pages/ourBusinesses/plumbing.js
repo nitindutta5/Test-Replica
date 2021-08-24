@@ -8,7 +8,7 @@ import MoreProducts from "../../components/VerticalsSections/MoreProducts";
 import NextBtn from "../../components/NextBtn";
 import Previous from "../../components/Previous";
 import VideoGallery from "../../components/VideoGallery";
-
+import { plumbingInstallation } from "../../Data";
 
 
 
@@ -49,7 +49,7 @@ const plumbing = ({ plumbing, ModalToggle, UpdateName, UpdateFile, UpdateType })
                     <Section2 key={id} data={Section.Section}>{Section.Title}</Section2>
                 ))
             }
-            <section className="pt-0">
+            <section >
                 <Container>
                     <Row className="mx-auto">
                         <Col md="10" className="mx-auto">
@@ -67,6 +67,25 @@ const plumbing = ({ plumbing, ModalToggle, UpdateName, UpdateFile, UpdateType })
                     </Row>
                 </Container>
             </section>
+            <section >
+                <Container>
+                    <Row className="mx-auto">
+                        <Col md="10" className="mx-auto">
+                            <h3 className="heading text-center">Installation Process</h3>
+                            <Slider {...params}>
+                                {
+                                    plumbingInstallation.map((obj, id) => (
+                                        <div className="mx-auto text-center" key={id}>
+                                            <MoreProducts img={obj.img} name={obj.name} brief={obj.brief} />
+                                        </div>
+                                    ))
+                                }
+                            </Slider>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+
             {
                 plumbing.VideoBox &&
                 <VideoGallery className="pt-0" data={plumbing.VideoBox.Video} dimension={1080 / 1920} />

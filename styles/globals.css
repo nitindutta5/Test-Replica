@@ -11,14 +11,14 @@ body {
 }
 
 small.heading {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
-.slick-slide {
+#our-Businesses .slick-slide {
   pointer-events: none;
 }
 
-.slick-current {
+#our-Businesses .slick-current {
   pointer-events: unset !important
 }
 
@@ -181,10 +181,10 @@ li {
 }
 
 #our-Businesses .slick-dots {
-  width: auto;
-  left: 25px;
-  bottom: 50%;
-  transform: translateY(50%);
+  /* width: auto; */
+  /* left: 25px; */
+  bottom: 4%;
+  /* transform: translateY(50%); */
 }
 
 #our-Businesses {
@@ -192,9 +192,9 @@ li {
 }
 
 #our-Businesses .slick-dots li {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: block;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  /* display: block; */
 }
 
 #our-Businesses .slick-dots li.slick-active button:before {
@@ -265,8 +265,17 @@ li {
 
 .office-card {
   margin: 0px auto;
-  width: max-content;
-  margin-bottom: 25%;
+  width: 100%;
+  margin-bottom: 20%;
+  max-width: 95%;
+}
+
+.office-card .plant {
+  font-size: 0.9rem;
+}
+
+.office-card .email {
+  font-size: 0.8rem;
 }
 
 .form-control {
@@ -936,6 +945,10 @@ section {
 
   .office-card p {
     font-size: 13px;
+  }
+
+  .office-card {
+    margin-bottom: 5%;
   }
 
 

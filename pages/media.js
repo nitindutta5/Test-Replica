@@ -7,8 +7,8 @@ import Testimonials from "../components/Testimonials"
 import VideoGallery from "../components/VideoGallery"
 
 
-const Media = ({blogs}) => {
-    const videoData = [{ video: "https://player.vimeo.com/video/534314647", title: "", time: "4min" }, { video: "https://player.vimeo.com/video/534314647", title: "", time: "4min" }];
+const Media = ({ blogs }) => {
+    const videoData = [{ video: "https://player.vimeo.com/video/534314647", title: "Value Engineering", time: "4min" }];
     return (
         <>
             <Head>
@@ -17,11 +17,11 @@ const Media = ({blogs}) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Banner src="./banner/media.png" text="JSLL LIFESTYLE DIARIES" />
-            <Blogs data={blogs}/>
+            <Blogs data={blogs} />
             <CaseStudies />
             <News_Updates />
             <Testimonials />
-            <VideoGallery data={videoData} dimension={1080/1920}/>
+            <VideoGallery data={videoData} dimension={1080 / 1920} />
         </>
     )
 }
