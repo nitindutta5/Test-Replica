@@ -14,14 +14,14 @@ const data = [
     {
         img: "../Group 51861.svg",
         businessHead: "Rajiv Kapoor",
-        plant: "Real Estate | Plumbing | Kitchens (North & East India)",
+        plant: "Plumbing | Kitchens | Real Estate(North & East India)",
         mobile: "(314)123-5670",
         email: "Rajiv.kapoor@jindalstainless.com"
     },
     {
         img: "../Group 51861.svg",
         businessHead: "Pankaj Kumar",
-        plant: "Real Estate | Plumbing | Kitchens (South & West India)",
+        plant: "Plumbing | Kitchens | Real Estate(South & West India)",
         mobile: "(314)123-5670",
         email: "Pankaj.kumar1@jindalstainless.com"
     },
@@ -49,7 +49,7 @@ const data = [
     {
         img: "../Group 51861.svg",
         businessHead: "Manak Garg",
-        plant: "COO | Mobility",
+        plant: " Mobility | COO",
         mobile: "(314)123-5670",
         email: "Manak.garg@jindalstainless.com"
     },
