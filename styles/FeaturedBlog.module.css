@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-image: url('../public/Group-45510.png');
     max-height: 380px;
+    filter: brightness(0.8);
 }
 
 .rightSection {

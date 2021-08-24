@@ -39,7 +39,7 @@ const Media = ({ blogData }) => {
                         <div id="blogcaseCarousel">
                             <Swiper {...Params}>
                                 <div className="swiper-slide" >
-                                    <FeaturedBlog cardTitle="Media & Updates" postTitle="Arttd'inox Launches a New Store in Bareilly, 2021" postSlug='/media' postBrief="" />
+                                    <FeaturedBlog cardTitle="Media & Updates" postTitle="Arttd'inox Launches a New Store in Bareilly, 2021" postFeaturedImg="../news/1.jpg" postSlug='/media' postBrief="" />
                                 </div>
                             </Swiper>
                         </div>
