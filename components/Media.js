@@ -28,7 +28,7 @@ const Media = ({ blogData }) => {
                                 {
                                     blogData.map((obj, id) => (
                                         <div className="swiper-slide" key={id}>
-                                            <FeaturedBlog cardTitle="Blogs" postTitle={obj.Title} postSlug={obj.slug} postBrief={obj.Brief} postFeaturedImg={obj.Banner_img.url} />
+                                            <FeaturedBlog cardTitle="Blogs" postTitle={obj.Title} postSlug={`blog/${obj.slug}`} postBrief={obj.Brief} postFeaturedImg={obj.Banner_img.url} />
                                         </div>
                                     ))
                                 }
@@ -39,7 +39,7 @@ const Media = ({ blogData }) => {
                         <div id="blogcaseCarousel">
                             <Swiper {...Params}>
                                 <div className="swiper-slide" >
-                                    <FeaturedBlog cardTitle="Media & Updates" postTitle="Lorem Ispem Lorem Ispem" postSlug="slug" postBrief="Lorem Ispem Lorem Ispem Lorem Ispem Lorem Ispem Lorem Ispem Lorem IspemLorem Ispem Lorem Ispem Lorem Ispem Lorem Ispem Lorem Ispem Lorem Ispem" />
+                                    <FeaturedBlog cardTitle="Media & Updates" postTitle="Lorem Ispem Lorem Ispem" postSlug='/media' postBrief="Lorem Ispem Lorem Ispem Lorem Ispem Lorem Ispem Lorem Ispem Lorem IspemLorem Ispem Lorem Ispem Lorem Ispem Lorem Ispem Lorem Ispem Lorem Ispem" />
                                 </div>
                             </Swiper>
                         </div>

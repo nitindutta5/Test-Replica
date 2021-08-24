@@ -15,6 +15,8 @@ const OurBusinesses = ({data,ModalToggle, UpdateName, UpdateFile, UpdateType}) =
         ModalToggle();
     }
 
+    console.log(data);
+
     var settings = {
         className: "center",
         centerMode: true,
@@ -22,7 +24,7 @@ const OurBusinesses = ({data,ModalToggle, UpdateName, UpdateFile, UpdateType}) =
         infinite: true,
         speed: 200,
         slidesToShow: 5,
-        autoplay: true,
+        // autoplay: true,
         centerPadding: "0px",
         arrows: true,
         nextArrow: <NextBtn />,
@@ -87,11 +89,12 @@ const OurBusinesses = ({data,ModalToggle, UpdateName, UpdateFile, UpdateType}) =
                                     <div key={id} >
                                         <div className="main">
                                             <img src={obj.Carousel_Image.url} className="img-fluid mainImg" />
-                                            <img className={classNames({
+                                            {/* <img className={classNames({
                                                 [styles.title]: true,
                                                 [styles.logo]: true,
                                                 "brand-logo": true
-                                            })} src={obj.logo.url} />
+                                            })} src={obj.logo.url} /> */}
+                                            <p className={styles.title}>{obj.name}</p>
                                             <Link href={`ourBusinesses/${obj.slug}`}>
                                                 <Button className={styles.knowMore} color="secondary">
                                                     Know More</Button></Link>

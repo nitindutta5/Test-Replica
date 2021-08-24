@@ -17,7 +17,7 @@ const FeaturedBlog = ({cardTitle, postTitle, postBrief, postSlug, postFeaturedIm
                                 <p className={styles.Content}>{postBrief.slice(0,200)}...</p>
                             </div>
                           
-                            <Link href={`/blog/${postSlug}`}>
+                            <Link href={`${postSlug}`}>
                                 <a className={styles.knowMore}>Know More <span><img src="./Know-more-arrow.svg" className={styles.arrow} /></span>
                                 </a>
                             </Link>

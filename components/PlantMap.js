@@ -23,20 +23,17 @@ const PlantMap = () => {
     }
     const data = [
         {
-            name: "Rohad Plant",
-            dem: "20,234 sq.m.",
+            name: "Rohad",
             desc: "48th km stone, Delhi Rohtak, highway, Rohtak, Haryana 124001",
             href: "https://www.google.com/maps/dir//JSL+Lifestyle+Limited,+48th+km+stone,+Delhi+Rohtak,+highway,+Rohtak,+Haryana+124001/@28.657676,76.716589,10z/data=!4m9!4m8!1m0!1m5!1m1!1s0x390d756f9a4b3a1d:0x4ec4e5ba587d4edd!2m2!1d76.7944366!2d28.7546799!3e0?hl=en"
         },
         {
-            name: "Pathredi Plant",
-            dem: "30,351 sq.m",
+            name: "Pathredi",
             desc: "Village Pathredi, Bilaspur Tauru Road, Gurugram, Haryana – 122413",
             href: "https://www.google.com/maps/dir//Jindal+Lifestyle+Ltd.,+Gurugram,+Haryana+122413/@28.347021,76.814721,10z/data=!4m9!4m8!1m0!1m5!1m1!1s0x390d390be40e9527:0x6263994310e42157!2m2!1d76.8897798!2d28.2752269!3e0?hl=en"
         },
         {
-            name: "Chennai Plant",
-            dem: "30,351 sq.m",
+            name: "Chennai",
             desc: "D2, CMDA St, Industrial Estate, Maraimalai Nagar, Tamil Nadu-603209",
             href: "https://www.google.com/maps/dir/28.682739,77.4816688/CMDA+St,+Rail+Nagar,+Maraimalai+Nagar,+Tamil+Nadu+603203/@20.6943674,74.0554031,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3a52f9deb37fff75:0x622e9fb6e49fc1cd!2m2!1d80.0373771!2d12.7953472"
         }
