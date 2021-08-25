@@ -594,7 +594,8 @@ section {
   transition: all 0.6s ease-in-out;
   cursor: pointer;
   min-height: 600px;
-  background-image: url("../public/about-section.png");
+  /* background-image: url("../public/about-section.png"); */
+  background-image: url("../public/AboutUs.jpg");
   filter: grayscale();
 }
 

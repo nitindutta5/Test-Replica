@@ -52,7 +52,7 @@ export const BusinessVerticals = [
 
 export const homePageBanners = [
     {
-        url: "../banner/ValueEngineering.jpg",
+        url: "../banner/OEM_Banner.jpg",
         text: "CRAFTING A SMART FUTURE FOR A BEAUTIFUL LIVING"
     },
     {
