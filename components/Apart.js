@@ -104,7 +104,7 @@ const Apart = () => {
                                 ))
                             }
                         </Slider>
-                        <img src="./left-cart.png" className={styles.left}/>
+                        <img src="./Our-Unique-Contribution_Image.jpg" className={styles.left}/>
                     </Col>
                 </Row>
             </Container>

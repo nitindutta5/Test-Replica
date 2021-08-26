@@ -12,7 +12,7 @@ const Careers = ({jobs}) => {
                 <meta name="description" content="Media Page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Banner src="./banner/Career.png" text="JSLL CAREERS" />
+            <Banner src="./banner/JSLL_Careers-page_Banner.jpg" text="JSLL CAREERS" />
             <CareerIntro />
             <MainCareer data={jobs}/>
             <NotFound/>

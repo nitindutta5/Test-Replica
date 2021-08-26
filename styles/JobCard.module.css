@@ -19,12 +19,16 @@
 .location {
     color: #0B0B0B;
     font-size: 0.9rem;
+    text-align: center;
 }
 
 .readMore {
     color: #0B0B0B !important;
     font-weight: 600;
     font-size: 0.9rem;
+    display: block;
+    width: 100%;
+    text-align: right;
 }
 
 

@@ -11,7 +11,7 @@ const Plants_Machines = () => {
                 <meta name="description" content="Our Plants & Machine Page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Banner src="./banner/why-stainless.png" text="Our Plants & Machines" />
+            <Banner src="./banner/why-stainless.png" text="Our Manufacturing Units & Equipments" />
             <VerticalPlantCarousel />
             <OurMachines />
         </>

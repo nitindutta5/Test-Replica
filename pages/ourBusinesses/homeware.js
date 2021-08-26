@@ -22,7 +22,13 @@ const jindalKitchen = ({ homeware, ModalToggle, UpdateName, UpdateFile, UpdateTy
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Banner src={homeware.Banner_Img.url} text="Homeware" />
-            <Section1 data={homeware} type="homeware">{homeware.DescriptionBox.Title}</Section1>
+            <Section1
+                data={homeware}
+                type="homeware"
+                logo
+            >
+                {homeware.DescriptionBox.Title}
+            </Section1>
             {
                 homeware.SectionBox.map((Section,id)=>(
                     <Section2 key={id} data={Section.Section}>{Section.Title}</Section2>

@@ -6,7 +6,12 @@ const Section1 = (props) => {
         <section className="bg3">
             <Container>
                 <Row>
-                    <Col lg="12"><h1 className="heading white-color text-center">{props.children}</h1></Col>
+                    <Col lg="12">
+                        <h1 className="heading white-color text-center">
+                            {props.children}
+                            { props.logo && <img className="logo" src="../arttdinox-logo.png" alt="logo" />}
+                        </h1>
+                    </Col>
                 </Row>
                 <Row>
                     {

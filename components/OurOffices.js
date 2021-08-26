@@ -7,70 +7,70 @@ const data = [
     {
         img: "../Group 51861.svg",
         businessHead: "Pushpa Chowdhary",
-        plant: "OEM Head",
+        plant: "Head - OEM",
         mobile: "(314)123-5670",
         email: "Pushpa.chowdhary@jindalstainless.com"
     },
     {
         img: "../Group 51861.svg",
         businessHead: "Rajiv Kapoor",
-        plant: "Plumbing | Kitchens | Real Estate(North & East India) Head",
+        plant: "Head - Plumbing | Kitchens | Real Estate(North & East India)",
         mobile: "(314)123-5670",
         email: "Rajiv.kapoor@jindalstainless.com"
     },
     {
         img: "../Group 51861.svg",
         businessHead: "Pankaj Kumar",
-        plant: "Plumbing | Kitchens | Real Estate(South & West India) Head",
+        plant: "Head - Plumbing | Kitchens | Real Estate(South & West India)",
         mobile: "(314)123-5670",
         email: "Pankaj.kumar1@jindalstainless.com"
     },
     {
         img: "../Group 51861.svg",
         businessHead: "Vijay Arya",
-        plant: "Rohad Plant Head",
+        plant: "Head - Rohad Plant",
         mobile: "(314)123-5670",
         email: "Vijay.arya@jindalstainless.com"
     },
     {
         img: "../Group 51861.svg",
         businessHead: "Tanuj Chahl",
-        plant: "Mobility Head",
+        plant: "Head - Mobility",
         mobile: "(314)123-5670",
         email: "Tanuj.chahal@jindalstainless.com"
     },
     {
         img: "../Group 51861.svg",
         businessHead: "Shreyash Trivedi",
-        plant: "Homeware | Marketing Head",
+        plant: "Head - Homeware | Marketing",
         mobile: "(314)123-5670",
         email: "Shreyash.trivedi@jindalstainless.com"
     },
     {
         img: "../Group 51861.svg",
         businessHead: "Manak Garg",
-        plant: " Mobility | COO Head",
+        plant: "Head - Mobility | COO",
         mobile: "(314)123-5670",
         email: "Manak.garg@jindalstainless.com"
     },
     {
         img: "../Group 51861.svg",
         businessHead: "Munish Mohan",
-        plant: "Pathredi Plant Head",
+        plant: "Head - Pathredi Plant",
         mobile: "(314)123-5670",
         email: "Munish.mohan@jindalstainless.com"
     },
     {
         img: "../Group 51861.svg",
         businessHead: "Vikram Rawat",
-        plant: "Chennai Plant Head",
+        plant: "Head - Chennai Plant",
         mobile: "(314)123-5670",
         email: "Vikram.rawat@jindalstainless.com"
     },
     {
         img:"",
         businessHead:"Mandvi Shringi",
-        plant:"HR Head",
+        plant:"Head - HR",
         mobile:"(314)123-5670",
         email:"Mandvi.shringi@jindalstainless.com"
     }
