@@ -6,8 +6,11 @@ import Awards from "../components/Awards"
 import TeamSection from "../components/TeamSection"
 import CertificateCarousel from "../components/CertificateCarousel"
 import Apart from "../components/Apart"
+import { parallaxData } from "../Data"
+
 
 const About = () => {
+    const data = parallaxData.aboutUs
     return (
         <>
             <Head>
@@ -17,7 +20,7 @@ const About = () => {
             </Head>
             <Banner src="./banner/R_17778-new.jpg" text="About Us" />
             <AboutUs />
-            <Parallax />
+            <Parallax data={data} filterEffect={true} />
             <Apart />
             <TeamSection />
             <Awards />

@@ -1,28 +1,35 @@
 import styles from '../styles/Parallax.module.css'
 import { Container, Row, Col } from 'reactstrap'
+import ClassNames from 'classnames'
 
-const Parallax = () => {
+const Parallax = ({ data, filterEffect }) => {
     return (
-        <section className={styles.parallax}>
+        <section
+            style={{ backgroundImage:`url(${data.bgImg})` }}
+            className={ClassNames({
+                [styles.parallax]: true,
+                [styles.filterEffect]: filterEffect
+            })}
+        >
             <Container fluid className="wrapper">
                 <Row>
                     <Col lg="4">
                         <div className={styles.vision}>
                             <h1 className="heading white-color mb-3">
-                                Our Vision
+                                {data.leftSection.title}
                             </h1>
                             <p className="white-color">
-                                To be a globally admired organization and enrich every life through best-in-class design & manufacturing of stainless steel products, where people associate with pride.
+                                {data.leftSection.content}
                             </p>
                         </div>
                     </Col>
                     <Col lg="4" className="ms-auto">
                         <div className={styles.vision}>
                             <h1 className="heading white-color mb-3">
-                                Our Mission
+                                {data.rightSection.title}
                             </h1>
                             <p className="white-color">
-                                To become a $1 billion enterprise, India’s largest stainless steel products manufacturer, and building the most admired lifestyle brand.
+                                {data.rightSection.content}
                             </p>
                         </div>
                     </Col>

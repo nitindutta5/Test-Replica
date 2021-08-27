@@ -45,7 +45,12 @@ const Infra = ({ infra, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
             <Section1 data={infra} type="infra" >{infra.DescriptionBox.Title}</Section1>
             {
                 infra.SectionBox.map((Section,id)=>(
-                    <Section2 key={id} data={Section.Section}>{Section.Title}</Section2>
+                    <Section2
+                        key={id}
+                        data={Section.Section}
+                    >
+                        {Section.Title}
+                    </Section2>
                 ))
             }
 
@@ -58,7 +63,11 @@ const Infra = ({ infra, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
                                 {
                                     infra.MoreProducts.Product.map((product, id) => (
                                         <div className="mx-auto text-center" key={id}>
-                                            <MoreProducts img={product.Product_Img.url} name={product.Product_Name} brief={product.Product_Brief} />
+                                            <MoreProducts
+                                                img={product.Product_Img.url}
+                                                name={product.Product_Name}
+                                                brief={product.Product_Brief}
+                                            />
                                         </div>
                                     ))
                                 }
@@ -69,7 +78,7 @@ const Infra = ({ infra, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
             </section>
             {
                 infra.VideoBox &&
-                                <VideoGallery className="pt-0" data={infra.VideoBox.Video} dimension={1080 / 1920} />
+                <VideoGallery className="pt-0" data={infra.VideoBox.Video} dimension={1080 / 1920} />
 
             }
             <section className="pt-0">
@@ -84,6 +93,8 @@ const Infra = ({ infra, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
         </div>
     )
 }
+
+
 export async function getStaticProps() {
     const baseURL = process.env.API_URL;
     let data;

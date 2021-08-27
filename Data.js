@@ -248,3 +248,60 @@ export const plantLocation = [
         href: "https://www.google.com/maps/dir/28.682739,77.4816688/CMDA+St,+Rail+Nagar,+Maraimalai+Nagar,+Tamil+Nadu+603203/@20.6943674,74.0554031,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3a52f9deb37fff75:0x622e9fb6e49fc1cd!2m2!1d80.0373771!2d12.7953472"
     }
 ];
+
+export const parallaxData = {
+    aboutUs: {
+        bgImg: "../circular-metal-brushed-texture-XBJMBTD.jpg",
+
+        leftSection: {
+            title: "Our Vision",
+            content: "To be a globally admired organization and enrich every life through best-in-class design & manufacturing of stainless steel products, where people associate with pride."
+        },
+
+        rightSection: {
+            title: "Our Mission",
+            content: "To become a $1 billion enterprise, India’s largest stainless steel products manufacturer, and building the most admired lifestyle brand."
+        }
+    },
+
+    csr: {
+        bgImg: "../parallax2.jpg",
+
+        leftSection: {
+            title: "Our Philosophy",
+            content: "Corporate Social Responsibility (CSR) is the strategic approach towards sustainable community development and the key to inclusive growth. This gives the employees and the management an opportunity to get connected with each other and the community at large. Our aim is to provide a platform that empowers the community through need-based programmes, making them self-reliant through a process of direct intervention. Corporate Social Responsibility (CSR) is the strategic approach towards sustainable community development and the key to inclusive growth. This gives the employees and the management an opportunity to get connected with each other and the community at large. Our aim is to provide a platform that empowers the community through need-based programmes, making them self-reliant through a process of direct intervention."
+        },
+
+        rightSection: {
+            title: "Jindal Stainless Foundation (JSF)",
+            content: "Jindal Stainless Foundation (JSF), registered under the Registrar of Societies, is the CSR arm of Jindal Stainless, established to work for the greater good of the community. Our aim is to focus ‘Beyond Business Responsibilities’, stressing on the importance of seeing a change in lives of communities around our plant locations as well as other geographies. Our key focus areas are Women Empowerment, Education and Skill Development, Integrated Health Care, Environment Sustainability, Community Development, and Integrated Farming. Under the able guidance of Mrs. Deepikaa Jindal, Chairperson, Jindal Stainless Foundation, our seasoned CSR professionals implement several initiatives through national and international civil societies and non-government organisations. Under the aegis of JSF, it is our earnest endeavour to uplift our surrounding communities and transform the lives of people who cross our path."
+        }
+    }
+}
+
+
+export const localInitiatives = [
+    {
+        img: "../reports/CSR-Policy.jpg",
+        title: "Community Development",
+        content: "We are working on various projects at the community level that aim to reach out to people, address various social and environmental issues, and upskill individuals and help them earn a livelihood."
+    },
+
+    {
+        img: "../reports/CSR-Policy.jpg",
+        title: "Skill Development",
+        content: "JLS Foundation has established Jindal Institute of Industrial Training in Hisar (Haryana) and Jajpur (Odisha) to impart training to the youth in order to make them economically independent and self-reliant. The courses taught at these institutes have been developed keeping in mind the existing and future market demands. The institutes are equipped with modern training infrastructure and instructors who individually mentor the students."
+    },
+
+    {
+        img: "../reports/CSR-Policy.jpg",
+        title: "Education",
+        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"
+    },
+
+    {
+        img: "../reports/CSR-Policy.jpg",
+        title: "Women Empowerment",
+        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"
+    }
+]

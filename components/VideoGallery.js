@@ -33,7 +33,9 @@ const VideoGallery = (props) => {
             <Container>
                 <Row>
                     <Col lg="8" className="mx-auto">
-                        <h2 className="heading text-center ">Video Gallery</h2>
+                        <h2 className="heading text-center ">
+                          { props.title || 'Video Gallery' }
+                        </h2>
                         <Slider {...settings} className="inn2">
                             {
                                 props.data.map((obj, id) => (

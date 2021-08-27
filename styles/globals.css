@@ -769,6 +769,32 @@ section {
   right: 10%;
 }
 
+.local-intiative-card .title {
+  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+}
+
+.local-intiative-card .content {
+  font-size: 13px;
+  color: #fff;
+}
+
+.local-intiative-card .btn-2 {
+  background-color: transparent !important;
+  color: #fff !important;
+  border: 1px solid #fff !important;
+  cursor:  pointer !important;
+  margin-top: 2rem;
+}
+
+.local-intiative-card .btn-2:hover {
+  background-color: #fff !important;
+  color: #363C4C !important;
+  border: 1px solid #fff !important;
+}
+
 @media(max-width:1700px) {
   .btn {
     min-width: 125px;

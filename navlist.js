@@ -39,6 +39,13 @@ export const navlist = [
     text: 'Media',
     link: '/media',
   },
+
+  {
+    name: '/csr',
+    text: 'CSR',
+    link: '/csr',
+  },
+
   {
     name: '/careers',
     text: 'Careers',
