@@ -14,7 +14,7 @@ const timelineData = [
     },
     {
       date: '1977',
-      content: 'In-house R&D wing was established with focus on new developments and continuous improvement. The Company also commercialized harrow discs for tractors in this year.'
+      content: 'In-house R&D wing was established with focus on new developments and continuous improvement. The company also commercialized harrow discs for tractors in this year.'
     },
     {
       date: '1978',
@@ -31,7 +31,7 @@ const timelineData = [
     ,
     {
       date: '1986',
-      content: 'The Company came out with its Initial Public Offer (IPO) of 12,00,000 equity shares and 4,80,000 Non-Convertible Debentures. '
+      content: 'The company came out with its Initial Public Offer (IPO) of 12,00,000 equity shares and 4,80,000 Non-Convertible Debentures. '
     }
     ,
     {
@@ -61,7 +61,7 @@ const timelineData = [
     ,
     {
       date: '2001',
-      content: 'Ms Deepikaa Jindal’s brainchild takes form and her pioneering leadership gives birth to  Arttd’inox.'
+      content: 'Ms Deepika Jindal’s brainchild takes form and her pioneering leadership gives birth to  Arttd’inox.'
     }
     ,
     {

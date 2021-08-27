@@ -88,14 +88,14 @@ export const plantData = [
     {
         url:"../ourplants/pathredi.png",
         name:"Pathredi Unit",
-        content:"The Pathredi facility is spread over a covered area of massive <b>30,351 sq. m.</b> with a fabrication capacity of 5000 MT per annum and caters to Mobility, Infrastructure, Value Engineering, Sanitation and Kitchen verticals.",
+        content:"The Pathredi facility is spread over a covered area of massive <b>30,351 sq. m.</b> with a fabrication capacity of 5000 MT per annum and caters to Mobility, Infrastructure, OEM, Sanitation and Kitchen verticals.",
         // dimen:"30,351 sq.m."
 
     },
     {
         url:"../ourplants/rohad.png",
         name:"Rohad Unit",
-        content:"The Rohad plant is spread across <b>20,234 sq. m.</b> and offers a wide range of in-house production and finishing capabilities for best-in-class quality products. The plant caters to Value Engineering and Arttd’inox.",
+        content:"The Rohad plant is spread across <b>20,234 sq. m.</b> and offers a wide range of in-house production and finishing capabilities for best-in-class quality products. The plant caters to OEM and Arttd’inox.",
         // dimen:"20,234 sq.m."
     }
 ];
