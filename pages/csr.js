@@ -111,10 +111,10 @@ const CSR = () => {
                 </Container>
             </section>
             <Parallax data={_parallaxData} />
-            <MajorInitiatives
+            {/* <MajorInitiatives
                 posts={posts}
                 title="Our Initiatives"
-            />
+            /> */}
 
             <LocalInitiatives posts={localInitiatives} />
 

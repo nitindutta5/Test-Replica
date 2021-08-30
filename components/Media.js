@@ -14,7 +14,6 @@ const Media = ({ blogData, mediaData }) => {
             clickable: true
         }
     }
-    console.log(blogData);
     return (
         <section className="bg3">
             <Container fluid className="wrapper">

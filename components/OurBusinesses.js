@@ -15,8 +15,6 @@ const OurBusinesses = ({data,ModalToggle, UpdateName, UpdateFile, UpdateType}) =
         ModalToggle();
     }
 
-    console.log(data);
-
     var settings = {
         className: "center",
         centerMode: true,

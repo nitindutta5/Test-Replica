@@ -96,10 +96,9 @@ const Apart = () => {
                                     <div key={id} className="position-relative">
                                         <div className={styles.card}>
                                             <p className={styles.number}>{id+1}</p>
-                                        <img src={obj.img} className={"img-fluid "+[styles.icon]} />
-                                        <p className={styles.content}>{obj.title}</p>
+                                            <img src={obj.img} className={"img-fluid "+[styles.icon]} />
+                                            <p className={styles.content}>{obj.title}</p>
                                         </div>
-                                      
                                     </div>
                                 ))
                             }

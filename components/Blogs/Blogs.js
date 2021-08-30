@@ -23,15 +23,6 @@ const Blogs = ({data}) => {
         setCurrentPage(currentPage + 1);
     };
 
-    // const handleFirstClick = (e, index) => {
-    //     e.preventDefault();
-    //     setCurrentPage(0);
-    // };
-
-    // const handleLastClick = (e, index) => {
-    //     e.preventDefault();
-    //     setCurrentPage(pagesCount - 1);
-    // }
     return (
         <section className="bg2">
             <Container fluid className="wrapper">

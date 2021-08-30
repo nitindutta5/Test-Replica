@@ -9,11 +9,11 @@ const Params = {
     slidesPerView: 3,
     autoplay: false,
     noSwiping: false,
-    arrows:true,
+    arrows: true,
     navigation: {
         nextEl: '.swiper-button-next',
         // prevEl: '.swiper-button-prev'
-      }
+    }
     // pagination: {
     //     el: '.swiper-pagination',
     //     type: 'bullets',
@@ -27,33 +27,32 @@ const LocalInitiatives = ({ posts, title }) => {
         <section className="bg3">
             <Container fluid className="wrapper">
                 <Row>
-                    {/* <Col lg="12">
-                        <h2 className="heading text-center white-color">
-                            { title }
-                        </h2>
-                    </Col> */}
                     <Col lg="12">
-                        <Swiper {...Params}>
-                            {
-                                posts.map(post => (
-                                    <div className="local-intiative-card">
-                                        <img src={post.img} className="w-100" />
-                                        <h3 className="title">
-                                            { post.title}
-                                        </h3>
-
-                                        <p className="content">
-                                            { post.content}
-                                        </p>
-
-                                        <Button className="btn-2">
-                                            Read More
-                                        </Button>                                        
-                                    </div>
-                                ))
-                            }
-                        </Swiper>
+                        <h2 className="heading text-center white-color">
+                            Our Initiatives
+                        </h2>
                     </Col>
+
+                    {
+                        posts.map(post => (
+                            <Col lg="6" className="mb-5">
+                                <div className="local-intiative-card px-5">
+                                    <img src={post.img} className="w-100" />
+                                    <h3 className="title">
+                                        {post.title}
+                                    </h3>
+
+                                    <p className="content">
+                                        {post.content}
+                                    </p>
+
+                                    <Button className="btn-2">
+                                        Read More
+                                    </Button>
+                                </div>
+                            </Col>
+                        ))
+                    }
                 </Row>
             </Container>
         </section>
