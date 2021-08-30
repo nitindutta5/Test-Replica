@@ -9,7 +9,7 @@ import BannerCarousel from '../components/BannerCarousel'
 import { homePageBanners } from '../Data'
 
 
-export default function Home({verticals, ModalToggle, UpdateName, UpdateFile, UpdateType, latestBlogs }) {
+export default function Home({verticals, ModalToggle, UpdateName, UpdateFile, UpdateType, latestBlogs, mediaData }) {
   return (
     <>
       <Head>
@@ -21,7 +21,7 @@ export default function Home({verticals, ModalToggle, UpdateName, UpdateFile, Up
       <AboutUs />
       <OurBusinesses data={verticals} ModalToggle={ModalToggle} UpdateFile={UpdateFile} UpdateName={UpdateName} UpdateType={UpdateType}/>
       <OurPlants/>
-      <Media blogData={latestBlogs}/>
+      <Media blogData={latestBlogs} mediaData={mediaData}/>
       <SocialMedia/>
     </>
   )
@@ -30,12 +30,14 @@ export default function Home({verticals, ModalToggle, UpdateName, UpdateFile, Up
 
 export async function getStaticProps() {
   const baseURL = process.env.API_URL;
-  let data, data2;
+  let data, data2, data3;
   try {
       const res = await fetch(baseURL + 'brochures');
       const res2 = await fetch(baseURL + 'blogs?_sort=Id:desc');
+      const res3 = await fetch(baseURL + `media-contents?_sort=Id:desc`);
       data = await res.json();
       data2 = await res2.json();
+      data3 = await res3.json();
   } catch (error) {
       console.log("Server Error Occured");
   }
@@ -43,7 +45,8 @@ export async function getStaticProps() {
   return {
       props: {
           verticals: data,
-          latestBlogs: data2.slice(0,2)
+          latestBlogs: data2.slice(0,2),
+          mediaData:data3.slice(0,2)
       }
   }
 }

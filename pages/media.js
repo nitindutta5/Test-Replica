@@ -8,29 +8,7 @@ import VideoGallery from "../components/VideoGallery"
 import NextBtn from "../components/NextBtn";
 import Previous from "../components/Previous";
 
-const caseData = [
-    {
-        img: "../casestudies/1.png",
-        title: "Lorem ipsum dolor sit amet, consetetur",
-        date: "13th June 2021"
-    },
-    {
-        img: "../casestudies/2.png",
-        title: "Lorem ipsum dolor sit amet, consetetur",
-        date: "13th June 2021",
-        info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum"
-    },
-    {
-        img: "../casestudies/3.png",
-        title: "Lorem ipsum dolor sit amet, consetetur",
-        date: "13th June 2021"
-    },
-    {
-        img: "../casestudies/1.png",
-        title: "Lorem ipsum dolor sit amet, consetetur",
-        date: "13th June 2021"
-    }
-];
+
 
 const _sliderConfig = {
     infinite: true,
@@ -61,7 +39,7 @@ const _sliderConfig = {
     ]
 };
 
-const Media = ({ blogs }) => {
+const Media = ({ blogs, caseStudyData, mediaData, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
     const videoData = [{ video: "https://player.vimeo.com/video/534314647", title: "Value Engineering", time: "4min" }];
     return (
         <>
@@ -73,11 +51,12 @@ const Media = ({ blogs }) => {
             <Banner src="./banner/media.png" text="JSLL LIFESTYLE DIARIES" />
             <Blogs data={blogs} />
             <CaseStudies
-                data={caseData}
+                data={caseStudyData}
                 title="Case Studies"
                 sliderConfig={_sliderConfig}
+                ModalToggle={ModalToggle} UpdateFile={UpdateFile} UpdateName={UpdateName} UpdateType={UpdateType}
             />
-            <News_Updates />
+            <News_Updates data={mediaData} />
             <Testimonials />
             <VideoGallery data={videoData} dimension={1080 / 1920} />
         </>
@@ -85,10 +64,14 @@ const Media = ({ blogs }) => {
 }
 export async function getStaticProps() {
     const baseURL = process.env.API_URL;
-    let data;
+    let data, caseStudies, media;
     try {
         const res = await fetch(baseURL + `blogs?_sort=Id:desc`);
+        const res1 = await fetch(baseURL + `case-studies?_sort=Id:desc`);
+        const res2 = await fetch(baseURL + `media-contents?_sort=Id:desc`);
         data = await res.json();
+        caseStudies = await res1.json();
+        media = await res2.json();
     } catch (error) {
         console.log("Server Error Occured");
     }
@@ -96,6 +79,8 @@ export async function getStaticProps() {
     return {
         props: {
             blogs: data,
+            caseStudyData: caseStudies,
+            mediaData: media
         }
     }
 }

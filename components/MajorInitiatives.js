@@ -16,7 +16,7 @@ const ParamsParent = {
 
 const Params = {
     spaceBetween: 20,
-    slidesPerView: 2,
+    slidesPerView: 1,
     autoplay: false,
     noSwiping: false,
     pagination: {
@@ -33,33 +33,30 @@ const MajorInitiatives = ({ posts, title }) => {
                 <Row>
                     <Col lg="12">
                         <h2 className="heading text-center white-color">
-                            { title }
+                            {title}
                         </h2>
                     </Col>
                     <Col lg="12">
-                        <Swiper {...ParamsParent}>
-                            {
-                                posts.map(post => (
-                                    <div>
-                                        <Swiper {...Params}>
-                                            {
-                                                post.blogData.map((obj, id) => (
-                                                    <div className="swiper-slide" key={id}>
-                                                        <FeaturedBlog
-                                                            cardTitle={obj.cardTitle}
-                                                            postTitle={obj.postTitle}
-                                                            postFeaturedImg={obj.postFeaturedImg}
-                                                            postBrief={obj.postBrief}
-                                                            // postSlug='/media'
-                                                        />
-                                                    </div>
-                                                ))
-                                            }
-                                        </Swiper>
-                                    </div>
-                                ))
-                            }
-                        </Swiper>
+                        <Row>
+                            <Col lg="6" className="mx-auto">
+                                <Swiper {...Params}>
+                                    {
+                                        posts.map((obj, id) => (
+                                            <div className="swiper-slide" key={id}>
+                                                <FeaturedBlog
+                                                    cardTitle={obj.cardTitle}
+                                                    postTitle={obj.postTitle}
+                                                    postFeaturedImg={obj.postFeaturedImg}
+                                                    postBrief={obj.postBrief}
+                                                // postSlug='/media'
+                                                />
+                                            </div>
+                                        ))
+                                    }
+                                </Swiper>
+                            </Col>
+                        </Row>
+
                     </Col>
                 </Row>
             </Container>

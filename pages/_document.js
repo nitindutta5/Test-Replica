@@ -42,6 +42,16 @@ class MyDocument extends Document {
             <input type="submit" />
           </form>
 
+          {/* Netlify Download CaseStudy Form */}
+          <form data-netlify="true" hidden name="download-casestudy" netlify-honeypot="bot-field">
+            <input type="hidden" name="casestudyName" />
+            <input type="text" name="Name" />
+            <input type="email" name="Email" />
+            <input type="tel" name="Mob" />
+            <input type="text" name="CompanyName" />
+            <input type="submit" />
+          </form>
+
           {/* Netlify Enquiry Form */}
           <form data-netlify="true" hidden name="enquiry" netlify-honeypot="bot-field">
             <input type="text" name="Name" />

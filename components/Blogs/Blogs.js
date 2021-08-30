@@ -2,40 +2,10 @@ import { Container, Row, Col, Pagination, PaginationLink, PaginationItem } from 
 import BlogCard from "./BlogCard";
 import { useState } from "react";
 
-// export const blogData = [
-//     {
-//         img: "../../blog/dummy1.png",
-//         title: "Lorem ipsum dolor sit amet, consetetur",
-//         date: "13th June 2021",
-//         info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum",
-//         slug: "lorem_Ispem"
-//     },
-//     {
-//         img: ".././blog/dummy2.png",
-//         title: "Lorem ipsum dolor sit amet, consetetur",
-//         date: "13th June 2021",
-//         info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum",
-//         slug: "lorem_Ispem"
-//     },
-//     {
-//         img: "../../blog/dummy3.png",
-//         title: "Lorem ipsum dolor sit amet, consetetur",
-//         date: "13th June 2021",
-//         info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum",
-//         slug: "lorem_Ispem"
-//     },
-//     {
-//         img: "../../blog/dummy2.png",
-//         title: "Lorem ipsum dolor sit amet, consetetur",
-//         date: "13th June 2021",
-//         info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum",
-//         slug: "lorem_Ispem"
-//     }
-// ];
+
 const Blogs = ({data}) => {
     const pageSize = 6;
     const pagesCount = Math.ceil(data.length/pageSize);
-    console.log(pagesCount);
     const [currentPage, setCurrentPage] = useState(0);
 
     const handlePageClick = (e, index) => {
@@ -82,9 +52,6 @@ const Blogs = ({data}) => {
                             }
                         </Row>
                         <Pagination aria-label="Page navigation example">
-                            {/* <PaginationItem disabled={currentPage <= 0}>
-                                <PaginationLink onClick={handleFirstClick} first href="#" />
-                            </PaginationItem> */}
                             <PaginationItem disabled={currentPage <= 0}>
                                 <PaginationLink onClick={handlePreviousClick} previous href="#" />
                             </PaginationItem>
@@ -98,9 +65,6 @@ const Blogs = ({data}) => {
                             <PaginationItem disabled={currentPage === pagesCount - 1}>
                                 <PaginationLink onClick={handleNextClick} next href="#" />
                             </PaginationItem>
-                            {/* <PaginationItem disabled={currentPage === pagesCount - 1}>
-                                <PaginationLink onClick={handleLastClick} last href="#" />
-                            </PaginationItem> */}
                         </Pagination>
                     </Col>
                 </Row>

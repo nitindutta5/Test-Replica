@@ -18,7 +18,7 @@ const About = () => {
                 <meta name="description" content="About Us Page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Banner src="./banner/R_17778-new.jpg" text="About Us" />
+            <Banner src="./banner/About-us_Banner.jpg" text="About Us" />
             <AboutUs />
             <Parallax data={data} filterEffect={true} />
             <Apart />

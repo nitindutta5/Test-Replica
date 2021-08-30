@@ -5,34 +5,34 @@ import Slider from 'react-slick';
 import NextBtn from "./NextBtn";
 import Previous from "./Previous";
 
-const News_Updates = () => {
+const News_Updates = ({data}) => {
     const [current, setCurrent] = useState(0);
-    const data = [{
-        img: "../news/1.jpg",
-        date: "2021",
-        source: "Artt'dinox",
-        title: "Arttd'inox Launches a New Store in Bareilly, 2021",
-        // content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
-    }, {
-        img: "../news/2.jpg",
-        date: "2020",
-        source: "Artt'dinox",
-        title: "Arttd'inox launches store in Chennai, 2020",
-        // content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
-    }, {
-        img: "../news/3.jpg",
-        date: "Jan 2020",
-        source: "Artt'dinox",
-        title: "Arttd'inox Featured in Better Interiors: Jan 2020, Page 46",
-        // content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
-    }, {
-        img: "../news/4.jpg",
-        date: "Jan 2020",
-        source: "Artt'dinox",
-        title: "Arttd'inox Featured in Kitchen Desire Magazine -Jan Feb 2020, Page 22",
-        // content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
-    }
-    ];
+    // const data = [{
+    //     img: "../news/1.jpg",
+    //     date: "2021",
+    //     source: "Artt'dinox",
+    //     title: "Arttd'inox Launches a New Store in Bareilly, 2021",
+    //     // content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
+    // }, {
+    //     img: "../news/2.jpg",
+    //     date: "2020",
+    //     source: "Artt'dinox",
+    //     title: "Arttd'inox launches store in Chennai, 2020",
+    //     // content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
+    // }, {
+    //     img: "../news/3.jpg",
+    //     date: "Jan 2020",
+    //     source: "Artt'dinox",
+    //     title: "Arttd'inox Featured in Better Interiors: Jan 2020, Page 46",
+    //     // content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
+    // }, {
+    //     img: "../news/4.jpg",
+    //     date: "Jan 2020",
+    //     source: "Artt'dinox",
+    //     title: "Arttd'inox Featured in Kitchen Desire Magazine -Jan Feb 2020, Page 22",
+    //     // content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
+    // }
+    // ];
     var settings = {
         autoplay:true,
         infinite: true,
@@ -64,7 +64,7 @@ const News_Updates = () => {
                         <h2 className="heading text-center white-color"> News & Updates</h2>
                         <Row>
                             <Col lg="6" className="mb-lg-0 mb-4">
-                                <img src={data[current].img} className="img-fluid" />
+                                <img src={data[current].img.url} className="img-fluid" />
                             </Col>
                             <Col lg="6" className="d-flex align-items-center">
                                 <div className="ps-3">
@@ -84,7 +84,7 @@ const News_Updates = () => {
                         data.map((obj, id) => (
                             <div key={id} onClick={() => setCurrent(id)}>
                                 <div className={styles.slide}>
-                                    <img src={obj.img} className="img-fluid mb-3" />
+                                    <img src={obj.img.url} className="img-fluid mb-3" />
                                     <p className={styles.verysmall}>
                                         {obj.date} | {obj.source} </p>
                                     <p className={[styles.small] + " pb-3"}>{obj.title}</p>

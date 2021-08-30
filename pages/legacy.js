@@ -12,7 +12,7 @@ const Legacy = () => {
                 <meta name="description" content="About Us Page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Banner src="./banner/legacy.png" text="Our Legacy" />
+            <Banner src="./banner/Legacy_Page_Banner.jpg" text="Our Legacy" />
             <section>
                 <h1 className="text-center heading">The Grand Milestones</h1>
                 <GrandTimeline />

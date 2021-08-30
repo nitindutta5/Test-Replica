@@ -8,7 +8,6 @@ import Link from 'next/link'
 import classNames from "classnames";
 import NextBtn from "../components/NextBtn";
 import Previous from "../components/Previous";
-import ModalForm from "../components/Form/ModalForm";
 
 
 const downloadBrochure = ({ verticals, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {

@@ -11,27 +11,26 @@ import CaseStudies from "../components/CaseStudies"
 
 const posts = [
     {
-        blogData: [
-            {
-                cardTitle: "Environment, Health & Safety",
-                postTitle: "",
-                postFeaturedImg: "../blogsPostSlider/csr/1.png",
-                postSlug: '/media',
-                postBrief: "Environment, Health & Safety (EHS) is the key agenda of the company. Jindal Stainless has taken numerous initiatives to realise improvements in these areas."
-            },
-        ]
+        cardTitle: "Environment, Health & Safety",
+        postTitle: "",
+        postFeaturedImg: "../blogsPostSlider/csr/1.jpg",
+        postSlug: '/media',
+        postBrief: "Environment, Health & Safety (EHS) is the key agenda of the company. Jindal Stainless has taken numerous initiatives to realise improvements in these areas."
     },
 
     {
-        blogData: [
-            {
-                cardTitle: "Human Rights",
-                postTitle: "",
-                postFeaturedImg: "../blogsPostSlider/csr/2.png",
-                postSlug: '/media',
-                postBrief: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
-            },
-        ]
+        cardTitle: "Human Rights",
+        postTitle: "",
+        postFeaturedImg: "../blogsPostSlider/csr/2.jpg",
+        postSlug: '/media',
+        postBrief: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
+    },
+    {
+        cardTitle: "UNGC & GNCI",
+        postTitle: "",
+        postFeaturedImg: "../blogsPostSlider/csr/3.jpg",
+        postSlug: '/media',
+        postBrief: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
     },
 ]
 
@@ -87,7 +86,7 @@ const CSR = () => {
         title: "Value Engineering",
         time: "4min"
     }];
-    
+
     return (
         <>
             <Banner src="./banner/CSR.png" text="Corporate Social Responsibility" />
@@ -99,7 +98,7 @@ const CSR = () => {
                                 The Sustainability Promise
                             </h1>
                             <p className="text-center para">
-                                At the apex of the industrial recycling pyramid lays sustainable steel which is 100% recyclable. At Jindal Stainless, we work today to build a  better tomorrow. 
+                                At the apex of the industrial recycling pyramid lays sustainable steel which is 100% recyclable. At Jindal Stainless, we work today to build a  better tomorrow.
                             </p>
                             <p className="text-center para">
                                 We believe that efficient sustainability goes beyond conservation. It starts with building a culture around the workspace where every individual takes mindful steps towards the environment.
@@ -118,7 +117,7 @@ const CSR = () => {
             />
 
             <LocalInitiatives posts={localInitiatives} />
-            
+
             <VideoGallery
                 data={videoData}
                 dimension={1080 / 1920}

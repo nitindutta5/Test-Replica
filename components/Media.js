@@ -2,7 +2,7 @@ import { Container, Row, Col } from "reactstrap";
 import FeaturedBlog from "../components/FeaturedBlog";
 import Swiper from 'react-id-swiper';
 
-const Media = ({ blogData }) => {
+const Media = ({ blogData, mediaData }) => {
     const Params = {
         spaceBetween: 20,
         slidesPerView: 1,
@@ -44,15 +44,19 @@ const Media = ({ blogData }) => {
                     <Col lg="6">
                         <div id="blogcaseCarousel">
                             <Swiper {...Params}>
-                                <div className="swiper-slide" >
-                                    <FeaturedBlog
-                                        cardTitle="Media & Updates"
-                                        postTitle="Arttd'inox Launches a New Store in Bareilly, 2021"
-                                        postFeaturedImg="../news/4.jpg"
-                                        postSlug='/media'
-                                        postBrief=""
-                                    />
-                                </div>
+                                {
+                                    mediaData.map((obj, id) => (
+                                        <div className="swiper-slide" key={id}>
+                                            <FeaturedBlog
+                                                cardTitle="Media & Updates"
+                                                postTitle={obj.title}
+                                                postFeaturedImg={obj.img.url}
+                                                postSlug='/media'
+                                                postBrief={obj.content}
+                                            />
+                                        </div>
+                                    ))
+                                }
                             </Swiper>
                         </div>
                     </Col>

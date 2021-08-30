@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import CaseStudyCard from './CaseStudyCard.js'
 import ClassNames from "classnames";
 
-const CaseStudies = ({ data, title, sliderConfig, bg2 }) => {
+const CaseStudies = ({ data, title, sliderConfig, bg2, ModalToggle, UpdateName, UpdateFile, UpdateType }) => {
     
     return (
         <section className={ClassNames({
@@ -17,7 +17,7 @@ const CaseStudies = ({ data, title, sliderConfig, bg2 }) => {
                             {
                                 data.map((obj, id) => (
                                     <div key={id} className="position-relative mb-5">
-                                        <CaseStudyCard data={obj} />
+                                        <CaseStudyCard data={obj}  ModalToggle={ModalToggle} UpdateFile={UpdateFile} UpdateName={UpdateName} UpdateType={UpdateType} />
                                     </div>
                                 ))
                             }

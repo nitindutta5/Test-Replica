@@ -52,15 +52,33 @@ const ModalForm = (props) => {
   }
 
   const downloadBrochure = () => {
-    // let link = document.createElement('a');
-    // link.href = file;
-    // link.target = "_blank";
-    // link.download = file.substring(file.lastIndexOf('/') + 1);
-    // link.dispatchEvent(new MouseEvent('click'));
-
     FileSaver.saveAs(file, file.substring(file.lastIndexOf('/') + 1));
   }
 
+  const handleCaseStudySubmit = (event) => {
+    event.preventDefault();
+    const isValid = formValidation();
+    if (isValid) {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": "download-casestudy",
+          "CasestudyName": props.name,
+          "Name": formData.Name,
+          "Email": formData.Email,
+          "Mob": formData.Mob,
+          "CompanyName": formData.CompanyName
+        })
+      })
+        .then(() => {
+          toggle();
+          router.push('/thankyou');
+          downloadBrochure();
+        })
+        .catch(error => alert(error))
+    }
+  }
 
   const handleBrochureSubmit = (event) => {
     event.preventDefault();
@@ -148,14 +166,19 @@ const ModalForm = (props) => {
       <Modal isOpen={modal} toggle={toggle} id="ModalForm">
         <img src="../../Cross.svg" className={styles.cross} onClick={closeModal} />
         <ModalBody className="py-5">
-          <h2 className="text-center my-4 heading white-color">{type === "downloadBrochure" ? 'Download Brochure' : 'Enquiry Form'}</h2>
+          <h2 className="text-center my-4 heading white-color">{type === "downloadBrochure" ? 'Download Brochure' : type=== 'downloadCasestudy'? 'Download Casestudy':'Enquiry Form'}</h2>
           <Row>
             <Col lg="8" className="mx-auto">
-              <Form method="post" name={type === "downloadBrochure" ? 'download-brochure' : 'enquiry'} onSubmit={type === "downloadBrochure" ? handleBrochureSubmit : handleEnquirySubmit}>
-                <input type="hidden" name="form-name" value={type === "downloadBrochure" ? 'download-brochure' : 'enquiry'} />
+              <Form method="post" name={type === "downloadBrochure" ? 'download-brochure' : type==='downloadCasestudy'?'download-casestudy':'enquiry'} onSubmit={type === "downloadBrochure" ? handleBrochureSubmit : type==='downloadCasestudy'?handleCaseStudySubmit: handleEnquirySubmit}>
+                <input type="hidden" name="form-name" value={type === "downloadBrochure" ? 'download-brochure' : type==='downloadCasestudy'? 'download-casestudy':'enquiry'} />
                 {
                   type==="downloadBrochure" &&
                   <input type="hidden" name="brochureName" value={props.name} />
+                }
+
+{
+                  type==="downloadCasestudy" &&
+                  <input type="hidden" name="casestudyName" value={props.name} />
                 }
 
                 <FormGroup row>
@@ -192,7 +215,7 @@ const ModalForm = (props) => {
                 </FormGroup>
                 <FormGroup row>
                   <Col sm={{ size: 12 }}>
-                    <Button color="primary">{type === "downloadBrochure" ? 'Download' : 'Submit'}</Button>
+                    <Button color="primary">{type === "downloadBrochure" ? 'Download' : type==="downloadCasestudy"?'Download':'Submit'}</Button>
                   </Col>
                 </FormGroup>
               </Form>

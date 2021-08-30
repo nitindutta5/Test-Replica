@@ -251,7 +251,7 @@ export const plantLocation = [
 
 export const parallaxData = {
     aboutUs: {
-        bgImg: "../circular-metal-brushed-texture-XBJMBTD.jpg",
+        bgImg: "../circular-metal-brushed-texture-X1.jpg",
 
         leftSection: {
             title: "Our Vision",

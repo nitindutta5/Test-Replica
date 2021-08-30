@@ -24,7 +24,7 @@ const OurBusinesses = ({data,ModalToggle, UpdateName, UpdateFile, UpdateType}) =
         infinite: true,
         speed: 200,
         slidesToShow: 5,
-        // autoplay: true,
+        autoplay: true,
         centerPadding: "0px",
         arrows: true,
         nextArrow: <NextBtn />,
