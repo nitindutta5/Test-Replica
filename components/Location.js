@@ -9,7 +9,7 @@ const Location = (props) => {
         <Row className="mt-5">
             {
                 props.data.map((location, id) => (
-                    <Col lg="3" md="4" xs="12" key={id} className="mb-4">
+                    <Col lg="3" md="4" xs="12" key={id} className="mb-4 d-flex justify-content-between flex-column">
                         <small className="heading mb-2">{location.name}</small>
                         <p className="pe-2 mb-3">{location.desc}</p>
                         

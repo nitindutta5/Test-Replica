@@ -113,97 +113,97 @@ export const stores = [
     {
         name: "PEE CEE TRADERS",
         desc: "16/106, LGF 2, Surya Palace, Indira Nagar, Lucknow, UP",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/dir//Pee+Cee+Sanitation,+16%2F106,Surya+Palace,Indira+Nagar,Ring+Road,Near+Munshi+Pulia+Chauraha,+Lucknow,+Uttar+Pradesh+226016/@24.6049888,73.4098599,6z/data=!4m8!4m7!1m0!1m5!1m1!1s0x399be2a83cc002cf:0x420b7b120b73fe00!2m2!1d80.9930692!2d26.8856803"
     },
     {
         name: "ACE HOME SOLUTIONS",
         desc: "C-001, Ist Floor, Tulip Towers, Stadium Road, Bareilly, UP",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/dir//Tulip+Tower,+FCI+Colony,+Bareilly,+Uttar+Pradesh+243005/@28.3767007,79.4333156,19z/data=!4m8!4m7!1m0!1m5!1m1!1s0x39a006dd0af27255:0x6b0dc57e4d82ca0d!2m2!1d79.4338628!2d28.3767007"
     },
     {
         name: "INHABIT VENTURES",
         desc: "1H. No.: 8-2-293/82/A/1096, 1st Floor, Road No. 36, Jubilee Hills, Hyderabad, Telangana - 500033",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/dir//8-2-293%2F82,+Rd+Number+36,+Jubilee+Hills,+Hyderabad,+Telangana+500034/@17.4324246,78.4052877,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bcb9137d5034f99:0xfc2f1008397cfab6!2m2!1d78.4074764!2d17.4324246"
     },
     {
         name: "CORNER STONE VENTURES",
         desc: "T M Yadav Gokul Plaza,1-29, Miyapur Road, Rajiv Gandhi Nagar, Gachibowli, Hyderabad - 32",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/dir//25,+TMYADAV+Gokul+Plaza,+1-25,1,+1,+Gachibowli+-+Miyapur+Rd,+Rajiv+gandhi+Nagar,+Gachibowli,+Hyderabad,+Telangana+500032/@17.4418087,78.3560465,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bcb93eab93821bd:0x667d622225b95d3c!2m2!1d78.3621754!2d17.4418056"
     },
     {
         name: "TRINOX INC.",
         desc: "167, ALG House, Near RK Photo Centre, Racecourse, Coimbatore - 641018",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/dir//Mother+Wear,+No.167,+ALG+House,+Race+Course+Rd,+near+RK+Photo+Centre,+Coimbatore,+Tamil+Nadu+641018/@11.0106498,76.9445717,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba859f5562013f7:0x1ba9296e5d62a269!2m2!1d76.9754668!2d11.0033729"
     },
     {
         name: "ADITYA KITCHEN INNOVATIONS",
         desc: "Ground floor, #27/1, Habibullah Road, T Nagar, Chennai, Tamilnadu - 600017",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/dir//27,+17%2F1,+Habibullah+Rd,+Parthsarathy+Puram,+Parthasarathi+Puram,+T.+Nagar,+Chennai,+Tamil+Nadu+600017/@13.0515866,80.2304437,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a526658af71089d:0xcc4b2c1d5a00b740!2m2!1d80.2326324!2d13.0515814"
     },
     {
         name: "ADINATH NAGAR",
         desc: "S-4, Adinath Nagar, Opp. Genpact, JLN Marg, Jaipur - 302017",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/dir//Adinath+Nagar,+Jaipur,+Rajasthan+302018/@26.8505326,75.8028831,19z/data=!4m8!4m7!1m0!1m5!1m1!1s0x396db5ddd4358837:0x9ff9b586bfaa396!2m2!1d75.8018227!2d26.8509719"
     },
     {
         name: "MANSAROVAR",
         desc: "Halcyon Technologies, 140/22-23, The Foresta, Shipra Path, Mansarovar, Jaipur, 302017",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/dir//Halcyon+Technology,+140%2F+22,23+,+The+Foresta,+Near,+Shipra+Path,+Maharani+Farm,+Mansarovar,+Jaipur,+Rajasthan+302020/@26.8549419,75.7381883,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x396db59680e668bb:0xebdafe2b9bf76961!2m2!1d75.7775917!2d26.8447534"
     },
     {
         name: "SN LIFESTYLE",
         desc: "Ground Floor, Subhedar Apartments, Dr. Munje Marg Road, Congress Nagar, Nagpur-440012",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/search/SN+LIFESTYLE+Ground+Floor,+Subhedar+Apartments,+Dr.+Munje+Marg+Road,+Congress+Nagar,+Nagpur-440012/@21.1318138,79.0821524,17z/data=!3m1!4b1"
     },
     {
         name: "LAXMI INDUSTRIAL ESTATE",
         desc: "29L, Laxmi Industrial Estate, Suresh Nagar, Andheri (West), Mumbai - 53",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/dir//29,+Laxmi+Industrial+Estate,+Suresh+Nagar,+Andheri+West,+Mumbai,+Maharashtra+400053/@19.1355401,72.8262173,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7b62284f6ecf3:0x8e1eff21798d8efb!2m2!1d72.828406!2d19.135535"
     },
     {
         name: "RASOI KITCHEN & APPLIANCES",
         desc: "Door No: 28/269/4, Marian tower, Parakkot Lane, Vasanth Nagar, Patturaikkal, Thrissur, Kerala - 680022",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/dir//RASOI+MODULAR+KITCHEN,+Marian+tower,+Parakkot+Ln,+Vasanth+Nagar,+Patturaikkal,+Thrissur,+Kerala+680022/@10.5357114,76.2108229,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba7ee59dfc2dd67:0x5db7d584cda251ac!2m2!1d76.2129978!2d10.5357063"
     },
     {
         name: "ADITYA KITCHEN INNOVATIONS",
         desc: "#251/2, 2nd Main Road, Sampige Road, 17th Cross, Malleshwaram, Bengaluru, Karnataka - 560003",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/dir//251,+352%2F2,+Sampige+Rd,+near+Croma,+Vyalikaval,+Yalappa+Garden,+Malleshwara,+Bengaluru,+Karnataka+560003/@13.0015039,77.5692456,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae162fbd0a783d:0x7399e125309a79a7!2m2!1d77.5714343!2d13.0014987"
     },
     {
         name: "SHYAM TRADERS",
         desc: "Nehru Road, 2nd Cross, Garden Area, Shivamogga, Karnataka - 577201",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/dir//Shyam+Traders,+Garden+Area+2nd+Cross,+Nehru+Rd,+Shivamogga,+Karnataka+577201/@13.931717,75.5702814,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bbba8d8235abaa5:0x9c9464b5b8e137c0!2m2!1d75.5725664!2d13.9317394"
     },
     {
         name: "GANGADHAR CHETTY ROAD ",
         desc: "No. 24, Gangadhar Chetty Road, Bangalore, Bengaluru (Bangalore) Urban, Karnataka, 560042",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/dir//24,+Gangadhar+Chetty+Rd,+Hanumanthappa+Layout,+Sivanchetti+Gardens,+Bengaluru,+Karnataka+560042/@12.9807041,77.6138083,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae168f738eb6a1:0xfef3481a542762be!2m2!1d77.615997!2d12.9806989"
     },
     {
         name: "SWAPNIL INTERIO",
         desc: "288/7, Old Railway Road, Gurgaon - 122001",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/dir//288,+7,+Old+Railway+Rd,+Rattan+Garden,+Shivpuri+Extension,+Sector+7,+Gurugram,+Haryana+122001/@28.4684748,77.0181098,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d19d2eb8470d1:0x74532cc446ebc220!2m2!1d77.0202985!2d28.4684701"
     },
     {
         name: "BAJRANG LIFESTYLE",
         desc: "F-102, Shivalik Arcade, Prahalad Nagar, Ahmedabad - 380015, Gujarat, India",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/dir//F-102,+Arttdinox+Ahmedabad,+Shivalik+Arcade,+Prahlad+Nagar,+Ahmedabad,+Gujarat+380015/@23.0116654,72.5061986,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x395e9be6fd77fe81:0x67e64db0e7cac992!2m2!1d72.5084247!2d23.0115468"
     },
     {
         name: "SAI FABRICATORS",
         desc: "#5-6, Avni Souza Building, Opoosite PMC Bank ,NH 66, Porvorim Bardez, Goa - 403501",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/dir//Sai+Fabricators,+Panvel-+Kochi,+NH+66+Highway,+Goa,+opp.+PMC+Bank,+Porvorim,+Sangolda,+Goa+403501/@15.5429319,73.8187916,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bbfc150b4beec7b:0xb5dd6a7a003026d5!2m2!1d73.8207282!2d15.5429626"
     },
     {
         name: "REVENUE ESTATE",
         desc: "296/2, Min West, Revenue Estate, Near Sultanpur Metro Station (Opposite Metro Pillar No SP 33), M.G. Road, New Delhi - 110030",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/dir//Arttdinox,+Sultanpur,+New+Delhi,+Delhi+110030/@28.5000325,77.1621919,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d1e43c80f7b09:0x609b73948d3c5b5f!2m2!1d77.1643734!2d28.5001212"
     },
     {
         name: "DEFENCE COLONY",
         desc: "B-77, Ground Floor, Defence Colony, New Delhi - 110024",
-        // href: "https://www.google.com/maps/dir//1st+floor,+plot+no,+Jindal+Stainless+Tower,+50,+Institutional+Area,+Sector+32,+Gurugram,+Haryana+122001/@28.447146,77.04244,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d193f6b683ecf:0xeb510130bdec6eae!2m2!1d77.0424395!2d28.4471458?hl=en"
+        href: "https://www.google.com/maps/dir//Arttdinox,+B-77,+Bhishma+Pitamah+Marg,+Block+B,+Defence+Colony,+New+Delhi,+Delhi+110049/@28.5673275,77.209704,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390ce25a411db2e1:0xc862afe79b4d2f73!2m2!1d77.2264264!2d28.5693311"
     }
 ];
 
