@@ -73,6 +73,14 @@ const Apart = () => {
                 }
             },
             {
+                breakpoint: 800,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                  dots:false
+                }
+              },
+            {
                 breakpoint: 500,
                 settings: {
                   slidesToShow: 1,

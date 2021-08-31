@@ -8,7 +8,6 @@ import NextBtn from "../../components/NextBtn";
 import Previous from "../../components/Previous";
 import BlogCard from "../../components/Blogs/BlogCard"
 const baseUrl = process.env.API_URL;
-// import { blogData } from '../../components/Blogs/Blogs'
 
 const BlogInnerPage = ({blog, allBlogs}) => {
     var settings = {

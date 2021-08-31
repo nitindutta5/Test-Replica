@@ -1,35 +1,16 @@
 import { Container, Row, Col, Button } from "reactstrap";
-import FeaturedBlog from "./FeaturedBlog";
-import Swiper from 'react-id-swiper';
-import NextBtn from "./NextBtn";
-import Previous from "./Previous";
-
-const Params = {
-    spaceBetween: 20,
-    slidesPerView: 3,
-    autoplay: false,
-    noSwiping: false,
-    arrows: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        // prevEl: '.swiper-button-prev'
-    }
-    // pagination: {
-    //     el: '.swiper-pagination',
-    //     type: 'bullets',
-    //     clickable: true
-    // }
-}
+import Link from 'next/link'
 
 
-const LocalInitiatives = ({ posts, title }) => {
+
+const LocalInitiatives = ({ posts }) => {
     return (
         <section className="bg3">
             <Container fluid className="wrapper">
                 <Row>
                     <Col lg="12">
                         <h2 className="heading text-center white-color">
-                            Our Initiatives
+                            More Initiatives
                         </h2>
                     </Col>
 
@@ -37,18 +18,24 @@ const LocalInitiatives = ({ posts, title }) => {
                         posts.map(post => (
                             <Col lg="6" className="mb-5">
                                 <div className="local-intiative-card px-5">
-                                    <img src={post.img} className="w-100" />
+                                    <div className="bg-img" style={{ backgroundImage: `url(${post.img.url})` }}>
+                                    </div>
                                     <h3 className="title">
                                         {post.title}
                                     </h3>
 
                                     <p className="content">
-                                        {post.content}
+                                        {post.Brief}
                                     </p>
+                                    <Link as={`/csr/${post.slug}`} href="/csr/[slug]">
+                                        <a>
+                                            <Button className="btn-2">
 
-                                    <Button className="btn-2">
-                                        Read More
-                                    </Button>
+                                                Read More
+
+                                            </Button>
+                                        </a>
+                                    </Link>
                                 </div>
                             </Col>
                         ))

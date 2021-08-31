@@ -1,30 +1,24 @@
-import { Container, Row, Col } from "reactstrap";
-import FeaturedBlog from "./FeaturedBlog";
+import { Container, Row, Col, Button } from "reactstrap";
 import Swiper from 'react-id-swiper';
-
-const ParamsParent = {
-    spaceBetween: 20,
-    slidesPerView: 2,
-    autoplay: false,
-    noSwiping: false,
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
-    }
-}
+import Link from 'next/link'
 
 const Params = {
     spaceBetween: 20,
-    slidesPerView: 1,
+    slidesPerView: 3,
     autoplay: false,
     noSwiping: false,
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
+    arrows: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
     }
+    // pagination: {
+    //     el: '.swiper-pagination',
+    //     type: 'bullets',
+    //     clickable: true
+    // }
 }
+
 
 const MajorInitiatives = ({ posts, title }) => {
     return (
@@ -37,26 +31,34 @@ const MajorInitiatives = ({ posts, title }) => {
                         </h2>
                     </Col>
                     <Col lg="12">
-                        <Row>
-                            <Col lg="6" className="mx-auto">
-                                <Swiper {...Params}>
-                                    {
-                                        posts.map((obj, id) => (
-                                            <div className="swiper-slide" key={id}>
-                                                <FeaturedBlog
-                                                    cardTitle={obj.cardTitle}
-                                                    postTitle={obj.postTitle}
-                                                    postFeaturedImg={obj.postFeaturedImg}
-                                                    postBrief={obj.postBrief}
-                                                // postSlug='/media'
-                                                />
+                        <Swiper {...Params}>
+                            {
+                                posts.map((post, id) => (
+                                    <div className="swiper-slide" key={id}>
+                                        <div className="local-intiative-card">
+                                            <div className="bg-img" style={{ backgroundImage: `url(${post.img.url})` }}>
                                             </div>
-                                        ))
-                                    }
-                                </Swiper>
-                            </Col>
-                        </Row>
+                                            <h3 className="title">
+                                                {post.title}
+                                            </h3>
 
+                                            <p className="content">
+                                                {post.Brief}
+                                            </p>
+                                            <Link as={`/csr/${post.slug}`} href="/csr/[slug]">
+                                                <a>
+                                                    <Button className="btn-2">
+
+                                                        Read More
+
+                                                    </Button>
+                                                </a>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                ))
+                            }
+                        </Swiper>
                     </Col>
                 </Row>
             </Container>

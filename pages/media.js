@@ -48,7 +48,7 @@ const Media = ({ blogs, caseStudyData, mediaData, ModalToggle, UpdateName, Updat
                 <meta name="description" content="Media Page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Banner src="./banner/media.png" text="JSLL LIFESTYLE DIARIES" />
+            <Banner src="./banner/media.png" text="JSL LIFESTYLE DIARIES" />
             <Blogs data={blogs} />
             <CaseStudies
                 data={caseStudyData}

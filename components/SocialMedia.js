@@ -73,11 +73,14 @@ const SocialMedia = () => {
                         </Slider> */}
                     </Col>
                     <Col xs="auto" className="mx-auto mb-5 mb-lg-0">
-                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Farttdinox&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400" style={{ "border": "none", "overflow": "hidden" }} scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Farttdinox&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="100%" style={{ "border": "none", "overflow": "hidden", 'maxWidth': '100%' }} scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </Col>
                     <Col xs="auto" className="mx-auto">
-                        <a className="twitter-timeline" data-lang="en" data-width="300" data-height="400" href="https://twitter.com/Jindal_Official?ref_src=twsrc%5Etfw">Tweets by Jindal</a> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+                        <a className="twitter-timeline" data-lang="en" data-width="100%" data-height="400" href="https://twitter.com/Jindal_Official?ref_src=twsrc%5Etfw">Tweets by Jindal</a> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
                     </Col>
+                    {/* <Col xs="auto" className="mx-auto">
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6836752947016269824" height="400" width="100%" frameborder="0" allowFullScreen="" title="Embedded post"></iframe>
+                    </Col> */}
                     {/* <Col lg="4">
                          <InstagramEmbed
                             url='https://www.instagram.com/p/CSMYzGCqHDX/'

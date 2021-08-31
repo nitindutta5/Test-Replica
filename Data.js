@@ -303,5 +303,38 @@ export const localInitiatives = [
         img: "../reports/CSR-Policy.jpg",
         title: "Women Empowerment",
         content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"
-    }
-]
+    },
+    {
+        title: "Environment, Health & Safety",
+        img: "../blogsPostSlider/csr/1.jpg",
+        content: "Environment, Health & Safety (EHS) is the key agenda of the company. Jindal Stainless has taken numerous initiatives to realise improvements in these areas."
+    },
+
+    {
+        title: "Human Rights",
+        img: "../blogsPostSlider/csr/2.jpg",
+        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
+    },
+    {
+        title: "UNGC & GNCI",
+        img: "../blogsPostSlider/csr/3.jpg",
+       content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
+    },
+];
+
+
+export const reportData = [
+    {
+        img: "../reports/CSR-Policy.jpg",
+        title: "CSR Policy",
+    },
+    {
+        img: "../reports/CSR-Annual.jpg",
+        title: "CSR Annual Report",
+        info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum"
+    },
+    {
+        img: "../reports/SROI.jpg",
+        title: "SROI Reports",
+    },
+];

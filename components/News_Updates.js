@@ -7,32 +7,7 @@ import Previous from "./Previous";
 
 const News_Updates = ({data}) => {
     const [current, setCurrent] = useState(0);
-    // const data = [{
-    //     img: "../news/1.jpg",
-    //     date: "2021",
-    //     source: "Artt'dinox",
-    //     title: "Arttd'inox Launches a New Store in Bareilly, 2021",
-    //     // content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
-    // }, {
-    //     img: "../news/2.jpg",
-    //     date: "2020",
-    //     source: "Artt'dinox",
-    //     title: "Arttd'inox launches store in Chennai, 2020",
-    //     // content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
-    // }, {
-    //     img: "../news/3.jpg",
-    //     date: "Jan 2020",
-    //     source: "Artt'dinox",
-    //     title: "Arttd'inox Featured in Better Interiors: Jan 2020, Page 46",
-    //     // content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
-    // }, {
-    //     img: "../news/4.jpg",
-    //     date: "Jan 2020",
-    //     source: "Artt'dinox",
-    //     title: "Arttd'inox Featured in Kitchen Desire Magazine -Jan Feb 2020, Page 22",
-    //     // content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
-    // }
-    // ];
+
     var settings = {
         autoplay:true,
         infinite: true,

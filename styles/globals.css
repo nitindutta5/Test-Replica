@@ -11,11 +11,13 @@ body {
 }
 
 .swiper-button-next:after,
+.swiper-button-prev:after,
 .swiper-container-rtl .swiper-button-prev:after {
   font-size: 2rem;
 }
 
 .swiper-button-next,
+.swiper-button-prev,
 .swiper-container-rtl .swiper-button-prev {
   color: grey;
   background: #fff;
@@ -590,6 +592,10 @@ section {
   padding-bottom: 8rem;
 }
 
+.sub-heading {
+  font-size: 2rem !important;
+}
+
 .heading {
   font-family: 'Jost';
   font-size: 40px;
@@ -787,6 +793,14 @@ section {
   font-weight: 700;
   font-size: 25px;
   color: #fff;
+}
+
+.local-intiative-card .bg-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 350px;
+  width: 100%;
 }
 
 .local-intiative-card .content {

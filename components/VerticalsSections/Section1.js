@@ -7,7 +7,7 @@ const Section1 = (props) => {
             <Container>
                 <Row>
                     <Col lg="12">
-                        <h1 className="heading white-color text-center">
+                        <h1 className="heading white-color text-center d-flex align-items-center justify-content-center">
                             {props.children}
                             { props.logo && <img className="logo" src="../arttdinox-logo.png" alt="logo" />}
                         </h1>
