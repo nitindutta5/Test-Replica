@@ -51,6 +51,10 @@ a {
   border-radius: 10px;
 }
 
+.orange {
+  color: #FF9100 !important;
+}
+
 .swiper-pagination-bullet-active {
   background-color: #808285;
 }

@@ -59,7 +59,7 @@ const JobDetails = ({ job }) => {
                                 job[0].ListType_Info.map((obj, id) => (
                                     <div className="py-4" key={id}>
                                         <p className={styles.Title}>{obj.Title}</p>
-                                        <p className={styles.mainContentList} dangerouslySetInnerHTML={{ __html: obj.Details }} />
+                                        <div className={styles.mainContentList} dangerouslySetInnerHTML={{ __html: obj.Details }} />
                                     </div>
                                 ))
                             }
