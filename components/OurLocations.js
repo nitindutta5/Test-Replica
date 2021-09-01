@@ -81,7 +81,7 @@ const OurLocations = () => {
                             <Row>
                                 <Col lg="2" className="mx-auto mt-5">
                                     {/* <p className="orange mt-5 bold text-center ">Select State</p> */}
-                                    <Input type="select" value={filter} onChange={(e) => handleFilter(e)} id="exampleSelectMulti">
+                                    <Input type="select" value={filter} onChange={(e) => handleFilter(e)} className="OurSelect" caret>
                                         {
                                             States.map((state, id) => (
                                                 <option key={id} value={state.val}>{state.val}</option>

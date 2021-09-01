@@ -62,11 +62,12 @@ a {
 }
 
 select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  appearance: auto;
 }
+
+
 
 .st0 {
   fill: none;
@@ -313,6 +314,13 @@ li {
   outline: none !important;
   box-shadow: none !important;
   padding-left: 0;
+  appearance: auto;
+}
+
+.OurSelect {
+  background-color: #dddddd;
+  border: 1px solid #dddddd !important;
+  padding-left: 5px;
 }
 
 #ModalForm .form-control {
