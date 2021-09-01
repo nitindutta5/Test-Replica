@@ -63,18 +63,18 @@ const JobForm = () => {
             let formdata = new FormData();
             formdata.append("form-name", "job-form");
             formdata.append('Name', data.Name);
-            formdata.append("Resume", data.Resume);
+            formdata.append("Resume", data.Resume[0]);
             formdata.append("Mob", data.Mob);
             formdata.append("countryCode", data.countryCode);
             formdata.append("Email", data.Email);
             if (data.Address.trim() != "") formdata.append("Address", data.Address);
-            else if (data.currentLocation.trim() != "") formdata.append("currentLocation", data.currentLocation);
-            else if (data.dOB.trim() != "") formdata.append("dOB", data.dOB);
-            else if (data.totalExperience.trim() != "") formdata.append("totalExperience", data.totalExperience);
-            else if (data.noticePeriod.trim() != "") formdata.append("noticePeriod", data.noticePeriod);
-            else if (data.currentCompany.trim() != "") formdata.append("currentCompany", data.currentCompany);
-            else if (data.currentCtc.trim() != "") formdata.append("currentCtc", data.currentCtc);
-            else if (data.expectedCtc.trim() != "") formdata.append("expectedCtc", data.expectedCtc);
+            if (data.currentLocation.trim() != "") formdata.append("currentLocation", data.currentLocation);
+            if (data.dOB.trim() != "") formdata.append("dOB", data.dOB);
+            if (data.totalExperience.trim() != "") formdata.append("totalExperience", data.totalExperience);
+            if (data.noticePeriod.trim() != "") formdata.append("noticePeriod", data.noticePeriod);
+            if (data.currentCompany.trim() != "") formdata.append("currentCompany", data.currentCompany);
+            if (data.currentCtc.trim() != "") formdata.append("currentCtc", data.currentCtc);
+            if (data.expectedCtc.trim() != "") formdata.append("expectedCtc", data.expectedCtc);
             fetch("/", {
                 method: "POST",
                 headers: { "Content-Type": "multipart/form-data" },
@@ -125,7 +125,7 @@ const JobForm = () => {
                     <Col sm={8} className="my-4" >
                         <Label className="mb-2">Attach CV*  pdf, docx</Label>
                         <div className="border p-2">
-                            <Input type="file" name="Resume" accept=".pdf,.docx" onChange={(e) => handleResume(e.target.files[0])} />
+                            <Input type="file" name="Resume" accept=".pdf,.docx" onChange={(e) => handleResume(e.target.files)} />
                             {Object.keys(resumeError).map((key) => {
                                 return <span style={{ color: "red", fontSize: '12px' }}>{resumeError[key]}</span>
                             })}
