@@ -20,7 +20,7 @@ const OurBusinesses = ({data,ModalToggle, UpdateName, UpdateFile, UpdateType}) =
         centerMode: true,
         dots: false,
         infinite: true,
-        speed: 200,
+        speed: 300,
         slidesToShow: 5,
         autoplay: true,
         centerPadding: "0px",

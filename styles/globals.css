@@ -777,6 +777,7 @@ section {
 
 
 #businesses .slick-center {
+  transition: all ease 0.5s;
   transform: scale(1);
 }
 

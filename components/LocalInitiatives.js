@@ -17,7 +17,7 @@ const LocalInitiatives = ({ posts }) => {
                     {
                         posts.map(post => (
                             <Col lg="6" className="mb-5">
-                                <div className="local-intiative-card px-5">
+                                <div className="local-intiative-card px-5 h-100 d-flex flex-column justify-content-between">
                                     <div className="bg-img" style={{ backgroundImage: `url(${post.img.url})` }}>
                                     </div>
                                     <h3 className="title">
