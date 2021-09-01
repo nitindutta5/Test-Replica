@@ -3,6 +3,8 @@ import { Button, Modal, FormGroup, ModalBody, Form, Row, Col, Input } from 'reac
 import { useRouter } from 'next/router'
 import { useState } from 'react';
 import FileSaver from 'file-saver';
+const countryCode = require('country-codes-list');
+
 
 const ModalForm = (props) => {
   const {
@@ -13,7 +15,9 @@ const ModalForm = (props) => {
     type
   } = props;
 
+  const myCountryCodesObject = countryCode.customList('countryCode', '[{countryCode}] {countryNameEn}: +{countryCallingCode}');
 
+  const countryCodes = Object.entries(myCountryCodesObject);
   const closeModal =() =>{
     updateFormData({
       Name: '',
@@ -31,7 +35,8 @@ const ModalForm = (props) => {
     Name: '',
     Email: '',
     Mob: '',
-    CompanyName: ''
+    CompanyName: '',
+    countryCode:'India: +91'
   });
   const [nameError, setNameError] = useState({});
   const [companyNameError, setCompanyNameError] = useState({});
@@ -65,6 +70,7 @@ const ModalForm = (props) => {
         body: encode({
           "form-name": "download-casestudy",
           "CasestudyName": name,
+          "countryCode":formData.countryCode,
           "Name": formData.Name,
           "Email": formData.Email,
           "Mob": formData.Mob,
@@ -182,6 +188,7 @@ const ModalForm = (props) => {
                 }
 
                 <FormGroup row>
+
                   <Col sm={12} className="mb-4" >
                     <Input type="text" name="Name" onChange={handleChange} value={formData.Name} placeholder="Name" className={styles.formcontrol} />
                     {Object.keys(nameError).map((key) => {
@@ -198,7 +205,14 @@ const ModalForm = (props) => {
                   </Col>
                 </FormGroup>
                 <FormGroup row>
-                  <Col sm={12} className="mb-4">
+                  <Col sm={12} className="mb-4 d-flex">
+                  <Input type="select" className="w-25" name="countryCode" onChange={handleChange} value={formData.countryCode}>
+                            {
+                                countryCodes.map((code, id) => (
+                                    <option key={id}>{' ' + code[1].replace(/(\[.*?\])/g, '')}</option>
+                                ))
+                            }
+                        </Input>
                     <Input type="tel" name="Mob" onChange={handleChange} value={formData.Mob} placeholder="Contact No" className={styles.formcontrol} />
                     {Object.keys(mobError).map((key) => {
                       return <span style={{ color: "white", fontSize: '12px' }}>{mobError[key]}</span>

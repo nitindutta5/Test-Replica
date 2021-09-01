@@ -7,7 +7,7 @@ class MyDocument extends Document {
         <Head />
         <body>
 
-          {/* Netlify Download Partner Form*/}
+          {/* Netlify Partner Form*/}
           <form data-netlify="true" hidden name="partner-form" netlify-honeypot="bot-field">
             <input type="text" name="Name" />
             <input type="email" name="Email" />
@@ -37,6 +37,7 @@ class MyDocument extends Document {
             <input type="hidden" name="brochureName" />
             <input type="text" name="Name" />
             <input type="email" name="Email" />
+            <input type="select" name="countryCode" />
             <input type="tel" name="Mob" />
             <input type="text" name="CompanyName" />
             <input type="submit" />
@@ -47,6 +48,7 @@ class MyDocument extends Document {
             <input type="hidden" name="casestudyName" />
             <input type="text" name="Name" />
             <input type="email" name="Email" />
+            <input type="select" name="countryCode" />
             <input type="tel" name="Mob" />
             <input type="text" name="CompanyName" />
             <input type="submit" />
@@ -56,6 +58,7 @@ class MyDocument extends Document {
           <form data-netlify="true" hidden name="enquiry" netlify-honeypot="bot-field">
             <input type="text" name="Name" />
             <input type="email" name="Email" />
+            <input type="select" name="countryCode" />
             <input type="tel" name="Mob" />
             <input type="text" name="CompanyName" />
             <input type="textarea" name="Msg" />
