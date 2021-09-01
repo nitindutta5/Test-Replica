@@ -64,7 +64,7 @@ const ModalForm = (props) => {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
           "form-name": "download-casestudy",
-          "CasestudyName": props.name,
+          "CasestudyName": name,
           "Name": formData.Name,
           "Email": formData.Email,
           "Mob": formData.Mob,
@@ -89,7 +89,7 @@ const ModalForm = (props) => {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
           "form-name": "download-brochure",
-          "BrochureName": props.name,
+          "BrochureName": name,
           "Name": formData.Name,
           "Email": formData.Email,
           "Mob": formData.Mob,

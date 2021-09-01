@@ -8,7 +8,7 @@ const OurPlants = () => {
             <Container>
                 <Row>
                     <Col lg="12" xs="11" className="mx-auto">
-                        <h2 className="heading text-center"> Our Plants</h2>
+                        <h2 className="heading text-center"> Manufacturing Units</h2>
                         <Row>
                             <Col lg="4" className={styles.plantCard}>
                                 <img src="./plants/chennai.png" className="img-fluid px-lg-4" />

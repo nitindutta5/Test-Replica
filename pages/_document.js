@@ -61,6 +61,25 @@ class MyDocument extends Document {
             <input type="textarea" name="Msg" />
             <input type="submit" />
           </form>
+
+
+          {/* Netlify job Form */}
+          <form data-netlify="true" hidden name="job-form" netlify-honeypot="bot-field">
+            <input type="file" name="Resume" />
+            <input type="text" name="Name" />
+            <input type="email" name="Email" />
+            <input type="select" name="countryCode" />
+            <input type="tel" name="Mob" />
+            <input type="text" name="Address" />
+            <input type="text" name="currentLocation" />
+            <input type="date" name="dOB" />
+            <input type="number" name="totalExperience" />
+            <input type="number" name="noticePeriod" />
+            <input type="text" name="currentCompany" />
+            <input type="text" name="currentCtc" />
+            <input type="text" name="expectedCtc" />
+            <input type="submit" />
+          </form>
           <Main />
           <NextScript />
         </body>

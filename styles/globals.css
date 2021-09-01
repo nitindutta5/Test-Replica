@@ -55,8 +55,17 @@ a {
   color: #FF9100 !important;
 }
 
+
+
 .swiper-pagination-bullet-active {
   background-color: #808285;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
 }
 
 .st0 {

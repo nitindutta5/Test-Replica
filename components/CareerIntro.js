@@ -27,15 +27,15 @@ const CareerIntro = () =>{
                                       L&D framework defined for workers outlining mandatory, role based, operational excellence & desirable trainings. We follow time bound learning path based approach consisting of class room and on the job training, evaluation & certification –Welding, Bending, Painting, Polishing. Our internal subject matter experts identified for trainings & assessments.
                                      <br/><br/>
                                      <small className="heading orange">Stainless Pride</small><br/>
-                                     Rewards & Recognition At JSLL, our people are our prized possessions. Stainless Pride - Rewards and Recognition, salutes the contributions of our achievers who truly have depicted our organization's performance and learning culture.
+                                     Rewards & Recognition At Jindal Lifestyle, our people are our prized possessions. Stainless Pride - Rewards and Recognition, salutes the contributions of our achievers who truly have depicted our organization's performance and learning culture.
                                      <br/><br/>
                                      
                                      <small className="heading orange">Utthaan</small><br/>
-                                     The Wellness Series Self-care & communication are crucial in the middle of a crisis. The extensive uncertainty of the situation has ultimately jolted our habits, routines, and overall - a lifestyle. And in this time of endless unknowns, we understand the power and significance of mental well-being. Realizing the importance of serving the best to our team a mental well-being JSL Lifestyle has taken a step in this very direction and initiated a series of wellness sessions for all its employees in collaboration with Brahmakumaris.
+                                     The Wellness Series Self-care & communication are crucial in the middle of a crisis. The extensive uncertainty of the situation has ultimately jolted our habits, routines, and overall - a lifestyle. And in this time of endless unknowns, we understand the power and significance of mental well-being. Realizing the importance of serving the best to our team a mental well-being Jindal Lifestyle has taken a step in this very direction and initiated a series of wellness sessions for all its employees in collaboration with Brahmakumaris.
                                      <br/><br/>
                                     
                                      <small className="heading orange">Town hall Meeting</small><br/>
-                                     Leadership Connect In JSL Lifestyle’s Quarterly Leadership Connect, the focus is on the impact of hard work in the previous quarter while appreciating everyone who made it possible.
+                                     Leadership Connect In Jindal Lifestyle’s Quarterly Leadership Connect, the focus is on the impact of hard work in the previous quarter while appreciating everyone who made it possible.
                                      <br/><br/>
                        
                                 </p>

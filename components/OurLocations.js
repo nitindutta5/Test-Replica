@@ -1,22 +1,37 @@
-import {Container, Row, Col} from 'reactstrap'
+import { Container, Row, Col, Input } from 'reactstrap'
 import styles from '../styles/OurLocations.module.css'
-import { useState } from 'react'
+import { useImperativeHandle, useState } from 'react'
 import classNames from 'classnames'
 import Location from './Location'
-import { stores, offices ,plantLocation } from '../Data'
+import { stores, States, offices, plantLocation } from '../Data'
 
 
-const OurLocations = () =>{
+const OurLocations = () => {
 
     const [active, setActive] = useState({
-        "plants":true
+        "plants": true
     });
-    const handleActive = (name) =>{
+    const handleActive = (name) => {
         setActive({
-            [name]:true
+            [name]: true
         });
     }
-    return(
+
+    const handleFilter = (e) => {
+        setFilter(e.target.value);
+        if (e.target.value !== "All") {
+            let updatedStores = stores.filter((obj) => { return obj.desc.includes(e.target.value) });
+            updateStoresData(updatedStores);
+        }
+        else {
+            updateStoresData(stores);
+        }
+
+    }
+
+    const [storesData, updateStoresData] = useState(stores);
+    const [filter, setFilter] = useState('All');
+    return (
         <section className="pb-0">
             <Container>
                 <Row>
@@ -24,37 +39,64 @@ const OurLocations = () =>{
                         <h1 className={styles.smallHeading}>Our Locations</h1>
                         <Row>
                             <Col lg="3" xs="6">
-                            <div className={classNames({[styles.boxes]:true,
-                            [styles.active]:active.plants})}  onClick={()=>handleActive("plants")}>
-                                Plants
-                            </div>
+                                <div className={classNames({
+                                    [styles.boxes]: true,
+                                    [styles.active]: active.plants
+                                })} onClick={() => handleActive("plants")}>
+                                    Plants
+                                </div>
                             </Col>
                             <Col lg="3" xs="6">
-                            <div className={classNames({[styles.boxes]:true,
-                            [styles.active]:active.partners})}  onClick={()=>handleActive("partners")}>
-                                Partners
-                            </div>
+                                <div className={classNames({
+                                    [styles.boxes]: true,
+                                    [styles.active]: active.partners
+                                })} onClick={() => handleActive("partners")}>
+                                    Partners
+                                </div>
                             </Col>
                             <Col lg="3" xs="6">
-                            <div className={classNames({[styles.boxes]:true,
-                            [styles.active]:active.offices})}  onClick={()=>handleActive("offices")}>
-                                Offices
-                            </div>
+                                <div className={classNames({
+                                    [styles.boxes]: true,
+                                    [styles.active]: active.offices
+                                })} onClick={() => handleActive("offices")}>
+                                    Offices
+                                </div>
                             </Col>
                             <Col lg="3" xs="6">
-                            <div className={classNames({[styles.boxes]:true,
-                            [styles.active]:active.stores})}  onClick={()=>handleActive("stores")}>
-                                Stores
-                            </div>
+                                <div className={classNames({
+                                    [styles.boxes]: true,
+                                    [styles.active]: active.stores
+                                })} onClick={() => handleActive("stores")}>
+                                    Stores
+                                </div>
                             </Col>
                         </Row>
                     </Col>
                 </Row>
                 {
-                    active.plants&&<Location data={plantLocation}/> ||
-                    active.stores&&<Location data={stores}/>||
-                    active.partners&&<h4 className="mt-5">Comming Soon</h4>||
-                    active.offices&&<Location data={offices}/>
+                    active.plants && <Location data={plantLocation} /> ||
+                    active.stores &&
+                    (
+                        <>
+                            <Row>
+                                <Col lg="2" className="mx-auto mt-5">
+                                    {/* <p className="orange mt-5 bold text-center ">Select State</p> */}
+                                    <Input type="select" value={filter} onChange={(e) => handleFilter(e)} id="exampleSelectMulti">
+                                        {
+                                            States.map((state, id) => (
+                                                <option key={id} value={state.val}>{state.val}</option>
+                                            ))
+                                        }
+                                    </Input>
+                                </Col>
+                            </Row>
+
+                            <Location data={storesData} />
+                        </>
+                    )
+                    ||
+                    active.partners && <h4 className="mt-5">Comming Soon</h4> ||
+                    active.offices && <Location data={offices} />
                 }
             </Container>
         </section>

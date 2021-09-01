@@ -23,7 +23,7 @@ const VerticalPlantCarousel = () => {
             <main className="scroll-container">
                 <section>
                     <Container>
-                        <h1 className="heading text-center">Our Plants</h1>
+                        <h1 className="heading text-center">Manufacturing Unit</h1>
                         <Slider {...params} >
                             {
                                 plantData.map((obj, id) => (
