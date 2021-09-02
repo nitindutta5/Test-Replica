@@ -11,7 +11,7 @@ const CareerInner = ({ job }) => {
     return (
         <>
             <Head>
-                <title>{job[0].Job_Title} | JSLL  Lifestyle</title>
+                <title>{job[0].Job_Title} | Jindal  Lifestyle</title>
                 <meta name="description" content="Jobs" />
             </Head>
             <div className={styles.dummyBanner}  >

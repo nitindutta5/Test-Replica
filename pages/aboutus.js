@@ -14,7 +14,7 @@ const About = () => {
     return (
         <>
             <Head>
-                <title>About Us | JSLL  Lifestyle</title>
+                <title>About Us | Jindal  Lifestyle</title>
                 <meta name="description" content="About Us Page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

@@ -8,7 +8,7 @@ const Careers = ({jobs}) => {
     return (
         <>
             <Head>
-                <title>Career | JSLL  Lifestyle</title>
+                <title>Career | Jindal Lifestyle</title>
                 <meta name="description" content="Media Page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

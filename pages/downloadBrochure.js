@@ -59,7 +59,7 @@ const downloadBrochure = ({ verticals, ModalToggle, UpdateName, UpdateFile, Upda
     return (
         <>
             <Head>
-                <title>Download Brochure | JSLL  Lifestyle</title>
+                <title>Download Brochure | Jindal  Lifestyle</title>
                 <meta name="description" content="Download Brochure" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

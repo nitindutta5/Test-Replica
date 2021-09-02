@@ -7,7 +7,7 @@ const CareerIntro = () =>{
             <Container fluid className="wrapper">
                 <Row>
                     <Col lg="12" className="mx-auto">
-                        <h1 className="heading text-center">Life At JSLL</h1>
+                        <h1 className="heading text-center">Life At Jindal Lifestyle</h1>
                         <Row>
                         <Col lg="8" className="order-2 order-lg-1">
                                 <h2 className="heading" style={{fontWeight:"600",lineHeight:"1.3"}}>

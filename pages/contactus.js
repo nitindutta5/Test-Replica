@@ -12,7 +12,7 @@ const ContactUs = () => {
     return (
         <>
             <Head>
-                <title>Contact Us | JSLL  Lifestyle</title>
+                <title>Contact Us | Jindal  Lifestyle</title>
                 <meta name="description" content="Contact Us Page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

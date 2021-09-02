@@ -13,7 +13,7 @@ export default function Home({verticals, ModalToggle, UpdateName, UpdateFile, Up
   return (
     <>
       <Head>
-        <title>JSLL | Lifestyle</title>
+        <title>Jindal Lifestyle</title>
         <meta name="description" content="Jindal Lifestyle" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

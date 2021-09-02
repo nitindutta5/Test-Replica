@@ -44,7 +44,7 @@ const Media = ({ blogs, caseStudyData, mediaData, ModalToggle, UpdateName, Updat
     return (
         <>
             <Head>
-                <title>Media | JSLL  Lifestyle</title>
+                <title>Media | Jindal  Lifestyle</title>
                 <meta name="description" content="Media Page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

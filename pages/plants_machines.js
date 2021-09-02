@@ -7,7 +7,7 @@ const Plants_Machines = () => {
     return (
         <>
             <Head>
-                <title>Plants & Machines | JSLL  Lifestyle</title>
+                <title>Plants & Machines | Jindal Lifestyle</title>
                 <meta name="description" content="Our Plants & Machine Page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

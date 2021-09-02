@@ -7,7 +7,7 @@ const ourBusinesses = ({verticals, ModalToggle, UpdateName, UpdateFile, UpdateTy
     return (
         <>
             <Head>
-                <title>Our Businesses | JSLL  Lifestyle</title>
+                <title>Our Businesses | Jindal  Lifestyle</title>
                 <meta name="description" content="Download Brochure" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

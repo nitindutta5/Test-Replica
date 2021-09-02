@@ -8,7 +8,7 @@ const Legacy = () => {
     return (
         <>
             <Head>
-                <title>Legacy | JSLL  Lifestyle</title>
+                <title>Legacy | Jindal Lifestyle</title>
                 <meta name="description" content="About Us Page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

@@ -10,7 +10,7 @@ const Why_Stainless_Steel = ({ checkOpen }) => {
         <>
             <Overlay checkOpen={checkOpen} />
             <Head>
-                <title>Why Stainless Steel | JSLL  Lifestyle</title>
+                <title>Why Stainless Steel | Jindal Lifestyle</title>
                 <meta name="description" content="Why Stainless Steel Page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
